@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# Geospatial analysis and representation for data science
-repository with code and documentation for the course "Geospatial analysis and representation for data science" for the students in data science of the university of Trento
+this website contains the documentation produced during the course in Geospatial analysis and representation for data science for the students in data science of the University of Trento
 
 ## Course information
 ### description
@@ -25,4 +24,4 @@ Every Friday from 25 September to 23 October online with [Maurizio Napolitano](h
 Link for the google meet on the ESSE3 page of Unitn
 
 ## Course websites
-- ESSE3 Unit: https://www.esse3.unitn.it/Guide/PaginaADContest.do?ad_cont_id=10692*94842*2020*2018*9999
+- ESSE3: [official communication chanel](https://www.esse3.unitn.it/Guide/PaginaADContest.do?ad_cont_id=10692*94842*2020*2018*9999)
