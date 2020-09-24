@@ -20,8 +20,12 @@ At the end of the course, students will be able to:
 - [Maurizio Napolitano](http://gitub.com/napo)
 
 ### Lessons
-Every Friday from 25 September to 23 October online with [Maurizio Napolitano](http://gitub.com/napo)<br/>
-Link for the google meet on the ESSE3 page of Unitn
+[Maurizio Napolitano](http://github.com/napo)</br>
+every Friday from 25 September to 23 October [online](http://meet.google.com/aqt-xcgc-hjk)
+
+[Import the calendar](https://calendar.google.com/calendar/ical/c_q40qko9pgtehko3lt9evb4n9po%40group.calendar.google.com/public/basic.ics) of the lessons
 
 ## Course websites
-- ESSE3: [official communication chanel](https://www.esse3.unitn.it/Guide/PaginaADContest.do?ad_cont_id=10692*94842*2020*2018*9999)
+- [official page of the University of Trento](https://www.esse3.unitn.it/Guide/PaginaADContest.do?ad_cont_id=10692*94842*2020*2018*9999)
+- [Lessons](https://napo.github.io/geospatial_course_unitn) by Maurizio Napolitano
+- [Github with code and other resources](https://github.com/napo/geospatial_course_unitn) by Maurizio Napolitano
