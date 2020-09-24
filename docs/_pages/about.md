@@ -4,26 +4,25 @@ title: About
 permalink: /about/
 ---
 
-[Reverie](https://github.com/amitmerchant1990/reverie) is a Jekyll theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for [my blog](https://www.amitmerchant.com).
+# Geospatial analysis and representation for data science
+repository with code and documentation for the course "Geospatial analysis and representation for data science" for the students in data science of the university of Trento
 
-This is a plug-and-play Jekyll theme which you can use on GitHub Pages without even setting up a local environment.
+## Course information
+### description
+The laboratory aims to provide the necessary basis for learning how to manage, analyze and visualize geospatial data through open source tools (geospatial libraries for python, qgis, R ...)
 
-## Features
+At the end of the course, students will be able to:
+- understand the specificity of the geospatial data model
+- elaborate and integrate geospatial data (vector and raster)
+- create maps (also accessible via the web)
 
-- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
-- Fully responsive and mobile optimized base theme
-- Sass/Coffeescript support using Jekyll 2.0
-- Free hosting on your GitHub Pages user site
-- All the SEO goodies comes in-built
-- Markdown blogging
-- Syntax highlighting using Pygments
-    - [Dracula syntax theme](https://draculatheme.com/) included
-- Disqus commenting
-- Google Analytics integration
-- Fuzzy search across blog posts
-- Pagination of posts works out-of-the-box.
-- Categorize posts out-of-the box
-- RSS Feed
-- In-built sitemap
+### Teachers
+- [Diego Giulani](https://webapps.unitn.it/du/en/Persona/PER0020867/Didattica)
+- [Maurizio Napolitano](http://gitub.com/napo)
 
-Learn more about it [here](https://github.com/amitmerchant1990/reverie) on how to get started.
+### Lessons
+Every Friday from 25 September to 23 October online with [Maurizio Napolitano](http://gitub.com/napo)<br/>
+Link for the google meet on the ESSE3 page of Unitn
+
+## Course websites
+- ESSE3 Unit: https://www.esse3.unitn.it/Guide/PaginaADContest.do?ad_cont_id=10692*94842*2020*2018*9999
