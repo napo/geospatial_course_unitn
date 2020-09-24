@@ -12,7 +12,7 @@ author: Maurizio Napolitano
 description: repository with code and documentation for the course "Geospatial analysis and representation for data science" for the students in data science of the University of Trento
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/geospatial.png
+avatar: /images/geospatial.png
 
 #
 # Flags below are optional
