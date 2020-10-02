@@ -22,5 +22,5 @@ Link for the google meet on the ESSE3 page of Unitn
 - [ESSE3 Unit](https://www.esse3.unitn.it/Guide/PaginaADContest.do?ad_cont_id=10692*94842*2020*2018*9999)
 
 ## License of the materials
-- slides in cc-by 
-- code in 
+- slides and texts under CC-BY
+- code under MIT License
