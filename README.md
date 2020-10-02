@@ -1,6 +1,8 @@
 # Geospatial analysis and representation for data science
 repository with code and documentation for the course "Geospatial analysis and representation for data science" for the students in [Data Science of the University of Trento](https://international.unitn.it/maths/master-in-data-science)
 
+web site with the content of the course - https://napo.github.io/geospatial_course_unitn/
+
 ## Course information
 ### description
 The laboratory aims to provide the necessary basis for learning how to manage, analyze and visualize geospatial data through open source tools (geospatial libraries for python, qgis, R ...)
