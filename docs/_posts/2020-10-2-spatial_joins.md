@@ -4,8 +4,7 @@ title:  Lesson 2: spatial relationships and operations
 excerpt: The tutorial introduces the concepts of spatial relationship and possible operations.
 The problem to be solved is to identify, starting from a csv file containing the latitude and longitude of the Italian libraries, in which macro-region of Italy there is a point chosen by the user.
 ---
-# Spatial relationships and operations
-
+## Introduction
 The problem to be solved is to identify, starting from a csv file containing the latitude and longitude of the Italian libraries, in which macro-region of Italy there is a point chosen by the user.
 
 ## goals of the tutorial
