@@ -13,3 +13,9 @@ permalink: /materials/
 - [Colab Research Google](https://colab.research.google.com/)
 - [Geopandas](https://geopandas.org)
 - [QGIS](https://qgis.org)
+
+## Code
+- [01_GIS_introduction_with_geopandas.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/01_GIS_introduction_with_geopandas.ipynb)
+- [01_solution_exercise,_geopackage_and_representative_point.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/01_solution_exercise%2C_geopackage_and_representative_point.ipynb)
+- [02_csv_files_spatial_relationships_and_operations.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/02_csv_files_spatial_relationships_and_operations.ipynb)
+- [everything](https://github.com/napo/geospatial_course_unitn/tree/master/code)
