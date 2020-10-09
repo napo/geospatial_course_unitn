@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Geospatial analysis and representation for data science 
+title: geospatial analysis and representation for data science 
 description: documentation and code for the course for the students in data science of the University of Trento
 baseurl: "/geospatial_course_unitn" # the subpath of your site, e.g. /blog
 url: "https://napo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -30,7 +30,7 @@ exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "pac
 # include: ["docs/tests/"]
 
 # Set a path/url to a logo that will be displayed instead of the title
-#logo: "/assets/images/just-the-docs.png"
+logo: "/assets/images/just-the-docs.png"
 
 # Enable or disable the site search
 # Supports true (default) or false
