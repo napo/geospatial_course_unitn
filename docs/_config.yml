@@ -81,7 +81,7 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 back_to_top: true
 back_to_top_text: "Back to top"
 
-footer_content: "Copyright &copy; 2020 Maurizio Napolitano - code in MIT License and documentation in CC-BY. Web site based on <a href=\"https://github.com/pmarsceill/just-the-docs">Just the Docs.</a>" made by Patrick Marsceill
+footer_content: "Copyright &copy; 2020 Maurizio Napolitano - code in MIT License and documentation in CC-BY. Web site based on <a href=\"https://github.com/pmarsceill/just-the-docs\">Just the Docs.</a> made by Patrick Marsceill"
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
