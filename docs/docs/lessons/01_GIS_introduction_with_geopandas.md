@@ -803,6 +803,7 @@ files.download('macro_regions.geojson')
 
 
 ---
+
 # Exercise
 - load the shapefile of ISTAT with the information of the provinces
 - filter it for an italian provice at your choice (eg. Trento)
@@ -812,4 +813,5 @@ files.download('macro_regions.geojson')
 - extract a rappresenative point for the area of a municipality in WGS84<br/>suggestion: *.representative_point()*
 - save the points in a GeoJSON file
 - calculate the distance on the geodentic between the municipaly with the big area and smallest area by using the centroid
+
 ---
