@@ -5,8 +5,18 @@ parent: Lessons
 nav_order: 3
 permalink: /lessons/retrieving_data_from_sdi
 ---
+*Lesson 09 October 2020*
+{: .no_toc }
 
-# **Retrieving data from spatial database infrastructures**
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+# Retrieving data from spatial database infrastructures
 
 ## goals of the tutorial
 - geocoding / reverse geocoding

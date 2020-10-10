@@ -5,7 +5,16 @@ parent: Lessons
 nav_order: 2
 permalink: /lessons/spatial_relationships_and_operations
 ---
+*Lesson 02 October 2020*
+{: .no_toc }
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 # Spatial relationships and operations
 based on scipy2018-geospatial
 

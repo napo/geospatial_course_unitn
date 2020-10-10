@@ -5,13 +5,7 @@ parent: Lessons
 nav_order: 1
 permalink: /lessons/gis_introduction
 ---
-
-
-# Lesson 25 September 2020
-- the vector data and ESRI Shapefile
-- the geodataframe in geopandas
-- spatial projection
-
+*Lesson 25 September 2020*
 {: .no_toc }
 
 ## Table of contents
