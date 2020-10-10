@@ -28426,12 +28426,6 @@ municipalities[municipalities.to_crs(epsg=4326).contains(point)]
 
 We can assume that the record is **WRONG**!!!
 
-
-
----
-
-
-<div class="alert alert-info" style="font-size:120%">
 **REFERENCE**
 
 Overview of the different functions to check spatial relationships (*spatial predicate functions*):
