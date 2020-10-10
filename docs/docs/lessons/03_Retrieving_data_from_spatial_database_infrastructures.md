@@ -1,3 +1,11 @@
+---
+layout: default
+title: GIS introduction with geopandas (vector data)
+parent: Lessons
+nav_order: 3
+permalink: /lessons/retrieving_data_from_sdi
+---
+
 # **Retrieving data from spatial database infrastructures**
 
 ## goals of the tutorial

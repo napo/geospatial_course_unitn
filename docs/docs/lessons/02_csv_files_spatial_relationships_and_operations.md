@@ -1,3 +1,11 @@
+---
+layout: default
+title: Spatial relationships and operations
+parent: Lessons
+nav_order: 2
+permalink: /lessons/spatial_relationships_and_operations
+---
+
 # Spatial relationships and operations
 based on scipy2018-geospatial
 
