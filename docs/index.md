@@ -2,35 +2,91 @@
 layout: default
 title: Home
 nav_order: 1
-description: "this website contains the documentation produced during the course in Geospatial analysis and representation for data science for the students in data science of the University of Trento
-"
+description: "this website contains the documentation produced during the course in Geospatial analysis and representation for data science for the students in data science of the University of Trento"
 permalink: /
 ---
+
 # Geospatial analysis and representation for data science
+{: .fs-9 }
 
 this website contains the documentation produced during the course in Geospatial analysis and representation for data science for the students in data science of the University of Trento
+{: .fs-6 .fw-300 }
+
+---
 
 ## Course information
 ### description
 The laboratory aims to provide the necessary basis for learning how to manage, analyze and visualize geospatial data through open source tools (geospatial libraries for python, qgis, R ...)
 
-At the end of the course, students will be able to:
-- understand the specificity of the geospatial data model
-- elaborate and integrate geospatial data (vector and raster)
-- create maps (also accessible via the web)
+### Quick start: Use as a GitHub Pages remote theme
 
-### Teachers
-- [Diego Giulani](https://webapps.unitn.it/du/en/Persona/PER0020867/Didattica)
-- [Maurizio Napolitano](http://gitub.com/napo)
+1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
+```yaml
+remote_theme: pmarsceill/just-the-docs
+```
+<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
 
-### Lessons
-[Maurizio Napolitano](http://github.com/napo)<br/>
-every Friday from 25 September to 23 October [online](http://meet.google.com/aqt-xcgc-hjk)
+### Local installation: Use the gem-based theme
 
-[Import the calendar](https://calendar.google.com/calendar/ical/c_q40qko9pgtehko3lt9evb4n9po%40group.calendar.google.com/public/basic.ics) of the lessons
+1. Install the Ruby Gem
+```bash
+$ gem install just-the-docs
+```
+```yaml
+# .. or add it to your your Jekyll site’s Gemfile
+gem "just-the-docs"
+```
+2. Add Just the Docs to your Jekyll site’s `_config.yml`
+```yaml
+theme: "just-the-docs"
+```
+3. _Optional:_ Initialize search data (creates `search-data.json`)
+```bash
+$ bundle exec just-the-docs rake search:init
+```
+3. Run you local Jekyll server
+```bash
+$ jekyll serve
+```
+```bash
+# .. or if you're using a Gemfile (bundler)
+$ bundle exec jekyll serve
+```
+4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
-## Course websites
-- [official page of the University of Trento](https://www.esse3.unitn.it/Guide/PaginaADContest.do?ad_cont_id=10692*94842*2020*2018*9999)
-- [Lessons](https://napo.github.io/geospatial_course_unitn) by Maurizio Napolitano
-- [Github with code and other resources](https://github.com/napo/geospatial_course_unitn) by Maurizio Napolitano
+If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
+### Configure Just the Docs
+
+- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
+
+---
+
+## About the project
+
+Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
+
+### License
+
+Just the Docs is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
+
+### Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
+
+#### Thank you to the contributors of Just the Docs!
+
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
+  </li>
+{% endfor %}
+</ul>
+
+### Code of Conduct
+
+Just the Docs is committed to fostering a welcoming community.
+
+[View our Code of Conduct](https://github.com/pmarsceill/just-the-docs/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.
