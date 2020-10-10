@@ -4,7 +4,7 @@ title: Materials
 nav_order: 2
 ---
 
-# Materils
+# Configuration
 {: .no_toc }
 
 
