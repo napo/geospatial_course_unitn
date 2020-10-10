@@ -1,17 +1,14 @@
-$body-background-color: $white;
-$sidebar-color: $grey-lt-300;
-$border-color: $grey-lt-200;
+$body-background-color: $white !default;
+$sidebar-color: $fbk-grey-lt-000 !default;
+$search-background-color: $white !default;
+$table-background-color: $white !default;
+$code-background-color: $grey-lt-000 !default;
+$feedback-color: darken($sidebar-color, 3%) !default;
 
-$body-text-color: $grey-dk-300;
-$body-heading-color: $blue-200;
-$nav-child-link-color: $blue-200;
-$search-result-preview-color: $grey-dk-000;
-
-$link-color: $blue-300;
-$btn-primary-color: $blue-200;
-$base-button-color: $grey-dk-250;
-
-$code-background-color: $grey-lt-300;
-$search-background-color: $white;
-$table-background-color: $grey-lt-200;
-$feedback-color: darken($sidebar-color, 3%);
+$body-text-color: $grey-dk-100 !default;
+$body-heading-color: $grey-dk-300 !default;
+$search-result-preview-color: $grey-dk-000 !default;
+$nav-child-link-color: $grey-dk-100 !default;
+$link-color: $purple-000 !default;
+$btn-primary-color: $purple-100 !default;
+$base-button-color: #f7f7f7 !default;
