@@ -28432,24 +28432,21 @@ We can assume that the record is **WRONG**!!!
 
 
 <div class="alert alert-info" style="font-size:120%">
-<b>REFERENCE</b>: <br>
+**REFERENCE**
 
 Overview of the different functions to check spatial relationships (*spatial predicate functions*):
-<ul>
-    <li>`equals`</li>
-<li>`contains`</li>
-<li>`crosses`</li>
-<li>`disjoint`</li>
-<li>`intersects`</li>
-<li>`overlaps`</li>
-<li>`touches`</li>
-<li>`within`</li>
-<li>`covers`</li>
-</ul>
+- equals
+- contains
+- crosses
+- disjoint
+- intersects
+- overlaps
+- touches
+- within
+- covers
 
 
 See https://shapely.readthedocs.io/en/stable/manual.html#predicates-and-relationships for an overview of those methods.
-
 
 See https://en.wikipedia.org/wiki/DE-9IM for all details on the semantics of those operations. 
 
@@ -28488,22 +28485,11 @@ libraries_and_macroregions.columns
 ```python
 libraries_and_macroregions.shape
 ```
-
-
-
-
     (11553, 21)
-
-
-
 
 ```python
 libraries_and_macroregions.head(5)
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
