@@ -28822,19 +28822,16 @@ total_libraries_for_macroregion.plot.bar()
 
 
 
-<div class="alert alert-info" style="font-size:120%">
-<b>SPATIAL JOIN </b>= *transferring attributes from one layer to another based on their spatial relationship*<br/>
+**SPATIAL JOIN** = *transferring attributes from one layer to another based on their spatial relationship*
+
 
 Different parts of this operations:
-<ul>
-    <li>The GeoDataFrame to which we want add information</li>
-    <li>The GeoDataFrame that contains the information we want to add</li>
-    <li>The spatial relationship we want to use to match both datasets ('intersects', 'contains', 'within')</li>
-    <li>The type of join: left or inner join</li>
-</ul>
+- The GeoDataFrame to which we want add information
+- The GeoDataFrame that contains the information we want to add
+- The spatial relationship we want to use to match both datasets ('*intersects*', '*contains*', '*within*')
+- The type of join: left or inner join
 
 
----
 # Spatial operations 
 GeoPandas provide analysis methods that return new geometric objects (based on shapely)
 
@@ -28854,51 +28851,29 @@ public_library_of_trento_32632 = geo_libraries[geo_libraries['codice-isil'] == '
 ```python
 public_library_of_trento_32632
 ```
-
-
-
-
-    
+   
 ![svg](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_114_0.svg)
     
-
-
-
 
 ```python
 public_library_of_trento_32632.buffer(9000) # a circle with a ray of 9000 meters
 ```
-
-
-
-
     
-![svg](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_115_0.svg)
-    
-
-
+![svg](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_115_0.svg)  
 
 
 ```python
 public_library_of_trento_32632
 ```
-
-
-
-
     
 ![svg](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_116_0.svg)
     
-
-
 
 ## Es. simplify
 
 *object.simplify(tolerance, preserve_topology=True)*
 
     Returns a simplified representation of the geometric object.
-
-
 
 ```python
 northeast_geometry = macroregions[macroregions.COD_RIP==2].geometry.values[0]
@@ -28909,28 +28884,15 @@ northeast_geometry = macroregions[macroregions.COD_RIP==2].geometry.values[0]
 northeast_geometry
 ```
 
-
-
-
-    
 ![svg](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_119_0.svg)
     
-
-
-
 
 ```python
 northeast_geometry.simplify(10000,preserve_topology=False)
 ```
-
-
-
-
     
 ![svg](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_120_0.svg)
     
-
-
 
 ## Es. symmetric_difference
 *object.symmetric_difference(other)*
@@ -28938,28 +28900,18 @@ northeast_geometry.simplify(10000,preserve_topology=False)
     Returns a representation of the points in this object not in the other geometric object, and the points in the other not in this geometric object.
 
 
-
 ```python
 northeast_geometry.simplify(10000,preserve_topology=False).symmetric_difference(public_library_of_trento_32632.buffer(9000))
 ```
-
-
-
-
     
 ![svg](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_122_0.svg)
     
 
-
-
-<div class="alert alert-info" style="font-size:120%">
-<b>REMEMBER:</b>
+**REMEMBER:**
 
 GeoPandas (and Shapely for the individual objects) provides a whole lot of basic methods to analyse the geospatial data (distance, length, centroid, boundary, convex_hull, simplify, transform, ....), much more than the few that we can touch in this tutorial.
-<ul>
-<li>An overview of all methods provided by GeoPandas can be found here: <a href="http://geopandas.readthedocs.io/en/latest/reference.html">http://geopandas.readthedocs.io/en/latest/reference.html</a></li>
-    </ul>
 
+- An overview of all methods provided by GeoPandas can be found here: [http://geopandas.readthedocs.io/en/latest/reference.html](http://geopandas.readthedocs.io/en/latest/reference.html)
 
 
 ---
@@ -29059,19 +29011,9 @@ italy = macroregions[['nation', 'geometry']]
 ```python
 italy.plot()
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7fda58f02940>
-
-
-
-
     
 ![png](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_128_1.png)
     
-
 
 
 ```python
@@ -29079,18 +29021,12 @@ italy.plot()
 italy = italy.to_crs(epsg=4326).dissolve(by='nation')
 
 ```
-
     CPU times: user 13 µs, sys: 2 µs, total: 15 µs
     Wall time: 18.6 µs
-
-
 
 ```python
 italy
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -29132,38 +29068,21 @@ italy
 ```python
 italy.geometry[0]
 ```
-
-
-
-
-    
+ 
 ![svg](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_131_0.svg)
     
-
-
-
 
 ```python
 italy.to_crs(epsg=32632).geometry[0]
 ```
-
-
-
-
-    
+  
 ![svg](02_csv_files_spatial_relationships_and_operations_files/02_csv_files_spatial_relationships_and_operations_132_0.svg)
-    
 
-
-
-<div class="alert alert-info" style="font-size:120%">
-<b>REMEMBER:</b>
+**REMEMBER:**
 
 dissolve can be thought of as doing three things: (a) it **dissolves** all the geometries within a given group together into a single geometric feature (using the *unary_union* method), and (b) it **aggregates** all the rows of data in a group using *groupby.aggregate()*, and (c) it **combines** those two results.
     
-<ul>
-<li>An overview of all methods provided by GeoPandas can be found here: <a href="http://geopandas.org/aggregation_with_dissolve.html">http://geopandas.org/aggregation_with_dissolve.html</a></li>
- </ul>
+- An overview of all methods provided by GeoPandas can be found here: [http://geopandas.org/aggregation_with_dissolve.htm](http://geopandas.org/aggregation_with_dissolve.html)
 
 ---
 # Exercise
@@ -29174,4 +29093,4 @@ dissolve can be thought of as doing three things: (a) it **dissolves** all the g
 - for each pharmacy contained in the macro-area, calculate how many libraries are within a 500m radius
 - creates a polygon that contains all the pharmacies within a 2km radius of the Trento public library
 - save the polygon in geopackage with the attribute "description" with value "area of the pharmacies 2km from the Trento public libray"
----
+

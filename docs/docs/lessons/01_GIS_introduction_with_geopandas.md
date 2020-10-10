@@ -813,5 +813,3 @@ files.download('macro_regions.geojson')
 - extract a rappresenative point for the area of a municipality in WGS84
 - save the points in a GeoJSON file
 - calculate the distance on the geodentic between the municipaly with the big area and smallest area by using the centroid
-
----
