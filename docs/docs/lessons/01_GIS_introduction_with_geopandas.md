@@ -810,7 +810,7 @@ files.download('macro_regions.geojson')
 - plot it
 - identify the cities of the province selected with the biggest and smallest area
 - extract all the centroids of the areas expressed in WGS84
-- extract a rappresenative point for the area of a municipality in WGS84<br/>suggestion: *.representative_point()*
+- extract a rappresenative point for the area of a municipality in WGS84
 - save the points in a GeoJSON file
 - calculate the distance on the geodentic between the municipaly with the big area and smallest area by using the centroid
 
