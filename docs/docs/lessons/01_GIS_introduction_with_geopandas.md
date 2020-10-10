@@ -1,3 +1,25 @@
+layout: default
+title: GIS introduction with geopandas (vector data)
+parent: lessons
+nav_order: 2
+---
+
+
+# Lesson 25 September 2020
+- the vector data and ESRI Shapefile
+- the geodataframe in geopandas
+- spatial projection
+
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 # GIS introduction with geopandas (vector data)
 based on scipy2018-geospatial
 
