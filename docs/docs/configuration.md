@@ -37,6 +37,7 @@ Here you can find the materials distributed during the course
 ### lesson 1 - GIS introduction with geopandas
 - [01_GIS_introduction_with_geopandas.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/01_GIS_introduction_with_geopandas.ipynb)
 - [01_solution_exercise,_geopackage_and_representative_point.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/01_solution_exercise%2C_geopackage_and_representative_point.ipynb)
+
 ### lesson 2 - Spatial relationships and operations
 - [02_csv_files_spatial_relationships_and_operations.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/02_csv_files_spatial_relationships_and_operations.ipynb)
 - [02_csv_files_spatial_relationships_and_operations.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/02_csv_files_spatial_relationships_and_operations.ipynb)
