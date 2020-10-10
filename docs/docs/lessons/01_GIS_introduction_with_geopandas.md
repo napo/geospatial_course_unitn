@@ -1,7 +1,8 @@
 layout: default
 title: GIS introduction with geopandas (vector data)
-parent: lessons
+parent: Lessons
 nav_order: 2
+permalink: /lessons/gis_introduction
 ---
 
 
