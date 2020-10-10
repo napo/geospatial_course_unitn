@@ -35,11 +35,6 @@ permalink: /lessons/solution_exercise_1
     Requirement already satisfied: cligj>=0.5 in /usr/local/lib/python3.6/dist-packages (from fiona->geopandas) (0.5.0)
     Requirement already satisfied: attrs>=17 in /usr/local/lib/python3.6/dist-packages (from fiona->geopandas) (20.2.0)
 
-
-# Setup
-
-
-
 ---
 # Exercise
 - load the shapefile of ISTAT with the information of the provinces
