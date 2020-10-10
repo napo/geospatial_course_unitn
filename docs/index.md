@@ -6,6 +6,7 @@ description: "this website contains the documentation produced during the course
 "
 permalink: /
 ---
+# Geospatial analysis and representation for data science
 
 this website contains the documentation produced during the course in Geospatial analysis and representation for data science for the students in data science of the University of Trento
 
@@ -23,7 +24,7 @@ At the end of the course, students will be able to:
 - [Maurizio Napolitano](http://gitub.com/napo)
 
 ### Lessons
-[Maurizio Napolitano](http://github.com/napo)</br>
+[Maurizio Napolitano](http://github.com/napo)<br/>
 every Friday from 25 September to 23 October [online](http://meet.google.com/aqt-xcgc-hjk)
 
 [Import the calendar](https://calendar.google.com/calendar/ical/c_q40qko9pgtehko3lt9evb4n9po%40group.calendar.google.com/public/basic.ics) of the lessons
