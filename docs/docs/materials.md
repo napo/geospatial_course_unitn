@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Configuration
-nav_order: 3
+title: Materials
+nav_order: 2
 ---
 
 # Materials
