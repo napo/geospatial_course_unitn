@@ -1,3 +1,21 @@
+---
+layout: default
+title: GIS concepts - solution to the exercise
+parent: Solutions
+nav_order: 1
+permalink: /lessons/solution_exercise_1
+---
+*Exercise after the lesson of 25 September 2020*
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+# Setup
 ```
 !pip install geopandas
 ```
