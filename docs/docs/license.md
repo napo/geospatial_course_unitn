@@ -16,6 +16,6 @@ all the code used in the lessons is under [MIT license](https://github.com/napo/
 
 ## Author
 ![](https://avatars0.githubusercontent.com/u/69814?s=200)<br/>
-Maurizio Napolitano <napo&#64;fbk.eu>
+Maurizio Napolitano <napo &#64; fbk.eu>
 
 
