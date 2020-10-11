@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Spatial relationships and operations
+title: 02 - Spatial relationships and operations
 parent: Lessons
 nav_order: 2
 permalink: /lessons/spatial_relationships_and_operations

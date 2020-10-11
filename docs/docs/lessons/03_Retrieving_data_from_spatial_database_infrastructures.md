@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Retrieving data from spatial database infrastructures
+title: 03 - Retrieving data from spatial database infrastructures
 parent: Lessons
 nav_order: 3
 permalink: /lessons/retrieving_data_from_sdi
