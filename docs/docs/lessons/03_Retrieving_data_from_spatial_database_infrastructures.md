@@ -473,8 +473,9 @@ map_point
 ```
 
 <iframe 
-    width="300"
+    width="100%"
     height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/via_verdi_26.html"
+    style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
 
@@ -486,17 +487,13 @@ add details like city and State
 q="Via Verdi, 26, Trento, Italia"
 ```
 
-
 ```
 point = gpd.tools.geocode(q, provider="arcgis")
 ```
 
-
 ```
 point
 ```
-
-
 
 
 <div>
@@ -533,18 +530,18 @@ point
 
 
 
-
 ```
 map_point = folium.Map([point.geometry.y,point.geometry.x], zoom_start=18)
 folium.GeoJson(point.to_json()).add_to(map_point)
 map_point
 ```
 
-
-
-
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html=PCFET0NUWVBFIGh0bWw+CjxoZWFkPiAgICAKICAgIDxtZXRhIGh0dHAtZXF1aXY9ImNvbnRlbnQtdHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04IiAvPgogICAgCiAgICAgICAgPHNjcmlwdD4KICAgICAgICAgICAgTF9OT19UT1VDSCA9IGZhbHNlOwogICAgICAgICAgICBMX0RJU0FCTEVfM0QgPSBmYWxzZTsKICAgICAgICA8L3NjcmlwdD4KICAgIAogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjYuMC9kaXN0L2xlYWZsZXQuanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY29kZS5qcXVlcnkuY29tL2pxdWVyeS0xLjEyLjQubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9qcy9ib290c3RyYXAubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9MZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy8yLjAuMi9sZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy5qcyI+PC9zY3JpcHQ+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjYuMC9kaXN0L2xlYWZsZXQuY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vYm9vdHN0cmFwLzMuMi4wL2Nzcy9ib290c3RyYXAubWluLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9jc3MvYm9vdHN0cmFwLXRoZW1lLm1pbi5jc3MiLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9mb250LWF3ZXNvbWUvNC42LjMvY3NzL2ZvbnQtYXdlc29tZS5taW4uY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL0xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLzIuMC4yL2xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvZ2gvcHl0aG9uLXZpc3VhbGl6YXRpb24vZm9saXVtL2ZvbGl1bS90ZW1wbGF0ZXMvbGVhZmxldC5hd2Vzb21lLnJvdGF0ZS5taW4uY3NzIi8+CiAgICA8c3R5bGU+aHRtbCwgYm9keSB7d2lkdGg6IDEwMCU7aGVpZ2h0OiAxMDAlO21hcmdpbjogMDtwYWRkaW5nOiAwO308L3N0eWxlPgogICAgPHN0eWxlPiNtYXAge3Bvc2l0aW9uOmFic29sdXRlO3RvcDowO2JvdHRvbTowO3JpZ2h0OjA7bGVmdDowO308L3N0eWxlPgogICAgCiAgICAgICAgICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsCiAgICAgICAgICAgICAgICBpbml0aWFsLXNjYWxlPTEuMCwgbWF4aW11bS1zY2FsZT0xLjAsIHVzZXItc2NhbGFibGU9bm8iIC8+CiAgICAgICAgICAgIDxzdHlsZT4KICAgICAgICAgICAgICAgICNtYXBfMjVmNjU0NDNkZTU4NGZmZmE5NjA1YTEzOGM0NGMzNzAgewogICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTsKICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwLjAlOwogICAgICAgICAgICAgICAgICAgIGhlaWdodDogMTAwLjAlOwogICAgICAgICAgICAgICAgICAgIGxlZnQ6IDAuMCU7CiAgICAgICAgICAgICAgICAgICAgdG9wOiAwLjAlOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICA8L3N0eWxlPgogICAgICAgIAo8L2hlYWQ+Cjxib2R5PiAgICAKICAgIAogICAgICAgICAgICA8ZGl2IGNsYXNzPSJmb2xpdW0tbWFwIiBpZD0ibWFwXzI1ZjY1NDQzZGU1ODRmZmZhOTYwNWExMzhjNDRjMzcwIiA+PC9kaXY+CiAgICAgICAgCjwvYm9keT4KPHNjcmlwdD4gICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcF8yNWY2NTQ0M2RlNTg0ZmZmYTk2MDVhMTM4YzQ0YzM3MCA9IEwubWFwKAogICAgICAgICAgICAgICAgIm1hcF8yNWY2NTQ0M2RlNTg0ZmZmYTk2MDVhMTM4YzQ0YzM3MCIsCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgY2VudGVyOiBbNDYuMDY2NjUwMDA2MDE5ODEsIDExLjExOTY1OTk4NTkzNzAzNF0sCiAgICAgICAgICAgICAgICAgICAgY3JzOiBMLkNSUy5FUFNHMzg1NywKICAgICAgICAgICAgICAgICAgICB6b29tOiAxOCwKICAgICAgICAgICAgICAgICAgICB6b29tQ29udHJvbDogdHJ1ZSwKICAgICAgICAgICAgICAgICAgICBwcmVmZXJDYW52YXM6IGZhbHNlLAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICApOwoKICAgICAgICAgICAgCgogICAgICAgIAogICAgCiAgICAgICAgICAgIHZhciB0aWxlX2xheWVyXzBiYjQ1NjYzNDI3MzRkMTBiNWI4MTJjZTY3ZTFkNDNkID0gTC50aWxlTGF5ZXIoCiAgICAgICAgICAgICAgICAiaHR0cHM6Ly97c30udGlsZS5vcGVuc3RyZWV0bWFwLm9yZy97en0ve3h9L3t5fS5wbmciLAogICAgICAgICAgICAgICAgeyJhdHRyaWJ1dGlvbiI6ICJEYXRhIGJ5IFx1MDAyNmNvcHk7IFx1MDAzY2EgaHJlZj1cImh0dHA6Ly9vcGVuc3RyZWV0bWFwLm9yZ1wiXHUwMDNlT3BlblN0cmVldE1hcFx1MDAzYy9hXHUwMDNlLCB1bmRlciBcdTAwM2NhIGhyZWY9XCJodHRwOi8vd3d3Lm9wZW5zdHJlZXRtYXAub3JnL2NvcHlyaWdodFwiXHUwMDNlT0RiTFx1MDAzYy9hXHUwMDNlLiIsICJkZXRlY3RSZXRpbmEiOiBmYWxzZSwgIm1heE5hdGl2ZVpvb20iOiAxOCwgIm1heFpvb20iOiAxOCwgIm1pblpvb20iOiAwLCAibm9XcmFwIjogZmFsc2UsICJvcGFjaXR5IjogMSwgInN1YmRvbWFpbnMiOiAiYWJjIiwgInRtcyI6IGZhbHNlfQogICAgICAgICAgICApLmFkZFRvKG1hcF8yNWY2NTQ0M2RlNTg0ZmZmYTk2MDVhMTM4YzQ0YzM3MCk7CiAgICAgICAgCiAgICAKICAgICAgICBmdW5jdGlvbiBnZW9fanNvbl9kODMzZWFiMzU2MGM0NWUyYTgyMTZhZGU4MDczZGE1ZF9vbkVhY2hGZWF0dXJlKGZlYXR1cmUsIGxheWVyKSB7CiAgICAgICAgICAgIGxheWVyLm9uKHsKICAgICAgICAgICAgfSk7CiAgICAgICAgfTsKICAgICAgICB2YXIgZ2VvX2pzb25fZDgzM2VhYjM1NjBjNDVlMmE4MjE2YWRlODA3M2RhNWQgPSBMLmdlb0pzb24obnVsbCwgewogICAgICAgICAgICAgICAgb25FYWNoRmVhdHVyZTogZ2VvX2pzb25fZDgzM2VhYjM1NjBjNDVlMmE4MjE2YWRlODA3M2RhNWRfb25FYWNoRmVhdHVyZSwKICAgICAgICAgICAgCiAgICAgICAgfSk7CgogICAgICAgIGZ1bmN0aW9uIGdlb19qc29uX2Q4MzNlYWIzNTYwYzQ1ZTJhODIxNmFkZTgwNzNkYTVkX2FkZCAoZGF0YSkgewogICAgICAgICAgICBnZW9fanNvbl9kODMzZWFiMzU2MGM0NWUyYTgyMTZhZGU4MDczZGE1ZAogICAgICAgICAgICAgICAgLmFkZERhdGEoZGF0YSkKICAgICAgICAgICAgICAgIC5hZGRUbyhtYXBfMjVmNjU0NDNkZTU4NGZmZmE5NjA1YTEzOGM0NGMzNzApOwogICAgICAgIH0KICAgICAgICAgICAgZ2VvX2pzb25fZDgzM2VhYjM1NjBjNDVlMmE4MjE2YWRlODA3M2RhNWRfYWRkKHsiZmVhdHVyZXMiOiBbeyJnZW9tZXRyeSI6IHsiY29vcmRpbmF0ZXMiOiBbMTEuMTE5NjU5OTg1OTM3MDM0LCA0Ni4wNjY2NTAwMDYwMTk4MV0sICJ0eXBlIjogIlBvaW50In0sICJpZCI6ICIwIiwgInByb3BlcnRpZXMiOiB7ImFkZHJlc3MiOiAiVmlhIEdpdXNlcHBlIFZlcmRpIDI2LCAzODEyMiwgVHJlbnRvIn0sICJ0eXBlIjogIkZlYXR1cmUifV0sICJ0eXBlIjogIkZlYXR1cmVDb2xsZWN0aW9uIn0pOwoKICAgICAgICAKPC9zY3JpcHQ+ onload="this.contentDocument.open();this.contentDocument.write(atob(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
-
+<iframe 
+    width="100%"
+    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/via_verdi_26_trento_arcgis.html"
+    style="border:none;"
+    allowfullscreen webkitallowfullscreen mozallowfullscreen>
+</iframe>
 
 
 Try a different geocoder
@@ -558,8 +555,6 @@ point_nominatim = gpd.tools.geocode(q, provider="Nominatim",user_agent="Example 
 ```
 point_nominatim
 ```
-
-
 
 
 <div>
@@ -595,6 +590,18 @@ point_nominatim
 </div>
 
 
+```
+map_point = folium.Map([point_nominatim.geometry.y,point_nominatim.geometry.x], zoom_start=18)
+folium.GeoJson(point.to_json()).add_to(map_point)
+map_point
+```
+
+<iframe 
+    width="100%"
+    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/via_verdi_26_trento_arcgis.html"
+    style="border:none;"
+    allowfullscreen webkitallowfullscreen mozallowfullscreen>
+</iframe>
 
 
 ```
@@ -610,9 +617,6 @@ point_nominatim = gpd.tools.geocode(q, provider="Nominatim",user_agent="Example 
 ```
 point_nominatim
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -648,40 +652,31 @@ point_nominatim
 
 
 
-
 ```
 map_point = folium.Map([point_nominatim.geometry.y,point.geometry.x], zoom_start=18)
 folium.GeoJson(point_nominatim.to_json()).add_to(map_point)
 map_point
 ```
 
-
-
-
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html=PCFET0NUWVBFIGh0bWw+CjxoZWFkPiAgICAKICAgIDxtZXRhIGh0dHAtZXF1aXY9ImNvbnRlbnQtdHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04IiAvPgogICAgCiAgICAgICAgPHNjcmlwdD4KICAgICAgICAgICAgTF9OT19UT1VDSCA9IGZhbHNlOwogICAgICAgICAgICBMX0RJU0FCTEVfM0QgPSBmYWxzZTsKICAgICAgICA8L3NjcmlwdD4KICAgIAogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjYuMC9kaXN0L2xlYWZsZXQuanMiPjwvc2NyaXB0PgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY29kZS5qcXVlcnkuY29tL2pxdWVyeS0xLjEyLjQubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9qcy9ib290c3RyYXAubWluLmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9MZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy8yLjAuMi9sZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy5qcyI+PC9zY3JpcHQ+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vbGVhZmxldEAxLjYuMC9kaXN0L2xlYWZsZXQuY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vYm9vdHN0cmFwLzMuMi4wL2Nzcy9ib290c3RyYXAubWluLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9jc3MvYm9vdHN0cmFwLXRoZW1lLm1pbi5jc3MiLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9mb250LWF3ZXNvbWUvNC42LjMvY3NzL2ZvbnQtYXdlc29tZS5taW4uY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL0xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLzIuMC4yL2xlYWZsZXQuYXdlc29tZS1tYXJrZXJzLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvZ2gvcHl0aG9uLXZpc3VhbGl6YXRpb24vZm9saXVtL2ZvbGl1bS90ZW1wbGF0ZXMvbGVhZmxldC5hd2Vzb21lLnJvdGF0ZS5taW4uY3NzIi8+CiAgICA8c3R5bGU+aHRtbCwgYm9keSB7d2lkdGg6IDEwMCU7aGVpZ2h0OiAxMDAlO21hcmdpbjogMDtwYWRkaW5nOiAwO308L3N0eWxlPgogICAgPHN0eWxlPiNtYXAge3Bvc2l0aW9uOmFic29sdXRlO3RvcDowO2JvdHRvbTowO3JpZ2h0OjA7bGVmdDowO308L3N0eWxlPgogICAgCiAgICAgICAgICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsCiAgICAgICAgICAgICAgICBpbml0aWFsLXNjYWxlPTEuMCwgbWF4aW11bS1zY2FsZT0xLjAsIHVzZXItc2NhbGFibGU9bm8iIC8+CiAgICAgICAgICAgIDxzdHlsZT4KICAgICAgICAgICAgICAgICNtYXBfMzI0ZTRmZTAwN2NmNGM1NWJlMjc1MDY3ZWU3N2ExNjcgewogICAgICAgICAgICAgICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTsKICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwLjAlOwogICAgICAgICAgICAgICAgICAgIGhlaWdodDogMTAwLjAlOwogICAgICAgICAgICAgICAgICAgIGxlZnQ6IDAuMCU7CiAgICAgICAgICAgICAgICAgICAgdG9wOiAwLjAlOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICA8L3N0eWxlPgogICAgICAgIAo8L2hlYWQ+Cjxib2R5PiAgICAKICAgIAogICAgICAgICAgICA8ZGl2IGNsYXNzPSJmb2xpdW0tbWFwIiBpZD0ibWFwXzMyNGU0ZmUwMDdjZjRjNTViZTI3NTA2N2VlNzdhMTY3IiA+PC9kaXY+CiAgICAgICAgCjwvYm9keT4KPHNjcmlwdD4gICAgCiAgICAKICAgICAgICAgICAgdmFyIG1hcF8zMjRlNGZlMDA3Y2Y0YzU1YmUyNzUwNjdlZTc3YTE2NyA9IEwubWFwKAogICAgICAgICAgICAgICAgIm1hcF8zMjRlNGZlMDA3Y2Y0YzU1YmUyNzUwNjdlZTc3YTE2NyIsCiAgICAgICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAgICAgY2VudGVyOiBbNDYuMDY2NDEzNDk5OTk5OTk2LCAxMS4xMTk2NTk5ODU5MzcwMzRdLAogICAgICAgICAgICAgICAgICAgIGNyczogTC5DUlMuRVBTRzM4NTcsCiAgICAgICAgICAgICAgICAgICAgem9vbTogMTgsCiAgICAgICAgICAgICAgICAgICAgem9vbUNvbnRyb2w6IHRydWUsCiAgICAgICAgICAgICAgICAgICAgcHJlZmVyQ2FudmFzOiBmYWxzZSwKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgKTsKCiAgICAgICAgICAgIAoKICAgICAgICAKICAgIAogICAgICAgICAgICB2YXIgdGlsZV9sYXllcl81YTVjYmNlZmRjMGI0NmM5YTU3NjUzY2M2MzljMmQyZiA9IEwudGlsZUxheWVyKAogICAgICAgICAgICAgICAgImh0dHBzOi8ve3N9LnRpbGUub3BlbnN0cmVldG1hcC5vcmcve3p9L3t4fS97eX0ucG5nIiwKICAgICAgICAgICAgICAgIHsiYXR0cmlidXRpb24iOiAiRGF0YSBieSBcdTAwMjZjb3B5OyBcdTAwM2NhIGhyZWY9XCJodHRwOi8vb3BlbnN0cmVldG1hcC5vcmdcIlx1MDAzZU9wZW5TdHJlZXRNYXBcdTAwM2MvYVx1MDAzZSwgdW5kZXIgXHUwMDNjYSBocmVmPVwiaHR0cDovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHRcIlx1MDAzZU9EYkxcdTAwM2MvYVx1MDAzZS4iLCAiZGV0ZWN0UmV0aW5hIjogZmFsc2UsICJtYXhOYXRpdmVab29tIjogMTgsICJtYXhab29tIjogMTgsICJtaW5ab29tIjogMCwgIm5vV3JhcCI6IGZhbHNlLCAib3BhY2l0eSI6IDEsICJzdWJkb21haW5zIjogImFiYyIsICJ0bXMiOiBmYWxzZX0KICAgICAgICAgICAgKS5hZGRUbyhtYXBfMzI0ZTRmZTAwN2NmNGM1NWJlMjc1MDY3ZWU3N2ExNjcpOwogICAgICAgIAogICAgCiAgICAgICAgZnVuY3Rpb24gZ2VvX2pzb25fYzBiMjk0YWQ0N2QzNDE4OWE0YjkwYmY4NzgxZDA1YmNfb25FYWNoRmVhdHVyZShmZWF0dXJlLCBsYXllcikgewogICAgICAgICAgICBsYXllci5vbih7CiAgICAgICAgICAgIH0pOwogICAgICAgIH07CiAgICAgICAgdmFyIGdlb19qc29uX2MwYjI5NGFkNDdkMzQxODlhNGI5MGJmODc4MWQwNWJjID0gTC5nZW9Kc29uKG51bGwsIHsKICAgICAgICAgICAgICAgIG9uRWFjaEZlYXR1cmU6IGdlb19qc29uX2MwYjI5NGFkNDdkMzQxODlhNGI5MGJmODc4MWQwNWJjX29uRWFjaEZlYXR1cmUsCiAgICAgICAgICAgIAogICAgICAgIH0pOwoKICAgICAgICBmdW5jdGlvbiBnZW9fanNvbl9jMGIyOTRhZDQ3ZDM0MTg5YTRiOTBiZjg3ODFkMDViY19hZGQgKGRhdGEpIHsKICAgICAgICAgICAgZ2VvX2pzb25fYzBiMjk0YWQ0N2QzNDE4OWE0YjkwYmY4NzgxZDA1YmMKICAgICAgICAgICAgICAgIC5hZGREYXRhKGRhdGEpCiAgICAgICAgICAgICAgICAuYWRkVG8obWFwXzMyNGU0ZmUwMDdjZjRjNTViZTI3NTA2N2VlNzdhMTY3KTsKICAgICAgICB9CiAgICAgICAgICAgIGdlb19qc29uX2MwYjI5NGFkNDdkMzQxODlhNGI5MGJmODc4MWQwNWJjX2FkZCh7ImZlYXR1cmVzIjogW3siZ2VvbWV0cnkiOiB7ImNvb3JkaW5hdGVzIjogWzExLjExOTcwNTY0NDY4MDY0NiwgNDYuMDY2NDEzNDk5OTk5OTk2XSwgInR5cGUiOiAiUG9pbnQifSwgImlkIjogIjAiLCAicHJvcGVydGllcyI6IHsiYWRkcmVzcyI6ICJEaXBhcnRpbWVudG8gZGkgU29jaW9sb2dpYSBlIFJpY2VyY2EgU29jaWFsZSwgMjYsIFZpYSBHaXVzZXBwZSBWZXJkaSwgQ2VudHJvIHN0b3JpY28gVHJlbnRvLCBUcmVudG8sIFRlcnJpdG9yaW8gVmFsIGRcdTAwMjdBZGlnZSwgUHJvdmluY2lhIGRpIFRyZW50bywgVHJlbnRpbm8tQWx0byBBZGlnZS9TXHUwMGZjZHRpcm9sLCAzODEyMiwgSXRhbGlhIn0sICJ0eXBlIjogIkZlYXR1cmUifV0sICJ0eXBlIjogIkZlYXR1cmVDb2xsZWN0aW9uIn0pOwoKICAgICAgICAKPC9zY3JpcHQ+ onload="this.contentDocument.open();this.contentDocument.write(atob(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
-
-
+<iframe 
+    width="100%"
+    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/via_giuseppe_verdi_26_trento_nominatim.html"
+    style="border:none;"
+    allowfullscreen webkitallowfullscreen mozallowfullscreen>
+</iframe>
 
 calculate the difference between the two points
-
 
 ```
 distance = point.to_crs('epsg:32632').geometry.distance(point_nominatim.geometry.to_crs('epsg:32632')).values[0]
 ```
 
-
 ```
 distance
 ```
-
-
-
-
     26.522713658370346
 
-
-
-## **Summary**
+## Summary
 
 - geocoding is, first of all, an NLP problem
 - geocoding services try to normalize the query by identifying the object you are looking for
@@ -704,8 +699,6 @@ distance
 ---
 
 https://siat.provincia.tn.it/geonetwork/srv/eng/catalog.search
-
-
 
 
 ## Setup
@@ -732,36 +725,22 @@ pip install owslib
     Installing collected packages: owslib
     Successfully installed owslib-0.20.0
 
-
-
 ```
 from owslib.csw import CatalogueServiceWeb
 ```
-
 
 ```
 csw = CatalogueServiceWeb("http://geodati.gov.it/RNDT/csw")
 ```
 
-
 ```
 csw.service
 ```
-
-
-
-
     'CSW'
-
-
-
 
 ```
 [op.name for op in csw.operations]
 ```
-
-
-
 
     ['GetCapabilities',
      'DescribeRecord',
@@ -769,9 +748,6 @@ csw.service
      'GetRecordById',
      'Transaction',
      'Harvest']
-
-
-
 
 ```
 from owslib.fes import PropertyIsLike, BBox
@@ -796,191 +772,96 @@ Eg. *%rento* => each word that ends with 'rento'
 trento_query = PropertyIsLike('csw:AnyText', 'Trento')
 ```
 
-
 ```
 csw.getrecords2(constraints=[trento_query],maxrecords=100)
 ```
-
 
 ```
 csw.results
 ```
 
-
-
-
     {'matches': 95, 'nextrecord': 0, 'returned': 95}
-
-
-
 
 ```
 for rec in csw.records:
   print(rec + " - " + csw.records[rec].title)
 ```
-
     agea:00129:20090724:090446 - Ortofotocarta Trento 2003
     agea:00377:20090911:093144 - Ortofotocarta Trento 2008
     agea:00128:20090724:085449 - Ortofotocarta Trento 1997
     p_TN:377793f1-1094-4e81-810e-403897418b23 - Limite Provinciale della Provincia Autonoma di Trento
     c_l378:toponomastica - Stradario, civici e toponimi del Comune di Trento
     c_l378:ortofoto2009 - Ortofoto 2009
-    p_TN:71403f02-0b4e-4f02-8475-1321c04e184c - PFM - vocazione alla produzione legnosa dei boschi - (VOCPRODUZIONE)
-    p_TN:c5c29caa-850d-43b5-8a42-4db73cf593f0 - PFM - vocazione naturalistica - (VOCNAT)
-    p_TN:2131bcc4-1a2b-46ff-a546-8c22aab0371a - Carta Tecnica Provinciale - CTP 2015
-    p_TN:bec36f9a-0566-44aa-bdb5-1c065a3a9a28 - Carta Topografica Generale - CTP 1998
-    p_TN:aec4a171-ad51-49d6-ad9b-42934a2c5d43 - Toponomastica dei Centri Abitati (scala 1:10000)
-    p_TN:e5d7975d-074b-4f19-a7e7-17274c9e6aa3 - Carta Tecnica Provinciale - CTP 2017
-    p_TN:f93c200f-1088-4121-94fc-4e94d1a88c8b - Carta Tecnica Provinciale - CTP 2013
-    p_TN:1e93bc40-a91f-49ba-891d-de3a4627b86e - Limite Comprensoriale
-    p_TN:6d80fcd4-1dac-40c6-8fee-d7a831d35959 - Carta Topografica Generale - CTP 00
+    [...]
     p_TN:cfa55552-a520-48d3-824c-2941b3c4d98d - Carta Topografica Generale - CTP 1998 singole sezioni - livello altimetria
     p_TN:9905ac49-d9cc-4317-b44b-a8450cc37b20 - Carta Topografica Generale - CTP 1998 singole sezioni - livello planimetria
     p_TN:8131f518-c808-4a30-912f-e34892aa0f1a - Carta Topografica Generale - CTP 00 singole sezioni livello altimetria
     p_TN:aa677704-2c39-4edd-ba64-b69282bff778 - Carta Topografica Generale - CTP 00 singole sezioni livello edifici
     p_TN:6a7806d8-63fa-4445-b009-9412c99d8fd2 - Edifici P.A.T. 3D
     p_TN:fbbc1e07-0b8e-46c9-b961-a02d8bebb217 - Ortofoto PAT 1973 in scala di grigi
-    p_TN:c11e62c6-2e67-4614-827f-8de8621ac9ee - Carta Topografica Generale - CTP 1998 singole sezioni - livello topografia
-    p_TN:2989b73f-f243-4fac-b1d0-6464863a7d1d - LiDAR DTM - Modello Digitale del Terreno - PAT 2006 / 2009
-    p_TN:06d1bcf9-6fa0-4e5e-af34-82366110720d - LiDAR DSM - Modello Digitale delle Superfici - PAT 2006 / 2009
-    ispra_rm:Meta_Geo_SV000056_RN - ITA_Trento_topo25k
-    p_TN:92ca98b4-f881-41eb-a229-c16dff316489 - Piano Urbanistico Provinciale - PUP formato vettoriale
-    p_TN:280bb887-dff4-446c-965c-43ae077a107d - Quadro d'unione sezioni 1:10.000 taglio ED50
-    p_TN:8ad3e252-0e1d-42b3-8cb5-abe9dbccc281 - Carta Topografica Generale - CTP 00 singole sezioni livello planimetria
-    p_TN:d28bdcfc-f271-4598-84ca-318ebcaf8dfb - Carta Topografica Generale - CTP 00 singole sezioni livello topografia
+    [...]
     p_TN:628a228e-d13c-41c8-803a-272883e3931e - Quadro d'unione sezioni 1:10.000 della 1° edizione della Carta Topografica Generale taglio ED50
     p_TN:c0518563-b53e-44da-870e-8719ef4a5215 - Piano Urbanistico Provinciale - PUP formato raster
     p_TN:335f1205-9d6e-4e75-b4cf-35b9385e4fae - LiDAR Padergnone 2007
-    p_TN:40091f90-ed0c-43f7-97b5-2099544a2708 - LiDAR Paneveggio 2007
-    p_TN:bb3efd89-143f-4fcf-8251-4a4b601e6d21 - LiDAR Ravina 2007
-    p_TN:ef82ba6c-e9b3-451d-9835-0f74b9f66650 - LiDAR Val di Sella 2007
-    p_TN:5c773de5-e3a7-4024-ab4c-ea313d3ba901 - LiDAR - Soleggiamenti DTM - PAT 2006 / 2009
-    p_TN:1f08d6de-85b0-41f3-b2b7-b3d04a5771d7 - LiDAR - Soleggiamenti DSM - PAT 2006 / 2009
+    [...]
     p_TN:abea13d9-c73a-46f1-b997-9c41267d06c5 - Aree di sintesi geologica
     p_TN:ea66f90c-426f-497c-9044-f870ce7a7f4b - Cave dismesse
     p_TN:fb95e841-df80-41b5-af08-8a31896533cc - Iperspettrale Paneveggio 2007
     p_TN:33db32ef-7ce4-43e3-bbf5-11440f4c9757 - Iperspettrale Padergnone 2007
-    p_TN:a16182cb-16cf-4c8b-b74f-0493a8c7f445 - Iperspettrale Val di Sella  2007
-    p_TN:62bc4940-4713-4677-814a-5d2077180e6d - Iperspettrale Ravina 2007
-    p_TN:e506ab2b-5eb6-452a-8ebb-102ffc4454b1 - Ortofoto Paneveggio 2007 RGB
+    [...]
     p_TN:054e1af3-2dd8-4496-8b83-261cccc2674c - Ortofoto Ravina 2007 RGB
     p_TN:44cd8a88-ba6e-4299-8075-df9996401006 - Ortofoto Padergnone 2007 RGB
     p_TN:85fb88cb-80c8-47f3-9e50-4142655cf461 - LiDAR dato grezzo - Padergnone 2007
     p_TN:b7db2c50-b463-4d30-a40f-b52ba92887ff - LiDAR DSM - Modello Digitale delle Superfici - Padergnone 2007
-    p_TN:0837bfca-dff2-4770-801f-235607f42b72 - LiDAR DTM - Modello Digitale del Terreno - Padergnone 2007
-    p_TN:25aa8b8f-271d-406c-8f7e-ba224ec844fe - LiDAR DTM - Modello Digitale del Terreno - Ravina 2007
-    p_TN:0f944cb5-770f-44ff-aad2-36a47f24bc94 - LiDAR DSM - Modello Digitale delle Superfici - Ravina 2007
-    p_TN:36069574-aef9-4855-ae3e-b8445cbd1319 - LiDAR dato grezzo - Ravina 2007
-    p_TN:4e838148-4631-4c4b-9758-798e450ca407 - LiDAR DTM - Modello Digitale del Terreno - Paneveggio 2007
-    p_TN:3ddfc8e1-1362-4915-ab77-8c31cee7ac82 - LiDAR DSM - Modello Digitale delle Superfici - Paneveggio 2007
-    p_TN:225321fc-0e6b-45d3-8dd0-58fd602bdf64 - LiDAR dato grezzo - Paneveggio 2007
-    p_TN:013ef530-ee77-49d2-8f95-035b27ab1f0a - Ortofoto Val di Sella 2007 RGB
-    p_TN:f0252045-0c4b-4ce9-8c31-5db78c3a63bd - LiDAR PAT 2006 / 2009
-    p_TN:3203e1b3-5d73-47d8-b04e-9ab27c8538cf - LiDAR dato grezzo - PAT 2006 / 2009
+    [...]
     p_TN:b0cdad84-3c7d-4422-8f7a-7cb762af3da1 - LiDAR DSM - Modello Digitale delle Superfici - Val di Sella 2007
     p_TN:152ad4d1-3263-4ae9-bce9-1265f019a784 - LiDAR DTM - Modello Digitale del Terreno - Val di Sella 2007
     p_TN:b388eaa7-4e27-4970-9b28-b541fe480bf0 - LiDAR dato grezzo - Val di Sella 2007
     p_TN:f2e88f1b-05d9-4942-93ee-857a0a9e1f0b - Ortofoto PAT 2015 RGB
     p_TN:441525c1-a100-405c-b6fc-1f0c319bacbb - Grotte
-    p_TN:2eacecb2-d78c-460e-9a4c-47b80a9f105d - Cartografia catastale numerica
-    p_TN:3dba066a-297b-401c-962a-e957371010a1 - Opera di consolidamento
-    p_TN:df88a5af-1f79-47f6-ada8-c6cf70ed42e6 - Tombinatura
-    p_TN:2dc4efe4-1441-4968-9d8a-e03a0742fe35 - Briglia di consolidamento
-    p_TN:13919c0d-1415-42f8-8842-b5b5e49f5e63 - Opera spondale
-    p_TN:29ff287d-9306-40eb-ae55-1b163e669b51 - Briglia di trattenuta
-    p_TN:0f0d2a2b-65f6-4f34-b5e0-aef7319abdbf - Cunettone
-    p_TN:a72a2c44-0094-43a7-8bc6-8f9c20e77c0f - Rafforzamento arginale
-    p_TN:71f65e11-5763-43c9-892c-a3d954be4fcb - Intervento di ingegneria naturalistica
-    p_TN:ff03f2d6-6c7c-4cf6-ab11-42b2c8963cc7 - Rivestimento in alveo
-    p_TN:366667ac-f7d2-42cf-a1a5-7450b3e44d6a - Piazza di deposito
-    p_TN:d24bfa28-3451-41c7-a1ac-e0a2fe4af6d9 - Rilevato arginale
-    p_TN:27c14db4-5fde-478f-a14b-a92ac3ff7602 - Vallo tomo
-    p_TN:37139ae6-4118-4b65-9471-9d57a1f84762 - Repellente
-    p_TN:405acb52-c061-4e21-9924-2283c8cc7175 - Drenaggio
-    p_TN:cee93e4c-9be2-47cb-8dcd-385aa1999d0d - AREA_PAT_DISTRETTI_DLGS152_2006
-    p_TN:30193185-3477-4185-988a-35cddc575473 - Sondaggi
-    p_TN:58604ed2-ac1d-4f78-a00c-514fd3562c51 - Limite Comunità di valle
-    adbpo:PDGPO2015GWCI:20151217 - Distretto Po - Direttiva Acque – Delimitazione dei corpi idrici sotterranei 2015
-    PCM:000094:20130308:143000 - Zone di allertamento per il rischio idrogeologico e idraulico - Italia (RNDT - Dataset)
-    p_TN:94725247-c839-470a-b98c-9fd412bc1a7f - IFF2007 nel BACINO DEL TORRENTE AVISIO
-    p_TN:4d40b9b3-f25b-4e27-b940-69194424b125 - IFF2007 nel BACINO del FIUME CHIESE
-    p_TN:afd60b6f-2805-4f71-98bc-0d6df7fbe1d2 - IFF2007 nel BACINO DEL TORRENTE FERSINA
-    p_TN:798f13c9-1e22-40da-b64c-74fe22b7b32f - IFF2007 nel BACINO DEL FIUME ADIGE
-    p_TN:bb9e5a5c-36bd-46a0-b7b5-67613b178777 - IFF2007 nel BACINO DEL FIUME BRENTA
-    p_TN:acee82fa-ee1d-460a-b1b1-a5753fde30f6 - IFF2007 nel BACINO DEL TORRENTE ASTICO
-    p_TN:ef2c038c-c6e0-4707-8419-a6d3eb72bf7f - IFF2007 nel BACINO DEI TORRENTI VANOI E CISMON
-    p_TN:8e6d85a5-bfec-480b-a4e4-94aac259388e - IFF2007 nel BACINO DEL FIUME SARCA
-    p_TN:4f8da929-aac5-47d3-b4f4-22c8a174b947 - IFF2007 nel BACINO DEL TORRENTE NOCE
-    adbpo:DistrettoDR2018:20181017 - Distretto Po - Delimitazione Regioni nel Distretto 2018
-    r_piemon:18895034-1059-47cd-95de-c858070d3aa3 - Inventario Regionale delle Emissioni in Atmosfera (IREA)
-    adbpo:DistrettoD2018:20181017 - Distretto Po - Delimitazione Distretto 2018
-
-
+ 
 ```
 p_TN:441525c1-a100-405c-b6fc-1f0c319bacbb => Grotte
 ```
 
 *grotte* means *caves* in italian language
 
-
 ```
 s="p_TN:441525c1-a100-405c-b6fc-1f0c319bacbb" #caves
 ```
-
 
 ```
 record = csw.records[s]
 ```
 
-
 ```
 record.title
 ```
 
-
-
-
     'Grotte'
-
-
-
 
 ```
 record.abstract
 ```
-
-
-
-
     "Catasto delle grotte naturali della Provincia autonoma di Trento.L'istituzione del catasto delle grotte e delle aree carsiche della Provincia di Trento è stata prevista dalla Legge provinciale n. 37 del 31/10/1983 (Protezione del patrimonio mineralogico, paleontologico, paletnologico, speleologico e carsico); l'articolo 14 della citata legge demanda alla Giunta provinciale l'emanazione delle norme attinenti all'impianto, al funzionamento, all'aggiornamento e all'accesso al catasto stesso.Il catasto delle grotte del Trentino è stato ufficialmente attivato in data 14 marzo 2008 tramite specifica delibera della Giunta Provinciale."
-
-
-
 
 ```
 for reference in record.references:
   print(reference['scheme'])
   print(reference['url'])
 ```
-
     urn:x-esri:specification:ServiceType:ArcIMS:Metadata:Server
     https://siat.provincia.tn.it/IDT/vector/public/p_tn_441525c1-a100-405c-b6fc-1f0c319bacbb.zip
     urn:x-esri:specification:ServiceType:ArcIMS:Metadata:Document
     https://geodati.gov.it/geoportalRNDTPA/csw?getxml=%7BF3EB7695-7DCD-49B9-8450-E19B2A86F69D%7D
 
-
-
 ```
 caves = gpd.read_file('https://siat.provincia.tn.it/IDT/vector/public/p_tn_441525c1-a100-405c-b6fc-1f0c319bacbb.zip')
 ```
 
-
 ```
 caves.head(5)
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1275,14 +1156,9 @@ caves.head(5)
 </div>
 
 
-
-
 ```
 caves.crs
 ```
-
-
-
 
     <Projected CRS: EPSG:25832>
     Name: ETRS89 / UTM zone 32N
@@ -1299,24 +1175,12 @@ caves.crs
     - Ellipsoid: GRS 1980
     - Prime Meridian: Greenwich
 
-
-
-
 ```
 caves.plot()
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7fa5b141a2e8>
-
-
-
-
-    
+   
 ![png](03_Retrieving_data_from_spatial_database_infrastructures_files/03_Retrieving_data_from_spatial_database_infrastructures_71_1.png)
-    
+  
 
 
 we can search by bounding box
@@ -1330,27 +1194,19 @@ https://boundingbox.klokantech.com/
 csw = CatalogueServiceWeb("http://www.pcn.minambiente.it/geoportal/csw")
 ```
 
-
 ```
 bbox_query = BBox([10.770062,45.866839,11.022748,46.083374])
 ```
-
 
 ```
 csw.getrecords2(constraints=[bbox_query],maxrecords=100)
 ```
 
-
 ```
 csw.results
 ```
 
-
-
-
     {'matches': 117, 'nextrecord': 101, 'returned': 100}
-
-
 
 
 ```
@@ -1362,36 +1218,20 @@ for rec in csw.records:
     m_amte:299FN3:554245de-46c5-4ff9-a214-43eb794baad8 - DSM LAST LiDAR con risoluzione a terra 1 metro - Regione Veneto
     m_amte:299FN3:6ad216c2-614b-4eb6-94d8-deefee09ba48 - DTM LiDAR con risoluzione a terra 1 metro - Regione Veneto
     m_amte:299FN3:046e201a-1864-4fb0-cd36-1cf75fbac550 - INTENSITY LiDAR con risoluzione a terra 1 metro - Regione Veneto
-    m_amte:299FN3:84a24090-2239-4e54-8764-8fa0a2e239a5 - DSM FIRST LiDAR con risoluzione a terra 1 metro - Regione Lombardia
-    m_amte:299FN3:0a0b4709-a1c2-47c1-8749-5816e25d9c4f - DSM LAST LiDAR con risoluzione a terra 1 metro - Regione Lombardia
-    m_amte:299FN3:e02c7579-8031-4563-fca5-e2f1523fa7d4 - DTM LiDAR con risoluzione a terra 1 metro - Regione Lombardia
-    m_amte:299FN3:4b87ddce-2c7d-4c27-e100-caf0557c477c - INTENSITY LiDAR con risoluzione a terra 1 metro - Regione Lombardia
+    [...]
     m_amte:299FN3:cbd1bd6d-4f0a-4707-aa42-fa97cf5a9a6e - Prodotti LiDAR - Regione Lombardia
     m_amte:299FN3:4dca3621-4baa-49ee-90b5-33ca42a4bb4e - Ortofoto in bianco e nero anni 1994-1996 - Regioni zona WGS84-UTM32
     m_amte:299FN3:21d09438-3f4c-4642-a9ea-064a60488b88 - Ortofoto a colori anno 2006 - Regioni zona WGS84-UTM32
     m_amte:299FN3:a1197b44-5b11-4a49-def8-ae45e2c5e6ae - Ortofoto in bianco e nero anni 1988-1989 - Regioni zona WGS84-UTM32
     m_amte:299FN3:2637cb18-6d0c-4508-bd6e-64804e85a550 - Ortofoto a colori anno 2000 - Regioni zona WGS84-UTM32
     m_amte:299FN3:55d73e34-780e-45a3-ba77-6292b307a597 - Numeri civici dei capoluoghi di provincia
-    m_amte:299FN3:24d2c4ab-0036-4be0-c803-f1eded63c3fb - Edificato dei capoluoghi di provincia
-    m_amte:299FN3:bd78d3e0-4f64-4c80-bd33-4ea6e17b8a29 - Date ortofoto in bianco e nero anni 1994-1996
-    m_amte:8HCH2C:6db40564-355c-4a66-c240-bb6173ad3bd8 - Zone di protezione speciale (ZPS)
-    m_amte:299FN3:0da844bd-387e-4c31-cfea-2b928189ad70 - Progetto incendi - cartografia anti incendi boschivi nei Parchi Nazionali
+    [...]
     m_amte:299FN3:8345a338-17c9-444b-c598-fe508d1cb45e - Scuole pubbliche per l'infanzia, primarie e secondarie sul territorio nazionale
     m_amte:299FN3:2b8ed8fd-6ae1-4594-cd25-405c36569685 - Carta fitoclimatica d'Italia
     m_amte:299FN3:1d117feb-517b-4688-aa75-da586566aa36 - Quadro di unione delle tavole LiDAR - Grigliato 2x2
     m_amte:299FN3:f9f310e3-2a7d-4b04-f3f1-f827e8c67339 - Quadro di unione delle tavole LiDAR - Grigliato 1x1
     m_amte:8HCH2C:c52b8f8b-1bee-4b73-984a-7c37bcb9b575 - Quadro di unione COSMO SKY-MED Descending - PST 2013
-    m_amte:8HCH2C:21907666-0be6-4f4f-d14b-fda0433d3340 - Quadro di unione COSMO SKY-MED Ascending - PST 2013
-    m_amte:8HCH2C:5dcb0f26-5a09-490b-db47-bc913dbd31cd - Datafile immagini SAR COSMO SKY-MED Descending - PST 2013
-    m_amte:8HCH2C:379bf691-58cd-468d-bff6-c5b69eabdd66 - Datafile immagini SAR COSMO SKY-MED Ascending - PST 2013
-    m_amte:000006:20181030:091345 - UnitOfManagement_IT_20181025
-    m_amte:8HCH2C:8cb1c5c8-5a7d-4be0-df35-5f6e4f7de63f - Rete Natura 2000 (SIC/ZSC e ZPS)
-    m_amte:299FN3:02ddd5df-f91a-4767-86dd-1993df9c65c5 - AIB - Uso suolo degli incendi nei Parchi Nazionali rilevati con GPS
-    m_amte:299FN3:cc27f7d2-b344-49f1-8ce5-e92a0c390e64 - AIB - Incendi rilevati con GPS nei Parchi Nazionali
-    m_amte:299FN3:ea869861-4075-4cdb-a461-0934f3a77fbd - Ortofoto a colori anno 2000 - Regioni zona WGS84-UTM33
-    m_amte:299FN3:acd4f94e-cd9b-40df-df31-cb366017dcf9 - Date ortofoto a colori  AGEA anni 2009-2012
-    m_amte:299FN3:89db50f2-60f8-49b7-8bbc-7c6360030a04 - Date ortofoto a colori anno 2006
-    m_amte:299FN3:66d70689-184b-4163-fd39-dc9fa896db98 - Date ortofoto a colori anno 2000
+    [...]
     m_amte:299FN3:80437fc1-bbed-41f9-84dc-ee091b9080e4 - Date ortofoto in bianco e nero anni 1988-1989
     m_amte:299FN3:c5dd5d00-555e-493f-8380-080dc164633c - Cartografia di base IGM 25.000 - Regioni zona WGS84-UTM32
     m_amte:299FN3:d36c3fd9-6c45-4ada-f497-a2f827f575cf - Cartografia di base IGM 25.000 - Regioni zona WGS84-UTM33
@@ -1399,18 +1239,7 @@ for rec in csw.records:
     m_amte:299FN3:cfa9e368-0773-4b4c-8bd6-65b7ca5d4dbc - Cartografia di base Atlante DeAgostini
     m_amte:299FN3:62b0784a-3eac-47e8-c85a-24db8e0b7ea8 - Cartografia di base  IGM 100.000 - Regioni zona WGS84-UTM32
     m_amte:299FN3:68dd5028-f5a0-42dd-8b6e-52b6223b0d3b - Servizio di conversione di coordinate del Geoportale Nazionale
-    m_amte:299FN3:06c67978-18c8-4da7-ff26-443d4f700c2d - Elenco ufficiale aree protette (EUAP)
-    m_amte:8HCH2C:9e8cb9de-4b74-4473-ed5e-e70ac71b2699 - Progetto coste - Macrodati nazionali sulla variazione della linea di costa 1960-2012
-    m_amte:299FN3:67888d8a-8b76-412d-d14c-01e1278f1f2f - AIB - Habitat a rischio
-    m_amte:299FN3:7336cd71-c311-44f1-d0ed-ddf2a327f496 - Datafile immagini SAR ENVISAT Descending
-    m_amte:8HCH2C:7880f1c1-cdab-4fd4-9a18-c4878a68c21d - Corine Land Cover anno 2012
-    m_amte:299FN3:542eea43-1163-408d-8879-18b4896eb038 - Unità amministrative 2011
-    m_amte:299FN3:d0439890-8379-45ac-f70b-3d7f11f20ce9 - Bacini idrografici principali
-    m_amte:299FN3:bced7a41-2ca7-4df5-c142-e95aafab0f8c - Catalogo frane - Deformazioni Gravitative Profonde di Versante (DGPV)
-    m_amte:299FN3:2b7dfce8-abec-4179-cf69-091bc0886c84 - Catalogo frane - Frane lineari
-    m_amte:299FN3:a39c7888-254e-4a3e-f295-07dfdaa0dfe2 - Catalogo frane - Aree
-    m_amte:299FN3:ca7b9c7f-194d-4416-cb45-af9ddfc8c64a - Catalogo frane - Punti Identificativi Fenomeni Franosi (PIFF)
-    m_amte:299FN3:f648aeba-b80b-40a1-d608-c45c1db2b48e - Catalogo frane - Frane poligonali
+    [..]
     m_amte:299FN3:e0c36031-607f-4abb-9d1d-b9a1b60a2c6d - Zonazione sismogenetica ZS9
     m_amte:299FN3:068c1a67-d08e-4e7c-d4f3-6d54c849a584 - Sezioni di censimento - ISTAT 1991
     m_amte:299FN3:bbea45fd-e678-4d17-f3f4-ddbbc6c3e60c - Zonazione sismogenetica ZS9  - Limiti
