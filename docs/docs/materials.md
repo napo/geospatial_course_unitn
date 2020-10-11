@@ -40,7 +40,7 @@ Here you can find the materials distributed during the course
 - [02_csv_files_spatial_relationships_and_operations.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/02_csv_files_spatial_relationships_and_operations.ipynb)
 
 ### lesson 3 - Retrivieng data from spatial database
-- [03_Retrieving_data_from_spatial_database_infrastructures.ipynb(https://github.com/napo/geospatial_course_unitn/blob/master/code/03_Retrieving_data_from_spatial_database_infrastructures.ipynb)
+- [03_Retrieving_data_from_spatial_database_infrastructures.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/03_Retrieving_data_from_spatial_database_infrastructures.ipynb)
 
 ### all the codes
 - [everything](https://github.com/napo/geospatial_course_unitn/tree/master/code)
