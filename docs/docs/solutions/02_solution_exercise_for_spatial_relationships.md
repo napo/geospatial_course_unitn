@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Spatial relationships and operations - solution to the exercise
+title: 02 - Spatial relationships and operations - solution to the exercise
 parent: Solutions
 nav_order: 2
 permalink: /lessons/solution_exercise_2
