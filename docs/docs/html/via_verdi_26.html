@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5f039a6b9734e5b878ceb989f31bc71 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f5f039a6b9734e5b878ceb989f31bc71" ></div>
+        
+</body>
+<script>    
+    
+            var map_f5f039a6b9734e5b878ceb989f31bc71 = L.map(
+                "map_f5f039a6b9734e5b878ceb989f31bc71",
+                {
+                    center: [25.839110000000062, -80.18467999999996],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 18,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f863bc64a510471086a50590c3578d86 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f5f039a6b9734e5b878ceb989f31bc71);
+        
+    
+        function geo_json_47eeb871b3d84160b2fc37b2509d3aa6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_47eeb871b3d84160b2fc37b2509d3aa6 = L.geoJson(null, {
+                onEachFeature: geo_json_47eeb871b3d84160b2fc37b2509d3aa6_onEachFeature,
+            
+        });
+
+        function geo_json_47eeb871b3d84160b2fc37b2509d3aa6_add (data) {
+            geo_json_47eeb871b3d84160b2fc37b2509d3aa6
+                .addData(data)
+                .addTo(map_f5f039a6b9734e5b878ceb989f31bc71);
+        }
+            geo_json_47eeb871b3d84160b2fc37b2509d3aa6_add({"features": [{"geometry": {"coordinates": [-80.18467999999996, 25.839110000000062], "type": "Point"}, "id": "0", "properties": {"address": "Via Verdi"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+</script>
