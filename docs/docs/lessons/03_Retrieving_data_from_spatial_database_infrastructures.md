@@ -74,14 +74,10 @@ pip install geopandas
     Requirement already satisfied: six>=1.7 in /usr/local/lib/python3.6/dist-packages (from fiona->geopandas) (1.15.0)
     Installing collected packages: pyproj, click-plugins, munch, cligj, fiona, geopandas
     Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.17 geopandas-0.8.1 munch-2.5.0 pyproj-2.6.1.post1
-
-
-
 ```
 # only for visualization purpouse
 !pip install git+https://github.com/python-visualization/folium
 ```
-
     Collecting git+https://github.com/python-visualization/folium
       Cloning https://github.com/python-visualization/folium to /tmp/pip-req-build-k6ylhcjy
       Running command git clone -q https://github.com/python-visualization/folium /tmp/pip-req-build-k6ylhcjy
@@ -105,9 +101,6 @@ pip install geopandas
         Uninstalling folium-0.8.3:
           Successfully uninstalled folium-0.8.3
     Successfully installed folium-0.11.0+20.gb70efc6
-
-
-
 ```
 import geopandas as gpd
 ```
@@ -118,7 +111,6 @@ import geopandas as gpd
 
 - the geopandas module is based on [geopy](https://geopy.readthedocs.io/en/stable/)
 - all the goecoders service are available [here](https://geopy.readthedocs.io/en/stable/#module-geopy.geocoders)
-
 
 **NOTE**
 
@@ -135,19 +127,15 @@ visit [getlon.lat](https://getlon.lat/)
 
 ## geocoding
 
-
 ```
 cols = ['city']
 names = [('Roma'),('Palermo'),('Trento'),('Genova'),('Bari'),('Trieste'),('Napoli'),('Cagliari'),('Messina'),('Lecce')]
 cities = gpd.GeoDataFrame(names,columns=cols)
 ```
 
-
 ```
 cities
 ```
-
-
 
 
 <div>
@@ -217,19 +205,13 @@ cities
 </div>
 
 
-
-
 ```
 geo_cities = gpd.tools.geocode(cities.city, provider="arcgis")
 ```
 
-
 ```
 geo_cities
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -307,41 +289,24 @@ geo_cities
   </tbody>
 </table>
 </div>
-
-
 
 
 ```
 geo_cities.plot()
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7fa5b326c518>
-
-
-
-
     
 ![png](03_Retrieving_data_from_spatial_database_infrastructures_files/03_Retrieving_data_from_spatial_database_infrastructures_13_1.png)
     
 
-
 ## reverse geocoding
-
 
 ```
 from geopy.geocoders import Nominatim
 ```
 
-
 ```
 geo_cities
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -419,43 +384,27 @@ geo_cities
   </tbody>
 </table>
 </div>
-
-
 
 
 ```
 point = geo_cities.geometry[2]
 ```
 
-
 ```
 point.wkt
 ```
 
-
-
-
     'POINT (11.11926000000005 46.07005000000004)'
-
-
-
-
+    
 ```
 type(point.x)
 ```
 
-
-
-
     float
-
-
-
 
 ```
 latlon = str(point.y) + "," + str(point.x)
 ```
-
 
 ```
 geolocator = Nominatim(user_agent="Example for the course")
@@ -470,21 +419,15 @@ Eg
 *geolocator = Nominatim(user_agent="Mozilla/5.0 (Linux; Android10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Mobile Safari/537.36")*
 
 
-
-
 ```
 location = geolocator.reverse(latlon)
 ```
 
 the raw method contains all the data available from the geocoder
 
-
 ```
 location.raw
 ```
-
-
-
 
     {'address': {'city': 'Trento',
       'country': 'Italia',
@@ -507,32 +450,32 @@ location.raw
      'place_id': 104813655}
 
 
-
 ## suggestion for a good geocoding
 more details you add and more fortune you have to obtain a good result
-
 
 ```
 q="Via Verdi, 26"
 ```
 
-
 ```
 point = gpd.tools.geocode(q, provider="arcgis")
 ```
-
 
 ```
 # import of folium to show the map
 import folium
 ```
 
-
 ```
 map_point = folium.Map([point.geometry.y,point.geometry.x], zoom_start=18)
 folium.GeoJson(point.to_json()).add_to(map_point)
 map_point
 ```
+<iframe 
+    width="300"
+    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/via_verdi_26.html"
+    allowfullscreen webkitallowfullscreen mozallowfullscreen>
+</iframe>
 
 
 
