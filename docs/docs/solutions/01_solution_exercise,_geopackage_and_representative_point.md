@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GIS concepts - solution to the exercise
+title: 01 - GIS concepts - solution to the exercise
 parent: Solutions
 nav_order: 1
 permalink: /lessons/solution_exercise_1
