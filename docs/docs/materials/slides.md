@@ -2,7 +2,7 @@
 layout: default
 title: Slides
 nav_order: 1
-has_children: true
+parent: Materials
 permalink: /materials/slides
 ---
 all the slides used during the course
