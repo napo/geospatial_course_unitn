@@ -8,7 +8,8 @@ permalink: /materials/video
 The students asked to register the lessons online.
 These are available at these addresses.
 
-Note: the recording would need a post-production work to be published, therefore the videos are only for the use of those who request them.{: .no_toc }
+Note: the recording would need a post-production work to be published, therefore the videos are only for the use of those who request them.
+
 ---
 ## Recordings
 - GIS introduction with geopandas [video not available]
