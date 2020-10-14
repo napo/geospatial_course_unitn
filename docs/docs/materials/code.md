@@ -2,20 +2,13 @@
 layout: default
 title: Code
 nav_order: 2
-has_children: true
+parent: Materials
 permalink: /materials/code
 ---
 all the code showed during the course as lessons<br/>
 You can use it in Colab
 {: .no_toc }
 
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
----
 ## Code
 ### lesson 1 - GIS introduction with geopandas
 - [01_GIS_introduction_with_geopandas.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/01_GIS_introduction_with_geopandas.ipynb)
