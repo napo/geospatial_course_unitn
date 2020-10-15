@@ -76,7 +76,8 @@ pip install geopandas
     Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.17 geopandas-0.8.1 munch-2.5.0 pyproj-2.6.1.post1
 ```
 
-# only for visualization purpouse
+only for visualization purpouse
+
 !pip install git+https://github.com/python-visualization/folium
 ```
     Collecting git+https://github.com/python-visualization/folium
@@ -702,7 +703,7 @@ distance
 https://siat.provincia.tn.it/geonetwork/srv/eng/catalog.search
 
 
-## Setup
+### Setup
 https://geopython.github.io/OWSLib/
 
 
