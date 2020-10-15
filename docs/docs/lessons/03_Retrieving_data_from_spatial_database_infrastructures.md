@@ -17,7 +17,7 @@ permalink: /lessons/retrieving_data_from_sdi
 ---
 # Retrieving data from spatial database infrastructures
 
-## goals of the tutorial
+** goals of the tutorial **
 - geocoding / reverse geocoding
 - OGC services
 - ESRI ArcGIS RestAPI
@@ -28,7 +28,7 @@ permalink: /lessons/retrieving_data_from_sdi
 - [geoportal of Trentino](http://www.territorio.provincia.tn.it/portal/server.pt/community/portale_geocartografico_trentino/254)
 - [italian civil protection department](http://www.protezionecivile.gov.it/)
 
-### requirements
+** requirements **
 - python knowledge
 - geopandas
 - gis concepts
@@ -42,7 +42,7 @@ permalink: /lessons/retrieving_data_from_sdi
 
 # Geocoding / reverse geocoding
 
-## Setup
+**Setup**
 
 
 ```
@@ -1743,7 +1743,8 @@ map_lakes
 
 
 
-## Summary WFS
+** Summary WFF **
+
 - there are different versions
 - from the version 1.1.0 you can have the problem of the axis inverted
 - check always the boundary: more is big and more you have to wait.. more you have to wait and more the connection can go in timeout
