@@ -17,7 +17,7 @@ permalink: /lessons/retrieving_data_from_sdi
 ---
 # Retrieving data from spatial database infrastructures
 
-** goals of the tutorial **
+**goals of the tutorial**
 - geocoding / reverse geocoding
 - OGC services
 - ESRI ArcGIS RestAPI
@@ -28,7 +28,7 @@ permalink: /lessons/retrieving_data_from_sdi
 - [geoportal of Trentino](http://www.territorio.provincia.tn.it/portal/server.pt/community/portale_geocartografico_trentino/254)
 - [italian civil protection department](http://www.protezionecivile.gov.it/)
 
-** requirements **
+**requirements**
 - python knowledge
 - geopandas
 - gis concepts
@@ -74,10 +74,9 @@ pip install geopandas
     Requirement already satisfied: six>=1.7 in /usr/local/lib/python3.6/dist-packages (from fiona->geopandas) (1.15.0)
     Installing collected packages: pyproj, click-plugins, munch, cligj, fiona, geopandas
     Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.17 geopandas-0.8.1 munch-2.5.0 pyproj-2.6.1.post1
-```
 
 only for visualization purpouse
-
+```
 !pip install git+https://github.com/python-visualization/folium
 ```
     Collecting git+https://github.com/python-visualization/folium
@@ -103,6 +102,7 @@ only for visualization purpouse
         Uninstalling folium-0.8.3:
           Successfully uninstalled folium-0.8.3
     Successfully installed folium-0.11.0+20.gb70efc6
+
 ```
 import geopandas as gpd
 ```
@@ -138,6 +138,7 @@ cities = gpd.GeoDataFrame(names,columns=cols)
 ```
 cities
 ```
+
 
 
 <div>
@@ -205,6 +206,8 @@ cities
   </tbody>
 </table>
 </div>
+
+
 
 
 ```
@@ -463,10 +466,10 @@ q="Via Verdi, 26"
 point = gpd.tools.geocode(q, provider="arcgis")
 ```
 
-```
-
 import of folium to show the map
 
+
+```
 import folium
 ```
 
@@ -669,7 +672,9 @@ map_point
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
 
-calculate the difference between the two points
+
+calculate the distance between the two points
+
 
 ```
 distance = point.to_crs('epsg:32632').geometry.distance(point_nominatim.geometry.to_crs('epsg:32632')).values[0]
@@ -679,6 +684,7 @@ distance = point.to_crs('epsg:32632').geometry.distance(point_nominatim.geometry
 distance
 ```
     26.522713658370346
+
 
 ## Summary
 
@@ -691,12 +697,12 @@ distance
 - a geocoder always tries to give an answer<br/>&nbsp;an excellent geocoder also returns the value of the precision estimate
 
 
-# OGC Services
+#OGC Services
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/ogc_services.png)
 
 ---
 
-## Catalog Service for the Web
+##Catalog Service for the Web
 
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/geocatalog_pat.png)
 
@@ -791,6 +797,7 @@ csw.results
 for rec in csw.records:
   print(rec + " - " + csw.records[rec].title)
 ```
+
     agea:00129:20090724:090446 - Ortofotocarta Trento 2003
     agea:00377:20090911:093144 - Ortofotocarta Trento 2008
     agea:00128:20090724:085449 - Ortofotocarta Trento 1997
@@ -825,6 +832,7 @@ for rec in csw.records:
     p_TN:f2e88f1b-05d9-4942-93ee-857a0a9e1f0b - Ortofoto PAT 2015 RGB
     p_TN:441525c1-a100-405c-b6fc-1f0c319bacbb - Grotte
  
+
 ```
 p_TN:441525c1-a100-405c-b6fc-1f0c319bacbb => Grotte
 ```
@@ -848,13 +856,16 @@ record.title
 ```
 record.abstract
 ```
+
     "Catasto delle grotte naturali della Provincia autonoma di Trento.L'istituzione del catasto delle grotte e delle aree carsiche della Provincia di Trento è stata prevista dalla Legge provinciale n. 37 del 31/10/1983 (Protezione del patrimonio mineralogico, paleontologico, paletnologico, speleologico e carsico); l'articolo 14 della citata legge demanda alla Giunta provinciale l'emanazione delle norme attinenti all'impianto, al funzionamento, all'aggiornamento e all'accesso al catasto stesso.Il catasto delle grotte del Trentino è stato ufficialmente attivato in data 14 marzo 2008 tramite specifica delibera della Giunta Provinciale."
+
 
 ```
 for reference in record.references:
   print(reference['scheme'])
   print(reference['url'])
 ```
+
     urn:x-esri:specification:ServiceType:ArcIMS:Metadata:Server
     https://siat.provincia.tn.it/IDT/vector/public/p_tn_441525c1-a100-405c-b6fc-1f0c319bacbb.zip
     urn:x-esri:specification:ServiceType:ArcIMS:Metadata:Document
@@ -1187,7 +1198,6 @@ caves.plot()
 ![png](03_Retrieving_data_from_spatial_database_infrastructures_files/03_Retrieving_data_from_spatial_database_infrastructures_71_1.png)
   
 
-
 we can search by bounding box
 
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/bbox_klokantech.png)
@@ -1270,7 +1280,6 @@ for rec in csw.records:
     m_amte:299FN3:79cbfd04-955b-4f8c-9de1-65a44ff0bdd9 - Corine Land Cover anno 2006
 
 
-
 ```
 s="m_amte:299FN3:d0439890-8379-45ac-f70b-3d7f11f20ce9" #water
 ```
@@ -1317,7 +1326,7 @@ for reference in record.references:
     http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Bacini_idrografici.map&Service=WFS
 
 
-## WFS
+## Web Feature Server (WFS)
 
 
 ```
@@ -1338,17 +1347,21 @@ wfs = WebFeatureService(url=url,version="1.1.0") #version can be: 1.0.0, 1.1.0, 
 ```
 wfs.identification.title
 ```
+
     "Specchi d'acqua interni"
 
 ```
 [operation.name for operation in wfs.operations]
 ```
+
     ['GetCapabilities', 'DescribeFeatureType', 'GetFeature']
 
 ```
 list(wfs.contents)
 ```
+
     ['ID.ACQUEFISICHE.SPECCHI.ACQUA']
+
 
 ```
 capabilities = wfs.getcapabilities().read()
@@ -1699,7 +1712,6 @@ shapely.ops.transform(lambda x, y: (y, x),lakes_inbbox.geometry[0])
     
 
 
-
 creation of a function to be use in the *apply* method of pandas
 
 
@@ -1743,7 +1755,7 @@ map_lakes
 
 
 
-** Summary WFF **
+** Summary WFS **
 
 - there are different versions
 - from the version 1.1.0 you can have the problem of the axis inverted
@@ -1998,7 +2010,6 @@ provincial_capitals.export_layer('provincial_capitals.shp', outSR=4326)
 ```
 
     Created: "provincial_capitals.shp"
-
     'provincial_capitals.shp'
 
 ```
