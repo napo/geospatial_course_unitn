@@ -464,7 +464,9 @@ point = gpd.tools.geocode(q, provider="arcgis")
 ```
 
 ```
-# import of folium to show the map
+
+import of folium to show the map
+
 import folium
 ```
 
