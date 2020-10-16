@@ -5,7 +5,7 @@ parent: Solutions
 nav_order: 2
 permalink: /lessons/solution_exercise_2
 ---
-*Exercise after the lesson of 02 October 2020*
+*Solution of the exercise after the lesson of 02 October 2020*
 {: .no_toc }
 
 ## Table of contents
