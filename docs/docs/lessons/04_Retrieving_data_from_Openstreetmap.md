@@ -1,3 +1,20 @@
+---
+layout: default
+title: 04 - Retrieving data from OpenStreetMap
+parent: Lessons
+nav_order: 4
+permalink: /lessons/retrieving_data_from_openstreetmap
+---
+*Lesson 16 October 2020*
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 # **Retrieving data from OpenStreetMap**
 
 ## goals of the tutorial

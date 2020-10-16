@@ -3,7 +3,7 @@ layout: default
 title: 03 - Retrieving data from Spatial Database Infrastructure - solution to the exercises
 parent: Solutions
 nav_order: 3
-permalink: /lessons/solution_exercise_2
+permalink: /lessons/solution_exercise_3
 ---
 *Solution of exercise after the lesson of 09 October 2020*
 {: .no_toc }
