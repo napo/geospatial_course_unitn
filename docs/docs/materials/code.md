@@ -23,7 +23,7 @@ You can use it in Colab
 - [03_solution_exercise_retrieving_data_from_sdi.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/03_solution_exercise_retrieving_data_from_sdi.ipynb)
 
 ### lesson 4 - Retrieving data from OpenStreetMap
-- [04_Retrieving_data_from_Openstreetmap.ipynb]https://github.com/napo/geospatial_course_unitn/blob/master/code/04_Retrieving_data_from_Openstreetmap.ipynb
+- [04_Retrieving_data_from_Openstreetmap.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/04_Retrieving_data_from_Openstreetmap.ipynb)
 
 ### all the codes
 - [everything](https://github.com/napo/geospatial_course_unitn/tree/master/code)
