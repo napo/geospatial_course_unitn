@@ -20,7 +20,7 @@ permalink: /lessons/solution_exercise_3
 you can use pygeos or rtree but you need to install before geopandas
 
 
-```
+```bash
 !pip install pygeos
 ```
 
@@ -33,7 +33,7 @@ you can use pygeos or rtree but you need to install before geopandas
 
 
 
-```
+```bash
 !pip install geopandas
 ```
 
@@ -65,7 +65,7 @@ you can use pygeos or rtree but you need to install before geopandas
 
 
 
-```
+```bash
 !pip install owslib
 ```
 
@@ -87,7 +87,7 @@ you can use pygeos or rtree but you need to install before geopandas
 
 
 
-```
+```bash
 !pip install pyshp
 ```
 
@@ -104,7 +104,7 @@ you can use pygeos or rtree but you need to install before geopandas
 
 
 
-```
+```bash
 !pip install bmi-arcgis-restapi
 ```
 
@@ -128,7 +128,7 @@ you can use pygeos or rtree but you need to install before geopandas
 
 
 
-```
+```bash
 !pip install git+https://github.com/python-visualization/folium 
 ```
 
@@ -166,7 +166,7 @@ you can use pygeos or rtree but you need to install before geopandas
 ## find the administrative border of “comunità di valle” (community of valley) of Province Autonomous of Trento
 
 
-```
+```python
 from owslib.csw import CatalogueServiceWeb
 from owslib.fes import PropertyIsLike, BBox
 import geopandas as gpd
@@ -180,22 +180,22 @@ import folium
 We start from the italian national repository - http://geodati.gov.it
 
 
-```
+```python
 csw = CatalogueServiceWeb("http://geodati.gov.it/RNDT/csw")
 ```
 
 
-```
+```python
 query = PropertyIsLike('csw:AnyText', 'Comunità di valle')
 ```
 
 
-```
+```python
 csw.getrecords2(constraints=[query],maxrecords=5)
 ```
 
 
-```
+```python
 for rec in csw.records:
   print(rec + " - " + csw.records[rec].title)
 ```
@@ -208,17 +208,17 @@ for rec in csw.records:
 
 
 
-```
+```python
 id_record="p_TN:58604ed2-ac1d-4f78-a00c-514fd3562c51"
 ```
 
 
-```
+```python
 record = csw.records[id_record]
 ```
 
 
-```
+```python
 record.abstract
 ```
 
@@ -230,7 +230,7 @@ record.abstract
 
 
 
-```
+```python
 for reference in record.references:
   print(reference['scheme'])
   print(reference['url'])
@@ -245,12 +245,12 @@ for reference in record.references:
 
 
 
-```
+```python
 valley_communities = gpd.read_file('https://siat.provincia.tn.it/IDT/vector/public/p_tn_58604ed2-ac1d-4f78-a00c-514fd3562c51.zip')
 ```
 
 
-```
+```python
 valley_communities.head(5)
 ```
 
@@ -390,14 +390,10 @@ valley_communities.head(5)
 
 
 
-```
+```python
 valley_communities.plot()
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7efcb953d588>
 
 
 
@@ -408,7 +404,7 @@ valley_communities.plot()
 
 
 
-```
+```python
 valley_communities.head(5)
 ```
 
@@ -552,12 +548,12 @@ valley_communities.head(5)
 ### identify the smallest community of valley
 
 
-```
+```python
 smallest_community = valley_communities[valley_communities.area == valley_communities.area.min()]
 ```
 
 
-```
+```python
 smallest_community
 ```
 
@@ -625,7 +621,7 @@ smallest_community
 
 
 
-```
+```python
 smallest_community.nome
 ```
 
@@ -638,14 +634,10 @@ smallest_community.nome
 
 
 
-```
+```python
 smallest_community.plot()
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7efcb607c550>
 
 
 
@@ -658,14 +650,14 @@ smallest_community.plot()
 add it on a map ... only to understand where is the area on the bottom left corner ;)
 
 
-```
+```python
 centery = smallest_community.geometry.centroid.to_crs(epsg=4326).y
 centerx = smallest_community.geometry.centroid.to_crs(epsg=4326).x
 json_geometry = smallest_community.to_crs(epsg=4326).to_json()
 ```
 
 
-```
+```python
 map_area = folium.Map([centery,centerx], zoom_start=12,tiles='Stamen Terrain')
 folium.GeoJson(json_geometry).add_to(map_area)
 map_area
@@ -688,7 +680,7 @@ map_area
 identify the bounding box
 
 
-```
+```python
 smallest_community.to_crs(epsg=4326).bounds
 ```
 
@@ -734,7 +726,7 @@ smallest_community.to_crs(epsg=4326).bounds
 
 
 
-```
+```python
 bbox = list(smallest_community.to_crs(epsg=4326).bounds.values[0])
 ```
 
@@ -753,7 +745,7 @@ bbox
 in this case we can use the WFS of [the national cartographic portal of the Italian Ministry of the Environment](http://www.pcn.minambiente.it/)
 
 
-```
+```python
 #if you want use the CSW you can go here
 csw = CatalogueServiceWeb("http://www.pcn.minambiente.it/geoportal/csw")
 ```
@@ -764,22 +756,22 @@ csw = CatalogueServiceWeb("http://www.pcn.minambiente.it/geoportal/csw")
 [ ... ] 
 
 
-```
+```python
 from owslib.wfs import WebFeatureService
 ```
 
 
-```
+```python
 wfs_url="http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Aste_fluviali.map"
 ```
 
 
-```
+```python
 wfs = WebFeatureService(url=wfs_url,version="1.1.0")
 ```
 
 
-```
+```python
 wfs.identification.title
 ```
 
@@ -791,7 +783,7 @@ wfs.identification.title
 
 
 
-```
+```python
 wfs.contents
 ```
 
@@ -806,29 +798,29 @@ wfs.contents
 
 
 
-```
+```python
 layer = list(wfs.contents)[2]
 ```
 
 
-```
+```python
 response = wfs.getfeature(typename=layer, bbox=bbox,srsname='urn:ogc:def:crs:EPSG::4326')
 ```
 
 
-```
+```python
 out = open('rivers_inbox.gml', 'wb')
 out.write(response.read())
 out.close()
 ```
 
 
-```
+```python
 rivers = gpd.read_file("rivers_inbox.gml")
 ```
 
 
-```
+```python
 rivers.head(3)
 ```
 
@@ -940,14 +932,11 @@ rivers.head(3)
 
 
 
-```
+```python
 rivers.plot()
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7efcb34cf860>
 
 
 
@@ -961,31 +950,27 @@ there is always the problem of the inverted axes
 We can solve it with this function
 
 
-```
+```python
 import shapely
 ```
 
 
-```
+```python
 def swapxy(geometry):
   geometry = shapely.ops.transform(lambda x, y: (y, x),geometry)
   return geometry
 ```
 
 
-```
+```python
 rivers['geometry'] = rivers['geometry'].apply(lambda geometry: swapxy(geometry))
 ```
 
 
-```
+```python
 rivers.plot()
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7efcb34b59b0>
 
 
 
@@ -998,13 +983,13 @@ rivers.plot()
 we are ready to plot on a map
 
 
-```
+```python
 y = rivers.unary_union.centroid.y
 x = rivers.unary_union.centroid.x
 ```
 
 
-```
+```python
 map_rivers = folium.Map([y,x], zoom_start=11,tiles='Stamen Terrain')
 folium.GeoJson(rivers.to_json()).add_to(map_rivers)
 map_rivers
@@ -1025,7 +1010,7 @@ we need to have all the rivers inside the area and not the bounding box
 
 
 
-```
+```python
 gpd.clip(rivers, smallest_community)
 ```
 
@@ -1088,19 +1073,16 @@ gpd.clip(rivers, smallest_community)
 the geodatamews have to use the same projection
 
 
-```
+```python
 rivers_rotaliana = gpd.clip(rivers.to_crs(epsg=4326), smallest_community.to_crs(epsg=4326))
 ```
 
 
-```
+```python
 rivers.plot()
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7efcb3426ba8>
 
 
 
@@ -1111,14 +1093,11 @@ rivers.plot()
 
 
 
-```
+```python
 rivers_rotaliana.plot()
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7efcb346e9b0>
 
 
 
@@ -1131,7 +1110,7 @@ rivers_rotaliana.plot()
 show the rivers on the map
 
 
-```
+```python
 folium.GeoJson(rivers_rotaliana.to_json()).add_to(map_area)
 
 ```
@@ -1144,7 +1123,7 @@ folium.GeoJson(rivers_rotaliana.to_json()).add_to(map_area)
 
 
 
-```
+```python
 map_rivers
 ```
 
@@ -1169,7 +1148,7 @@ map_rivers
 # repeat the same exercise with the layer “Comuni Terremotati” (municipalities affected by earthquake) of the italian Civil Protection by choosing the smallest municipality contained on the layer
 
 
-```
+```python
 import os
 os.environ['RESTAPI_USE_ARCPY'] = 'FALSE'
 import restapi
@@ -1183,13 +1162,13 @@ import restapi
 
 
 
-```
+```python
 rest_url = 'https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services'
 ags = restapi.ArcServer(rest_url)
 ```
 
 
-```
+```python
 agc_service_name = ""
 for service in ags.services:
   if service.name == 'Comuni_Terremotati':
@@ -1201,7 +1180,7 @@ for service in ags.services:
 
 
 
-```
+```python
 ags_service = ags.getService(agc_service_name)
 ags_service.list_layers()
 ```
@@ -1214,14 +1193,14 @@ ags_service.list_layers()
 
 
 
-```
+```python
 municipalities_affected_earthquake = ags_service.layer('comuni_terremotatiDD')
 ```
 
 we can ask ArcGIS RestAPI to transform the source from the native projection to the [EPSG:25832](http://epsg.io/25832)
 
 
-```
+```python
 municipalities_affected_earthquake.export_layer('municipalities_affected_earthquake.shp', outSR=25832)
 ```
 
@@ -1236,12 +1215,12 @@ municipalities_affected_earthquake.export_layer('municipalities_affected_earthqu
 
 
 
-```
+```python
 geo_municipalities_affected_earthquake = gpd.read_file('municipalities_affected_earthquake.shp')
 ```
 
 
-```
+```python
 geo_municipalities_affected_earthquake.geometry
 ```
 
@@ -1272,7 +1251,7 @@ geo_municipalities_affected_earthquake.geometry
 the values of the coordinates seems to be in meters
 
 
-```
+```python
 geo_municipalities_affected_earthquake.crs
 ```
 
@@ -1296,12 +1275,12 @@ geo_municipalities_affected_earthquake.crs
 .. but the CRS is EPSG:426 ... we need to rewrite it!!!
 
 
-```
+```python
 geo_municipalities_affected_earthquake = geo_municipalities_affected_earthquake.set_crs(epsg=25832,allow_override=True)
 ```
 
 
-```
+```python
 geo_municipalities_affected_earthquake.crs
 ```
 
@@ -1328,14 +1307,14 @@ geo_municipalities_affected_earthquake.crs
 Now is ok!
 
 
-```
+```python
 centery = geo_municipalities_affected_earthquake.to_crs(epsg=4326).geometry.unary_union.centroid.y
 centerx = geo_municipalities_affected_earthquake.to_crs(epsg=4326).geometry.unary_union.centroid.x
 json_geometry = geo_municipalities_affected_earthquake.to_crs(epsg=4326).to_json()
 ```
 
 
-```
+```python
 map_area = folium.Map([centery,centerx], zoom_start=10,tiles='Stamen Terrain')
 folium.GeoJson(json_geometry).add_to(map_area)
 map_area
@@ -1351,12 +1330,12 @@ map_area
 
 
 
-```
+```python
 minarea = geo_municipalities_affected_earthquake.geometry.area.min()
 ```
 
 
-```
+```python
 minarea
 ```
 
@@ -1368,19 +1347,15 @@ minarea
 
 
 
-```
+```python
 smallest_municipality = geo_municipalities_affected_earthquake[geo_municipalities_affected_earthquake.geometry.area == minarea]
 ```
 
 
-```
+```python
 smallest_municipality.plot()
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7efcb2cbf470>
 
 
 
@@ -1391,14 +1366,14 @@ smallest_municipality.plot()
 
 
 
-```
+```python
 centery = smallest_municipality.to_crs(epsg=4326).geometry.unary_union.centroid.y
 centerx = smallest_municipality.to_crs(epsg=4326).geometry.unary_union.centroid.x
 json_geometry = smallest_municipality.to_crs(epsg=4326).to_json()
 ```
 
 
-```
+```python
 map_area = folium.Map([centery,centerx], zoom_start=13,tiles='Stamen Terrain')
 folium.GeoJson(json_geometry).add_to(map_area)
 map_area
@@ -1416,7 +1391,7 @@ map_area
 
 
 
-```
+```python
 smallest_municipality.COMUNE
 ```
 
@@ -1431,36 +1406,32 @@ smallest_municipality.COMUNE
 we can use the same WFS resource used before with the new bounding box
 
 
-```
+```python
 bbox= list(smallest_municipality.to_crs(epsg=4326).bounds.values[0])
 ```
 
 
-```
+```python
 response = wfs.getfeature(typename=layer, bbox=bbox,srsname='urn:ogc:def:crs:EPSG::4326')
 ```
 
 
-```
+```python
 out = open('rivers_capitignano.gml', 'wb')
 out.write(response.read())
 out.close()
 ```
 
 
-```
+```python
 rivers_capitignano = gpd.read_file("rivers_capitignano.gml")
 ```
 
 
-```
+```python
 rivers_capitignano.plot()
 ```
 
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7efcb2c48048>
 
 
 
@@ -1473,19 +1444,16 @@ rivers_capitignano.plot()
 ... and we need always to invert the axes
 
 
-```
+```python
 rivers_capitignano['geometry'] = rivers_capitignano['geometry'].apply(lambda geometry: swapxy(geometry))
 ```
 
 
-```
+```python
 rivers_capitignano.plot()
 ```
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7efcb2bc7320>
 
 
 
