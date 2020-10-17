@@ -13,5 +13,6 @@ Note: the recording would need a post-production work to be published, therefore
 ---
 ## Recordings
 - GIS introduction with geopandas [video not available]
-- [Spatial_relationships and operations](https://drive.google.com/file/d/1FzCO5CEgs08kMDQQOuecqlV1fry0fkzV/view?usp=sharing)
-- [Retrieving_data_from_spatial_database](https://drive.google.com/file/d/1FzCO5CEgs08kMDQQOuecqlV1fry0fkzV/view?usp=sharing)
+- [Spatial relationships and operations](https://drive.google.com/file/d/1FzCO5CEgs08kMDQQOuecqlV1fry0fkzV/view?usp=sharing)
+- [Retrieving data from spatial database](https://drive.google.com/file/d/1FzCO5CEgs08kMDQQOuecqlV1fry0fkzV/view?usp=sharing)
+- [Retrieving data from OpenStreetMap](https://drive.google.com/file/d/1KgJHsNsQLzwZ1qD4cKFDCzRwNmbW9_Tc/view?usp=sharing)

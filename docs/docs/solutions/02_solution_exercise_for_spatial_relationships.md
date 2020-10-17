@@ -2687,10 +2687,3 @@ from google.colab import files
 files.download('phamarcies2k_to_pl_trento.gpkg')
 ```
 
-
-    <IPython.core.display.Javascript object>
-
-
-
-    <IPython.core.display.Javascript object>
-

@@ -125,7 +125,7 @@ permalink: /lessons/retrieving_data_from_openstreetmap
 
 [slide](https://docs.google.com/presentation/d/e/2PACX-1vT91FHgpKShrTx4H6AlsmLmAb00Pe0QUB_LKugBdoP1N6pAl_sdFKKnDu0msDzmTwxjI7OXh-dbPb-K/pub?start=false&loop=false&delayms=3000)
 
-# RAW Data
+# Raw Data
 OSM XML
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/osmdata1.png)
 
@@ -137,7 +137,7 @@ OSM XML
 
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/osmdata3.png)
 
-# OverPass API
+## OverPass API
 
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/overpassturbo.png)
 
@@ -154,7 +154,7 @@ Export from HOTOSM
 
 https://export.hotosm.org/en/v3/exports/91f6bf76-f310-46fe-a6dd-8f230489d1aa
 
-## PYROSM
+# PYROSM
 
 OpenStreetMap PBF data parser for Python
 

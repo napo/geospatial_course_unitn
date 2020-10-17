@@ -18,8 +18,12 @@ You can use it in Colab
 - [02_csv_files_spatial_relationships_and_operations.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/02_csv_files_spatial_relationships_and_operations.ipynb)
 - [02_csv_files_spatial_relationships_and_operations.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/02_csv_files_spatial_relationships_and_operations.ipynb)
 
-### lesson 3 - Retrivieng data from spatial database
+### lesson 3 - Retrievieng data from spatial database
 - [03_Retrieving_data_from_spatial_database_infrastructures.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/03_Retrieving_data_from_spatial_database_infrastructures.ipynb)
+- [03_solution_exercise_retrieving_data_from_sdi.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/03_solution_exercise_retrieving_data_from_sdi.ipynb)
+
+### lesson 4 - Retrieving data from OpenStreetMap
+- [04_Retrieving_data_from_Openstreetmap.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/04_Retrieving_data_from_Openstreetmap.ipynb)
 
 ### all the codes
 - [everything](https://github.com/napo/geospatial_course_unitn/tree/master/code)
