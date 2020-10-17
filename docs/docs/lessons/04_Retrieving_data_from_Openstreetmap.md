@@ -1086,7 +1086,7 @@ natural.plot(column='natural', legend=True, figsize=(12,12))
 
 ---
 # Exercises
-- download from OpenStreetMap all supermarkets inside the bounding box of the city with this the coordinate <br/>latitude: 46.21209<br/>
+- download from OpenStreetMap all supermarkets inside the bounding box of the city with these coordinates <br/>latitude: 46.21209<br/>
 longitude: 11.09351<br/>
 - identify the longest road of the city (state roads, walking routes, motorways are excluded).<br/>
 Please use "unclassified"
