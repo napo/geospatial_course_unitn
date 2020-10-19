@@ -34,7 +34,7 @@ permalink: /lessons/retrieving_data_from_openstreetmap
 # Setup
 
 
-```
+```bash
 !pip install -U pygeos
 ```
 
@@ -43,7 +43,7 @@ permalink: /lessons/retrieving_data_from_openstreetmap
 
 
 
-```
+```bash
 !pip install geopandas
 ```
 
@@ -75,7 +75,7 @@ permalink: /lessons/retrieving_data_from_openstreetmap
 
 
 
-```
+```bash
 !pip install pyrosm
 ```
 
@@ -161,7 +161,7 @@ OpenStreetMap PBF data parser for Python
 note: install it always after geopandas
 
 
-```
+```python
 import pyrosm
 from pyrosm.data import sources
 ```
@@ -175,7 +175,7 @@ from pyrosm.data import sources
 Print available source categories
 
 
-```
+```python
 sources.available.keys()
 ```
 
@@ -189,7 +189,7 @@ sources.available.keys()
 Prints a list of countries in Europa that can be downloaded
 
 
-```
+```python
 sources.europe.available
 ```
 
@@ -251,7 +251,7 @@ sources.europe.available
 Print a list of all cities that can be downloaded
 
 
-```
+```python
 sources.cities.available
 ```
 
@@ -500,7 +500,7 @@ Check all countries having sub-regions
 
 
 
-```
+```python
 sources.subregions.available.keys()
 ```
 
@@ -515,7 +515,7 @@ Check sub-regions in Italy
 
 
 
-```
+```python
 sources.subregions.italy.available
 
 ```
@@ -530,7 +530,7 @@ sources.subregions.italy.available
 there aren't other subregions or cities ... 
 
 
-```
+```bash
 !wget https://github.com/napo/geospatial_course_unitn/raw/master/data/openstreetmap/trento.osm.pbf
 ```
 
@@ -553,7 +553,7 @@ there aren't other subregions or cities ...
 
 
 
-```
+```bash
 !wget https://github.com/napo/geospatial_course_unitn/raw/master/data/openstreetmap/trento_boundary.geojson
 ```
 
@@ -576,7 +576,7 @@ there aren't other subregions or cities ...
 
 
 
-```
+```bash
 !pwd
 ```
 
@@ -584,28 +584,28 @@ there aren't other subregions or cities ...
 
 
 
-```
+```python
 import geopandas as gpd
 ```
 
 
-```
+```python
 trento_boundary = gpd.read_file("trento_boundary.geojson")
 ```
 
 
-```
+```python
 bbox_geom = trento_boundary['geometry'].values[0]
 ```
 
 
-```
+```python
 # Get the shapely geometry from GeoDataFrame
 bbox_geom = trento_boundary['geometry'].values[0]
 ```
 
 
-```
+```python
 bbox_geom
 ```
 
@@ -619,12 +619,12 @@ bbox_geom
 
 
 
-```
+```python
 osm = pyrosm.OSM("/content/trento.osm.pbf",bounding_box=bbox_geom)
 ```
 
 
-```
+```python
 osm.conf.tags.available
 ```
 
@@ -657,7 +657,7 @@ osm.conf.tags.available
 
 
 
-```
+```python
 osm.conf.tags.amenity
 ```
 
@@ -756,7 +756,7 @@ osm.conf.tags.amenity
 
 
 
-```
+```python
 buildings = osm.get_buildings()
 buildings.plot(figsize=(12,12))
 %time
@@ -773,7 +773,7 @@ buildings.plot(figsize=(12,12))
 
 
 
-```
+```python
 buildings.head(4)
 ```
 
@@ -1005,7 +1005,7 @@ buildings.head(4)
 
 
 
-```
+```python
 drive_net = osm.get_network(network_type="driving")
 drive_net.plot(figsize=(10,10))
 %time
@@ -1022,7 +1022,7 @@ drive_net.plot(figsize=(10,10))
 
 
 
-```
+```python
 walk = osm.get_network("walking")
 walk.plot(color="k", figsize=(12,12), lw=0.7, alpha=0.6)
 ```
@@ -1041,7 +1041,7 @@ walk.plot(color="k", figsize=(12,12), lw=0.7, alpha=0.6)
 
 
 
-```
+```python
 custom_filter = {'amenity': True, "shop": True}
 pois = osm.get_pois(custom_filter=custom_filter)
 
@@ -1066,17 +1066,10 @@ ax = pois.plot(column='poi_type', markersize=3, figsize=(12,12), legend=True, le
 
 
 
-```
+```python
 natural = osm.get_natural()
 natural.plot(column='natural', legend=True, figsize=(12,12))
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f5624416320>
-
-
 
 
     

@@ -55,7 +55,7 @@ permalink: /lessons/solution_exercise_1
 Import of the packages
 
 
-```
+```python
 import geopandas as gpd
 from google.colab import files
 ```
@@ -72,7 +72,7 @@ for convenience, download the file with "wget" from the command line on Linux
 
 
 
-```
+```bash
 !wget https://github.com/napo/geospatial_course_unitn/raw/master/data/administrative_units_italy_2020/istat_administrative_units_2020.gpkg
 ```
 
@@ -106,15 +106,15 @@ for convenience, download the file with "wget" from the command line on Linux
 
 To have a look at the structure of the files, download the files and open them using the basic SQLite3 command-line utility.
 
-```
+```bash
 sqlite3 istat_administrative_units_2020.gpkg
 ```
-```
+```bash
 SQLite version 3.31.1 2020-01-27 19:55:54
 Enter ".help" for usage hints.
 sqlite> .table
 ```
-```
+```bash
 gpkg_contents                     rtree_macroregions_geom_rowid   
 gpkg_extensions                   rtree_municipalities_geom       
 gpkg_geometry_columns             rtree_municipalities_geom_node  
@@ -131,7 +131,7 @@ rtree_macroregions_geom_node      rtree_regions_geom_rowid
 rtree_macroregions_geom_parent 
 ```
 
-```
+```bash
 sqlite> select * from macroregions;
 ```
 ```
@@ -141,19 +141,19 @@ sqlite> select * from macroregions;
 4|GP|4|Sud
 5|GP|5|Isole
 ```
-```
+```bash
 sqlite> .q
 ```
 
 Geopandas can manage geopackage by using [fiona](https://github.com/Toblerity/Fiona)
 
 
-```
+```python
 import fiona
 ```
 
 
-```
+```python
 fiona.supported_drivers
 ```
 
@@ -186,7 +186,7 @@ fiona.supported_drivers
 
 
 
-```
+```python
 'GPKG': 'raw',
 ```
 **raw** => **r**ead **a**ppend **w**rite
@@ -199,7 +199,7 @@ geopandas can:
 geopackage can store more layers, so we have to investigate the contents
 
 
-```
+```python
 fiona.listlayers('istat_administrative_units_2020.gpkg')
 ```
 
@@ -211,12 +211,12 @@ fiona.listlayers('istat_administrative_units_2020.gpkg')
 
 
 
-```
+```python
 provincies = gpd.read_file("istat_administrative_units_2020.gpkg",layer="provincies")
 ```
 
 
-```
+```python
 provincies.head(3)
 ```
 
@@ -304,7 +304,7 @@ provincies.head(3)
 
 
 
-```
+```python
 provincies.columns
 ```
 
@@ -367,12 +367,12 @@ kind of supra-municipal territorial units.
 ## filter it for an italian provice at your choice (eg. Trento)
 
 
-```
+```python
 trentino = provincies[provincies['DEN_PROV']=='Trento']
 ```
 
 
-```
+```python
 trentino
 ```
 
@@ -434,7 +434,7 @@ trentino
 ## plot it
 
 
-```
+```python
 trentino.plot()
 ```
 
@@ -454,12 +454,12 @@ trentino.plot()
 this means we need to use another layer / dataset
 
 
-```
+```python
 municipalities = gpd.read_file("istat_administrative_units_2020.gpkg",layer="municipalities")
 ```
 
 
-```
+```python
 municipalities.columns
 ```
 
@@ -523,13 +523,13 @@ Provincial capital or metropolitan city<br/>
 the **COD_PROV** of the Province of Trento is **22**
 
 
-```
+```python
 # filter the province
 municipalities_province_trento = municipalities[municipalities.COD_PROV==22]
 ```
 
 
-```
+```python
 # plot it
 municipalities_province_trento.plot()
 ```
@@ -554,12 +554,12 @@ we are using generalized boundaries !!!
 finding the max area
 
 
-```
+```python
 max_area = municipalities_province_trento.geometry.area.max()
 ```
 
 
-```
+```python
 max_area
 ```
 
@@ -573,12 +573,12 @@ max_area
 finding the min area
 
 
-```
+```python
 min_area = municipalities_province_trento.geometry.area.min()
 ```
 
 
-```
+```python
 min_area
 ```
 
@@ -592,7 +592,7 @@ min_area
 ... you can obtain the same in another way (combination of the requests)
 
 
-```
+```python
 municipalities[municipalities.COD_PROV==22].geometry.area.min()
 ```
 
@@ -609,12 +609,12 @@ municipalities[municipalities.COD_PROV==22].geometry.area.min()
 
 
 
-```
+```python
 maxarea_municipality_trentino = provincia_trento[provincia_trento.geometry.area == max_area]
 ```
 
 
-```
+```python
 maxarea_municipality_trentino.PRO_COM_T
 ```
 
@@ -627,7 +627,7 @@ maxarea_municipality_trentino.PRO_COM_T
 
 
 
-```
+```python
 maxarea_municipality_trentino.COMUNE
 ```
 
@@ -642,7 +642,7 @@ maxarea_municipality_trentino.COMUNE
 the municipality with the bigger area is **Primiero San Martino di Castrozza** (022245)
 
 
-```
+```python
 maxarea_municipality_trentino.plot()
 ```
 
@@ -661,12 +661,12 @@ maxarea_municipality_trentino.plot()
 
 
 
-```
+```python
 minarea_municipality_trentino = provincia_trento[provincia_trento.geometry.area == min_area]
 ```
 
 
-```
+```python
 minarea_municipality_trentino.COMUNE
 ```
 
@@ -679,7 +679,7 @@ minarea_municipality_trentino.COMUNE
 
 
 
-```
+```python
 minarea_municipality_trentino.PRO_COM_T
 ```
 
@@ -694,7 +694,7 @@ minarea_municipality_trentino.PRO_COM_T
 the municipality with the smallest area is **Carzano** (022243)
 
 
-```
+```python
 minarea_municipality_trentino.plot()
 ```
 
@@ -712,7 +712,7 @@ minarea_municipality_trentino.plot()
 ## extract all the centroids of the areas expressed in WGS84
 
 
-```
+```python
 maxarea_municipality_trentino.geometry.centroid.to_crs(epsg=4326)
 ```
 
@@ -725,7 +725,7 @@ maxarea_municipality_trentino.geometry.centroid.to_crs(epsg=4326)
 
 
 
-```
+```python
 minarea_municipality_trentino.geometry.centroid.to_crs(epsg=4326)
 ```
 
@@ -740,17 +740,17 @@ minarea_municipality_trentino.geometry.centroid.to_crs(epsg=4326)
 ## extract a rappresenative point for the area of the smallest and bigger municipality in WGS84
 
 
-```
+```python
 representative_point_minarea_municipality = minarea_municipality_trentino.geometry.representative_point()
 ```
 
 
-```
+```python
 representative_point_maxarea_municipality = maxarea_municipality_trentino.geometry.representative_point()
 ```
 
 
-```
+```python
 representative_point_minarea_municipality.to_crs(epsg=4326)
 ```
 
@@ -763,7 +763,7 @@ representative_point_minarea_municipality.to_crs(epsg=4326)
 
 
 
-```
+```python
 representative_point_maxarea_municipality.to_crs(epsg=4326)
 ```
 
@@ -779,12 +779,12 @@ representative_point_maxarea_municipality.to_crs(epsg=4326)
 we can save each point in geojson 
 
 
-```
+```python
 representative_point_maxarea_municipality.to_crs(epsg=4326).to_file("point.geojson",driver="GeoJSON")
 ```
 
 
-```
+```python
 # check if the file exist with a 'ls' command on the remote linux machine
 !ls point.geojson
 ```
@@ -795,17 +795,17 @@ representative_point_maxarea_municipality.to_crs(epsg=4326).to_file("point.geojs
 ... but we need to create an only one file with all the data in a geojson file
 
 
-```
+```python
 points = representative_point_maxarea_municipality.append(representative_point_minarea_municipality)
 ```
 
 
-```
+```python
 points.to_crs(epsg=4326).to_file("points.geojson",driver="GeoJSON")
 ```
 
 
-```
+```python
 #donwload the file
 files.download("points.geojson")
 ```
@@ -826,7 +826,7 @@ you can download, open with [geojson.io](https://geojson.io) and create a [gist 
 ... maybe you are ready to work on this way .. but ...
 
 
-```
+```python
 maxarea_municipality_trentino.geometry.centroid.distance(minarea_municipality_trentino.geometry.centroid)
 ```
 
@@ -844,13 +844,13 @@ maxarea_municipality_trentino.geometry.centroid.distance(minarea_municipality_tr
 
 
 there is a warning
-```
+```python
 The indices of the two GeoSeries are different.
 ```
 ... and we have 2 geodataframe with a row for each so ...
 
 
-```
+```python
 maxarea_municipality_trentino.index
 ```
 
@@ -862,17 +862,17 @@ maxarea_municipality_trentino.index
 
 
 
-```
+```python
 idx_minarea = minarea_municipality_trentino.index[0]
 ```
 
 
-```
+```python
 idx_maxarea = maxarea_municipality_trentino.index[0]
 ```
 
 
-```
+```python
 maxarea_municipality_trentino.geometry[idx_maxarea].centroid.distance(minarea_municipality_trentino.geometry[idx_minarea].centroid)
 ```
 
@@ -891,12 +891,12 @@ Where is the centroid of Liguria?
 
 
 
-```
+```python
 regions = gpd.read_file("istat_administrative_units_2020.gpkg",layer="regions")
 ```
 
 
-```
+```python
 regions.DEN_REG.unique()
 ```
 
@@ -912,7 +912,7 @@ regions.DEN_REG.unique()
 
 
 
-```
+```python
 regions[regions.DEN_REG=='Liguria'].plot()
 ```
 
@@ -928,49 +928,35 @@ regions[regions.DEN_REG=='Liguria'].plot()
 
 
 
-```
+```python
 regions[regions.DEN_REG=='Liguria'].to_crs(epsg=4326).to_file("liguria.geojson",driver='GeoJSON')
 ```
 
 
-```
+```python
 regions[regions.DEN_REG=='Liguria'].centroid.to_crs(epsg=4326).to_file("liguria_centroid.geojson",driver='GeoJSON')
 ```
 
 
-```
+```python
 regions[regions.DEN_REG=='Liguria'].representative_point().to_crs(epsg=4326).to_file("liguria_representative_point.geojson",driver='GeoJSON')
 ```
 
 
-```
+```python
 files.download("liguria.geojson")
 ```
 
 
-```
+```python
 files.download("liguria_centroid.geojson")
 ```
 
 
-    <IPython.core.display.Javascript object>
-
-
-
-    <IPython.core.display.Javascript object>
-
-
-
-```
+```python
 files.download('liguria_representative_point.geojson')
 ```
 
-
-    <IPython.core.display.Javascript object>
-
-
-
-    <IPython.core.display.Javascript object>
 
 
 you can upload all the geojson on [uMap](http://umap.openstreetmap.fr) to [see the result](http://umap.openstreetmap.fr/it/map/liguria_505528#8/44.058/9.075) 

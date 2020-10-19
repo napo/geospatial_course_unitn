@@ -45,8 +45,8 @@ permalink: /lessons/retrieving_data_from_sdi
 **Setup**
 
 
-```
-pip install geopandas
+```bash
+!pip install geopandas
 ```
 
     Collecting geopandas
@@ -76,7 +76,7 @@ pip install geopandas
     Successfully installed click-plugins-1.1.1 cligj-0.5.0 fiona-1.8.17 geopandas-0.8.1 munch-2.5.0 pyproj-2.6.1.post1
 
 only for visualization purpouse
-```
+```bash
 !pip install git+https://github.com/python-visualization/folium
 ```
     Collecting git+https://github.com/python-visualization/folium
@@ -103,7 +103,7 @@ only for visualization purpouse
           Successfully uninstalled folium-0.8.3
     Successfully installed folium-0.11.0+20.gb70efc6
 
-```
+```python
 import geopandas as gpd
 ```
 
@@ -129,13 +129,13 @@ visit [getlon.lat](https://getlon.lat/)
 
 ## geocoding
 
-```
+```python
 cols = ['city']
 names = [('Roma'),('Palermo'),('Trento'),('Genova'),('Bari'),('Trieste'),('Napoli'),('Cagliari'),('Messina'),('Lecce')]
 cities = gpd.GeoDataFrame(names,columns=cols)
 ```
 
-```
+```python
 cities
 ```
 
@@ -210,11 +210,11 @@ cities
 
 
 
-```
+```python
 geo_cities = gpd.tools.geocode(cities.city, provider="arcgis")
 ```
 
-```
+```python
 geo_cities
 ```
 
@@ -296,7 +296,7 @@ geo_cities
 </div>
 
 
-```
+```python
 geo_cities.plot()
 ```
     
@@ -305,11 +305,11 @@ geo_cities.plot()
 
 ## reverse geocoding
 
-```
+```python
 from geopy.geocoders import Nominatim
 ```
 
-```
+```python
 geo_cities
 ```
 
@@ -391,27 +391,27 @@ geo_cities
 </div>
 
 
-```
+```python
 point = geo_cities.geometry[2]
 ```
 
-```
+```python
 point.wkt
 ```
 
     'POINT (11.11926000000005 46.07005000000004)'
     
-```
+```python
 type(point.x)
 ```
 
     float
 
-```
+```python
 latlon = str(point.y) + "," + str(point.x)
 ```
 
-```
+```python
 geolocator = Nominatim(user_agent="Example for the course")
 ```
 
@@ -424,13 +424,13 @@ Eg
 *geolocator = Nominatim(user_agent="Mozilla/5.0 (Linux; Android10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Mobile Safari/537.36")*
 
 
-```
+```python
 location = geolocator.reverse(latlon)
 ```
 
 the raw method contains all the data available from the geocoder
 
-```
+```python
 location.raw
 ```
 
@@ -458,22 +458,22 @@ location.raw
 ## suggestion for a good geocoding
 more details you add and more fortune you have to obtain a good result
 
-```
+```python
 q="Via Verdi, 26"
 ```
 
-```
+```python
 point = gpd.tools.geocode(q, provider="arcgis")
 ```
 
 import of folium to show the map
 
 
-```
+```python
 import folium
 ```
 
-```
+```python
 map_point = folium.Map([point.geometry.y,point.geometry.x], zoom_start=18)
 folium.GeoJson(point.to_json()).add_to(map_point)
 map_point
@@ -490,15 +490,15 @@ map_point
 add details like city and State
 
 
-```
+```python
 q="Via Verdi, 26, Trento, Italia"
 ```
 
-```
+```python
 point = gpd.tools.geocode(q, provider="arcgis")
 ```
 
-```
+```python
 point
 ```
 
@@ -537,7 +537,7 @@ point
 
 
 
-```
+```python
 map_point = folium.Map([point.geometry.y,point.geometry.x], zoom_start=18)
 folium.GeoJson(point.to_json()).add_to(map_point)
 map_point
@@ -554,12 +554,12 @@ map_point
 Try a different geocoder
 
 
-```
+```python
 point_nominatim = gpd.tools.geocode(q, provider="Nominatim",user_agent="Example for the course")
 ```
 
 
-```
+```python
 point_nominatim
 ```
 
@@ -597,7 +597,7 @@ point_nominatim
 </div>
 
 
-```
+```python
 map_point = folium.Map([point_nominatim.geometry.y,point_nominatim.geometry.x], zoom_start=18)
 folium.GeoJson(point.to_json()).add_to(map_point)
 map_point
@@ -611,17 +611,17 @@ map_point
 </iframe>
 
 
-```
+```python
 q="Via Giuseppe Verdi, 26, Trento, Italia"
 ```
 
 
-```
+```python
 point_nominatim = gpd.tools.geocode(q, provider="Nominatim",user_agent="Example for the course")
 ```
 
 
-```
+```python
 point_nominatim
 ```
 
@@ -659,7 +659,7 @@ point_nominatim
 
 
 
-```
+```python
 map_point = folium.Map([point_nominatim.geometry.y,point.geometry.x], zoom_start=18)
 folium.GeoJson(point_nominatim.to_json()).add_to(map_point)
 map_point
@@ -676,11 +676,11 @@ map_point
 calculate the distance between the two points
 
 
-```
+```python
 distance = point.to_crs('epsg:32632').geometry.distance(point_nominatim.geometry.to_crs('epsg:32632')).values[0]
 ```
 
-```
+```python
 distance
 ```
     26.522713658370346
@@ -716,7 +716,7 @@ https://siat.provincia.tn.it/geonetwork/srv/eng/catalog.search
 https://geopython.github.io/OWSLib/
 
 
-```
+```python
 pip install owslib
 ```
 
@@ -736,20 +736,20 @@ pip install owslib
     Installing collected packages: owslib
     Successfully installed owslib-0.20.0
 
-```
+```python
 from owslib.csw import CatalogueServiceWeb
 ```
 
-```
+```python
 csw = CatalogueServiceWeb("http://geodati.gov.it/RNDT/csw")
 ```
 
-```
+```python
 csw.service
 ```
     'CSW'
 
-```
+```python
 [op.name for op in csw.operations]
 ```
 
@@ -760,7 +760,7 @@ csw.service
      'Transaction',
      'Harvest']
 
-```
+```python
 from owslib.fes import PropertyIsLike, BBox
 ```
 
@@ -779,21 +779,21 @@ fields to query
 Eg. *%rento* => each word that ends with 'rento'
 
 
-```
+```python
 trento_query = PropertyIsLike('csw:AnyText', 'Trento')
 ```
 
-```
+```python
 csw.getrecords2(constraints=[trento_query],maxrecords=100)
 ```
 
-```
+```python
 csw.results
 ```
 
     {'matches': 95, 'nextrecord': 0, 'returned': 95}
 
-```
+```python
 for rec in csw.records:
   print(rec + " - " + csw.records[rec].title)
 ```
@@ -833,34 +833,34 @@ for rec in csw.records:
     p_TN:441525c1-a100-405c-b6fc-1f0c319bacbb - Grotte
  
 
-```
+```python
 p_TN:441525c1-a100-405c-b6fc-1f0c319bacbb => Grotte
 ```
 
 *grotte* means *caves* in italian language
 
-```
+```python
 s="p_TN:441525c1-a100-405c-b6fc-1f0c319bacbb" #caves
 ```
 
-```
+```python
 record = csw.records[s]
 ```
 
-```
+```python
 record.title
 ```
 
     'Grotte'
 
-```
+```python
 record.abstract
 ```
 
     "Catasto delle grotte naturali della Provincia autonoma di Trento.L'istituzione del catasto delle grotte e delle aree carsiche della Provincia di Trento è stata prevista dalla Legge provinciale n. 37 del 31/10/1983 (Protezione del patrimonio mineralogico, paleontologico, paletnologico, speleologico e carsico); l'articolo 14 della citata legge demanda alla Giunta provinciale l'emanazione delle norme attinenti all'impianto, al funzionamento, all'aggiornamento e all'accesso al catasto stesso.Il catasto delle grotte del Trentino è stato ufficialmente attivato in data 14 marzo 2008 tramite specifica delibera della Giunta Provinciale."
 
 
-```
+```python
 for reference in record.references:
   print(reference['scheme'])
   print(reference['url'])
@@ -871,11 +871,11 @@ for reference in record.references:
     urn:x-esri:specification:ServiceType:ArcIMS:Metadata:Document
     https://geodati.gov.it/geoportalRNDTPA/csw?getxml=%7BF3EB7695-7DCD-49B9-8450-E19B2A86F69D%7D
 
-```
+```python
 caves = gpd.read_file('https://siat.provincia.tn.it/IDT/vector/public/p_tn_441525c1-a100-405c-b6fc-1f0c319bacbb.zip')
 ```
 
-```
+```python
 caves.head(5)
 ```
 
@@ -1172,7 +1172,7 @@ caves.head(5)
 </div>
 
 
-```
+```python
 caves.crs
 ```
 
@@ -1191,7 +1191,7 @@ caves.crs
     - Ellipsoid: GRS 1980
     - Prime Meridian: Greenwich
 
-```
+```python
 caves.plot()
 ```
    
@@ -1205,26 +1205,26 @@ we can search by bounding box
 https://boundingbox.klokantech.com/
 
 
-```
+```python
 csw = CatalogueServiceWeb("http://www.pcn.minambiente.it/geoportal/csw")
 ```
 
-```
+```python
 bbox_query = BBox([10.770062,45.866839,11.022748,46.083374])
 ```
 
-```
+```python
 csw.getrecords2(constraints=[bbox_query],maxrecords=100)
 ```
 
-```
+```python
 csw.results
 ```
 
     {'matches': 117, 'nextrecord': 101, 'returned': 100}
 
 
-```
+```python
 for rec in csw.records:
   print(rec + " - " + csw.records[rec].title)
 ```
@@ -1280,31 +1280,31 @@ for rec in csw.records:
     m_amte:299FN3:79cbfd04-955b-4f8c-9de1-65a44ff0bdd9 - Corine Land Cover anno 2006
 
 
-```
+```python
 s="m_amte:299FN3:d0439890-8379-45ac-f70b-3d7f11f20ce9" #water
 ```
 
 
-```
+```python
 record = csw.records[s]
 ```
 
 
-```
+```python
 record.title
 ```
 
     'Bacini idrografici principali'
 
 
-```
+```python
 record.abstract
 ```
 
     'Sulla base dello strato informativo dei bacini idrografici a scala nazionale 1:250.000, congruente con il reticolo idrografico, sono stati individuati, secondo quanto previsto dal D.Lgs.152/99 e successivamente dalla Direttiva Quadro sulle Acque 2000/60/CE, i bacini idrografici dei corsi d’acqua scolanti a mare con superficie maggiore o uguale a 200 Kmq.'
 
 
-```
+```python
 for reference in record.references:
   print(reference['scheme'])
   print(reference['url'])
@@ -1329,41 +1329,41 @@ for reference in record.references:
 ## Web Feature Server (WFS)
 
 
-```
+```python
 from owslib.wfs import WebFeatureService
 ```
 
 
-```
+```python
 url="http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/wfs/Specchi_Acqua.map&Service=WFS"
 ```
 
 
-```
+```python
 wfs = WebFeatureService(url=url,version="1.1.0") #version can be: 1.0.0, 1.1.0, 2.0.0
 ```
 
 
-```
+```python
 wfs.identification.title
 ```
 
     "Specchi d'acqua interni"
 
-```
+```python
 [operation.name for operation in wfs.operations]
 ```
 
     ['GetCapabilities', 'DescribeFeatureType', 'GetFeature']
 
-```
+```python
 list(wfs.contents)
 ```
 
     ['ID.ACQUEFISICHE.SPECCHI.ACQUA']
 
 
-```
+```python
 capabilities = wfs.getcapabilities().read()
 ```
 
@@ -1521,7 +1521,7 @@ capabilities = wfs.getcapabilities().read()
 ```
 
 
-```
+```python
 for layer, meta in wfs.items():
     print(meta.__dict__)
     print(meta.title)
@@ -1539,19 +1539,19 @@ for layer, meta in wfs.items():
 
 
 
-```
+```python
 layer = list(wfs.contents)[0]
 ```
 
 
-```
+```python
 layer
 ```
 
     'ID.ACQUEFISICHE.SPECCHI.ACQUA'
 
 
-```
+```python
 response = wfs.getfeature(typename=layer, bbox=(10.7976,45.8649,10.9851,46.0496),srsname='urn:ogc:def:crs:EPSG::4326')
 %time
 ```
@@ -1561,19 +1561,19 @@ response = wfs.getfeature(typename=layer, bbox=(10.7976,45.8649,10.9851,46.0496)
 
 
 
-```
+```python
 out = open('lakes_inbbox.gml', 'wb')
 out.write(response.read())
 out.close()
 ```
 
 
-```
+```python
 lakes_inbbox = gpd.read_file("lakes_inbbox.gml")
 ```
 
 
-```
+```python
 lakes_inbbox.head(5)
 ```
 
@@ -1665,13 +1665,13 @@ lakes_inbbox.head(5)
 
 
 
-```
+```python
 lakes_inbbox.unary_union.centroid.x
 ```
 
     45.873490909948416
 
-```
+```python
 map_lakes = folium.Map([lakes_inbbox.unary_union.centroid.y,lakes_inbbox.unary_union.centroid.x], zoom_start=12)
 folium.GeoJson(lakes_inbbox.to_json()).add_to(map_lakes)
 map_lakes
@@ -1690,20 +1690,20 @@ Usually Geopandas corrects it alone.<br/>
 In this case we need an operation to change the axes orientation<br/>
 This function is supplied in the shapely package.<br/>
 
-```
+```python
 import shapely
 ```
 
 example with a geometry
 
-```
+```python
 lakes_inbbox.geometry[0]
 ```
     
 ![svg](03_Retrieving_data_from_spatial_database_infrastructures_files/03_Retrieving_data_from_spatial_database_infrastructures_105_0.svg)
     
 
-```
+```python
 shapely.ops.transform(lambda x, y: (y, x),lakes_inbbox.geometry[0])
 ```
 
@@ -1715,14 +1715,14 @@ shapely.ops.transform(lambda x, y: (y, x),lakes_inbbox.geometry[0])
 creation of a function to be use in the *apply* method of pandas
 
 
-```
+```python
 def swapxy(geometry):
   geometry = shapely.ops.transform(lambda x, y: (y, x),geometry)
   return geometry
 ```
 
 
-```
+```python
 swapxy(lakes_inbbox.geometry[0])
 ```
 
@@ -1735,12 +1735,12 @@ swapxy(lakes_inbbox.geometry[0])
 
 
 
-```
+```python
 lakes_inbbox['geometry'] = lakes_inbbox['geometry'].apply(lambda geometry: swapxy(geometry))
 ```
 
 
-```
+```python
 map_lakes = folium.Map([lakes_inbbox.unary_union.centroid.y,lakes_inbbox.unary_union.centroid.x], zoom_start=11)
 folium.GeoJson(lakes_inbbox.to_json()).add_to(map_lakes)
 map_lakes
@@ -1777,7 +1777,7 @@ https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services
 Documentation of the ESRI API's<br/>https://developers.arcgis.com/rest/
 
 
-```
+```bash
 pip install pyshp
 ```
 
@@ -1794,7 +1794,7 @@ pip install pyshp
 
 
 
-```
+```bash
 pip install bmi-arcgis-restapi
 ```
 
@@ -1818,7 +1818,7 @@ pip install bmi-arcgis-restapi
 
 
 
-```
+```python
 import os
 # we need this to inform the bmi-arcgis-restapi to use pyshp and not arcpy
 os.environ['RESTAPI_USE_ARCPY'] = 'FALSE'
@@ -1837,7 +1837,7 @@ import restapi
 **pyshp** *faster* but with the *basic* functions
 
 
-```
+```python
 rest_url = 'https://services6.arcgis.com/L1SotImj1AAZY1eK/ArcGIS/rest/services'
 
 # no authentication is required, so no username and password are supplied
@@ -1845,7 +1845,7 @@ ags = restapi.ArcServer(rest_url)
 ```
 
 
-```
+```python
 ags.services
 ```
 
@@ -1955,19 +1955,19 @@ ags.services
     }]
 
 
-```
+```python
 # access "CapoluoghiProvincia" service 
 ags_service = ags.getService('CapoluoghiProvincia')
 ags_service.list_layers()
 ```
     ['CapoluoghiProvincia']
 
-```
+```python
 provincial_capitals = ags_service.layer('CapoluoghiProvincia') #not case sensitive, also supports wildcard search (*)
 ```
 
 
-```
+```python
 provincial_capitals.list_fields()
 ```
 
@@ -2004,7 +2004,7 @@ provincial_capitals.list_fields()
      'Shape_Ar_1',
      'ORIG_FID']
 
-```
+```python
 # export layer to shapefile in WGS 1984 projection
 provincial_capitals.export_layer('provincial_capitals.shp', outSR=4326)
 ```
@@ -2012,12 +2012,12 @@ provincial_capitals.export_layer('provincial_capitals.shp', outSR=4326)
     Created: "provincial_capitals.shp"
     'provincial_capitals.shp'
 
-```
+```python
 gpd_provincial_capitals = gpd.read_file('provincial_capitals.shp')
 ```
 
 
-```
+```python
 gpd_provincial_capitals.plot()
 ```
   

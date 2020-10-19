@@ -18,7 +18,7 @@ permalink: /lessons/solution_exercise_2
 
 # Setup
 
-```
+```bash
 try:
   import rtree
 except ModuleNotFoundError as e:
@@ -71,7 +71,7 @@ except ModuleNotFoundError as e:
 
 
 
-```
+```bash
 !pip install geopandas
 ```
 
@@ -103,7 +103,7 @@ except ModuleNotFoundError as e:
 
 
 
-```
+```python
 import pandas as pd
 import geopandas as gpd
 ```
@@ -123,7 +123,7 @@ import geopandas as gpd
 geopackage with the administrative units of italy
 
 
-```
+```bash
 !wget https://github.com/napo/geospatial_course_unitn/raw/master/data/administrative_units_italy_2020/istat_administrative_units_2020.gpkg
 ```
 
@@ -146,19 +146,19 @@ geopackage with the administrative units of italy
 
 
 
-```
+```python
 municipalities = gpd.read_file("istat_administrative_units_2020.gpkg",layer="municipalities")
 ```
 
 # create the geodataframe of the pharmacies of Trentino
 
-
+python
 ```
 phamarcies = pd.read_csv("https://servizi.apss.tn.it/opendata/FARM001.csv")
 ```
 
 
-```
+```python
 geo_phamarcies = gpd.GeoDataFrame(
     phamarcies,
     crs='EPSG:4326',
@@ -166,15 +166,9 @@ geo_phamarcies = gpd.GeoDataFrame(
 ```
 
 
-```
+```python
 geo_phamarcies.plot()
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f2f1db5e1d0>
-
 
 
 
@@ -184,7 +178,7 @@ geo_phamarcies.plot()
 # count the total of phamarcies for each muncipality of Trentino
 
 
-```
+```python
 geo_phamarcies.groupby(geo_phamarcies.COMUNE).size().to_frame("size").sort_values(['size', 'COMUNE'], ascending=[False, True])
 ```
 
@@ -274,14 +268,14 @@ geo_phamarcies.groupby(geo_phamarcies.COMUNE).size().to_frame("size").sort_value
 cod_prov = 22
 
 
-```
+```python
 municipalities_trentino = municipalities[municipalities.COD_PROV==22].to_crs(epsg=4326)
 ```
 
 ## Method 1 - spatial join
 
 
-```
+```python
 sjon_trentino_pharmacy = gpd.sjoin(municipalities_trentino,geo_phamarcies, how='inner', op='contains', lsuffix='trentino', rsuffix='pharmacy')
 %time
 
@@ -292,7 +286,7 @@ sjon_trentino_pharmacy = gpd.sjoin(municipalities_trentino,geo_phamarcies, how='
 
 
 
-```
+```python
 sjon_trentino_pharmacy.groupby('COMUNE_trentino').size().to_frame("size").sort_values(['size', 'COMUNE_trentino'], ascending=[False,True])
 ```
 
@@ -379,7 +373,7 @@ sjon_trentino_pharmacy.groupby('COMUNE_trentino').size().to_frame("size").sort_v
 ## method 2 - loop between areas and points
 
 
-```
+```python
 names = []
 totals = []
 for idx, municipality in municipalities_trentino.iterrows():
@@ -402,7 +396,7 @@ data = {'municipality':names, 'count_phamarcies':totals}
 
 
 
-```
+```python
 pd.DataFrame(data).sort_values(['count_phamarcies', 'municipality'], ascending=[False,True])
 ```
 
@@ -502,12 +496,12 @@ cough cough cough ... there a lot of mistakes with the coordinates in this datas
 find duplicate geometry
 
 
-```
+```python
 onlygeometry = geo_phamarcies.geometry
 ```
 
 
-```
+```python
 geo_phamarcies[onlygeometry.isin(onlygeometry[onlygeometry.duplicated()])].head(5)
 ```
 
@@ -677,7 +671,7 @@ geo_phamarcies[onlygeometry.isin(onlygeometry[onlygeometry.duplicated()])].head(
 
 
 
-```
+```python
 geo_phamarcies[onlygeometry.isin(onlygeometry[onlygeometry.duplicated()])].shape
 ```
 
@@ -691,12 +685,12 @@ geo_phamarcies[onlygeometry.isin(onlygeometry[onlygeometry.duplicated()])].shape
 # create the macroarea of all the municipalities bordering with Trento
 
 
-```
+```python
 trento_polygon = municipalities_trentino[municipalities_trentino.COMUNE=='Trento'].geometry.values[0]
 ```
 
 
-```
+```python
 trento_polygon
 ```
 
@@ -708,17 +702,17 @@ trento_polygon
 
 
 
-```
+```python
 touches_with_trento = municipalities_trentino[municipalities_trentino.geometry.touches(trento_polygon)]
 ```
 
 
-```
+```python
 municipalities_around_trento = touches_with_trento.COMUNE.unique()
 ```
 
 
-```
+```python
 list(municipalities_around_trento)
 ```
 
@@ -743,7 +737,7 @@ list(municipalities_around_trento)
 
 
 
-```
+```python
 touches_with_trento.geometry.unary_union
 ```
 
@@ -759,7 +753,7 @@ touches_with_trento.geometry.unary_union
 ## method 1 - unary_union
 
 
-```
+```python
 %time
 touches_with_trento.append(municipalities_trentino[municipalities_trentino.COMUNE=='Trento']).geometry.unary_union
 ```
@@ -778,7 +772,7 @@ touches_with_trento.append(municipalities_trentino[municipalities_trentino.COMUN
 ## method 1 - dissolve
 
 
-```
+```python
 %time
 touches_with_trento.append(municipalities_trentino[municipalities_trentino.COMUNE=='Trento']).dissolve(by='COD_PROV').geometry.values[0]
 ```
@@ -795,7 +789,7 @@ touches_with_trento.append(municipalities_trentino[municipalities_trentino.COMUN
 
 
 
-```
+```python
 aroud_trento_area = touches_with_trento.append(municipalities_trentino[municipalities_trentino.COMUNE=='Trento']).dissolve(by='COD_PROV').geometry.values[0]
 ```
 
@@ -805,23 +799,23 @@ aroud_trento_area = touches_with_trento.append(municipalities_trentino[municipal
 note: there a lot of bad latitude and longitude in this dataset!!!
 
 
-```
+```python
 libraries = pd.read_csv('http://opendata.anagrafe.iccu.sbn.it/territorio.zip', compression='zip', sep=';')
 ```
 
 
-```
+```python
 libraries['latitudine'] = pd.to_numeric(libraries.latitudine.str.replace(",","."))
 libraries.longitudine = pd.to_numeric(libraries.longitudine.str.replace(",","."))
 ```
 
 
-```
+```python
 libraries = libraries[libraries.latitudine.isnull() == False]
 ```
 
 
-```
+```python
 geo_libraries = gpd.GeoDataFrame(
     libraries,
     crs='EPSG:4326',
@@ -829,7 +823,7 @@ geo_libraries = gpd.GeoDataFrame(
 ```
 
 
-```
+```python
 geo_libraries[geo_libraries.within(aroud_trento_area)].comune.unique()
 ```
 
@@ -854,12 +848,12 @@ Eg: Baselga di Pinè, Terre d'Adige and Madruzzo aren't bordering with Trento
 
 
 
-```
+```python
 libraries_in_macroarea = geo_libraries[geo_libraries.within(aroud_trento_area)]
 ```
 
 
-```
+```python
 libraries_in_macroarea.geometry.unary_union
 ```
 
@@ -875,30 +869,24 @@ libraries_in_macroarea.geometry.unary_union
 we need to calculate the distance in **meters**
 
 
-```
+```python
 libraries_in_macroarea = libraries_in_macroarea.to_crs(epsg=32632)
 ```
 
 
-```
+```python
 libraries_in_macroarea_500 =  libraries_in_macroarea
 ```
 
 
-```
+```python
 libraries_in_macroarea_500['geometry'] = libraries_in_macroarea.buffer(500)
 ```
 
 
-```
+```python
 libraries_in_macroarea_500.plot()
 ```
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x7f2f1d854eb8>
-
 
 
 
@@ -908,12 +896,12 @@ libraries_in_macroarea_500.plot()
 ## step 3 - calculate how many lbiraries are 500m close to each phamarcy into macroarea
 
 
-```
+```python
 libraries500m_from_phamarcies = gpd.sjoin(libraries_in_macroarea_500 ,geo_phamarcies.to_crs(epsg=32632), how='inner', op='contains', lsuffix='library', rsuffix='pharmacy')
 ```
 
 
-```
+```python
 libraries500m_from_phamarcies
 ```
 
@@ -1442,7 +1430,7 @@ libraries500m_from_phamarcies
 ... there are **bad values** about latitude and logitude in **both** original **datasets**
 
 
-```
+```python
 libraries500m_from_phamarcies.groupby('comune').size().to_frame("size").sort_values(['size', 'comune'], ascending=[False,True])
 ```
 
@@ -1527,7 +1515,7 @@ we need the geometry of the public library of Trento in meters
 
 
 
-```
+```python
 trento_public_library = geo_libraries[geo_libraries['codice-isil'] == 'IT-TN0121'].to_crs(epsg=32632).geometry.values[0]
 ```
 
@@ -1536,17 +1524,17 @@ trento_public_library = geo_libraries[geo_libraries['codice-isil'] == 'IT-TN0121
 calculate the distance from the position for each phamarcy
 
 
-```
+```python
 geo_phamarcies['distance'] = geo_phamarcies.to_crs(epsg=32632).geometry.distance(trento_public_library)
 ```
 
 
-```
+```python
 phamarcies_2000m_from_public_library_trento = geo_phamarcies[geo_phamarcies['distance'] < 2000.0]
 ```
 
 
-```
+```python
 phamarcies_2000m_from_public_library_trento
 ```
 
@@ -2060,12 +2048,12 @@ phamarcies_2000m_from_public_library_trento
 ## method 2 - spatial relationship
 
 
-```
+```python
 trento_public_library_2k = trento_public_library.buffer(2000)
 ```
 
 
-```
+```python
 trento_public_library_2k
 ```
 
@@ -2077,12 +2065,12 @@ trento_public_library_2k
 
 
 
-```
+```python
 phamarcies_2000m_from_public_library_trento = geo_phamarcies[geo_phamarcies.to_crs(epsg=32632).within(trento_public_library_2k)]
 ```
 
 
-```
+```python
 phamarcies_2000m_from_public_library_trento
 ```
 
@@ -2600,17 +2588,17 @@ there are always data with wrong latitude and longitude
 Here how to find the rows with the duplicated geometries
 
 
-```
+```python
 onlygeometry_phamarcy = phamarcies_2000m_from_public_library_trento.geometry
 ```
 
 
-```
+```python
 toremove = phamarcies_2000m_from_public_library_trento[onlygeometry_phamarcy.isin(onlygeometry_phamarcy[onlygeometry.duplicated()])]
 ```
 
 
-```
+```python
 list(toremove.COD_FARMACIA_OD)
 ```
 
@@ -2631,12 +2619,12 @@ list(toremove.COD_FARMACIA_OD)
 
 
 
-```
+```python
 final_dataset = phamarcies_2000m_from_public_library_trento[~phamarcies_2000m_from_public_library_trento.COD_FARMACIA_OD.isin(list(toremove.COD_FARMACIA_OD))]
 ```
 
 
-```
+```python
 final_dataset = final_dataset.reset_index()
 ```
 
@@ -2648,7 +2636,7 @@ In geometry, the convex hull or convex envelope or convex closure of a shape is 
 
 
 
-```
+```python
 final_dataset.geometry.unary_union.convex_hull
 ```
 
@@ -2662,27 +2650,27 @@ final_dataset.geometry.unary_union.convex_hull
 # save the polygon in geopackage with the attribute "description" with value "area of the pharmacies 2km from the Trento public libray"
 
 
-```
+```python
 polygon = final_dataset.geometry.unary_union.convex_hull
 ```
 
 
-```
+```python
 data = {'description': ['area of the pharmacies 2km from the Trento public libray'], 'geometry': [polygon]}
 ```
 
 
-```
+```python
 phamarcies2k = gpd.GeoDataFrame(data, crs=final_dataset.crs)
 ```
 
 
-```
+```python
 phamarcies2k.to_file("phamarcies2k_to_pl_trento.gpkg",driver="GPKG",layer='phamarcies')
 ```
 
 
-```
+```python
 from google.colab import files
 files.download('phamarcies2k_to_pl_trento.gpkg')
 ```
