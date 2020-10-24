@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How To
-nav_order: 100
+nav_order: 6
 permalink: /howto
 ---
 # How to use the code published
