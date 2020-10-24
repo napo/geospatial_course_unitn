@@ -14,20 +14,20 @@ You can download each file from [here](https://github.com/napo/geospatial_course
 
 or simple [clone the repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/howto_clone.png]
+![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/howto_clone.png)
 
 # Colab 
 The code is presented in class using Google Colab
 
 you can decide to import each script from the Colab' interface
 
-![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/howto_colab_import.png]
+![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/howto_colab_import.png)
 
 or by using the github repository
 
 you can decide to import each script from the Colab' interface
 
-![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/howto_colab_github.png]
+![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/howto_colab_github.png)
 
 # Anaconda
 If you use anaconda rember to change the command *pip* with the command *conda* to install all the packages
