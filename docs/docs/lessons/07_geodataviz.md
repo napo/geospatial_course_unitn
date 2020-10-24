@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 07 - geodata visualization
+title: 07 - Geodata visualization
 parent: Lessons
 nav_order: 7
 permalink: /lessons/geodataviz
