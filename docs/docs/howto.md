@@ -15,6 +15,15 @@ You can download each file from [here](https://github.com/napo/geospatial_course
 or simple [clone the repository](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/howto_clone.png)
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
 
 # Colab 
 The code is presented in class using Google Colab
