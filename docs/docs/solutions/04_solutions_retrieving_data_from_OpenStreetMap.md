@@ -415,7 +415,7 @@ polygon
 
 
 
-## method 1 - download from export.hotosm.org
+### method 1 - download from export.hotosm.org
 
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/export_hostosm_mezzolombardo.png)
 
@@ -525,7 +525,7 @@ bbox_mezzolombardo.to_file("bbox_mezzolombardo.geojson",driver="GeoJSON")
 path_pbf_file = "/content/mezzolombardo_bbox.osm.pbf"
 ```
 
-## method 1 - download and cut from geodati fmach
+### method 2 - download and cut from geodati fmach
 
 http://www.geodati.fmach.it/italia_osm.html
 
