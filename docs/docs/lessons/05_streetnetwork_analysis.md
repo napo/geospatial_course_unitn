@@ -783,8 +783,6 @@ edges[edges.travel_time == edges.travel_time.max()].osmid
 ```
 
 
-
-
     2483    660422718
     2687    660422718
     Name: osmid, dtype: object
@@ -857,7 +855,7 @@ for idnode in route:
   osmids.append(osmid)
 ```
 
-``python
+```python
 nodes[nodes.osmid.isin(osmids)]
 ```
 
