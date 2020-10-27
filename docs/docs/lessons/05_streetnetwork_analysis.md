@@ -837,303 +837,36 @@ route
      276977119]
 
 
+these values are the ids of each node of the graph
 
 
 ```python
-G[388416104]
-```
+G.nodes[388416104]```
 
 
-
-
-    AdjacencyView({885639428: {0: {'osmid': 28881638, 'name': 'Via San Francesco', 'highway': 'residential', 'oneway': False, 'length': 3.771, 'speed_kph': 10.0, 'travel_time': 1.4}}, 388416101: {0: {'osmid': 80400799, 'oneway': False, 'name': 'Via San Francesco', 'highway': 'residential', 'length': 62.319, 'speed_kph': 10.0, 'travel_time': 22.4}}, 885639383: {0: {'osmid': 179318888, 'name': 'Via Arturo De Varda', 'highway': 'residential', 'oneway': False, 'length': 64.554, 'geometry': <shapely.geometry.linestring.LineString object at 0x7f253779f160>, 'speed_kph': 10.0, 'travel_time': 23.2}}})
+  {'osmid': 388416104, 'x': 11.0933838, 'y': 46.2133289}
 
 
 
 
 ```python
-edges[edges.u.isin(route)]
+nodes = ox.graph_to_gdfs(G,edges=False,nodes=True)
 ```
 
+extract all the osmid
 
+```python
+osmids = []
+for idnode in route:
+  osmid = G.nodes[idnode]['osmid']
+  osmids.append(osmid)
+```
 
+``python
+nodes[nodes.osmid.isin(osmids)]
+```
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>osmid</th>
-      <th>ref</th>
-      <th>name</th>
-      <th>highway</th>
-      <th>maxspeed</th>
-      <th>oneway</th>
-      <th>length</th>
-      <th>speed_kph</th>
-      <th>travel_time</th>
-      <th>geometry</th>
-      <th>service</th>
-      <th>junction</th>
-      <th>bridge</th>
-      <th>access</th>
-      <th>tunnel</th>
-      <th>u</th>
-      <th>v</th>
-      <th>key</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>108</th>
-      <td>42293674</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>residential</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>36.217</td>
-      <td>10.0</td>
-      <td>13.0</td>
-      <td>LINESTRING (11.09323 46.21839, 11.09359 46.21860)</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>276977119</td>
-      <td>527734693</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>109</th>
-      <td>25414040</td>
-      <td>NaN</td>
-      <td>Via Giorgio Perlasca</td>
-      <td>residential</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>34.547</td>
-      <td>10.0</td>
-      <td>12.4</td>
-      <td>LINESTRING (11.09323 46.21839, 11.09317 46.218...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>276977119</td>
-      <td>2249094490</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>110</th>
-      <td>25414040</td>
-      <td>NaN</td>
-      <td>Via Giorgio Perlasca</td>
-      <td>residential</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>60.521</td>
-      <td>10.0</td>
-      <td>21.8</td>
-      <td>LINESTRING (11.09323 46.21839, 11.09320 46.218...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>276977119</td>
-      <td>276977118</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>111</th>
-      <td>25414040</td>
-      <td>NaN</td>
-      <td>Via Giorgio Perlasca</td>
-      <td>residential</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>7.986</td>
-      <td>10.0</td>
-      <td>2.9</td>
-      <td>LINESTRING (11.09404 46.21657, 11.09405 46.21665)</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>276977130</td>
-      <td>973022445</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>112</th>
-      <td>26286316</td>
-      <td>NaN</td>
-      <td>Via Rotaliana</td>
-      <td>tertiary</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>12.492</td>
-      <td>52.0</td>
-      <td>0.9</td>
-      <td>LINESTRING (11.09404 46.21657, 11.09420 46.21657)</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>276977130</td>
-      <td>527734678</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>2431</th>
-      <td>25414040</td>
-      <td>NaN</td>
-      <td>Via Giorgio Perlasca</td>
-      <td>residential</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>34.547</td>
-      <td>10.0</td>
-      <td>12.4</td>
-      <td>LINESTRING (11.09315 46.21808, 11.09317 46.218...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2249094490</td>
-      <td>276977119</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2463</th>
-      <td>80334024</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>service</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>5.819</td>
-      <td>24.3</td>
-      <td>0.9</td>
-      <td>LINESTRING (11.09250 46.21473, 11.09245 46.21477)</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2274146551</td>
-      <td>937561848</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2464</th>
-      <td>80334024</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>service</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>30.744</td>
-      <td>24.3</td>
-      <td>4.6</td>
-      <td>LINESTRING (11.09250 46.21473, 11.09254 46.214...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2274146551</td>
-      <td>937562241</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2465</th>
-      <td>[115648606, 428490935]</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>footway</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>47.996</td>
-      <td>37.0</td>
-      <td>4.7</td>
-      <td>LINESTRING (11.09250 46.21473, 11.09247 46.214...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2274146551</td>
-      <td>1305986871</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2466</th>
-      <td>[428490936, 140993491, 428490935]</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>footway</td>
-      <td>NaN</td>
-      <td>False</td>
-      <td>23.955</td>
-      <td>37.0</td>
-      <td>2.3</td>
-      <td>LINESTRING (11.09250 46.21473, 11.09253 46.214...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2274146551</td>
-      <td>861050486</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>73 rows × 18 columns</p>
-</div>
-
-
+![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/table_osmids_osmnx.png)
 
 
 ```python
