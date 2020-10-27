@@ -4,7 +4,11 @@ title: How To
 nav_order: 6
 permalink: /howto
 ---
+
 # How to use the code published
+
+
+
 {: .no_toc .text-delta }
 
 the code presented in these pages can be reached [via github]((https://github.com/napo/geospatial_course_unitn/tree/master/code)) and is distributed to be used with [Jupyter Notebook](https://ipython.org/notebook.html) (extension *.ipnyb* for each file)
