@@ -771,8 +771,6 @@ edges[edges.travel_time == edges.travel_time.max()].name
 ```
 
 
-
-
     2483    NaN
     2687    NaN
     Name: name, dtype: object
@@ -809,9 +807,6 @@ route = ox.shortest_path(G, point_nearest_trainstation, point_nearest_school, we
 route
 ```
 
-
-
-
     [388416104,
      885639428,
      1305986901,
@@ -841,11 +836,11 @@ these values are the ids of each node of the graph
 
 
 ```python
-G.nodes[388416104]```
+G.nodes[388416104]
+```
 
 
-  {'osmid': 388416104, 'x': 11.0933838, 'y': 46.2133289}
-
+     {'osmid': 388416104, 'x': 11.0933838, 'y': 46.2133289}
 
 
 
