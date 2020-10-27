@@ -25,7 +25,7 @@ At the end of the course, students will be able to:
 
 ### Teachers
 - [Diego Giulani](https://webapps.unitn.it/du/en/Persona/PER0020867/Didattica)
-- [Maurizio Napolitano](http://gitub.com/napo)
+- [Maurizio Napolitano](http://github.com/napo)
 
 ### Lessons
 [Maurizio Napolitano](http://github.com/napo)<br/>
