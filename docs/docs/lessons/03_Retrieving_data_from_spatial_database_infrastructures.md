@@ -697,12 +697,13 @@ distance
 - a geocoder always tries to give an answer<br/>&nbsp;an excellent geocoder also returns the value of the precision estimate
 
 
-#OGC Services
+# OGC Services
+
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/ogc_services.png)
 
 ---
 
-##Catalog Service for the Web
+## Catalog Service for the Web
 
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/geocatalog_pat.png)
 
