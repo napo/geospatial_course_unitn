@@ -5,10 +5,12 @@ nav_order: 3
 parent: Materials
 permalink: /materials/video
 ---
-The students asked to register the lessons online.
-These are available at these addresses.
+The recordings are those of the lessons held in the online classroom with the students, so they can available only to the students of the course (privacy issues).
 
-Note: the recording would need a post-production work to be published, therefore the videos are only for the use of those who request them.
+The recordings aren't so usefull for people not involved in the coruse becase do not lend themselves well to being disseminated in the absence of context, they also contain some organizational and technical issues such as audio problems, screen resolution problems, students' faces and other questions related to the normal life of a classroom (there are also the 10 minutes of the pause).
+It is therefore not disclosable material without any of these premises.
+
+If there are enough requests we could consider creating video lessons suitable for self-learning
 
 ---
 ## Recordings
