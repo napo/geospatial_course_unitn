@@ -5,7 +5,7 @@ parent: Lessons
 nav_order: 6
 permalink: /lessons/raster
 ---
-*Lesson 31 October 2020*
+*Lesson 30 October 2020*
 
 {: .no_toc }
 
