@@ -265,7 +265,7 @@ show(image)
 
 
 
-## Manage a raster
+# Manage a raster
 
 Here you can find a cutted version of the geotiff of the muncipality of Trento around the scientific hub area in Povo - Trento
 
