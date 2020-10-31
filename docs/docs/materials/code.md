@@ -24,9 +24,14 @@ You can use it in Colab
 
 ### lesson 4 - Retrieving data from OpenStreetMap
 - [04_Retrieving_data_from_Openstreetmap.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/04_Retrieving_data_from_Openstreetmap.ipynb)
+- [04_solution_retrieving_data_from_OpenStreetMap.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/04_solution_retrieving_data_from_OpenStreetMap.ipynb)
 
-### lesson 5 - Retrieving data from OpenStreetMap
+### lesson 5 - Street Network Analysis
 - [05_Streetnetwork_analysis.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/05_Streetnetwork_analysis.ipynb)
+- [05_solution_street_network_analysis.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/05_solution_street_network_analysis.ipynb)
+
+### lesson 6 - Basic operations on raster data
+- [06_Basic_operations_on_raster_data.ipynb](https://github.com/napo/geospatial_course_unitn/blob/master/code/06_Basic_operations_on_raster_data.ipynb)
 
 ### all the codes
 - [everything](https://github.com/napo/geospatial_course_unitn/tree/master/code)
