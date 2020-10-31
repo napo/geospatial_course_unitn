@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 06 - Raster data
+title: 06 - Basic operations on raster data
 parent: Lessons
 nav_order: 6
 permalink: /lessons/raster
