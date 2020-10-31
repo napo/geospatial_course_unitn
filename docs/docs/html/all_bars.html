@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_b546fa5adb6f471095d5c435934b2f9c {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_b546fa5adb6f471095d5c435934b2f9c" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_b546fa5adb6f471095d5c435934b2f9c = L.map(
+        'map_b546fa5adb6f471095d5c435934b2f9c', {
+        center: [46.0728361125, 11.120556430553345],
+        zoom: 16,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_ca600be3e65b40b7bf2465162d9bfb15 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_b546fa5adb6f471095d5c435934b2f9c);
+    
+        var geo_json_566bc2f348da4564b5e650e669fcef66 = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [11.1194647, 46.0725015], "type": "Point"}, "id": "96", "properties": {"addr:city": "Trento", "addr:housenumber": "1", "addr:street": "Piazza Dante", "highlight": {}, "name": "Bar Stazione Buffet Trento", "path_lenght_from_train_station": 41.043, "style": {}, "travel_time_from_train_station": 42.2}, "type": "Feature"}, {"geometry": {"coordinates": [11.120304522213377, 46.07242895], "type": "Point"}, "id": "253", "properties": {"addr:city": "Trento", "addr:housenumber": "13", "addr:street": "Piazza Dante", "highlight": {}, "name": "Flora", "path_lenght_from_train_station": 98.54199999999999, "style": {}, "travel_time_from_train_station": 101.39999999999999}, "type": "Feature"}, {"geometry": {"coordinates": [11.1203793, 46.0737528], "type": "Point"}, "id": "97", "properties": {"addr:city": "Trento", "addr:housenumber": "2", "addr:street": "Via Dogana", "highlight": {}, "name": "Bar Trento-Mal\u00e9", "path_lenght_from_train_station": 257.27000000000004, "style": {}, "travel_time_from_train_station": 264.7}, "type": "Feature"}, {"geometry": {"coordinates": [11.1220772, 46.0726612], "type": "Point"}, "id": "168", "properties": {"addr:city": "Trento", "addr:housenumber": "29/1", "addr:street": "Via Clementino Vannetti", "highlight": {}, "name": "Giornale & Caff\u00e8", "path_lenght_from_train_station": 262.236, "style": {}, "travel_time_from_train_station": 269.79999999999995}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(map_b546fa5adb6f471095d5c435934b2f9c );
+        geo_json_566bc2f348da4564b5e650e669fcef66.setStyle(function(feature) {return feature.properties.style;});
+        
+</script>

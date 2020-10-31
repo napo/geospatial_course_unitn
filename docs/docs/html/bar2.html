@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_b9b568b045104bf598b929702fc5a599 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_b9b568b045104bf598b929702fc5a599" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_b9b568b045104bf598b929702fc5a599 = L.map(
+        'map_b9b568b045104bf598b929702fc5a599', {
+        center: [46.07222446985105, 11.119955257750544],
+        zoom: 1,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_0521e496b54a438c964f07e4e5eefe70 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_b9b568b045104bf598b929702fc5a599);
+    
+                var poly_line_22cc62c2eb9844b4a9a9c82f18415d08 = L.polyline(
+                    [[46.0720446, 11.1195324], [46.072033, 11.119568]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#cc0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#cc0000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_b9b568b045104bf598b929702fc5a599);
+            
+    
+            var popup_4f49d56b778049df8d3eacf40b587151 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9a299d3a402147b5a1fedb71371b4f75 = $(`<div id="html_9a299d3a402147b5a1fedb71371b4f75" style="width: 100.0%; height: 100.0%;">NaN</div>`)[0];
+                popup_4f49d56b778049df8d3eacf40b587151.setContent(html_9a299d3a402147b5a1fedb71371b4f75);
+            
+
+            poly_line_22cc62c2eb9844b4a9a9c82f18415d08.bindPopup(popup_4f49d56b778049df8d3eacf40b587151)
+            ;
+
+            
+        
+    
+                var poly_line_aa075adbe660418e99e7b6e065705fd3 = L.polyline(
+                    [[46.072033, 11.119568], [46.0720071, 11.1196528]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#cc0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#cc0000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_b9b568b045104bf598b929702fc5a599);
+            
+    
+            var popup_15409d727ab243f782916e491f370729 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_22f07d935e9c4970915678b6eb43362d = $(`<div id="html_22f07d935e9c4970915678b6eb43362d" style="width: 100.0%; height: 100.0%;">NaN</div>`)[0];
+                popup_15409d727ab243f782916e491f370729.setContent(html_22f07d935e9c4970915678b6eb43362d);
+            
+
+            poly_line_aa075adbe660418e99e7b6e065705fd3.bindPopup(popup_15409d727ab243f782916e491f370729)
+            ;
+
+            
+        
+    
+                var poly_line_9e2c7de7dc0042739af4e34902e5e7af = L.polyline(
+                    [[46.0720071, 11.1196528], [46.0719886, 11.119714]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#cc0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#cc0000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_b9b568b045104bf598b929702fc5a599);
+            
+    
+            var popup_d0b0d7de42ed4466b1e53f1d290d7fa1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1e57dc1c25904bdbb3e7bd3ce78b1576 = $(`<div id="html_1e57dc1c25904bdbb3e7bd3ce78b1576" style="width: 100.0%; height: 100.0%;">NaN</div>`)[0];
+                popup_d0b0d7de42ed4466b1e53f1d290d7fa1.setContent(html_1e57dc1c25904bdbb3e7bd3ce78b1576);
+            
+
+            poly_line_9e2c7de7dc0042739af4e34902e5e7af.bindPopup(popup_d0b0d7de42ed4466b1e53f1d290d7fa1)
+            ;
+
+            
+        
+    
+                var poly_line_2f8b937a74b8416895fb9fe4689ae00c = L.polyline(
+                    [[46.0719886, 11.119714], [46.0722786, 11.1199072]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#cc0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#cc0000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_b9b568b045104bf598b929702fc5a599);
+            
+    
+            var popup_ecec2cc62fe64371ac09e467c0629ab9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0c5c302e4dcf44a79efc764da16f4e3e = $(`<div id="html_0c5c302e4dcf44a79efc764da16f4e3e" style="width: 100.0%; height: 100.0%;">"Piazza Dante Alighieri"</div>`)[0];
+                popup_ecec2cc62fe64371ac09e467c0629ab9.setContent(html_0c5c302e4dcf44a79efc764da16f4e3e);
+            
+
+            poly_line_2f8b937a74b8416895fb9fe4689ae00c.bindPopup(popup_ecec2cc62fe64371ac09e467c0629ab9)
+            ;
+
+            
+        
+    
+                var poly_line_336b68bf39f240b9939134c659763bf3 = L.polyline(
+                    [[46.0722786, 11.1199072], [46.0723687, 11.1200523]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#cc0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#cc0000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_b9b568b045104bf598b929702fc5a599);
+            
+    
+            var popup_62b4df7d0f30427387326822dc083c00 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d24717e99ab24d52b88e4f98a49c159f = $(`<div id="html_d24717e99ab24d52b88e4f98a49c159f" style="width: 100.0%; height: 100.0%;">"Piazza Dante Alighieri"</div>`)[0];
+                popup_62b4df7d0f30427387326822dc083c00.setContent(html_d24717e99ab24d52b88e4f98a49c159f);
+            
+
+            poly_line_336b68bf39f240b9939134c659763bf3.bindPopup(popup_62b4df7d0f30427387326822dc083c00)
+            ;
+
+            
+        
+    
+                var poly_line_9ed22ad1e222484698bb9328651a4e73 = L.polyline(
+                    [[46.0723687, 11.1200523], [46.0723548, 11.1202069]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#cc0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#cc0000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_b9b568b045104bf598b929702fc5a599);
+            
+    
+            var popup_5047cf51f307419593580a007c4ce5d5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2adef9612b4a41189c9c3c142e4e08d2 = $(`<div id="html_2adef9612b4a41189c9c3c142e4e08d2" style="width: 100.0%; height: 100.0%;">"Piazza Dante"</div>`)[0];
+                popup_5047cf51f307419593580a007c4ce5d5.setContent(html_2adef9612b4a41189c9c3c142e4e08d2);
+            
+
+            poly_line_9ed22ad1e222484698bb9328651a4e73.bindPopup(popup_5047cf51f307419593580a007c4ce5d5)
+            ;
+
+            
+        
+    
+                var poly_line_b08f56d9523b40359663f14200fe185c = L.polyline(
+                    [[46.0723548, 11.1202069], [46.0723435, 11.120333]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#cc0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#cc0000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_b9b568b045104bf598b929702fc5a599);
+            
+    
+            var popup_4590d9102bbf4471964b8fd0e39e2c5d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_89a595faccd94f84880e57c41ca3d377 = $(`<div id="html_89a595faccd94f84880e57c41ca3d377" style="width: 100.0%; height: 100.0%;">"Piazza Dante"</div>`)[0];
+                popup_4590d9102bbf4471964b8fd0e39e2c5d.setContent(html_89a595faccd94f84880e57c41ca3d377);
+            
+
+            poly_line_b08f56d9523b40359663f14200fe185c.bindPopup(popup_4590d9102bbf4471964b8fd0e39e2c5d)
+            ;
+
+            
+        
+    
+                var poly_line_58b84bfc878e447f8e003df54414a710 = L.polyline(
+                    [[46.0723435, 11.120333], [46.0724334, 11.120387]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "#cc0000",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#cc0000",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 5
+}
+                    )
+                    .addTo(map_b9b568b045104bf598b929702fc5a599);
+            
+    
+            var popup_ca1c8f770c854fc68523771c74ccf8f7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_632f01a19cef470a802195f3ab2622f6 = $(`<div id="html_632f01a19cef470a802195f3ab2622f6" style="width: 100.0%; height: 100.0%;">NaN</div>`)[0];
+                popup_ca1c8f770c854fc68523771c74ccf8f7.setContent(html_632f01a19cef470a802195f3ab2622f6);
+            
+
+            poly_line_58b84bfc878e447f8e003df54414a710.bindPopup(popup_ca1c8f770c854fc68523771c74ccf8f7)
+            ;
+
+            
+        
+    
+                
+
+                map_b9b568b045104bf598b929702fc5a599.fitBounds(
+                    [[46.0719886, 11.1195324], [46.0724334, 11.120387]],
+                    {}
+                    );
+            
+</script>
