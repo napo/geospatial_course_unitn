@@ -106,7 +106,7 @@ except ModuleNotFoundError as e:
     Requirement already satisfied: attrs>=17 in /usr/local/lib/python3.6/dist-packages (from fiona->geopandas>=0.8->osmnx) (20.2.0)
 
 
-## Exercises
+# Exercises
 - identify the shortest path by walk to reach the Castle of Trento from the main train station
 - identify how many bars you can reach by walking in 5 minutes from the main train station of Trento
 
