@@ -1,3 +1,18 @@
+---
+layout: default
+title: 06 - Basic operations on raster data - solution to the exercises
+parent: Solutions
+nav_order: 6
+permalink: /lessons/solution_exercise_6
+---
+*Solution of exercise after the lesson of 30 October 2020*
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 # Setup
 
 
