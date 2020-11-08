@@ -29,7 +29,7 @@ At the end of the course, students will be able to:
 
 ### Lessons
 [Maurizio Napolitano](http://github.com/napo)<br/>
-every Friday from 25 September to 13 November [online](http://meet.google.com/aqt-xcgc-hjk)
+every Friday from 25 September to 21 November [online](http://meet.google.com/aqt-xcgc-hjk)
 
 [Import the calendar](https://calendar.google.com/calendar/ical/c_q40qko9pgtehko3lt9evb4n9po%40group.calendar.google.com/public/basic.ics) of the lessons
 
