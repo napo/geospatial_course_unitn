@@ -212,7 +212,7 @@ ox.plot_route_folium(G,route,popup_attribute='name',tiles='OpenStreetMap')
 
 <iframe 
     width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/from_train_station_to_castle.html"
+    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/castello.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
