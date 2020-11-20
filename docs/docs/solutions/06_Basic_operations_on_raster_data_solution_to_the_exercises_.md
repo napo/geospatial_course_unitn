@@ -109,6 +109,7 @@ permalink: /lessons/solution_exercise_6
 - clip the area with the shape of Polo Ferrari (in front on FBK)
 - create the altitude profile of the street “Via Sommarive”
 - find the area FBK in the WMS of municipality of Trento - layer “Carta Tecnica 1:2.000 alta risoluzione” and vectorize it
+
 ---
 
 
