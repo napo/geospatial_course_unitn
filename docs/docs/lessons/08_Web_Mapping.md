@@ -102,8 +102,8 @@ m1
 ```
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m1.html"
+    width="800px"
+    height="600px" src="https://napo.github.io/geospatial_course_unitn/docs/html/m1.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
