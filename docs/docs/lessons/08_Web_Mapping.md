@@ -2,7 +2,7 @@
 layout: default
 title: 08 - Web Mapping
 parent: Lessons
-nav_order: 5
+nav_order: 8
 permalink: /lessons/webmapping
 ---
 *Lesson 13 November 2020*
