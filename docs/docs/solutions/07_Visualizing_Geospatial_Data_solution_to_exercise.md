@@ -1,10 +1,11 @@
 ---
 layout: default
-title: 07 - Visualizing Geospatia _Data - solution to the exercises
+title: 07 - Visualizing Geospatia Data - solution to the exercises
 parent: Solutions
 nav_order: 7
 permalink: /lessons/solution_exercise_7
 ---
+
 *Solution of exercise after the lesson of 6 November 2020*
 {: .no_toc }
 
@@ -13,6 +14,7 @@ permalink: /lessons/solution_exercise_7
 
 1. TOC
 {:toc}
+
 # Setup
 
 
@@ -312,7 +314,9 @@ voti = votes
 
 
 ```python
-geo_districts = gpd.read_file(urlbase + "circoscrizioni_trento.geojson")
+geo_districts = gpd.read_file(
+                urlbase + 
+                "circoscrizioni_trento.geojson")
 ```
 
 
@@ -328,10 +332,12 @@ geo_districts.plot()
 
 
 ```python
-ax = geo_districts.to_crs(epsg=3857).plot(color='xkcd:orange',figsize=(9,9),alpha=0.5,edgecolor='black')
-ctx.add_basemap(ax,crs=geo_districts.to_crs(epsg=3857).crs.to_string(),
-               source=ctx.providers.CartoDB.Positron)
-
+ax = geo_districts.to_crs(epsg=3857).plot(color='xkcd:orange',
+                            figsize=(9,9),alpha=0.5,
+                            edgecolor='black')
+ctx.add_basemap(ax,
+      crs=geo_districts.to_crs(epsg=3857).crs.to_string(),
+      source=ctx.providers.CartoDB.Positron)
 ```
 
 
@@ -464,7 +470,8 @@ ranking.sort_values(by=['voti'],ascending=False)
 
 
 ```python
-totalvotes_districts = votes_candidate_mayor.groupby(['circoscrizione']).voti.sum()
+totalvotes_districts = 
+      votes_candidate_mayor.groupby(['circoscrizione']).voti.sum()
 ```
 
 
