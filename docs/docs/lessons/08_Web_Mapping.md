@@ -126,8 +126,8 @@ m2
 
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m2.html"
+    width="550px"
+    height="350px" src="https://napo.github.io/geospatial_course_unitn/docs/html/m2.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -154,8 +154,8 @@ fig3.add_child(m3)
 
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m3.html"
+    width="800"
+    height="600" src="https://napo.github.io/geospatial_course_unitn/docs/html/m3.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -182,7 +182,6 @@ urlbase = "https://raw.githubusercontent.com/napo/geospatial_course_unitn/master
 polling_stations = pd.read_csv(urlbase +
  "polling_places_trento.csv",sep=";")
 ```
-
 
 ```python
 polling_stations
@@ -391,8 +390,8 @@ m4
 
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m4.html"
+    width="800"
+    height="600" src="https://napo.github.io/geospatial_course_unitn/docs/html/m4.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -443,12 +442,11 @@ m5
 ```
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m5.html"
+    width="550"
+    height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m5.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
-
 
 
 ```python
@@ -463,8 +461,8 @@ m5
 ```
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m5b.html"
+    width="550"
+    height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m5b.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -503,8 +501,8 @@ m6
 
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m6.html"
+    width="550"
+    height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m6.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -554,8 +552,8 @@ m7
 ```
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m7.html"
+    width="550"
+    height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m7.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -578,12 +576,8 @@ votes_candidate_mayor.cognome_sindaco.unique()
 ```
 
 
-
-
     array(['MARTINI', 'BRUNO', 'IANESELLI', 'PANTANO', 'ZANETTI', 'MERLER',
            'CARLI', 'DEGASPERI'], dtype=object)
-
-
 
 
 ```python
@@ -626,8 +620,8 @@ m8
 ```
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m8.html"
+    width="550"
+    height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m8.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -649,8 +643,8 @@ m8
 ```
 s
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m8.html"
+    width="550"
+    height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m8.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -712,8 +706,8 @@ m9
 ```
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m9.html"
+    width="550"
+    height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m9.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -739,8 +733,8 @@ m9
 
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m9b.html"
+    width="550"
+    height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m9b.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -766,8 +760,8 @@ m9
 ```
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m9c.html"
+    width="550"
+    height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m9c.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -828,8 +822,8 @@ m10
 ```
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m10.html"
+    width="800"
+    height="600" src="https://napo.github.io/geospatial_course_unitn/docs/html/m10.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
@@ -870,8 +864,8 @@ m10
 
 
 <iframe 
-    width="100%"
-    height="300" src="https://napo.github.io/geospatial_course_unitn/docs/html/m10.html"
+    width="800"
+    height="600" src="https://napo.github.io/geospatial_course_unitn/docs/html/m10.html"
     style="border:none;"
     allowfullscreen webkitallowfullscreen mozallowfullscreen>
 </iframe>
