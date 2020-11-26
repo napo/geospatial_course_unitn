@@ -834,34 +834,29 @@ add tooltip
 
 ```python
 folium.features.GeoJson(map_marini,
-                        name='Labels',
-                        style_function=lambda x: {'color':'transparent','fillColor':'transparent','weight':0},
-                        tooltip=folium.features.GeoJsonTooltip(fields=['percentage'],
-                                                                aliases = ['% Marini votes'],
-                                                                labels=True,
-                                                                sticky=False
-                                                  )
-                       ).add_to(m10)
+    name='Labels',
+    style_function=lambda x: {'color':'transparent','fillColor':'transparent','weight':0},
+    tooltip=folium.features.GeoJsonTooltip(fields=['percentage'],
+    aliases = ['% Marini votes'],
+    labels=True,
+    sticky=False
+    )).add_to(m10)
 
 folium.features.GeoJson(map_degasperi,
-                        name='Labels',
-                        style_function=lambda x: {'color':'transparent','fillColor':'transparent','weight':0},
-                        tooltip=folium.features.GeoJsonTooltip(fields=['percentage'],
-                                                                aliases = ['% Degasperi votes'],
-                                                                labels=True,
-                                                                sticky=False
-                                                   )
-                       ).add_to(m10)
+    name='Labels',
+    style_function=lambda x: {'color':'transparent','fillColor':'transparent','weight':0},
+    tooltip=folium.features.GeoJsonTooltip(fields=['percentage'],
+    aliases = ['% Degasperi votes'],
+    labels=True,
+    sticky=False
+    )).add_to(m10)
 ```
-
 
 
 ```python
 fig10.add_child(m10)
 m10
 ```
-
-
 
 <iframe 
     width="800"
