@@ -20,4 +20,5 @@ If there are enough requests we could consider creating video lessons suitable f
 - [04] [Retrieving data from OpenStreetMap](https://drive.google.com/file/d/1KgJHsNsQLzwZ1qD4cKFDCzRwNmbW9_Tc/view?usp=sharing)
 - [05] [Street Network Analysis](https://drive.google.com/file/d/1ExbOJbr2taV9DgZNLHt3-8_F0a7Ay1w5/view?usp=sharing)
 - [06] [Basic operations on raster data](https://drive.google.com/file/d/1zQmtCUeiWmN1nvYEqv6KUxQ5yyf0zV9l/view?usp=sharing)
-- [08] [Visualizing Geospatial Data](https://drive.google.com/file/d/1GKPpi3-EtVaEieol8cFjQJG7SDNVJw0v/view?usp=sharing)
+- [07] [Visualizing Geospatial Data](https://drive.google.com/file/d/1GKPpi3-EtVaEieol8cFjQJG7SDNVJw0v/view?usp=sharing)
+- [08] [Web Mapping](https://drive.google.com/file/d/1C2pZ63e3O0FYJNyt9M4hoDiG9WkrpYHH/view?usp=sharing)
