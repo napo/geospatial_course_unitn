@@ -641,7 +641,7 @@ HeatMap(data.values).add_to(m8)
 fig8.add_child(m8)
 m8
 ```
-s
+
 <iframe 
     width="550"
     height="350" src="https://napo.github.io/geospatial_course_unitn/docs/html/m8b.html"
