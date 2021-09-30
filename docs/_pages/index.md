@@ -20,7 +20,7 @@ feature_row:
     alt: "lessons"
     title: "Lessons"
     excerpt: "each lesson introduces a geospatial analysis theme through the use of python code with jupyter notebook"
-    url: "#test-link"
+    url: "/lessons/"
     btn_label: "Lessons"
     btn_class: "btn--primary"
   - image_path: /assets/images/signpost-gaf17bd0c9_640.jpg
@@ -28,15 +28,15 @@ feature_row:
     alt: "solutions"
     title: "Solutions"
     excerpt: "at the end of each lesson a problem is proposed to be carried out as a learning self-test and the solutions are published here"
-    url: "#test-link"
+    url: "/solutions/"
     btn_label: "Solutions"
     btn_class: "btn--primary"
   - image_path: /assets/images/old-books-gc074b1a43_640.jpg
     image_caption: "Credit [jarmoluk](https://www.instagram.com/michal_jarmoluk/)"
-    title: "Materials"
+    title: "Slides"
     excerpt: "code, slides, readings ... all the material presented during the course it's accessible from this page"
-    url: "#test-link"
-    btn_label: "Materials"
+    url: "/slides/"
+    btn_label: "Slides"
     btn_class: "btn--primary"
 ---
 
