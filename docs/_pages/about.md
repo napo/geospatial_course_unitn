@@ -15,6 +15,14 @@ At the end of the course, students will be able to:
 - elaborate and integrate geospatial data (vector and raster)
 - create maps (also accessible via the web)
 
+## Teaching Method
+the teaching method chosen is ["hands-on learning"](https://en.wikipedia.org/wiki/Experiential_learning): 
+at each lesson some geospatial analysis concepts are introduced showing python code (with Jupyter Notebook) on the fly.<br/>
+Step by step students put the concepts into practice and also face everyday problems in data analysis.<br/>
+At the end of each lesson an exercise is proposed to reinforce what has been learned.<br/>
+In the next lesson the solution is then presented, thus repeating the concepts exposed and inserting something new.
+
+
 ## Teachers
 
 - [Diego Giulani](https://webapps.unitn.it/du/en/Persona/PER0020867/Didattica)
