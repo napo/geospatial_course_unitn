@@ -22,7 +22,6 @@ Step by step students put the concepts into practice and also face everyday prob
 At the end of each lesson an exercise is proposed to reinforce what has been learned.<br/>
 In the next lesson the solution is then presented, thus repeating the concepts exposed and inserting something new.
 
-
 ## Teachers
 
 - [Diego Giulani](https://webapps.unitn.it/du/en/Persona/PER0020867/Didattica)
@@ -32,6 +31,9 @@ In the next lesson the solution is then presented, thus repeating the concepts e
 
 Maurizio Napolitano<br/>
 every Friday from 1 October to 3 December - room 12 Department of Sociology and Social Research - University of Trento
+
+## Slide about the course 
+[view the slides](https://docs.google.com/presentation/d/e/2PACX-1vSBVsLi-ND3eGZ0ZyAd-XWs453H4PRkywlYzJIVrHWnxrF1QLMe0GX4nlWq8YXeqWNNUwZS-t8IOO4e/pub?start=false&loop=false&delayms=3000) - [download](https://github.com/napo/geospatial_course_unitn/raw/master/pdf/presentation of the course - geospatial analysis.pdf) 
 
 
 ## Course websites
