@@ -1,0 +1,91 @@
+# main links
+main:
+  - title: "Lessons"
+    url: /lessons/
+  - title: "Solutions"
+    url: /solutions/
+  - title: "Slides"
+    url: /slides/
+  - title: "Readings"
+    url: /readings/
+  - title: "Howto"
+    url: /howto/
+  - title: "About"
+    url: /about/
+  - title: "License"
+    url: /license/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+# documentation links
+lessons :
+  - title: 01 - GIS introduction
+    children:
+      - title: "Goals of the tutorial"
+        url: /lessons/01-gis_introduction#gis-introduction
+      - title: "Let’s start with GeoPandas"
+        url: /lessons/01-gis_introduction#lets-start-with-geopandas
+      - title: "ESRI Shapefile"
+        url: /lessons/01-gis_introduction#esri-shapefile
+      - title: "Spatial Projections"
+        url: /lessons/01-gis_introduction#spatial-projections
+      - title: "EPSG"
+        url: /lessons/01-gis_introduction#EPSG
+      - title: "Formats"
+        url: /lessos/01-gis_introduction#fiona-vector-formats
+      - title: "Exercise"
+        url: /lessos/01-gis_introduction#fiona-vector-formats
+  - title: Meta
+    children:
+      - title: "About"
+        url: /about/
+      - title: "Slides"
+        url: /slides/
+      - title: "Readings"
+        url: /readings/
+      - title: "License"
+        url: /license/
+      - title: "HOWTO"
+        url: /howto/
+
+# sidebar navigation list sample
+sidebar-sample:
+  - title: "Parent Page A"
+    children:
+      - title: "Child Page A1"
+        url: /
+      - title: "Child Page A2"
+        url: /
+      - title: "Child Page A3"
+        url: /
+      - title: "Child Page A4"
+        url: /
+  - title: "Parent Page B"
+    children:
+      - title: "Child Page B1"
+        url: /
+      - title: "Child Page B2"
+        url: /
+      - title: "Child Page B3"
+        url: /
+      - title: "Child Page B4"
+        url: /
+      - title: "Child Page B5"
+        url: /
+  - title: "Parent Page C"
+    children:
+      - title: "Child Page C1"
+        url: /
+      - title: "Child Page C2"
+        url: /
+      - title: "Child Page C3"
+        url: /
+      - title: "Child Page C4"
+        url: /
+      - title: "Child Page C5"
+        url: /
+  - title: "Parent Page D"
+    children:
+      - title: "Child Page D1"
+        url: /
+      - title: "Child Page D2"
+        url: /
