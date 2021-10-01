@@ -636,15 +636,15 @@ files.download('macro_regions.geojson')
 1. load the shapefile of ISTAT with the information of the provinces
   - filter it for an italian provice at your choice (eg. Trento)
   - plot it
+2. load the shapefile of ISTAT with the informations of the muncipalities
   - identify the cities of the province selected with the biggest and smallest area
   - extract all the centroids of the areas expressed in WGS84
-2. load the shapefile of ISTAT with the informations of the muncipalities
   - select all the muncipalities of the Province of Trento
   - extract a representative point for the area of each municipality converted in WGS84<br/>suggestion: *.representative_point()*
   - save the points in a GeoJSON file
   - calculate the distance on the geodentic between the municipality with the big area and smallest area by using the centroid
 3. download the shapefile of the [lakes and bodies of water](https://github.com/napo/geospatial_course_unitn/raw/master/data/lakes_bodies_of_water_trentino.zip) of Trentino - projection Monte Mario zone 1
   - plot the geometries where Fktuso is "02"
-  - convert in in WGS84
+  - convert in WGS84 and create a geojson
 
 ---
