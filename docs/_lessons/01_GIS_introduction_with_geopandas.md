@@ -645,5 +645,6 @@ files.download('macro_regions.geojson')
   - calculate the distance on the geodentic between the municipality with the big area and smallest area by using the centroid
 3. download the shapefile of the [lakes and bodies of water](https://github.com/napo/geospatial_course_unitn/raw/master/data/lakes_bodies_of_water_trentino.zip) of Trentino - projection Monte Mario zone 1
   - plot the geometries where Fktuso is "02"
+  - convert in in WGS84
 
 ---
