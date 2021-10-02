@@ -643,8 +643,9 @@ files.download('macro_regions.geojson')
   - extract a representative point for the area of each municipality converted in WGS84<br/>suggestion: *.representative_point()*
   - save the points in a GeoJSON file
   - calculate the distance on the geodentic between the municipality with the big area and smallest area by using the centroid
-3. download the shapefile of the [lakes and bodies of water](https://github.com/napo/geospatial_course_unitn/raw/master/data/lakes_bodies_of_water_trentino.zip) of Trentino - projection Monte Mario zone 1
+3. download the shapefile of the [lakes and bodies of water](https://github.com/napo/geospatial_course_unitn/raw/master/data/trentino/lakes_bodies_of_water_trentino.zip) of Trentino 
   - plot the geometries where Fktuso is "02"
   - convert in WGS84 and create a geojson
 
+  note: projection Monte Mario zone 1
 ---
