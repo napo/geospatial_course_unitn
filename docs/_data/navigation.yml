@@ -19,21 +19,21 @@ main:
 # documentation links
 lessons :
   - title: 01 - GIS introduction
+  - title: Meta
     children:
-      - title: "Goals of the tutorial"
-        url: /lessons/01-gis_introduction#gis-introduction
-      - title: "Let’s start with GeoPandas"
-        url: /lessons/01-gis_introduction#lets-start-with-geopandas
-      - title: "ESRI Shapefile"
-        url: /lessons/01-gis_introduction#esri-shapefile
-      - title: "Spatial Projections"
-        url: /lessons/01-gis_introduction#spatial-projections
-      - title: "EPSG"
-        url: /lessons/01-gis_introduction#EPSG
-      - title: "Formats"
-        url: /lessos/01-gis_introduction#fiona-vector-formats
-      - title: "Exercise"
-        url: /lessos/01-gis_introduction#fiona-vector-formats
+      - title: "About"
+        url: /about/
+      - title: "Slides"
+        url: /slides/
+      - title: "Readings"
+        url: /readings/
+      - title: "License"
+        url: /license/
+      - title: "HOWTO"
+        url: /howto/
+
+solutions :
+  - title: 01 - geodatframe basic operations
   - title: Meta
     children:
       - title: "About"
