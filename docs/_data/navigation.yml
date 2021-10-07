@@ -19,6 +19,9 @@ main:
 # documentation links
 lessons :
   - title: 01 - GIS introduction
+    url: /lessons/01-gis_introduction
+  - title: 02 - Spatial relationships and operations
+    url: /lessons/02-spatial_relationships_and_operations
   - title: Meta
     children:
       - title: "About"
