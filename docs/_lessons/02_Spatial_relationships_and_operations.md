@@ -8,10 +8,10 @@ last_modified_at: 2021-10-07T17:48:05-03:00
 toc: true
 ---
 # Spatial relationships and operations
-based on scipy2018-geospatial
+**based on scipy2018-geospatial**
 
 ## goals of the tutorial
-- load csv files as geodataframe
+- load tabular data files (eg. csv or xls) as geodataframe
 - spatial projection conversion
 - spatial relationships 
 - spatial joins
@@ -19,7 +19,8 @@ based on scipy2018-geospatial
 
 **based on the open data of:**
 - [ISTAT](https://www.istat.it/it/archivio/222527) Italian National Institute of Statistic 
-- [Ministery of Agriculture](https://anagrafe.iccu.sbn.it/it/open-data/) Italian Ministery of Cultural Heritage
+- [Italian Ministry of Agricultural, Food and Forestry Policies](https://www.politicheagricole.it/)
+
 
 
 ### requirements
@@ -261,8 +262,7 @@ df = pd.read_excel(regional_sources[0])
 ```
 ... but you can obtain some mistakes due a SSL error
  
-so you can solve in this way with the following code following this [thread on stackoverflow](https://stackoverflow.com/questions/38015537/python-requests-exceptions-sslerror-dh-key-too-small)
-
+you can solve in this way with the following code following this [thread on stackoverflow](https://stackoverflow.com/questions/38015537/python-requests-exceptions-sslerror-dh-key-too-small)
 
 ```python
 requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += 'HIGH:!DH:!aNULL'
@@ -1164,9 +1164,9 @@ monumental_trees_northeast.region.unique()
     array(['BOLZANO', 'FRIULI VENEZIA GIULIA', 'VENETO', 'EMILIA-ROMAGNA',
            'LAZIO', 'TRENTO'], dtype=object)
 
-
 ---
 
+... **LAZIO** isn't a region of the North-East Italy. There is an error in the data! 
 
 **Reference**
 {: .notice--info}
@@ -1735,13 +1735,16 @@ plt.show()
 ---
 # Exercise
  
-1 - create the geodataframe of the [filling stations](https://www.mise.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv) of Italy - data from the itaian [Ministry of Economic Development](https://www.mise.gov.it)
+1 - create the geodataframe of the [gas&oil stations](https://www.mise.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv) of Italy 
+  - data from the italian [Ministry of Economic Development](https://www.mise.gov.it)
   - count the total of filling stations for each muncipality of Trentino
+
 2 - identify the difference of municipalities in Trentino from 2020 to 2021
   - identify which municipalities are created from aggregation to others
   - find the biggest new municipality of Trentino and show all the italian municipalities with bordering it
   - create the macroarea of all the municipalities bordering with it
   - for each filling station in the macro-area, calculate how many monumental trees have been within a 500m radius
+  
 3 - creates a polygon that contains all the monumental trees inside the area
-  - identify all the filling station in this area which are within 2km of each other
+  - identify all the gas&oil stations in this area which are within 2km of each other
   - save the polygon in geopackage with the attribute "description" with the name of the filling station
