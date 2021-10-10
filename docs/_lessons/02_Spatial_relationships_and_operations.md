@@ -1747,4 +1747,4 @@ plt.show()
   
 3 - creates a polygon that contains all the monumental trees inside the area
   - identify all the gas&oil stations in this area which are within 2km of each other
-  - save the polygon in geopackage with the attribute "description" with the name of the filling station
+  - save the polygon in geopackage with the attribute "description" with the name of the gas&oil station
