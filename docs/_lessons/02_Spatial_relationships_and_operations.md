@@ -1737,13 +1737,13 @@ plt.show()
  
 1 - create the geodataframe of the [gas&oil stations](https://www.mise.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv) of Italy 
   - data from the italian [Ministry of Economic Development](https://www.mise.gov.it)
-  - count the total of filling stations for each muncipality of Trentino
+  - count the total of the gas&oil stations for each muncipality of Trentino
 
 2 - identify the difference of municipalities in Trentino from 2020 to 2021
   - identify which municipalities are created from aggregation to others
   - find the biggest new municipality of Trentino and show all the italian municipalities with bordering it
   - create the macroarea of all the municipalities bordering with it
-  - for each filling station in the macro-area, calculate how many monumental trees have been within a 500m radius
+  - for each gas&oil station in the macro-area, calculate how many monumental trees have been within a 500m radius
   
 3 - creates a polygon that contains all the monumental trees inside the area
   - identify all the gas&oil stations in this area which are within 2km of each other
