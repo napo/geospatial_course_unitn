@@ -96,11 +96,11 @@ import requests
 
 geopackage with the administrative units of italy
 
-The couse offers the file in a geopackage stored [here](https://github.com/napo/geospatial_course_unitn/raw/master/data/istat_administrative_units_generalized_2021/istat_administrative_units_generalized_2021.gpkg)
+The couse offers the file in a geopackage stored [here](https://github.com/napo/geospatial_course_unitn/raw/master/data/istat/istat_administrative_units_generalized_2021.gpkg)
 
 
 ```python
-url = 'https://github.com/napo/geospatial_course_unitn/raw/master/data/istat_administrative_units_generalized_2021/istat_administrative_units_generalized_2021.gpkg'
+url = 'https://github.com/napo/geospatial_course_unitn/raw/master/data/istat/istat_administrative_units_generalized_2021.gpkg'
 ```
 
 
