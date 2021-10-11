@@ -1739,7 +1739,7 @@ plt.show()
   - data from the italian [Ministry of Economic Development](https://www.mise.gov.it)
   - count the total of the gas&oil stations for each muncipality of Trentino
 
-2 - identify the difference of municipalities in Trentino from 2020 to 2021
+2 - identify the difference of municipalities in Trentino in the year 2019 with the year 2021
   - identify which municipalities are created from aggregation to others
   - find the biggest new municipality of Trentino and show all the italian municipalities with bordering it
   - create the macroarea of all the municipalities bordering with it
