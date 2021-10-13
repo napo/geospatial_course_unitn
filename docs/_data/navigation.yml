@@ -37,6 +37,9 @@ lessons :
 
 solutions :
   - title: 01 - geodatframe basic operations
+    url: /solutions/01-geodataframe_operations
+  - title: 02 - spatial relationships and overlay_operations
+    url: /solutions/02-spatialrelationship_and_operations
   - title: Meta
     children:
       - title: "About"

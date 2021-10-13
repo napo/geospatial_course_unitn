@@ -1233,6 +1233,7 @@ ftkuso02.to_crs(epsg=4326)
 
 
 ERROR: 
+{: .notice--warning}
 *Cannot transform naive geometries.  Please set a crs on the object first.*
 
 The geodataframe is without the CRS

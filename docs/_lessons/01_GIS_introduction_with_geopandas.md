@@ -349,8 +349,6 @@ macroregions.geometry[0]
     
 
 
-
-
 ```python
 macroregions.DEN_RIP[0]
 ```
