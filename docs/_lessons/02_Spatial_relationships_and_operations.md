@@ -1401,27 +1401,22 @@ regions[regions.DEN_REG == 'Lazio'].to_crs(epsg=4326).bounds
 </div>
 
 
-
-
-
 ---
 
 
-<div class="alert alert-info" style="font-size:120%">
-<b>REFERENCE</b>: <br>
+**REFERENCE**
 
 Overview of the different functions to check spatial relationships (*spatial predicate functions*):
-<ul>
-    <li>`equals`</li>
-<li>`contains`</li>
-<li>`crosses`</li>
-<li>`disjoint`</li>
-<li>`intersects`</li>
-<li>`overlaps`</li>
-<li>`touches`</li>
-<li>`within`</li>
-<li>`covers`</li>
-</ul>
+
+- `equals`
+- `contains`
+- `crosses`
+- `disjoint`
+- `intersects`
+- `overlaps`
+- `touches`
+- `within`
+- `covers`
 
 
 See https://shapely.readthedocs.io/en/stable/manual.html#predicates-and-relationships for an overview of those methods.
@@ -1450,14 +1445,11 @@ monumental_trees_and_macroregions.columns
 ```
 
 
-
-
     Index(['COD_RIP', 'DEN_RIP', 'geometry', 'index_trees', 'region', 'province',
            'municipality', 'place', 'altitude', 'urban_place',
            'species_scientific_name', 'species_common_name', 'latitude',
            'longitude'],
           dtype='object')
-
 
 
 
@@ -1467,17 +1459,13 @@ monumental_trees_and_macroregions.shape
 
 
 
-
     (3660, 14)
-
 
 
 
 ```python
 monumental_trees_and_macroregions.head(5)
 ```
-
-
 
 
 <div>
@@ -1613,7 +1601,6 @@ monumental_trees_and_macroregions.geom_type.unique()
 
 
 
-
     array(['MultiPolygon'], dtype=object)
 
 
@@ -1624,7 +1611,6 @@ monumental_trees_and_macroregions.geom_type.unique()
 ```python
 monumental_trees_and_macroregions.groupby(['DEN_RIP']).index_trees.count()
 ```
-
 
 
 
@@ -1650,9 +1636,7 @@ plt.show()
     
 
 
-
-<div class="alert alert-info" style="font-size:120%">
-<b>SPATIAL JOIN </b>= *transferring attributes from one layer to another based on their spatial relationship*<br/>
+**SPATIAL JOIN** = *transferring attributes from one layer to another based on their spatial relationship*
 
 Different parts of this operations:
 <ul>
@@ -1689,7 +1673,6 @@ monumental_tree_in_trento_32632
 
 
 
-
     
 ![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_92_0.svg)
     
@@ -1700,7 +1683,6 @@ monumental_tree_in_trento_32632
 ```python
 monumental_tree_in_trento_32632.buffer(9000) # a circle with a ray of 9000 meters
 ```
-
 
 
 
@@ -1731,7 +1713,6 @@ northeast_geometry = macroregions[macroregions.COD_RIP==2].geometry.values[0]
 ```python
 northeast_geometry
 ```
-
 
 
 
@@ -1775,8 +1756,7 @@ northeast_geometry.simplify(10000,preserve_topology=False).symmetric_difference(
 
 
 
-<div class="alert alert-info" style="font-size:120%">
-<b>REMEMBER:</b>
+**REMEMBER:**
 
 GeoPandas (and Shapely for the individual objects) provides a whole lot of basic methods to analyse the geospatial data (distance, length, centroid, boundary, convex_hull, simplify, transform, ....), much more than the few that we can touch in this tutorial.
 <ul>
@@ -1784,8 +1764,8 @@ GeoPandas (and Shapely for the individual objects) provides a whole lot of basic
     </ul>
 
 
-
 ---
+
 # Clip 
 
 Extracts input features that overlay the clip features.
@@ -2018,8 +1998,7 @@ italy.to_crs(epsg=32632).geometry[0]
 
 
 
-<div class="alert alert-info" style="font-size:120%">
-<b>REMEMBER:</b>
+**REMEMBER:**
 
 dissolve can be thought of as doing three things: (a) it **dissolves** all the geometries within a given group together into a single geometric feature (using the *unary_union* method), and (b) it **aggregates** all the rows of data in a group using *groupby.aggregate()*, and (c) it **combines** those two results.
     
