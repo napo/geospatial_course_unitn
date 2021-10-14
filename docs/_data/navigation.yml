@@ -22,6 +22,8 @@ lessons :
     url: /lessons/01-gis_introduction
   - title: 02 - Spatial relationships and operations
     url: /lessons/02-spatial_relationships_and_operations
+  - title: 03 - Retrieving data from spatial database infrastructures
+    url:  /lessons/03-retrieving_data_from_sdi
   - title: Meta
     children:
       - title: "About"

@@ -1,5 +1,5 @@
 ---
-title: "Solution 01: operations with GeoDataFrame"
+title: "Solution 01"
 permalink: /solutions/01-geodataframe_operations
 excerpt: “shapefile format s*cks!"
 last_modified_at: 2021-10-06T08:48:05-04:00
@@ -7,19 +7,13 @@ last_modified_at: 2021-10-06T08:48:05-04:00
 #  - /theme-setup/
 toc: true
 ---
+---
+# Exercise 01:  operations with GeoDataFrame
 
-# Setup
-
-
-```python
-try:
-  import geopandas as gpd
-except ModuleNotFoundError as e:
-  !pip install geopandas==0.10.0
-  import geopandas as gpd
-  if gpd.__version__ != "0.10.0":
-    !pip install -U geopandas==0.10.0
-```
+## learning objectives
+* repeat the concepts on the previous lesson
+* introduce geopackage
+* centroid vs representative point
 
 ---
 
@@ -40,14 +34,19 @@ except ModuleNotFoundError as e:
    
    note: projection Monte Mario zone 1
 
----
+--- 
 
-# Solutions
+# Setup
 
-## learning objectives
-* repeat the concepts on the previous lesson
-* introduce geopackage
-* centroid vs representative point
+```python
+try:
+  import geopandas as gpd
+except ModuleNotFoundError as e:
+  !pip install geopandas==0.10.0
+  import geopandas as gpd
+  if gpd.__version__ != "0.10.0":
+    !pip install -U geopandas==0.10.0
+```
 
 --- 
 

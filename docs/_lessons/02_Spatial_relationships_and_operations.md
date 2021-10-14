@@ -1,11 +1,12 @@
 ---
-title: "Lesson 02: Spatial relationships and operations"
+title: "Lesson 02"
 permalink: /lessons/02-spatial_relationships_and_operations
 excerpt: "Spatial is Special"
 last_modified_at: 2021-10-07T17:48:05-03:00
 #redirect_from:
 #  - /theme-setup/
 toc: true
+---
 ---
 # Spatial relationships and operations
 **based on scipy2018-geospatial**
@@ -22,7 +23,6 @@ toc: true
 - [Italian Ministry of Agricultural, Food and Forestry Policies](https://www.politicheagricole.it/)
 
 
-
 ### requirements
 - python knowledge
 - pandas
@@ -30,10 +30,11 @@ toc: true
 
 ### status 
 *"Spatial is Special"*
+{: .notice--success}
 
 ---
 
-# Setup
+# SETUP
 for the spatial operations we need to improve geopandas with some libraries.
 
 You can use rtree o pygeos 
@@ -46,12 +47,20 @@ Pyton RTree is a wrapper to the library [libspatialiteindex](https://libspatiali
 if you are using a Linux distribution based on Debian (like the instance of Google Colab) you have to install the libspatialindex library before
 
 
+
 ```python
+import platform
+
 try:
   import rtree
 except ModuleNotFoundError as e:
-  !apt-get install libspatialindex-dev
-  !pip install rtree==0.9.2
+  if (platform.system() == 'Linux'):
+    !apt-get install libspatialindex-dev
+    !pip install rtree==0.9.7
+    import rtree
+
+if rtree.__version__ != "0.9.7":
+  !pip install -U rtree==0.9.7
   import rtree
 ```
 
@@ -70,23 +79,22 @@ except ModuleNotFoundError as e:
 
 ## geopandas
 
-version 0.10.0 
+version 0.10.1
 
 
 ```python
 try:
   import geopandas as gpd
 except ModuleNotFoundError as e:
-  !pip install geopandas==0.10.0
+  !pip install geopandas==0.10.1
   import geopandas as gpd
-  if gpd.__version__ != "0.10.0":
-    !pip install -U geopandas==0.10.0
+  if gpd.__version__ != "0.10.1":
+    !pip install -U geopandas==0.10.1
 ```
 
 
 ```python
 import pandas as pd
-import geopandas as gpd
 import matplotlib.pyplot as plt
 import requests 
 ```
@@ -96,7 +104,7 @@ import requests
 
 geopackage with the administrative units of italy
 
-The couse offers the file in a geopackage stored [here](https://github.com/napo/geospatial_course_unitn/raw/master/data/istat/istat_administrative_units_generalized_2021.gpkg)
+The couse offers the file in a geopackage stored [here](https://github.com/napo/geospatial_course_unitn/raw/master/data/istat/istat_administrative_units_generalized_2021.gpkgg)
 
 
 ```python
@@ -119,24 +127,33 @@ open(geopackage_istat_file, 'wb').write(r.content)
 ```
 
 
+
+
     42049536
+
+
 
 
 ```python
 regions = gpd.read_file(geopackage_istat_file,layer="regions")
 ```
 
+
 ```python
 provincies = gpd.read_file(geopackage_istat_file,layer="provincies")
 ```
+
 
 ```python
 municipalities = gpd.read_file(geopackage_istat_file,layer="municipalities")
 ```
 
+
 ```python
 macroregions
 ```
+
+
 
 
 <div>
@@ -199,10 +216,13 @@ macroregions
 
 
 
+
+
 ## monumental trees of Italy
-The italian Ministery of Agricultural offers a datasets the location of each monumental tree for each region of Italy.<br/>
+The italian Ministery of Agricultural offers a datasets the location of each monumental tree for each region of Italy.
 
 Visit this [page](https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260)
+
 
 ### from a dataframe to a geodataframe
 we have a several XLS files with a sheet where there is a column with latitude and another with longitude
@@ -256,6 +276,36 @@ regional_sources.append("https://www.politicheagricole.it/flex/cm/pages/ServeAtt
 regional_sources.append("https://www.politicheagricole.it/flex/cm/pages/ServeAttachment.php/L/IT/D/b%252F9%252F2%252FD.03014417b256a41ab612/P/BLOB%3AID%3D11260/E/xls")
 ```
 
+It's also possibile scrape the URL of the XLS file with this code (contribution by Aurora Maria Tumminello)
+
+
+```python
+try:
+  import bs4 
+except ModuleNotFoundError as e:
+  !pip install bs4
+  import bs4 
+if bs4.__version__ != "4.9.3":
+  !pip install -U bs4==4.9.3
+  import bs4
+```
+
+
+```python
+# Saving URLs to download Regional data about Monumental Trees
+# Get HTML content
+html = requests.get("https://www.politicheagricole.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11260#id-bed7384af14fdba2da436d64155c62b1").content
+# Parse the document with BeautifulSoup
+soup = bs4.BeautifulSoup(html, 'html.parser')
+# Find all elements of the selected class (the ones we're going to download)
+regions_urls = soup.findAll("div", {"class": "blob-element-download BLOBAlignLeft"})
+
+# Saving downloading links inside the list
+regional_sources=[]
+for e in regions_urls:
+  regional_sources.append(e.a['href'])
+```
+
 you can donwload each dataset directly with pandas with an instruction like this:
 ```python
 df = pd.read_excel(regional_sources[0])
@@ -263,6 +313,7 @@ df = pd.read_excel(regional_sources[0])
 ... but you can obtain some mistakes due a SSL error
  
 you can solve in this way with the following code following this [thread on stackoverflow](https://stackoverflow.com/questions/38015537/python-requests-exceptions-sslerror-dh-key-too-small)
+
 
 ```python
 requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += 'HIGH:!DH:!aNULL'
@@ -282,7 +333,6 @@ for source in regional_sources:
         monumental_trees = monumental_trees.append(pd.read_excel(req.content))
 ```
 
-
 ### investigate the data
 
 
@@ -290,12 +340,20 @@ for source in regional_sources:
 monumental_trees.shape[0]
 ```
 
+
+
+
     3665
+
+
 
 
 ```python
 monumental_trees
 ```
+
+
+
 
 <div>
 <style scoped>
@@ -605,7 +663,11 @@ deg, minutes, seconds, direction =  re.split('[°\'"]', lat)
 (float(deg) + float(minutes)/60 + float(seconds)/(60*60)) * (-1 if direction in ['W', 'S'] else 1)
 ```
 
+
+
+
     45.57311111111112
+
 
 
 a good blog post to explain the problem is here 
@@ -615,9 +677,18 @@ a good blog post to explain the problem is here
 https://www.ubergizmo.com/how-to/read-gps-coordinates/
 
 
+
+
 ```python
 # dms2dec is an useful library for this conversion
 from dms2dec.dms_convert import dms2dec
+```
+
+
+```python
+# change commas in dots
+monumental_trees['LATITUDINE SU GIS'] = monumental_trees['LATITUDINE SU GIS'].apply(lambda x: x.replace(",", "."))
+monumental_trees['LONGITUDINE SU GIS'] = monumental_trees['LONGITUDINE SU GIS'].apply(lambda x: x.replace(",", "."))
 ```
 
 
@@ -631,6 +702,8 @@ monumental_trees['longitude'] = monumental_trees['LONGITUDINE SU GIS'].apply(lam
 ```python
 monumental_trees.columns
 ```
+
+
 
 
     Index(['PROGR', 'REGIONE', 'ID SCHEDA', 'PROVINCIA', 'COMUNE', 'LOCALITÀ',
@@ -675,6 +748,8 @@ monumental_trees = monumental_trees[['region','province','municipality','place',
 ```python
 monumental_trees.head(5)
 ```
+
+
 
 
 <div>
@@ -803,13 +878,18 @@ geo_monumental_trees = gpd.GeoDataFrame(
 
 
 ```python
+geo_monumental_trees.to_file("geo_monumental_trees.geojson",driver="GeoJSON")
+```
+
+
+```python
 geo_monumental_trees.plot(figsize=(12,12))
 plt.show()
 ```
 
 
     
-![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_40_0.png)
+![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_46_0.png)
     
 
 
@@ -819,9 +899,11 @@ macroregions.plot()
 plt.show()
 ```
 
+
     
-![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_41_0.png)
+![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_47_0.png)
     
+
 
 overlay the layers
 
@@ -834,13 +916,11 @@ plt.show()
 
 
     
-![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_43_0.png)
+![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_49_0.png)
     
 
 
-**ERROR**!
-{: .notice--warning}
-
+**ERROR**!<br/>
 We need to use the same projection!!!<br/>
 The projection used in our geodataframe of ISTAT is EPSG:32632
 
@@ -848,6 +928,8 @@ The projection used in our geodataframe of ISTAT is EPSG:32632
 ```python
 macroregions.crs
 ```
+
+
 
 
     <Projected CRS: EPSG:32632>
@@ -878,7 +960,7 @@ plt.show()
 
 
     
-![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_47_0.png)
+![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_53_0.png)
     
 
 
@@ -901,6 +983,8 @@ we need the north-east italian macro-region in wgs84
 ```python
 macroregions
 ```
+
+
 
 
 <div>
@@ -962,13 +1046,21 @@ macroregions
 </div>
 
 
+
+
 ```python
 macroregions.geometry[1]
 ```
 
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_52_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_58_0.svg)
     
+
+
+
 
 ```python
 northeast = macroregions.to_crs(epsg=4326).geometry[1]
@@ -978,11 +1070,19 @@ northeast = macroregions.to_crs(epsg=4326).geometry[1]
 ```python
 northeast
 ```
+
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_54_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_60_0.svg)
     
 
+
+
 ## let's start with just one point
+
+
 
 so we will choose a library in Trento (north east italy)
 
@@ -990,6 +1090,9 @@ so we will choose a library in Trento (north east italy)
 ```python
 geo_monumental_trees[geo_monumental_trees.municipality == 'Trento'].head(5)
 ```
+
+
+
 
 <div>
 <style scoped>
@@ -1111,9 +1214,14 @@ monumental_tree_in_trento = geo_monumental_trees[geo_monumental_trees.municipali
 monumental_tree_in_trento
 ```
 
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_60_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_66_0.svg)
     
+
+
 
 ## within relation
 in our case:<br>&nbsp;&nbsp;&nbsp;&nbsp;it's the point inside the area?
@@ -1122,6 +1230,8 @@ in our case:<br>&nbsp;&nbsp;&nbsp;&nbsp;it's the point inside the area?
 ```python
 monumental_tree_in_trento.within(northeast)
 ```
+
+
 
 
     True
@@ -1137,8 +1247,17 @@ northeast.contains(monumental_tree_in_trento)
 ```
 
 
+
+
     True
 
+
+
+we can iterate the operation for each point
+
+_very slow!_
+
+.. so we work with an only one point
 
 
 ```python
@@ -1146,48 +1265,169 @@ monumental_trees_northeast = geo_monumental_trees[geo_monumental_trees.within(no
 %time
 ```
 
-    CPU times: user 3 µs, sys: 0 ns, total: 3 µs
-    Wall time: 6.44 µs
+    CPU times: user 2 µs, sys: 0 ns, total: 2 µs
+    Wall time: 4.77 µs
+
 
 
 ```python
 monumental_trees_northeast.shape
 ```
 
+
+
+
     (782, 11)
+
+
 
 
 ```python
 monumental_trees_northeast.region.unique()
 ```
 
+
+
+
     array(['BOLZANO', 'FRIULI VENEZIA GIULIA', 'VENETO', 'EMILIA-ROMAGNA',
            'LAZIO', 'TRENTO'], dtype=object)
 
+
+
+.. **LAZIO** isn't a region of the North-East Italy
+
+
+```python
+monumental_trees_northeast[monumental_trees_northeast.region == 'LAZIO']
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>region</th>
+      <th>province</th>
+      <th>municipality</th>
+      <th>place</th>
+      <th>altitude</th>
+      <th>urban_place</th>
+      <th>species_scientific_name</th>
+      <th>species_common_name</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>66</th>
+      <td>LAZIO</td>
+      <td>Latina</td>
+      <td>Priverno</td>
+      <td>Parco Gallio - San Martino</td>
+      <td>44.0</td>
+      <td>no</td>
+      <td>Quercus frainetto Ten.</td>
+      <td>Farnetto</td>
+      <td>45.655747</td>
+      <td>12.110947</td>
+      <td>POINT (12.11095 45.65575)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+regions[regions.DEN_REG == 'Lazio'].to_crs(epsg=4326).bounds
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>minx</th>
+      <th>miny</th>
+      <th>maxx</th>
+      <th>maxy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>11</th>
+      <td>11.44937</td>
+      <td>40.784734</td>
+      <td>14.027645</td>
+      <td>42.838683</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+
 ---
 
-... **LAZIO** isn't a region of the North-East Italy. There is an error in the data! 
 
-**Reference**
-{: .notice--info}
+<div class="alert alert-info" style="font-size:120%">
+<b>REFERENCE</b>: <br>
 
 Overview of the different functions to check spatial relationships (*spatial predicate functions*):
-* `equals`
-* `contains`
-* `crosses`
-* `disjoint`
-* `intersects`
-* `overlaps`
-* `touches`
-* `within`
-* `covers`
+<ul>
+    <li>`equals`</li>
+<li>`contains`</li>
+<li>`crosses`</li>
+<li>`disjoint`</li>
+<li>`intersects`</li>
+<li>`overlaps`</li>
+<li>`touches`</li>
+<li>`within`</li>
+<li>`covers`</li>
+</ul>
 
 
-See [https://shapely.readthedocs.io/en/stable/manual.html#predicates-and-relationships](https://shapely.readthedocs.io/en/stable/manual.html#predicates-and-relationships) for an overview of those methods.
+See https://shapely.readthedocs.io/en/stable/manual.html#predicates-and-relationships for an overview of those methods.
 
 
-See [https://en.wikipedia.org/wiki/DE-9IM](https://en.wikipedia.org/wiki/DE-9IM) for all details on the semantics of those operations. 
-
+See https://en.wikipedia.org/wiki/DE-9IM for all details on the semantics of those operations. 
 
 # Spatial Joins
 
@@ -1200,14 +1440,17 @@ monumental_trees_and_macroregions = gpd.sjoin(macroregions.to_crs(epsg=4326),
 %time
 ```
 
-    CPU times: user 3 µs, sys: 1 µs, total: 4 µs
-    Wall time: 6.2 µs
+    CPU times: user 2 µs, sys: 1 µs, total: 3 µs
+    Wall time: 4.05 µs
 
 
 
 ```python
 monumental_trees_and_macroregions.columns
 ```
+
+
+
 
     Index(['COD_RIP', 'DEN_RIP', 'geometry', 'index_trees', 'region', 'province',
            'municipality', 'place', 'altitude', 'urban_place',
@@ -1217,17 +1460,24 @@ monumental_trees_and_macroregions.columns
 
 
 
+
 ```python
 monumental_trees_and_macroregions.shape
 ```
 
 
+
+
     (3660, 14)
+
+
 
 
 ```python
 monumental_trees_and_macroregions.head(5)
 ```
+
+
 
 
 <div>
@@ -1375,6 +1625,9 @@ monumental_trees_and_macroregions.geom_type.unique()
 monumental_trees_and_macroregions.groupby(['DEN_RIP']).index_trees.count()
 ```
 
+
+
+
     DEN_RIP
     Centro         536
     Isole          568
@@ -1385,32 +1638,32 @@ monumental_trees_and_macroregions.groupby(['DEN_RIP']).index_trees.count()
 
 
 
+
 ```python
 monumental_trees_and_macroregions.groupby(['DEN_RIP']).index_trees.count().plot(kind='bar')
 plt.show()
 ```
 
+
     
-![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_78_0.png)
+![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_87_0.png)
     
 
-**spatial join** = *transferring attributes from one layer to another based on their spatial relationship*
+
+
+<div class="alert alert-info" style="font-size:120%">
+<b>SPATIAL JOIN </b>= *transferring attributes from one layer to another based on their spatial relationship*<br/>
 
 Different parts of this operations:
-* The GeoDataFrame to which we want add information
-* The GeoDataFrame that contains the information we want to add
-* The spatial relationship we want to use to match both datasets ('intersects', 'contains', 'within')
-* The type of join: left or inner join
+<ul>
+    <li>The GeoDataFrame to which we want add information</li>
+    <li>The GeoDataFrame that contains the information we want to add</li>
+    <li>The spatial relationship we want to use to match both datasets ('intersects', 'contains', 'within')</li>
+    <li>The type of join: left or inner join</li>
+</ul>
 
-![](https://web.natur.cuni.cz/~langhamr/lectures/vtfg1/mapinfo_1/about_gis/Image23.gif)
-
-See also [spatial join nearest](https://geopandas.org/docs/reference/api/geopandas.GeoDataFrame.sjoin_nearest.html#geopandas.GeoDataFrame.sjoin_nearest) that performe a spatial join of two GeoDataFrames based on the distance between their geometries.
-
-Examples: 
-[https://geopandas.readthedocs.io/en/latest/docs/user_guide/mergingdata.html](https://geopandas.readthedocs.io/en/latest/docs/user_guide/mergingdata.html)
 
 ---
-
 # Spatial operations 
 GeoPandas provide analysis methods that return new geometric objects (based on shapely)
 
@@ -1419,29 +1672,48 @@ See [https://shapely.readthedocs.io/en/stable/manual.html#spatial-analysis-metho
 ## buffer
 *object.buffer(distance, resolution=16, cap_style=1, join_style=1, mitre_limit=5.0)*
 
-    Returns an approximate representation of all points within a given distance of the this geometric object.
+Returns an approximate representation of all points within a given distance of the this geometric object.
+
+![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/buffer.png)
+
 
 
 ```python
 monumental_tree_in_trento_32632 = geo_monumental_trees[geo_monumental_trees.municipality == 'Trento'].to_crs(32632).geometry.values[0]
 ```
 
+
 ```python
 monumental_tree_in_trento_32632
 ```
 
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_83_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_92_0.svg)
     
+
+
 
 
 ```python
 monumental_tree_in_trento_32632.buffer(9000) # a circle with a ray of 9000 meters
 ```
 
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_84_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_93_0.svg)
     
+
+
+
+due to the algorithm with which the buffer is built, as the value increases, from whatever geometry one starts, the result will take on more and more the shape of a circumference.
+
+
+<img src="https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/buffer.gif" width="450px"/>
 
 ## simplify
 
@@ -1460,18 +1732,28 @@ northeast_geometry = macroregions[macroregions.COD_RIP==2].geometry.values[0]
 northeast_geometry
 ```
 
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_87_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_97_0.svg)
     
+
+
 
 
 ```python
 northeast_geometry.simplify(10000,preserve_topology=False)
 ```
 
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_88_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_98_0.svg)
     
+
+
 
 ## Es. symmetric_difference
 *object.symmetric_difference(other)*
@@ -1479,20 +1761,29 @@ northeast_geometry.simplify(10000,preserve_topology=False)
     Returns a representation of the points in this object not in the other geometric object, and the points in the other not in this geometric object.
 
 
+
 ```python
 northeast_geometry.simplify(10000,preserve_topology=False).symmetric_difference(monumental_tree_in_trento_32632.buffer(9000))
 ```
 
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_90_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_100_0.svg)
     
 
-**Remember:**
-{: .notice--info}
+
+
+<div class="alert alert-info" style="font-size:120%">
+<b>REMEMBER:</b>
 
 GeoPandas (and Shapely for the individual objects) provides a whole lot of basic methods to analyse the geospatial data (distance, length, centroid, boundary, convex_hull, simplify, transform, ....), much more than the few that we can touch in this tutorial.
+<ul>
+<li>An overview of all methods provided by GeoPandas can be found here: <a href="https://geopandas.readthedocs.io/en/latest/docs/reference.html">https://geopandas.readthedocs.io/en/latest/docs/reference.html</a></li>
+    </ul>
 
-An overview of all methods provided by GeoPandas can be found here: <a href="https://geopandas.readthedocs.io/en/latest/docs/reference.html">https://geopandas.readthedocs.io/en/latest/docs/reference.html
+
 
 ---
 # Clip 
@@ -1518,25 +1809,36 @@ municipalities_inside_circle.COMUNE.unique()
 ```
 
 
+
+
     array(['Caldonazzo', 'Altopiano della Vigolana', 'Calceranica al Lago',
            'Tenna', 'Garniga Terme', 'Vignola-Falesina', 'Pergine Valsugana',
            'Trento', 'Civezzano', 'Vallelaghi', 'Fornace', 'Baselga di Pinè',
            'Albiano', 'Lavis', 'Lona-Lases', 'Giovo'], dtype=object)
 
 
+
+
 ```python
 municipalities_inside_circle.plot(figsize=(10,10))
 plt.show()
 ```
+
+
     
-![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_95_0.png)
+![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_105_0.png)
     
+
+
 ---
 # Aggregation with dissolve
 
 Spatial data are often more granular than we need. For example, we have the data of the macro-regions but we don't have a geometry with the border of Italy.
 
 If we have a columns to operate a *groupby* we can solve it but to create the geometry we need the function *dissolve*.
+
+
+
 
 ```python
 macroregions['nation']='italy'
@@ -1546,6 +1848,9 @@ macroregions['nation']='italy'
 ```python
 macroregions
 ```
+
+
+
 
 <div>
 <style scoped>
@@ -1612,31 +1917,41 @@ macroregions
 </div>
 
 
+
+
 ```python
 italy = macroregions[['nation', 'geometry']]
 ```
+
 
 ```python
 italy.plot()
 plt.show()
 ```
+
+
     
-![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_100_0.png)
+![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_110_0.png)
     
 
+
+
 ```python
+
 italy = italy.to_crs(epsg=4326).dissolve(by='nation')
 %time
 ```
 
-    CPU times: user 4 µs, sys: 0 ns, total: 4 µs
-    Wall time: 7.63 µs
+    CPU times: user 3 µs, sys: 0 ns, total: 3 µs
+    Wall time: 5.72 µs
 
 
 
 ```python
 italy
 ```
+
+
 
 
 <div>
@@ -1680,8 +1995,11 @@ italy
 italy.geometry[0]
 ```
 
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_103_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_113_0.svg)
     
 
 
@@ -1691,17 +2009,23 @@ italy.geometry[0]
 italy.to_crs(epsg=32632).geometry[0]
 ```
 
+
+
+
     
-![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_104_0.svg)
+![svg](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_114_0.svg)
     
 
 
-**Rember**
-{: .notice--info}
+
+<div class="alert alert-info" style="font-size:120%">
+<b>REMEMBER:</b>
 
 dissolve can be thought of as doing three things: (a) it **dissolves** all the geometries within a given group together into a single geometric feature (using the *unary_union* method), and (b) it **aggregates** all the rows of data in a group using *groupby.aggregate()*, and (c) it **combines** those two results.
     
-An overview of all methods provided by GeoPandas can be found here: <a href="http://geopandas.org/aggregation_with_dissolve.html">http://geopandas.org/aggregation_with_dissolve.html
+<ul>
+<li>An overview of all methods provided by GeoPandas can be found here: <a href="http://geopandas.org/aggregation_with_dissolve.html">http://geopandas.org/aggregation_with_dissolve.html</a></li>
+ </ul>
 
 ---
 # Overlay
@@ -1717,21 +2041,28 @@ The basic idea is demonstrated by the graphic below but keep in mind that overla
 source: https://geopandas.org/gallery/overlays.html
 
 
+
 ```python
 macroregion_gdf = macroregions[macroregions.COD_RIP==2].to_crs(epsg=32632)
 ```
+
 
 ```python
 overlay = italy.to_crs(epsg=32632).overlay(macroregion_gdf, how="difference")
 ```
 
+
 ```python
 overlay.plot()
 plt.show()
 ```
+
+
     
-![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_109_0.png)
+![png](02_Spatial_relationships_and_operations_files/02_Spatial_relationships_and_operations_119_0.png)
     
+
+
 ---
 # Exercise
  
@@ -1747,4 +2078,4 @@ plt.show()
   
 3 - creates a polygon that contains all the monumental trees inside the area
   - identify all the gas&oil stations in this area which are within 2km of each other
-  - save the polygon in geopackage with the attribute "description" with the name of the gas&oil station
+  - save the polygon in geopackage with the attribute "description" with the name of the filling station
