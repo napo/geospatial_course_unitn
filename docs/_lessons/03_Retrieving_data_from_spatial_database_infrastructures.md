@@ -2,7 +2,7 @@
 title: "Lesson 03"
 permalink: /lessons/03-retrieving_data_from_sdi
 excerpt: "Spatial is Special"
-last_modified_at: 2021-10-07T17:48:05-03:00
+last_modified_at: 2021-10-15T17:48:05-03:00
 #redirect_from:
 #  - /theme-setup/
 toc: true
