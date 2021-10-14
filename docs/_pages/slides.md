@@ -10,3 +10,6 @@ toc: true
 
 ## Geospatial concepts
 [view the slides](https://docs.google.com/presentation/d/e/2PACX-1vT_my7vYOE2_xOdD-eZOtjxEFrbi1BfMcx_84jwomsVgI5wOfPxBO6sPNhxPtaLuEhrrkxmPbiv5Na0/pub?start=false&loop=false&delayms=3000) - [download](https://github.com/napo/geospatial_course_unitn/raw/master/pdf/geospatial concepts - datascience.pdf)
+
+## Open Data
+[view the slides](https://docs.google.com/presentation/d/e/2PACX-1vTun2Zjdo9DNELADx6mE1Bc6Mo8-E-wDuZc_ujZNFe2SlLMUg7VdIIoXT2xDtUsNc0UZ7SWb56y5Sx2/pub?start=false&loop=false&delayms=3000) - [download](https://github.com/napo/geospatial_course_unitn/raw/master/pdf/some%20concepts%20of%20open%20data.pdf)
