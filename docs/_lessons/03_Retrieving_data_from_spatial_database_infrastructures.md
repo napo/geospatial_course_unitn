@@ -724,8 +724,7 @@ point_nominatim
 point_nominatim.explore(marker_kwds={"color": "green", "radius": "10"})
 ```
 
-<a href=""><img src=""></a>
-
+<a href="webmap/via_verdi_26_nominatim.html"><ing src="https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/via_verdi_nominatim.png"/></a>
 
 calculate the difference between the two points
 
@@ -864,7 +863,6 @@ csw = CatalogueServiceWeb("http://geodati.gov.it/RNDT/csw")
 ```python
 csw.service
 ```
-
 
 
 
