@@ -1,7 +1,7 @@
 ---
 title: "Lesson 01"
 permalink: /lessons/01-gis_introduction
-excerpt: “The Earth isn’t flat!!!”"
+excerpt: The Earth isn’t flat!!!
 last_modified_at: 2021-09-30T08:48:05-04:00
 #redirect_from:
 #  - /theme-setup/
@@ -24,7 +24,8 @@ based on scipy2018-geospatial
 - pandas
 
 ### status 
-*"The Earth isn't flat!!!"*
+{: .notice--success}
+The Earth isn't flat!!!
 
 ---
 
