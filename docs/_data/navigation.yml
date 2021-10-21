@@ -24,6 +24,8 @@ lessons :
     url: /lessons/02-spatial_relationships_and_operations
   - title: 03 - Retrieving data from spatial database infrastructures
     url:  /lessons/03-retrieving_data_from_sdi
+  - title: 04 - Retrieving data from OpenStreetMap
+    url:  /lessons/04-retrieving_data_from_openstreetmap
   - title: Meta
     children:
       - title: "About"
@@ -42,6 +44,8 @@ solutions :
     url: /solutions/01-geodataframe_operations
   - title: 02 - spatial relationships and overlay_operations
     url: /solutions/02-spatialrelationship_and_operations
+  - title: 03 - retrieving data from SDI
+    url: /solutions/03-retrieving_data_from_sdi
   - title: Meta
     children:
       - title: "About"
