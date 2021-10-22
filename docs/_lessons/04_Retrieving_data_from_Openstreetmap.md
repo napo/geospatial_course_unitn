@@ -55,7 +55,7 @@ if gpd.__version__ != "0.10.1":
 try:
   import pyrosm
 except ModuleNotFoundError as e:
-  !pip install pyrosm==0.3.1
+  !pip install pyrosm==0.6.1
   import pyrosm
 ```
 
