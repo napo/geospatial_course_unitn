@@ -46,6 +46,8 @@ solutions :
     url: /solutions/02-spatialrelationship_and_operations
   - title: 03 - retrieving data from SDI
     url: /solutions/03-retrieving_data_from_sdi
+  - title: 04 - retrieving data from OpenStreetMap
+    url: /solutions/03-retrieving_data_from_osm
   - title: Meta
     children:
       - title: "About"
