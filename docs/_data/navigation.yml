@@ -26,6 +26,8 @@ lessons :
     url:  /lessons/03-retrieving_data_from_sdi
   - title: 04 - Retrieving data from OpenStreetMap
     url:  /lessons/04-retrieving_data_from_openstreetmap
+  - title: 05 - Street Network Analysis
+    url:  /lessons/05-street-network-analysis
   - title: Meta
     children:
       - title: "About"
