@@ -1361,7 +1361,7 @@ G = osm.to_graph(nodes, edges, graph_type="pandana")
 
 
 ```python
-# For simplicity, ensure all restaurants are represented as points
+# For simplicity, ensure all supermarkets are represented as points
 supermarkets["geometry"] =supermarkets.representative_point().geometry
 supermarkets["lat"] = supermarkets.geometry.y
 supermarkets["lon"] = supermarkets.geometry.x
@@ -1379,7 +1379,7 @@ G.precompute(2000)
 
 After we have done precalculations with pandana, it allows conducting performant queries, such as querying distances to X number of nearest supermarkets for all network nodes.<br/>
 
-The following example shows how to find the 5 closest restaurants from each network node (up to 2000 meter distance threshold):
+The following example shows how to find the 5 closest supermarkets from each network node (up to 2000 meter distance threshold):
 
 
 ```python
@@ -1390,7 +1390,7 @@ G.set_pois(category="supermarkets", maxdist=2000, maxitems=10,
 
 
 ```python
-# For each node in the network find distances to 5 closest restaurants (up to 2000 meters)
+# For each node in the network find distances to 5 closest supermarkets (up to 2000 meters)
 nearest_five = G.nearest_pois(2000, "supermarkets", num_pois=5)
 nearest_five.head(10)
 ```
@@ -1545,7 +1545,7 @@ supermarkets["employee_cnt"] = np.random.choice([x for x in range(10,50)], size=
 
 
 ```python
-# Find the closest node-id for each restaurant
+# Find the closest node-id for each supermarkets
 node_ids = G.get_node_ids(supermarkets.lon, supermarkets.lat)
 ```
 
