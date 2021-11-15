@@ -49,7 +49,9 @@ solutions :
   - title: 03 - retrieving data from SDI
     url: /solutions/03-retrieving_data_from_sdi
   - title: 04 - retrieving data from OpenStreetMap
-    url: /solutions/03-retrieving_data_from_osm
+    url: /solutions/04-retrieving_data_from_osm
+  - title: 05 - streets network analysiss
+    url: /solutions/05-streets_network_analysis
   - title: Meta
     children:
       - title: "About"
