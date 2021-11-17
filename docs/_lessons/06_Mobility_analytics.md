@@ -1398,7 +1398,7 @@ trajectory.to_point_gdf().head(10)
 
 # Exercise
 
-the [tips_truck.gpkg](https://github.com/napo/geospatial_course_unitn/raw/master/data/geotemporaldata/trips_truck.gpkg) dataset contains the routes of a garbage vehicle in April 2018.
+the [trips_truck.gpkg](https://github.com/napo/geospatial_course_unitn/raw/master/data/geotemporaldata/trips_truck.gpkg) dataset contains the routes of a garbage vehicle in April 2018.
 
 Based on this data:
 - identify the longest route carried out
