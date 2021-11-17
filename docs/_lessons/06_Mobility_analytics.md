@@ -1404,5 +1404,5 @@ Based on this data:
 - identify the longest route carried out
 - identify the places of the daily departure and arrival points
 - show the km traveled day by day
-- identify the breaks carried out in the shortest route of the first week and in the longest one of the last
-- of the shortest route of the entire month, locate the route on the OpenStreetMap road graph
+- identify the breaks carried out in the shortest route of the third week and in the longest one of the last
+- identify the longest route of the third week of the month on the OpenStreetMap road graph
