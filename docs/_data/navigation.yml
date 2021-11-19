@@ -50,8 +50,12 @@ solutions :
     url: /solutions/03-retrieving_data_from_sdi
   - title: 04 - retrieving data from OpenStreetMap
     url: /solutions/04-retrieving_data_from_osm
-  - title: 05 - streets network analysiss
+  - title: 05 - streets network analysis
     url: /solutions/05-streets_network_analysis
+  - title: 06 - mobility analytics
+    url: /solutions/06-mobilty-analytics
+  - title: 07 - basic operations on raster data
+    url: /solutions/07-basic-operation-with-raster
   - title: Meta
     children:
       - title: "About"
