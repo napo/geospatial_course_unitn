@@ -1720,7 +1720,7 @@ plt.show()
 
 
 
-## identify the streets network orientation of this list of cities
+# identify the streets network orientation of this list of cities
 
 Trento - Italy, Udine - Italy,  Trieste - Italy, Bari - Italy, Cremona - Italy, Bergamo - Italy, Chengdu - China, Istanbul - Turkey 
 
