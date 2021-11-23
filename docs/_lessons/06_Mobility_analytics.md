@@ -1,7 +1,7 @@
 ---
 title: "Lesson 06"
 permalink: /lessons/06-mobilty-analytics
-excerpt: "Where's Wally?"
+excerpt: "Where was Wally?"
 last_modified_at: 2021-11-14T16:32:02-10:18
 #redirect_from:
 #  - /theme-setup/
@@ -14,7 +14,7 @@ goals of the tutorial
 
 - transform movement data into information
 - trajectory
-(- map matching )
+- [map matching]([Map Matching](https://en.wikipedia.org/wiki/Map_matching) (look the [solutions](https://napo.github.io/geospatial_course_unitn/solutions/06-moving_analysis#identify-the-longest-route-of-the-third-week-of-the-month-on-the-openstreetmap-road-graph) )
 
 based on the data of Strava 
 

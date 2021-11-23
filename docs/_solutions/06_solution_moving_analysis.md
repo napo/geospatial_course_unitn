@@ -1457,7 +1457,9 @@ stop_point_plot
 
 ## identify the longest route of the third week of the month on the OpenStreetMap road graph
 
-for this operation we will use an algorithm of Map Matching.
+for this operation we will use an algorithm of [Map Matching](https://en.wikipedia.org/wiki/Map_matching).
+
+Map matching is the problem of how to match recorded geographic coordinates to a logical model of the real world,
 
 ![](https://fmm-wiki.github.io/assets/images/fmm.png)
 
