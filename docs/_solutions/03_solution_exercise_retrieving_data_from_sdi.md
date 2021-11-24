@@ -1,8 +1,10 @@
 ---
 title: "Solution 03"
 permalink: /solutions/03-retrieving_data_from_sdi
-excerpt: "Looking for data"
+excerpt: "Retrieving data from SDI"
 last_modified_at: 2021-10-22T06:48:03-01:21
+header:
+  teaser: /solutions/03_solution_exercise_retrieving_data_from_sdi_files/03_solution_exercise_retrieving_data_from_sdi_62_0.png
 #redirect_from:
 #  - /theme-setup/
 toc: true
@@ -1113,16 +1115,6 @@ we can ask ArcGIS RestAPI to transform the source from the native projection to 
 municipalities_affected_earthquake.export_layer('municipalities_affected_earthquake.shp', outSR=25832)
 ```
 
-    Created: "municipalities_affected_earthquake.shp"
-
-
-
-
-
-    'municipalities_affected_earthquake.shp'
-
-
-
 
 ```python
 geo_municipalities_affected_earthquake = gpd.read_file('municipalities_affected_earthquake.shp')
@@ -1330,4 +1322,3 @@ plt.show()
     
 ![png](03_solution_exercise_retrieving_data_from_sdi_files/03_solution_exercise_retrieving_data_from_sdi_101_0.png)
     
-

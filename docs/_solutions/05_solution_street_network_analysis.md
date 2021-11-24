@@ -1,8 +1,10 @@
 ---
 title: "Solution 05"
 permalink: /solutions/05-streets_network_analysis
-excerpt: "Show me the way"
+excerpt: "Street Network Analysis"
 last_modified_at: 2021-11-13T07:37:03-01:21
+header:
+  teaser: /solutions/05_solution_street_network_analysis_files/05_solution_street_network_analysis_113_0.png
 #redirect_from:
 #  - /theme-setup/
 toc: true

@@ -1,8 +1,10 @@
 ---
 title: "Lesson 02"
 permalink: /lessons/02-spatial_relationships_and_operations
-excerpt: "Spatial is Special"
+excerpt: "Spatial relationships and operations"
 last_modified_at: 2021-10-07T17:48:05-03:00
+header: 
+  teaser: https://upload.wikimedia.org/wikipedia/commons/5/55/TopologicSpatialRelarions2.png
 #redirect_from:
 #  - /theme-setup/
 toc: true

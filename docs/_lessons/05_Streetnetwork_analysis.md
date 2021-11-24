@@ -1,8 +1,10 @@
 ---
 title: "Lesson 05"
 permalink: /lessons/05-street-network-analysis
-excerpt: "My Way"
+excerpt: "Street Network Analysis"
 last_modified_at: 2021-10-22T06:48:03-01:21
+header:
+  teaser: /lessons/05_Streetnetwork_analysis_files/05_Streetnetwork_analysis_108_0.png
 #redirect_from:
 #  - /theme-setup/
 toc: true

@@ -1,8 +1,10 @@
 ---
 title: "Lesson 04"
 permalink: /lessons/04-retrieving_data_from_openstreetmap
-excerpt: "OpenStreetMap is a commons"
+excerpt: "Retrieving data from OpenStreetMap"
 last_modified_at: 2021-10-22T06:48:03-01:21
+header:
+  teaser: https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/osm.png
 #redirect_from:
 #  - /theme-setup/
 toc: true

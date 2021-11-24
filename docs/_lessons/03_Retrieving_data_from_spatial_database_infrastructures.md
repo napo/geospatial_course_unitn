@@ -1,8 +1,10 @@
 ---
 title: "Lesson 03"
 permalink: /lessons/03-retrieving_data_from_sdi
-excerpt: "finding data"
+excerpt: "Retrieving data from spatial database infrastructures"
 last_modified_at: 2021-10-15T17:48:05-03:00
+header:
+  teaser: https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/ogc_services.png
 #redirect_from:
 #  - /theme-setup/
 toc: true

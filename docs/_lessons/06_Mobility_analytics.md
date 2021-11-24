@@ -1,8 +1,10 @@
 ---
 title: "Lesson 06"
 permalink: /lessons/06-mobilty-analytics
-excerpt: "Where was Wally?"
+excerpt: "Mobility Analytics"
 last_modified_at: 2021-11-14T16:32:02-10:18
+header:
+  teaser: /lessons/06_Mobility_analytics_files/06_Mobility_analytics_42_0.png
 #redirect_from:
 #  - /theme-setup/
 toc: true

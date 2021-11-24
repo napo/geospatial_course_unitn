@@ -1,9 +1,10 @@
 ---
 title: "Lesson 01"
 permalink: /lessons/01-gis_introduction
-excerpt: The Earth isn’t flat!!!
+excerpt: GIS introduction with geopandas (vector data)
 last_modified_at: 2021-09-30T08:48:05-04:00
-#redirect_from:
+header:
+  teaser: https://upload.wikimedia.org/wikipedia/commons/b/b9/Usgs_map_traverse_mercator.PNG
 #  - /theme-setup/
 toc: true
 ---

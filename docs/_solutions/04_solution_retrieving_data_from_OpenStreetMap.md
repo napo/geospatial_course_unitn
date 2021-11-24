@@ -1,8 +1,10 @@
 ---
 title: "Solution 04"
 permalink: /solutions/04-retrieving_data_from_osm
-excerpt: "OpenStreetMap is a commons"
+excerpt: "Retrieving data from OpenStreetMap"
 last_modified_at: 2021-10-29T06:48:03-01:21
+header:
+  teaser: https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/mezzolombardo_drinking_waters.jpg
 #redirect_from:
 #  - /theme-setup/
 toc: true

@@ -1,8 +1,10 @@
 ---
 title: "Solution 01"
 permalink: /solutions/01-geodataframe_operations
-excerpt: “shapefile format s*cks!"
+excerpt: Operations with Vector data
 last_modified_at: 2021-10-06T08:48:05-04:00
+header:
+  teaser: https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/lakesftk20.png
 #redirect_from:
 #  - /theme-setup/
 toc: true

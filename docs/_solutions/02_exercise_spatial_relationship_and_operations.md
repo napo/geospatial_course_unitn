@@ -1,8 +1,10 @@
 ---
 title: "Solution 02"
 permalink: /solutions/02-spatial_relationships_and_operations
-excerpt: "Spatial is Special"
+excerpt: "Spatial Relationships and Operations"
 last_modified_at: 2021-10-14T17:48:05-03:00
+header:
+  teaser: https://grass.osgeo.org/grass78/manuals/addons/v_concave_concave.png
 #redirect_from:
 #  - /theme-setup/
 toc: true
