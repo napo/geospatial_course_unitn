@@ -1,3 +1,14 @@
+---
+title: "Lesson 08"
+permalink: /lessons/08-visualizing-geospatial-data
+excerpt: "Visualizing Geospatial Data"
+last_modified_at: 2021-11-25T18:16:32-0:21
+header:
+  teaser: /lessons/08_visualizing_geospatial_data_files/08_visualizing_geospatial_data_53_0.png
+#redirect_from:
+#  - /theme-setup/
+toc: true
+---
 # Visualizing Geospatial Data
 inspired from scipy2018-geospatial and geographic data science book
 
@@ -18,8 +29,6 @@ inspired from scipy2018-geospatial and geographic data science book
 
 **suggestion**<br/>
 follow the [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) - daily social mapping project in November 2020 - hashtag Twitter [#30DayMapChallege](https://twitter.com/hashtag/30DayMapChallenge) 
-
-
 
 
 **status**<br/>

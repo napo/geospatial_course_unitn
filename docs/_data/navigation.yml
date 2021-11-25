@@ -32,6 +32,8 @@ lessons :
     url: /lessons/06-moving_analysis
   - title: 07 - Basic operations on raster data
     url: /lessons/07-basic-operation-on-raster
+  - title: 08 - Visualizing geospatial data
+    url: /lessons/08-visualizing-geospatial-data
   - title: Meta
     children:
       - title: "About"
