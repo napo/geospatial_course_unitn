@@ -28,7 +28,7 @@ inspired from scipy2018-geospatial and geographic data science book
 - geopandas
 
 **suggestion**<br/>
-follow the [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) - daily social mapping project in November 2020 - hashtag Twitter [#30DayMapChallege](https://twitter.com/hashtag/30DayMapChallenge) 
+follow the [30DayMapChallenge](https://github.com/tjukanovt/30DayMapChallenge) - daily social mapping project in November 2021 - hashtag Twitter [#30DayMapChallege](https://twitter.com/hashtag/30DayMapChallenge) 
 
 
 **status**<br/>
