@@ -16,7 +16,7 @@ goals of the tutorial
 
 - transform movement data into information
 - trajectory
-- [map matching]([Map Matching](https://en.wikipedia.org/wiki/Map_matching) (look the [solutions](https://napo.github.io/geospatial_course_unitn/solutions/06-moving_analysis#identify-the-longest-route-of-the-third-week-of-the-month-on-the-openstreetmap-road-graph) )
+- [map matching](https://en.wikipedia.org/wiki/Map_matching) (look the [solutions](https://napo.github.io/geospatial_course_unitn/solutions/06-moving_analysis#identify-the-longest-route-of-the-third-week-of-the-month-on-the-openstreetmap-road-graph) )
 
 based on the data of Strava 
 
