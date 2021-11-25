@@ -1853,20 +1853,19 @@ XKCD's suggestion :)
 
 <img src="https://imgs.xkcd.com/comics/heatmap_2x.png" width="500px" />
 
-source: https://xkcd.com/1138/
+source: [https://xkcd.com/1138/](https://xkcd.com/1138/)
 
-explanation: https://www.explainxkcd.com/wiki/index.php/1138:_Heatmap
-
+explanation: [https://www.explainxkcd.com/wiki/index.php/1138:_Heatmap](https://www.explainxkcd.com/wiki/index.php/1138:_Heatmap)
 
 
 ---
 
 
 
-
 ![](https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/election_data_usa.gif)
 
-http://try-to-impeach-this.jetpack.ai/
+
+[source](http://try-to-impeach-this.jetpack.ai/)
 
 ---
 # Exercise<br/>
