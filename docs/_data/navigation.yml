@@ -60,8 +60,10 @@ solutions :
     url: /solutions/05-streets_network_analysis
   - title: 06 - mobility analytics
     url: /solutions/06-moving_analysis
-  - title: 07 - Operations on raster data
+  - title: 07 - operations on raster data
     url: /solutions/07-operations_on_raster_data
+  - title: 08 - visualizing geospatial data (elections)
+    url: /solutions/08-visualizing-electoral-data
   - title: Meta
     children:
       - title: "About"
