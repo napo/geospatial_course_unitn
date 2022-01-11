@@ -38,17 +38,6 @@ if mpd.__version__ != "0.7.rc1":
   !pip install -U movingpandas==0.7.rc1
 ```
 
-    /home/napo/.local/lib/python3.9/site-packages/geopandas/_compat.py:111: UserWarning: The Shapely GEOS version (3.8.0-CAPI-1.13.1 ) is incompatible with the GEOS version PyGEOS was compiled with (3.9.1-CAPI-1.14.2). Conversions between both will be slow.
-      warnings.warn(
-
-
-
-
-
-
-
-
-
 
 
 ```python
