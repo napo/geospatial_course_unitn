@@ -34,6 +34,8 @@ lessons :
     url: /lessons/07-basic-operation-on-raster
   - title: 08 - Visualizing geospatial data
     url: /lessons/08-visualizing-geospatial-data
+  - title: 09 - Web Mapping
+    url: /lessons/09-web-mapping
   - title: Meta
     children:
       - title: "About"
