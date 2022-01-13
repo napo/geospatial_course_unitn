@@ -85,7 +85,7 @@ m=folium.Map(location=[46.06769,11.15135])
 m
 ```
 
-![](/lessons/09_web_mapping/mappa1.jpg)
+![](09_web_mapping_files/mappa1.jpg)
 
 
 ## Change tile layer
@@ -102,7 +102,7 @@ folium.LayerControl().add_to(m2)
 m2
 ```
 
-![](/lessons/09_web_mapping/mappa2.jpg)
+![](09_web_mapping_files/mappa2.jpg)
 
 
 
@@ -117,7 +117,7 @@ m3 = folium.Map(location=[46.0672,11.1212],
 m3
 ```
 
-![](/lessons/09_web_mapping/mappa3.jpg)
+![](09_web_mapping_files/mappa3.jpg)
 
 
 
@@ -341,7 +341,7 @@ for index, row in polling_stations.iterrows():
 m4
 ```
 
-![](/lessons/09_web_mapping/mappa4.jpg)
+![](09_web_mapping_files/mappa4.jpg)
 
 
 
@@ -387,7 +387,7 @@ for index, row in polling_stations.iterrows():
 m5
 ```
 
-![](/lessons/09_web_mapping/mappa5.jpg)
+![](09_web_mapping_files/mappa5.jpg)
 
 
 
@@ -401,7 +401,7 @@ for index, row in polling_stations.iterrows():
 m5
 ```
 
-![](/lessons/09_web_mapping/mappa6.jpg)
+![](09_web_mapping_files/mappa6.jpg)
 
 
 
@@ -436,7 +436,7 @@ m6
 ```
 
 
-![](/lessons/09_web_mapping/mappa7.jpg)
+![](09_web_mapping_files/mappa7.jpg)
 
 
 
@@ -479,7 +479,7 @@ HeatMap(data.values).add_to(m7)
 m7
 ```
 
-![](/lessons/09_web_mapping/mappa8.jpg)
+![](09_web_mapping_files/mappa8.jpg)
 
 
 
@@ -545,7 +545,7 @@ HeatMap(data.values).add_to(m8)
 m8
 ```
 
-![](/lessons/09_web_mapping/mappa9.jpg)
+![](09_web_mapping_files/mappa9.jpg)
 
 
 
@@ -561,7 +561,7 @@ data = candidate_pantano[['latitude','longitude','percentage']]
 HeatMap(data.values).add_to(m8)
 m8
 ```
-![](/lessons/09_web_mapping/mappa10.jpg)
+![](09_web_mapping_files/mappa10.jpg)
 
 
 
@@ -616,7 +616,7 @@ folium.GeoJson(
 m9
 ```
 
-![](/lessons/09_web_mapping/mappa11.jpg)
+![](09_web_mapping_files/mappa11.jpg)
 
 
 
@@ -635,7 +635,7 @@ folium.GeoJson(
 
 m9
 ```
-![](/lessons/09_web_mapping/mappa12.jpg)
+![](09_web_mapping_files/mappa12.jpg)
 
 
 
@@ -656,7 +656,7 @@ folium.Choropleth(
     smooth_factor=0).add_to(m9)
 m9
 ```
-![](/lessons/09_web_mapping/mappa13.jpg)
+![](09_web_mapping_files/mappa13.jpg)
 
 
 
@@ -711,7 +711,7 @@ folium.Choropleth(
 m10
 ```
 
-![](/lessons/09_web_mapping/mappa13.jpg)
+![](09_web_mapping_files/mappa13.jpg)
 
 
 add tooltip
@@ -744,7 +744,7 @@ folium.features.GeoJson(map_degasperi,
 m10
 ```
 
-![](/lessons/09_web_mapping/mappa14.jpg)
+![](09_web_mapping_files/mappa14.jpg)
 
 
 
