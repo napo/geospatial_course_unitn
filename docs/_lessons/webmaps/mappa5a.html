@@ -1,0 +1,3101 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d526c1d821b4c34a1bdd59de3b1d443 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9d526c1d821b4c34a1bdd59de3b1d443" ></div>
+        
+</body>
+<script>    
+    
+            var map_9d526c1d821b4c34a1bdd59de3b1d443 = L.map(
+                "map_9d526c1d821b4c34a1bdd59de3b1d443",
+                {
+                    center: [46.0672, 11.1212],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f0fc4646db00464daf589985ed4a9e75 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+            var marker_081992673ab0465889567f407d3b27c9 = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_b1e96ef000f44cacae1f3919f3688894 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_081992673ab0465889567f407d3b27c9.setIcon(custom_icon_b1e96ef000f44cacae1f3919f3688894);
+        
+    
+        var popup_21abe7cec4ad4396bb9e1909d2bab1d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c92ec72732164a57ac629b0e7d35a6c6 = $(`<div id="html_c92ec72732164a57ac629b0e7d35a6c6" style="width: 100.0%; height: 100.0%;">Piazza Raffaello Sanzio, 13</div>`)[0];
+            popup_21abe7cec4ad4396bb9e1909d2bab1d5.setContent(html_c92ec72732164a57ac629b0e7d35a6c6);
+        
+
+        marker_081992673ab0465889567f407d3b27c9.bindPopup(popup_21abe7cec4ad4396bb9e1909d2bab1d5)
+        ;
+
+        
+    
+    
+            marker_081992673ab0465889567f407d3b27c9.bindTooltip(
+                `<div>
+                     Scuola Elementare R. Sanzio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7228c887fed94e6c8d841f6c475d873b = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_532c382982664136ab2fb4c051b09575 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_7228c887fed94e6c8d841f6c475d873b.setIcon(custom_icon_532c382982664136ab2fb4c051b09575);
+        
+    
+        var popup_4a4651e188644b34b04cca96880343ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ca287706f214a249ab3499cc06a3f47 = $(`<div id="html_9ca287706f214a249ab3499cc06a3f47" style="width: 100.0%; height: 100.0%;">Piazza Raffaello Sanzio, 13</div>`)[0];
+            popup_4a4651e188644b34b04cca96880343ea.setContent(html_9ca287706f214a249ab3499cc06a3f47);
+        
+
+        marker_7228c887fed94e6c8d841f6c475d873b.bindPopup(popup_4a4651e188644b34b04cca96880343ea)
+        ;
+
+        
+    
+    
+            marker_7228c887fed94e6c8d841f6c475d873b.bindTooltip(
+                `<div>
+                     Scuola Elementare R. Sanzio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3ea26f9a5c1478c9822fb880d67989d = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_afd979318acb424cb2bd9f351c5fa748 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_e3ea26f9a5c1478c9822fb880d67989d.setIcon(custom_icon_afd979318acb424cb2bd9f351c5fa748);
+        
+    
+        var popup_e497475779f546e08ebee09832f2304a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e345434c83854c5ca2170d8e3f25300c = $(`<div id="html_e345434c83854c5ca2170d8e3f25300c" style="width: 100.0%; height: 100.0%;">Piazza Raffaello Sanzio, 13</div>`)[0];
+            popup_e497475779f546e08ebee09832f2304a.setContent(html_e345434c83854c5ca2170d8e3f25300c);
+        
+
+        marker_e3ea26f9a5c1478c9822fb880d67989d.bindPopup(popup_e497475779f546e08ebee09832f2304a)
+        ;
+
+        
+    
+    
+            marker_e3ea26f9a5c1478c9822fb880d67989d.bindTooltip(
+                `<div>
+                     Scuola Elementare R. Sanzio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_198252bb223942638936ce16894a7e60 = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_b2b8c6ce348f42b9b90baef8af79c943 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_198252bb223942638936ce16894a7e60.setIcon(custom_icon_b2b8c6ce348f42b9b90baef8af79c943);
+        
+    
+        var popup_cc37ba95e6ad47eb8647753eaf4ea221 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01677d669fa7499d81da58a5da37e4be = $(`<div id="html_01677d669fa7499d81da58a5da37e4be" style="width: 100.0%; height: 100.0%;">Piazza Raffaello Sanzio, 13</div>`)[0];
+            popup_cc37ba95e6ad47eb8647753eaf4ea221.setContent(html_01677d669fa7499d81da58a5da37e4be);
+        
+
+        marker_198252bb223942638936ce16894a7e60.bindPopup(popup_cc37ba95e6ad47eb8647753eaf4ea221)
+        ;
+
+        
+    
+    
+            marker_198252bb223942638936ce16894a7e60.bindTooltip(
+                `<div>
+                     Scuola Elementare R. Sanzio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b013304cc2840039063c333bd35801a = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_7aaf4e30d0444d55a50c90e38c4a596d = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_6b013304cc2840039063c333bd35801a.setIcon(custom_icon_7aaf4e30d0444d55a50c90e38c4a596d);
+        
+    
+        var popup_35fe69e26fa1499e8402c75b0d9cc931 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9acce08a428c44b6b9cc302c00d710ff = $(`<div id="html_9acce08a428c44b6b9cc302c00d710ff" style="width: 100.0%; height: 100.0%;">Piazza Raffaello Sanzio, 13</div>`)[0];
+            popup_35fe69e26fa1499e8402c75b0d9cc931.setContent(html_9acce08a428c44b6b9cc302c00d710ff);
+        
+
+        marker_6b013304cc2840039063c333bd35801a.bindPopup(popup_35fe69e26fa1499e8402c75b0d9cc931)
+        ;
+
+        
+    
+    
+            marker_6b013304cc2840039063c333bd35801a.bindTooltip(
+                `<div>
+                     Scuola Elementare R. Sanzio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f79efe3a9c5e4b43a4463f878730aad3 = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_f271a1a1283f43adb35fc526e30d6045 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_f79efe3a9c5e4b43a4463f878730aad3.setIcon(custom_icon_f271a1a1283f43adb35fc526e30d6045);
+        
+    
+        var popup_83fb777443504c248f3a71fe75c1aaa9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65f298e9b08f491a9faeb8d1f616b80b = $(`<div id="html_65f298e9b08f491a9faeb8d1f616b80b" style="width: 100.0%; height: 100.0%;">Piazza Raffaello Sanzio, 13</div>`)[0];
+            popup_83fb777443504c248f3a71fe75c1aaa9.setContent(html_65f298e9b08f491a9faeb8d1f616b80b);
+        
+
+        marker_f79efe3a9c5e4b43a4463f878730aad3.bindPopup(popup_83fb777443504c248f3a71fe75c1aaa9)
+        ;
+
+        
+    
+    
+            marker_f79efe3a9c5e4b43a4463f878730aad3.bindTooltip(
+                `<div>
+                     Scuola Elementare R. Sanzio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a703450649444c92b4965498ff8be963 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_f26ab439e36f47b285ff10e79ddb0b53 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_a703450649444c92b4965498ff8be963.setIcon(custom_icon_f26ab439e36f47b285ff10e79ddb0b53);
+        
+    
+        var popup_ddfbcf4f60c947409d8e588387afc816 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b2532f949e5424b8112934e078a3af0 = $(`<div id="html_3b2532f949e5424b8112934e078a3af0" style="width: 100.0%; height: 100.0%;">Via Antonio Stoppani, 3</div>`)[0];
+            popup_ddfbcf4f60c947409d8e588387afc816.setContent(html_3b2532f949e5424b8112934e078a3af0);
+        
+
+        marker_a703450649444c92b4965498ff8be963.bindPopup(popup_ddfbcf4f60c947409d8e588387afc816)
+        ;
+
+        
+    
+    
+            marker_a703450649444c92b4965498ff8be963.bindTooltip(
+                `<div>
+                     Scuola Elementare S. Bellesini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1102149b722845c99bb586c42e0bf394 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_df2284949e424defa68c70a0f55066a7 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_1102149b722845c99bb586c42e0bf394.setIcon(custom_icon_df2284949e424defa68c70a0f55066a7);
+        
+    
+        var popup_0f274206bdf24bdab4ab9aae19bced73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25a707850ccf40c9b68cd9318d26c60f = $(`<div id="html_25a707850ccf40c9b68cd9318d26c60f" style="width: 100.0%; height: 100.0%;">Via Antonio Stoppani, 3</div>`)[0];
+            popup_0f274206bdf24bdab4ab9aae19bced73.setContent(html_25a707850ccf40c9b68cd9318d26c60f);
+        
+
+        marker_1102149b722845c99bb586c42e0bf394.bindPopup(popup_0f274206bdf24bdab4ab9aae19bced73)
+        ;
+
+        
+    
+    
+            marker_1102149b722845c99bb586c42e0bf394.bindTooltip(
+                `<div>
+                     Scuola Elementare S. Bellesini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a2e88a844ee4f7abf31e40e06331d7c = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_54ed18c19d8a4ac28dcc3a8ac88b51bf = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_7a2e88a844ee4f7abf31e40e06331d7c.setIcon(custom_icon_54ed18c19d8a4ac28dcc3a8ac88b51bf);
+        
+    
+        var popup_97274346ff6444cd92c9699e208d0505 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04ec97d2a2e041d2a49e756ccc170a1f = $(`<div id="html_04ec97d2a2e041d2a49e756ccc170a1f" style="width: 100.0%; height: 100.0%;">Via Antonio Stoppani, 3</div>`)[0];
+            popup_97274346ff6444cd92c9699e208d0505.setContent(html_04ec97d2a2e041d2a49e756ccc170a1f);
+        
+
+        marker_7a2e88a844ee4f7abf31e40e06331d7c.bindPopup(popup_97274346ff6444cd92c9699e208d0505)
+        ;
+
+        
+    
+    
+            marker_7a2e88a844ee4f7abf31e40e06331d7c.bindTooltip(
+                `<div>
+                     Scuola Elementare S. Bellesini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_370b999d0b0f4d0a83f01d7317642658 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_cf1b84df6ee9429685a1d45fa3c6a462 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_370b999d0b0f4d0a83f01d7317642658.setIcon(custom_icon_cf1b84df6ee9429685a1d45fa3c6a462);
+        
+    
+        var popup_eda4721062d14da786fc455d2bc26270 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2b3d7a071f246b8936900a597bf5f0d = $(`<div id="html_b2b3d7a071f246b8936900a597bf5f0d" style="width: 100.0%; height: 100.0%;">Via Antonio Stoppani, 3</div>`)[0];
+            popup_eda4721062d14da786fc455d2bc26270.setContent(html_b2b3d7a071f246b8936900a597bf5f0d);
+        
+
+        marker_370b999d0b0f4d0a83f01d7317642658.bindPopup(popup_eda4721062d14da786fc455d2bc26270)
+        ;
+
+        
+    
+    
+            marker_370b999d0b0f4d0a83f01d7317642658.bindTooltip(
+                `<div>
+                     Scuola Elementare S. Bellesini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7235efd48c2d4400af349e224298d6c5 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_df790e41a89e4451845d72c4455c569b = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_7235efd48c2d4400af349e224298d6c5.setIcon(custom_icon_df790e41a89e4451845d72c4455c569b);
+        
+    
+        var popup_73eb75e7a92b40d68d8334952e8f6317 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c98790518bf34a5e8bf945ebcddd3af9 = $(`<div id="html_c98790518bf34a5e8bf945ebcddd3af9" style="width: 100.0%; height: 100.0%;">Via Antonio Stoppani, 3</div>`)[0];
+            popup_73eb75e7a92b40d68d8334952e8f6317.setContent(html_c98790518bf34a5e8bf945ebcddd3af9);
+        
+
+        marker_7235efd48c2d4400af349e224298d6c5.bindPopup(popup_73eb75e7a92b40d68d8334952e8f6317)
+        ;
+
+        
+    
+    
+            marker_7235efd48c2d4400af349e224298d6c5.bindTooltip(
+                `<div>
+                     Scuola Elementare S. Bellesini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ff57cd38bd5488d83b40398ecd6baa9 = L.marker(
+                [46.08378, 11.12214],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_b1cbe8c24eb547668d18f72c0cdcc476 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_7ff57cd38bd5488d83b40398ecd6baa9.setIcon(custom_icon_b1cbe8c24eb547668d18f72c0cdcc476);
+        
+    
+        var popup_02a1399cf2cd4e4e84ed1cbb3975da0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b7ef4e52af349809714d3ef1dc95a8f = $(`<div id="html_7b7ef4e52af349809714d3ef1dc95a8f" style="width: 100.0%; height: 100.0%;">Via dei Solteri, 66</div>`)[0];
+            popup_02a1399cf2cd4e4e84ed1cbb3975da0b.setContent(html_7b7ef4e52af349809714d3ef1dc95a8f);
+        
+
+        marker_7ff57cd38bd5488d83b40398ecd6baa9.bindPopup(popup_02a1399cf2cd4e4e84ed1cbb3975da0b)
+        ;
+
+        
+    
+    
+            marker_7ff57cd38bd5488d83b40398ecd6baa9.bindTooltip(
+                `<div>
+                     Centro Sociale (ex Elementari)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26d2868b78e7414c8f8a9a6e349725cc = L.marker(
+                [46.08378, 11.12214],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_75cb61191a9647e897e487874689fbbd = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_26d2868b78e7414c8f8a9a6e349725cc.setIcon(custom_icon_75cb61191a9647e897e487874689fbbd);
+        
+    
+        var popup_25d7668a32884a3eb51398302bd4f81f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bcb7b06d1bf4fbb9e3c3b62651df1fb = $(`<div id="html_5bcb7b06d1bf4fbb9e3c3b62651df1fb" style="width: 100.0%; height: 100.0%;">Via dei Solteri, 66</div>`)[0];
+            popup_25d7668a32884a3eb51398302bd4f81f.setContent(html_5bcb7b06d1bf4fbb9e3c3b62651df1fb);
+        
+
+        marker_26d2868b78e7414c8f8a9a6e349725cc.bindPopup(popup_25d7668a32884a3eb51398302bd4f81f)
+        ;
+
+        
+    
+    
+            marker_26d2868b78e7414c8f8a9a6e349725cc.bindTooltip(
+                `<div>
+                     Centro Sociale (ex Elementari)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7faaa5b70aec40f2a7c0c56dbb1bbb45 = L.marker(
+                [46.08378, 11.12214],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_4c5a2c66748f4a218ff2277531c7f3d9 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_7faaa5b70aec40f2a7c0c56dbb1bbb45.setIcon(custom_icon_4c5a2c66748f4a218ff2277531c7f3d9);
+        
+    
+        var popup_9697949cbf774d9f8ebe463206cb4ef7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2af1a37c975e4aa89ae89a15cb15b308 = $(`<div id="html_2af1a37c975e4aa89ae89a15cb15b308" style="width: 100.0%; height: 100.0%;">Via dei Solteri, 66</div>`)[0];
+            popup_9697949cbf774d9f8ebe463206cb4ef7.setContent(html_2af1a37c975e4aa89ae89a15cb15b308);
+        
+
+        marker_7faaa5b70aec40f2a7c0c56dbb1bbb45.bindPopup(popup_9697949cbf774d9f8ebe463206cb4ef7)
+        ;
+
+        
+    
+    
+            marker_7faaa5b70aec40f2a7c0c56dbb1bbb45.bindTooltip(
+                `<div>
+                     Centro Sociale (ex Elementari)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35fe18d8190b4d508a58b1ef98bbf773 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_d68c7c05c7574e38b8483a135b352edb = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_35fe18d8190b4d508a58b1ef98bbf773.setIcon(custom_icon_d68c7c05c7574e38b8483a135b352edb);
+        
+    
+        var popup_a2c8c15c6c984e2aadfbda1022dc728e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dc5f4f46b0da4521b628aa7ea426f228 = $(`<div id="html_dc5f4f46b0da4521b628aa7ea426f228" style="width: 100.0%; height: 100.0%;">Via Antonio Stoppani, 3</div>`)[0];
+            popup_a2c8c15c6c984e2aadfbda1022dc728e.setContent(html_dc5f4f46b0da4521b628aa7ea426f228);
+        
+
+        marker_35fe18d8190b4d508a58b1ef98bbf773.bindPopup(popup_a2c8c15c6c984e2aadfbda1022dc728e)
+        ;
+
+        
+    
+    
+            marker_35fe18d8190b4d508a58b1ef98bbf773.bindTooltip(
+                `<div>
+                     Scuola Elementare S. Bellesini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9b59fb867d0452ca89ab9768ace3377 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_e180853fb33e4768851c1b51f653605f = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_e9b59fb867d0452ca89ab9768ace3377.setIcon(custom_icon_e180853fb33e4768851c1b51f653605f);
+        
+    
+        var popup_cee0dd766c524f2693722d1a229890f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c886f4d16cb45618a303e45a6224f66 = $(`<div id="html_3c886f4d16cb45618a303e45a6224f66" style="width: 100.0%; height: 100.0%;">Via Antonio Stoppani, 3</div>`)[0];
+            popup_cee0dd766c524f2693722d1a229890f2.setContent(html_3c886f4d16cb45618a303e45a6224f66);
+        
+
+        marker_e9b59fb867d0452ca89ab9768ace3377.bindPopup(popup_cee0dd766c524f2693722d1a229890f2)
+        ;
+
+        
+    
+    
+            marker_e9b59fb867d0452ca89ab9768ace3377.bindTooltip(
+                `<div>
+                     Scuola Elementare S. Bellesini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ac1881a996544378cc76e6dab5ed56b = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_cb073fb862d141a7af4bc4e6b0a86cc7 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_7ac1881a996544378cc76e6dab5ed56b.setIcon(custom_icon_cb073fb862d141a7af4bc4e6b0a86cc7);
+        
+    
+        var popup_d78347b6e10448cea56f1e1353166676 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43799a3732184b169414292e6c78db42 = $(`<div id="html_43799a3732184b169414292e6c78db42" style="width: 100.0%; height: 100.0%;">Via San Giovanni Bosco, 8</div>`)[0];
+            popup_d78347b6e10448cea56f1e1353166676.setContent(html_43799a3732184b169414292e6c78db42);
+        
+
+        marker_7ac1881a996544378cc76e6dab5ed56b.bindPopup(popup_d78347b6e10448cea56f1e1353166676)
+        ;
+
+        
+    
+    
+            marker_7ac1881a996544378cc76e6dab5ed56b.bindTooltip(
+                `<div>
+                     Scuola Elementare F. Crispi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2b5b73d08de4824b51a3ef0fe12cc31 = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_96dc02a221e3496ba2793c7281839698 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_b2b5b73d08de4824b51a3ef0fe12cc31.setIcon(custom_icon_96dc02a221e3496ba2793c7281839698);
+        
+    
+        var popup_15cb69acd3014463b23d8272146589c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c98040349215478ebeb4e79b68eb1cf0 = $(`<div id="html_c98040349215478ebeb4e79b68eb1cf0" style="width: 100.0%; height: 100.0%;">Via San Giovanni Bosco, 8</div>`)[0];
+            popup_15cb69acd3014463b23d8272146589c6.setContent(html_c98040349215478ebeb4e79b68eb1cf0);
+        
+
+        marker_b2b5b73d08de4824b51a3ef0fe12cc31.bindPopup(popup_15cb69acd3014463b23d8272146589c6)
+        ;
+
+        
+    
+    
+            marker_b2b5b73d08de4824b51a3ef0fe12cc31.bindTooltip(
+                `<div>
+                     Scuola Elementare F. Crispi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2409874c4f264ce394114590cd731b7c = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_b5e68dc7747b4526b8e1993042a37c3f = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_2409874c4f264ce394114590cd731b7c.setIcon(custom_icon_b5e68dc7747b4526b8e1993042a37c3f);
+        
+    
+        var popup_3fa6caa8815440a680b3896de976d69f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea9e33a1d8c14f26b5da35c81bb8463e = $(`<div id="html_ea9e33a1d8c14f26b5da35c81bb8463e" style="width: 100.0%; height: 100.0%;">Via San Giovanni Bosco, 8</div>`)[0];
+            popup_3fa6caa8815440a680b3896de976d69f.setContent(html_ea9e33a1d8c14f26b5da35c81bb8463e);
+        
+
+        marker_2409874c4f264ce394114590cd731b7c.bindPopup(popup_3fa6caa8815440a680b3896de976d69f)
+        ;
+
+        
+    
+    
+            marker_2409874c4f264ce394114590cd731b7c.bindTooltip(
+                `<div>
+                     Scuola Elementare F. Crispi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_227721409b6646f2861e109b5a9ef6a0 = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_1822b4db091d4e0eae79c796ee51c5c0 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_227721409b6646f2861e109b5a9ef6a0.setIcon(custom_icon_1822b4db091d4e0eae79c796ee51c5c0);
+        
+    
+        var popup_98dcd9216789492993628a974d3c2946 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b35320e5665469c9e2ba17af85aca3c = $(`<div id="html_5b35320e5665469c9e2ba17af85aca3c" style="width: 100.0%; height: 100.0%;">Via San Giovanni Bosco, 8</div>`)[0];
+            popup_98dcd9216789492993628a974d3c2946.setContent(html_5b35320e5665469c9e2ba17af85aca3c);
+        
+
+        marker_227721409b6646f2861e109b5a9ef6a0.bindPopup(popup_98dcd9216789492993628a974d3c2946)
+        ;
+
+        
+    
+    
+            marker_227721409b6646f2861e109b5a9ef6a0.bindTooltip(
+                `<div>
+                     Scuola Elementare F. Crispi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af239f9463054d4fb8a54c396cb2e2bb = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_c0199726347b4b1eb14746eeaf5b10ed = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_af239f9463054d4fb8a54c396cb2e2bb.setIcon(custom_icon_c0199726347b4b1eb14746eeaf5b10ed);
+        
+    
+        var popup_39c3638848ee487f94d3e995e83e5ed7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e793f958154a4cb5ae189260839addb4 = $(`<div id="html_e793f958154a4cb5ae189260839addb4" style="width: 100.0%; height: 100.0%;">Via San Giovanni Bosco, 8</div>`)[0];
+            popup_39c3638848ee487f94d3e995e83e5ed7.setContent(html_e793f958154a4cb5ae189260839addb4);
+        
+
+        marker_af239f9463054d4fb8a54c396cb2e2bb.bindPopup(popup_39c3638848ee487f94d3e995e83e5ed7)
+        ;
+
+        
+    
+    
+            marker_af239f9463054d4fb8a54c396cb2e2bb.bindTooltip(
+                `<div>
+                     Scuola Elementare F. Crispi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d264836baf054421b7f2e1ae11ffb929 = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_e83f1b7076ed42dca147193fcbeb78ae = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_d264836baf054421b7f2e1ae11ffb929.setIcon(custom_icon_e83f1b7076ed42dca147193fcbeb78ae);
+        
+    
+        var popup_4e3d5291920c40dca581968cc7ecae3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41fea894aeb549c9b69f96b35bd7b9e6 = $(`<div id="html_41fea894aeb549c9b69f96b35bd7b9e6" style="width: 100.0%; height: 100.0%;">Via San Giovanni Bosco, 8</div>`)[0];
+            popup_4e3d5291920c40dca581968cc7ecae3c.setContent(html_41fea894aeb549c9b69f96b35bd7b9e6);
+        
+
+        marker_d264836baf054421b7f2e1ae11ffb929.bindPopup(popup_4e3d5291920c40dca581968cc7ecae3c)
+        ;
+
+        
+    
+    
+            marker_d264836baf054421b7f2e1ae11ffb929.bindTooltip(
+                `<div>
+                     Scuola Elementare F. Crispi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af0590baf58040f9b5f5e7173f5b8676 = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_cf56e042cf344b9c9bc1b98f498dfccf = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_af0590baf58040f9b5f5e7173f5b8676.setIcon(custom_icon_cf56e042cf344b9c9bc1b98f498dfccf);
+        
+    
+        var popup_6add2ebb9aaa4452865fd339c27964ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59a7b7a5589c4a1390a811f72e9c6065 = $(`<div id="html_59a7b7a5589c4a1390a811f72e9c6065" style="width: 100.0%; height: 100.0%;">Via San Giovanni Bosco, 8</div>`)[0];
+            popup_6add2ebb9aaa4452865fd339c27964ba.setContent(html_59a7b7a5589c4a1390a811f72e9c6065);
+        
+
+        marker_af0590baf58040f9b5f5e7173f5b8676.bindPopup(popup_6add2ebb9aaa4452865fd339c27964ba)
+        ;
+
+        
+    
+    
+            marker_af0590baf58040f9b5f5e7173f5b8676.bindTooltip(
+                `<div>
+                     Scuola Elementare F. Crispi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a486f06fb63400cb0679a1809a69a47 = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_e9b8d510cae1479d8dba1a8611c8930e = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_1a486f06fb63400cb0679a1809a69a47.setIcon(custom_icon_e9b8d510cae1479d8dba1a8611c8930e);
+        
+    
+        var popup_6be55d53433148dd8b4b48982f9b6206 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f5758550d09435bbedbf4ff8b5112cf = $(`<div id="html_1f5758550d09435bbedbf4ff8b5112cf" style="width: 100.0%; height: 100.0%;">Via San Pio X, 103</div>`)[0];
+            popup_6be55d53433148dd8b4b48982f9b6206.setContent(html_1f5758550d09435bbedbf4ff8b5112cf);
+        
+
+        marker_1a486f06fb63400cb0679a1809a69a47.bindPopup(popup_6be55d53433148dd8b4b48982f9b6206)
+        ;
+
+        
+    
+    
+            marker_1a486f06fb63400cb0679a1809a69a47.bindTooltip(
+                `<div>
+                     Scuola Elementare D. Savio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b257f8d56a1b4af89d61bea595e38083 = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_a6a203059d2246d8aafa5e34efd38c2a = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_b257f8d56a1b4af89d61bea595e38083.setIcon(custom_icon_a6a203059d2246d8aafa5e34efd38c2a);
+        
+    
+        var popup_b48546711ba245dcb412e2249a0543ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a144e57e27e04a998237a212e22eba15 = $(`<div id="html_a144e57e27e04a998237a212e22eba15" style="width: 100.0%; height: 100.0%;">Via San Pio X, 103</div>`)[0];
+            popup_b48546711ba245dcb412e2249a0543ce.setContent(html_a144e57e27e04a998237a212e22eba15);
+        
+
+        marker_b257f8d56a1b4af89d61bea595e38083.bindPopup(popup_b48546711ba245dcb412e2249a0543ce)
+        ;
+
+        
+    
+    
+            marker_b257f8d56a1b4af89d61bea595e38083.bindTooltip(
+                `<div>
+                     Scuola Elementare D. Savio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1713d2d652d84de594029d26d9ee1a7e = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_2e178e62fe574748be0641eb1cba7067 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_1713d2d652d84de594029d26d9ee1a7e.setIcon(custom_icon_2e178e62fe574748be0641eb1cba7067);
+        
+    
+        var popup_b7867de798bf42a1b091a8786350da17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_311b56c81b024040b6efd90fbc34d261 = $(`<div id="html_311b56c81b024040b6efd90fbc34d261" style="width: 100.0%; height: 100.0%;">Via San Pio X, 103</div>`)[0];
+            popup_b7867de798bf42a1b091a8786350da17.setContent(html_311b56c81b024040b6efd90fbc34d261);
+        
+
+        marker_1713d2d652d84de594029d26d9ee1a7e.bindPopup(popup_b7867de798bf42a1b091a8786350da17)
+        ;
+
+        
+    
+    
+            marker_1713d2d652d84de594029d26d9ee1a7e.bindTooltip(
+                `<div>
+                     Scuola Elementare D. Savio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5d88a5968f24b2ebb6b281d30e8900f = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_c55b10cfae9f436a9cb4c296333ccaef = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_b5d88a5968f24b2ebb6b281d30e8900f.setIcon(custom_icon_c55b10cfae9f436a9cb4c296333ccaef);
+        
+    
+        var popup_d10bcc2e59614203a025ef9db2d2b560 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82c4450d756d45d88defbc8da6ff1b20 = $(`<div id="html_82c4450d756d45d88defbc8da6ff1b20" style="width: 100.0%; height: 100.0%;">Via San Pio X, 103</div>`)[0];
+            popup_d10bcc2e59614203a025ef9db2d2b560.setContent(html_82c4450d756d45d88defbc8da6ff1b20);
+        
+
+        marker_b5d88a5968f24b2ebb6b281d30e8900f.bindPopup(popup_d10bcc2e59614203a025ef9db2d2b560)
+        ;
+
+        
+    
+    
+            marker_b5d88a5968f24b2ebb6b281d30e8900f.bindTooltip(
+                `<div>
+                     Scuola Elementare D. Savio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebd1279572e148389ec88705afcdc683 = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_cd79bae61e3c4a79955ce3ec8f97ceed = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_ebd1279572e148389ec88705afcdc683.setIcon(custom_icon_cd79bae61e3c4a79955ce3ec8f97ceed);
+        
+    
+        var popup_17ec33a57a2d4adca5a2637f03462dd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e2af380b6dc4c6480fd832e4d210c0e = $(`<div id="html_2e2af380b6dc4c6480fd832e4d210c0e" style="width: 100.0%; height: 100.0%;">Via San Pio X, 103</div>`)[0];
+            popup_17ec33a57a2d4adca5a2637f03462dd4.setContent(html_2e2af380b6dc4c6480fd832e4d210c0e);
+        
+
+        marker_ebd1279572e148389ec88705afcdc683.bindPopup(popup_17ec33a57a2d4adca5a2637f03462dd4)
+        ;
+
+        
+    
+    
+            marker_ebd1279572e148389ec88705afcdc683.bindTooltip(
+                `<div>
+                     Scuola Elementare D. Savio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_552281198c3e4763ac1cc1c5c56417de = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_0fead52649f24cd2991f958c4c4d57fa = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_552281198c3e4763ac1cc1c5c56417de.setIcon(custom_icon_0fead52649f24cd2991f958c4c4d57fa);
+        
+    
+        var popup_b477c49a55d342ae831e188923ab8106 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f8bac857ca94350baf555b137c125d6 = $(`<div id="html_0f8bac857ca94350baf555b137c125d6" style="width: 100.0%; height: 100.0%;">Via San Pio X, 103</div>`)[0];
+            popup_b477c49a55d342ae831e188923ab8106.setContent(html_0f8bac857ca94350baf555b137c125d6);
+        
+
+        marker_552281198c3e4763ac1cc1c5c56417de.bindPopup(popup_b477c49a55d342ae831e188923ab8106)
+        ;
+
+        
+    
+    
+            marker_552281198c3e4763ac1cc1c5c56417de.bindTooltip(
+                `<div>
+                     Scuola Elementare D. Savio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecdc7bead851405080c7faa3505682a7 = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_f0aed9323b69489297349e22ce4f2eb4 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_ecdc7bead851405080c7faa3505682a7.setIcon(custom_icon_f0aed9323b69489297349e22ce4f2eb4);
+        
+    
+        var popup_cb430960be7f4fd98b77b70e6f9f1d56 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4063e5250c4c4104bf092fbe58658596 = $(`<div id="html_4063e5250c4c4104bf092fbe58658596" style="width: 100.0%; height: 100.0%;">Via San Pio X, 103</div>`)[0];
+            popup_cb430960be7f4fd98b77b70e6f9f1d56.setContent(html_4063e5250c4c4104bf092fbe58658596);
+        
+
+        marker_ecdc7bead851405080c7faa3505682a7.bindPopup(popup_cb430960be7f4fd98b77b70e6f9f1d56)
+        ;
+
+        
+    
+    
+            marker_ecdc7bead851405080c7faa3505682a7.bindTooltip(
+                `<div>
+                     Scuola Elementare D. Savio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa938364500f4ecf97beeecd9b4eb5df = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_9a495b8a9dd9452dbb10d25310556370 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_aa938364500f4ecf97beeecd9b4eb5df.setIcon(custom_icon_9a495b8a9dd9452dbb10d25310556370);
+        
+    
+        var popup_7ad99daedaac430fa8f6e425de6c1233 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_978f75ae16c34b57828ca2e45f5f16d4 = $(`<div id="html_978f75ae16c34b57828ca2e45f5f16d4" style="width: 100.0%; height: 100.0%;">Via San Pio X, 103</div>`)[0];
+            popup_7ad99daedaac430fa8f6e425de6c1233.setContent(html_978f75ae16c34b57828ca2e45f5f16d4);
+        
+
+        marker_aa938364500f4ecf97beeecd9b4eb5df.bindPopup(popup_7ad99daedaac430fa8f6e425de6c1233)
+        ;
+
+        
+    
+    
+            marker_aa938364500f4ecf97beeecd9b4eb5df.bindTooltip(
+                `<div>
+                     Scuola Elementare D. Savio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1439a13f318040ee89ab2012c3a2f1dc = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_41ab4c9f9b73444f82a7d158932d3126 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_1439a13f318040ee89ab2012c3a2f1dc.setIcon(custom_icon_41ab4c9f9b73444f82a7d158932d3126);
+        
+    
+        var popup_14e1b2b97b4e4373b22e38cf772e6cfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb92bcd4d0fb4e798113d545a4e1c1e4 = $(`<div id="html_eb92bcd4d0fb4e798113d545a4e1c1e4" style="width: 100.0%; height: 100.0%;">Via Antonio Fogazzaro, 2</div>`)[0];
+            popup_14e1b2b97b4e4373b22e38cf772e6cfd.setContent(html_eb92bcd4d0fb4e798113d545a4e1c1e4);
+        
+
+        marker_1439a13f318040ee89ab2012c3a2f1dc.bindPopup(popup_14e1b2b97b4e4373b22e38cf772e6cfd)
+        ;
+
+        
+    
+    
+            marker_1439a13f318040ee89ab2012c3a2f1dc.bindTooltip(
+                `<div>
+                     Scuola Elementare Nicolodi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ad4f5dde7e04f5aad66e735f302fd2f = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_d6b44b1832054fcbac963163e075e688 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_2ad4f5dde7e04f5aad66e735f302fd2f.setIcon(custom_icon_d6b44b1832054fcbac963163e075e688);
+        
+    
+        var popup_74e3c902cee943cbb53a0238fad47a9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_915016e4c1694075ab9c0bf9b4228b2a = $(`<div id="html_915016e4c1694075ab9c0bf9b4228b2a" style="width: 100.0%; height: 100.0%;">Via Antonio Fogazzaro, 2</div>`)[0];
+            popup_74e3c902cee943cbb53a0238fad47a9d.setContent(html_915016e4c1694075ab9c0bf9b4228b2a);
+        
+
+        marker_2ad4f5dde7e04f5aad66e735f302fd2f.bindPopup(popup_74e3c902cee943cbb53a0238fad47a9d)
+        ;
+
+        
+    
+    
+            marker_2ad4f5dde7e04f5aad66e735f302fd2f.bindTooltip(
+                `<div>
+                     Scuola Elementare Nicolodi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4cf52b0d15543a78775e9699682031b = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_b3c35c4842d14c0f89c081a164b85ce0 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_d4cf52b0d15543a78775e9699682031b.setIcon(custom_icon_b3c35c4842d14c0f89c081a164b85ce0);
+        
+    
+        var popup_c05a05872add4d748196eb3f0d89d852 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2dabb0e494894b4eaef47ce552921055 = $(`<div id="html_2dabb0e494894b4eaef47ce552921055" style="width: 100.0%; height: 100.0%;">Via Antonio Fogazzaro, 2</div>`)[0];
+            popup_c05a05872add4d748196eb3f0d89d852.setContent(html_2dabb0e494894b4eaef47ce552921055);
+        
+
+        marker_d4cf52b0d15543a78775e9699682031b.bindPopup(popup_c05a05872add4d748196eb3f0d89d852)
+        ;
+
+        
+    
+    
+            marker_d4cf52b0d15543a78775e9699682031b.bindTooltip(
+                `<div>
+                     Scuola Elementare Nicolodi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b27547d82e304ef09ed80f9c0c42220d = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_2600b6bcd94745e0995e45a19361e1d2 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_b27547d82e304ef09ed80f9c0c42220d.setIcon(custom_icon_2600b6bcd94745e0995e45a19361e1d2);
+        
+    
+        var popup_0da69bd329344a489ac349c7178a1877 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_325a3cbd406847c9a42c0a0df55760c3 = $(`<div id="html_325a3cbd406847c9a42c0a0df55760c3" style="width: 100.0%; height: 100.0%;">Via Antonio Fogazzaro, 2</div>`)[0];
+            popup_0da69bd329344a489ac349c7178a1877.setContent(html_325a3cbd406847c9a42c0a0df55760c3);
+        
+
+        marker_b27547d82e304ef09ed80f9c0c42220d.bindPopup(popup_0da69bd329344a489ac349c7178a1877)
+        ;
+
+        
+    
+    
+            marker_b27547d82e304ef09ed80f9c0c42220d.bindTooltip(
+                `<div>
+                     Scuola Elementare Nicolodi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9eda68a952964f5596bd31f2d60b03c3 = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_0735f6eb015b42a1bdf09bbe4e650a55 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_9eda68a952964f5596bd31f2d60b03c3.setIcon(custom_icon_0735f6eb015b42a1bdf09bbe4e650a55);
+        
+    
+        var popup_866a4734ad6243d78cdf80cfad9d0566 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_869e6532950f45a7b17bc38d88da7aae = $(`<div id="html_869e6532950f45a7b17bc38d88da7aae" style="width: 100.0%; height: 100.0%;">Via Antonio Fogazzaro, 2</div>`)[0];
+            popup_866a4734ad6243d78cdf80cfad9d0566.setContent(html_869e6532950f45a7b17bc38d88da7aae);
+        
+
+        marker_9eda68a952964f5596bd31f2d60b03c3.bindPopup(popup_866a4734ad6243d78cdf80cfad9d0566)
+        ;
+
+        
+    
+    
+            marker_9eda68a952964f5596bd31f2d60b03c3.bindTooltip(
+                `<div>
+                     Scuola Elementare Nicolodi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0eae4e518a34cc983787775a44307a3 = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_97f6879c8d514d73887c4b049d9e5782 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_b0eae4e518a34cc983787775a44307a3.setIcon(custom_icon_97f6879c8d514d73887c4b049d9e5782);
+        
+    
+        var popup_b4162c3e5e314b63aa6abbb7136f3c5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae218199391f4a388f085084f2db25f8 = $(`<div id="html_ae218199391f4a388f085084f2db25f8" style="width: 100.0%; height: 100.0%;">Via Luigi Einaudi, 13</div>`)[0];
+            popup_b4162c3e5e314b63aa6abbb7136f3c5d.setContent(html_ae218199391f4a388f085084f2db25f8);
+        
+
+        marker_b0eae4e518a34cc983787775a44307a3.bindPopup(popup_b4162c3e5e314b63aa6abbb7136f3c5d)
+        ;
+
+        
+    
+    
+            marker_b0eae4e518a34cc983787775a44307a3.bindTooltip(
+                `<div>
+                     Scuola Elementare Clarina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c2bdd65f8e74aa890199e5695938470 = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_6fb6f01396424ccc8fc92080160908fa = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_5c2bdd65f8e74aa890199e5695938470.setIcon(custom_icon_6fb6f01396424ccc8fc92080160908fa);
+        
+    
+        var popup_91ffb0cd9de94382ad19ee95c745e25d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fd2ec75eff234ea48dd8c7ca89a70603 = $(`<div id="html_fd2ec75eff234ea48dd8c7ca89a70603" style="width: 100.0%; height: 100.0%;">Via Luigi Einaudi, 13</div>`)[0];
+            popup_91ffb0cd9de94382ad19ee95c745e25d.setContent(html_fd2ec75eff234ea48dd8c7ca89a70603);
+        
+
+        marker_5c2bdd65f8e74aa890199e5695938470.bindPopup(popup_91ffb0cd9de94382ad19ee95c745e25d)
+        ;
+
+        
+    
+    
+            marker_5c2bdd65f8e74aa890199e5695938470.bindTooltip(
+                `<div>
+                     Scuola Elementare Clarina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_115350ebab4849a0b5a815be01c0f0ce = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_13ca3a32fa4e4c4681403429c03d9807 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_115350ebab4849a0b5a815be01c0f0ce.setIcon(custom_icon_13ca3a32fa4e4c4681403429c03d9807);
+        
+    
+        var popup_03f59e29ae824f558fd1c2a99d0a4e22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72ffbb806d154d6683b34353afe782fb = $(`<div id="html_72ffbb806d154d6683b34353afe782fb" style="width: 100.0%; height: 100.0%;">Via Luigi Einaudi, 13</div>`)[0];
+            popup_03f59e29ae824f558fd1c2a99d0a4e22.setContent(html_72ffbb806d154d6683b34353afe782fb);
+        
+
+        marker_115350ebab4849a0b5a815be01c0f0ce.bindPopup(popup_03f59e29ae824f558fd1c2a99d0a4e22)
+        ;
+
+        
+    
+    
+            marker_115350ebab4849a0b5a815be01c0f0ce.bindTooltip(
+                `<div>
+                     Scuola Elementare Clarina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04f6b43c3366446eb17d4c4968f47e1e = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_35846c8e5f734c83b3b7b098fbaead21 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_04f6b43c3366446eb17d4c4968f47e1e.setIcon(custom_icon_35846c8e5f734c83b3b7b098fbaead21);
+        
+    
+        var popup_571ed246ccc14d1081d92b37dd7dbbf7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d9597e3f2894a648b347dcd3ac8fea0 = $(`<div id="html_4d9597e3f2894a648b347dcd3ac8fea0" style="width: 100.0%; height: 100.0%;">Via Luigi Einaudi, 13</div>`)[0];
+            popup_571ed246ccc14d1081d92b37dd7dbbf7.setContent(html_4d9597e3f2894a648b347dcd3ac8fea0);
+        
+
+        marker_04f6b43c3366446eb17d4c4968f47e1e.bindPopup(popup_571ed246ccc14d1081d92b37dd7dbbf7)
+        ;
+
+        
+    
+    
+            marker_04f6b43c3366446eb17d4c4968f47e1e.bindTooltip(
+                `<div>
+                     Scuola Elementare Clarina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee434482ba104a94aaf99feaf6e32f87 = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_57d0fa2039874035841ed3e8519ea142 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_ee434482ba104a94aaf99feaf6e32f87.setIcon(custom_icon_57d0fa2039874035841ed3e8519ea142);
+        
+    
+        var popup_f9fba71997e04798923854426ad86796 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d95b8e234ba475980bd1be6a758c63d = $(`<div id="html_1d95b8e234ba475980bd1be6a758c63d" style="width: 100.0%; height: 100.0%;">Via Luigi Einaudi, 13</div>`)[0];
+            popup_f9fba71997e04798923854426ad86796.setContent(html_1d95b8e234ba475980bd1be6a758c63d);
+        
+
+        marker_ee434482ba104a94aaf99feaf6e32f87.bindPopup(popup_f9fba71997e04798923854426ad86796)
+        ;
+
+        
+    
+    
+            marker_ee434482ba104a94aaf99feaf6e32f87.bindTooltip(
+                `<div>
+                     Scuola Elementare Clarina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbadc12f17dd495bb58dd249e00e6c3b = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_f9ee37fe8170425f818be2bd6adf8583 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_cbadc12f17dd495bb58dd249e00e6c3b.setIcon(custom_icon_f9ee37fe8170425f818be2bd6adf8583);
+        
+    
+        var popup_7ec1b6f04ac84b02b63ac04f6e42186f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f4f1d256cf743fc8ef238c885b85fd9 = $(`<div id="html_2f4f1d256cf743fc8ef238c885b85fd9" style="width: 100.0%; height: 100.0%;">Via Luigi Einaudi, 13</div>`)[0];
+            popup_7ec1b6f04ac84b02b63ac04f6e42186f.setContent(html_2f4f1d256cf743fc8ef238c885b85fd9);
+        
+
+        marker_cbadc12f17dd495bb58dd249e00e6c3b.bindPopup(popup_7ec1b6f04ac84b02b63ac04f6e42186f)
+        ;
+
+        
+    
+    
+            marker_cbadc12f17dd495bb58dd249e00e6c3b.bindTooltip(
+                `<div>
+                     Scuola Elementare Clarina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_776a56ae636d4ee5a42e820991a22f62 = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_ac370f76034f41338bf88a7529a5fb9a = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_776a56ae636d4ee5a42e820991a22f62.setIcon(custom_icon_ac370f76034f41338bf88a7529a5fb9a);
+        
+    
+        var popup_58424cf73aca444c8692598ae2e04486 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a2e278ea5194f0789439aa4a88fbf7b = $(`<div id="html_9a2e278ea5194f0789439aa4a88fbf7b" style="width: 100.0%; height: 100.0%;">Via Luigi Einaudi, 13</div>`)[0];
+            popup_58424cf73aca444c8692598ae2e04486.setContent(html_9a2e278ea5194f0789439aa4a88fbf7b);
+        
+
+        marker_776a56ae636d4ee5a42e820991a22f62.bindPopup(popup_58424cf73aca444c8692598ae2e04486)
+        ;
+
+        
+    
+    
+            marker_776a56ae636d4ee5a42e820991a22f62.bindTooltip(
+                `<div>
+                     Scuola Elementare Clarina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_346eeddb0381452e8e70d28746d6b68b = L.marker(
+                [46.03983, 11.13395],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_2b816b1de0aa4772b3b2687b2b4bdeeb = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_346eeddb0381452e8e70d28746d6b68b.setIcon(custom_icon_2b816b1de0aa4772b3b2687b2b4bdeeb);
+        
+    
+        var popup_9c213423eaca4f97bc1f22ab06cbda89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3b84c0fdcde402e9b96993f8a6ad137 = $(`<div id="html_e3b84c0fdcde402e9b96993f8a6ad137" style="width: 100.0%; height: 100.0%;">Piazzale Europa, 4</div>`)[0];
+            popup_9c213423eaca4f97bc1f22ab06cbda89.setContent(html_e3b84c0fdcde402e9b96993f8a6ad137);
+        
+
+        marker_346eeddb0381452e8e70d28746d6b68b.bindPopup(popup_9c213423eaca4f97bc1f22ab06cbda89)
+        ;
+
+        
+    
+    
+            marker_346eeddb0381452e8e70d28746d6b68b.bindTooltip(
+                `<div>
+                     Scuola Elementare Madonna Bianca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aed7b26d75b24d9ba885819f5a06fcf5 = L.marker(
+                [46.03983, 11.13395],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_61a9782aa45e42c9bced2146fa82d11a = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_aed7b26d75b24d9ba885819f5a06fcf5.setIcon(custom_icon_61a9782aa45e42c9bced2146fa82d11a);
+        
+    
+        var popup_ab341fc87b5f4e07bcc2213c9d2d2309 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2788728b7d1e4893a18e7a2562977915 = $(`<div id="html_2788728b7d1e4893a18e7a2562977915" style="width: 100.0%; height: 100.0%;">Piazzale Europa, 4</div>`)[0];
+            popup_ab341fc87b5f4e07bcc2213c9d2d2309.setContent(html_2788728b7d1e4893a18e7a2562977915);
+        
+
+        marker_aed7b26d75b24d9ba885819f5a06fcf5.bindPopup(popup_ab341fc87b5f4e07bcc2213c9d2d2309)
+        ;
+
+        
+    
+    
+            marker_aed7b26d75b24d9ba885819f5a06fcf5.bindTooltip(
+                `<div>
+                     Scuola Elementare Madonna Bianca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f063dfa6407f422cb7d994321bf6e5fd = L.marker(
+                [46.03983, 11.13395],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_fea6b91e7ccd4119b422f72e44a7d39d = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_f063dfa6407f422cb7d994321bf6e5fd.setIcon(custom_icon_fea6b91e7ccd4119b422f72e44a7d39d);
+        
+    
+        var popup_a7126cf063644b179e1bbe07eb6720a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0dff6bcb0224bb88b0f4cf22239ade2 = $(`<div id="html_f0dff6bcb0224bb88b0f4cf22239ade2" style="width: 100.0%; height: 100.0%;">Piazzale Europa, 4</div>`)[0];
+            popup_a7126cf063644b179e1bbe07eb6720a0.setContent(html_f0dff6bcb0224bb88b0f4cf22239ade2);
+        
+
+        marker_f063dfa6407f422cb7d994321bf6e5fd.bindPopup(popup_a7126cf063644b179e1bbe07eb6720a0)
+        ;
+
+        
+    
+    
+            marker_f063dfa6407f422cb7d994321bf6e5fd.bindTooltip(
+                `<div>
+                     Scuola Elementare Madonna Bianca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a06318c781640298c602c8d090ccf71 = L.marker(
+                [46.03983, 11.13395],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_c2a32cc84cb1467cbcb9cc06fe97b923 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_6a06318c781640298c602c8d090ccf71.setIcon(custom_icon_c2a32cc84cb1467cbcb9cc06fe97b923);
+        
+    
+        var popup_d071d81fb226464c8509cfc4b3b054f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91ac80ec90f6441abe5fb21ea0a37b57 = $(`<div id="html_91ac80ec90f6441abe5fb21ea0a37b57" style="width: 100.0%; height: 100.0%;">Piazzale Europa, 4</div>`)[0];
+            popup_d071d81fb226464c8509cfc4b3b054f6.setContent(html_91ac80ec90f6441abe5fb21ea0a37b57);
+        
+
+        marker_6a06318c781640298c602c8d090ccf71.bindPopup(popup_d071d81fb226464c8509cfc4b3b054f6)
+        ;
+
+        
+    
+    
+            marker_6a06318c781640298c602c8d090ccf71.bindTooltip(
+                `<div>
+                     Scuola Elementare Madonna Bianca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7fc31a9769f4c878515fa9aede59e97 = L.marker(
+                [46.05708, 11.13303],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_a909b6ae2e9447c5b712fb73448ee302 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_c7fc31a9769f4c878515fa9aede59e97.setIcon(custom_icon_a909b6ae2e9447c5b712fb73448ee302);
+        
+    
+        var popup_d879c2acfa37440a84eb75995c65df01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b15e2f5fb49d4e0faa4b54278037b41c = $(`<div id="html_b15e2f5fb49d4e0faa4b54278037b41c" style="width: 100.0%; height: 100.0%;">Largo Medaglie d'Oro, 9</div>`)[0];
+            popup_d879c2acfa37440a84eb75995c65df01.setContent(html_b15e2f5fb49d4e0faa4b54278037b41c);
+        
+
+        marker_c7fc31a9769f4c878515fa9aede59e97.bindPopup(popup_d879c2acfa37440a84eb75995c65df01)
+        ;
+
+        
+    
+    
+            marker_c7fc31a9769f4c878515fa9aede59e97.bindTooltip(
+                `<div>
+                     Centro Ospedaliero Santa Chiara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2da92f29c4804a8a922425d772c22f04 = L.marker(
+                [46.05708, 11.13303],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_a1ab935be815434b8f1480ba480feb21 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_2da92f29c4804a8a922425d772c22f04.setIcon(custom_icon_a1ab935be815434b8f1480ba480feb21);
+        
+    
+        var popup_4a4e447447a8484ba2b6aa965d4585c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b346003d9744483bbc28e4bef1210348 = $(`<div id="html_b346003d9744483bbc28e4bef1210348" style="width: 100.0%; height: 100.0%;">Largo Medaglie d'Oro, 9</div>`)[0];
+            popup_4a4e447447a8484ba2b6aa965d4585c7.setContent(html_b346003d9744483bbc28e4bef1210348);
+        
+
+        marker_2da92f29c4804a8a922425d772c22f04.bindPopup(popup_4a4e447447a8484ba2b6aa965d4585c7)
+        ;
+
+        
+    
+    
+            marker_2da92f29c4804a8a922425d772c22f04.bindTooltip(
+                `<div>
+                     Centro Ospedaliero Santa Chiara
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86de5315e55549adb2c34c8b54daa469 = L.marker(
+                [46.04812, 11.14654],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_ff5c5c705cbb4c65adf2c16cac93a089 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_86de5315e55549adb2c34c8b54daa469.setIcon(custom_icon_ff5c5c705cbb4c65adf2c16cac93a089);
+        
+    
+        var popup_a44a0bd834fa449cad44fc3beb920ab2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_588025528697422687444bea5ef73391 = $(`<div id="html_588025528697422687444bea5ef73391" style="width: 100.0%; height: 100.0%;">Piazza mons. G.P. Nicolini, 7</div>`)[0];
+            popup_a44a0bd834fa449cad44fc3beb920ab2.setContent(html_588025528697422687444bea5ef73391);
+        
+
+        marker_86de5315e55549adb2c34c8b54daa469.bindPopup(popup_a44a0bd834fa449cad44fc3beb920ab2)
+        ;
+
+        
+    
+    
+            marker_86de5315e55549adb2c34c8b54daa469.bindTooltip(
+                `<div>
+                     Scuola Elementare G. A. Tomasi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0bdd7ee98684a6a9a0ea24af944a96a = L.marker(
+                [46.04812, 11.14654],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_8c7233ff52904e4caf6c6a5fc1c25988 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_d0bdd7ee98684a6a9a0ea24af944a96a.setIcon(custom_icon_8c7233ff52904e4caf6c6a5fc1c25988);
+        
+    
+        var popup_8cbf0c75a04b49d88ad82d35c48b774c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9556689c186c42f88218bc3988903495 = $(`<div id="html_9556689c186c42f88218bc3988903495" style="width: 100.0%; height: 100.0%;">Piazza mons. G.P. Nicolini, 8</div>`)[0];
+            popup_8cbf0c75a04b49d88ad82d35c48b774c.setContent(html_9556689c186c42f88218bc3988903495);
+        
+
+        marker_d0bdd7ee98684a6a9a0ea24af944a96a.bindPopup(popup_8cbf0c75a04b49d88ad82d35c48b774c)
+        ;
+
+        
+    
+    
+            marker_d0bdd7ee98684a6a9a0ea24af944a96a.bindTooltip(
+                `<div>
+                     Scuola Elementare G. A. Tomasi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96fe28eac4c44203a602abdc9642d057 = L.marker(
+                [46.04812, 11.14654],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_29bc2cfacc684b08b84c9d4cc33ec0b3 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_96fe28eac4c44203a602abdc9642d057.setIcon(custom_icon_29bc2cfacc684b08b84c9d4cc33ec0b3);
+        
+    
+        var popup_6006aa3d7a634a08988e03fb1442dfd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3decf5184795450eb113a5b1243033bc = $(`<div id="html_3decf5184795450eb113a5b1243033bc" style="width: 100.0%; height: 100.0%;">Piazza mons. G.P. Nicolini, 9</div>`)[0];
+            popup_6006aa3d7a634a08988e03fb1442dfd9.setContent(html_3decf5184795450eb113a5b1243033bc);
+        
+
+        marker_96fe28eac4c44203a602abdc9642d057.bindPopup(popup_6006aa3d7a634a08988e03fb1442dfd9)
+        ;
+
+        
+    
+    
+            marker_96fe28eac4c44203a602abdc9642d057.bindTooltip(
+                `<div>
+                     Scuola Elementare G. A. Tomasi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4ce55a0e0f84574b92f264b8aae9ed9 = L.marker(
+                [46.04812, 11.14654],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_bba1f444e82f4695b76082b2f429b59e = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_c4ce55a0e0f84574b92f264b8aae9ed9.setIcon(custom_icon_bba1f444e82f4695b76082b2f429b59e);
+        
+    
+        var popup_411df371ec4545789bb3a77be3485932 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e8d33f3d7a3409391198e51154cc126 = $(`<div id="html_5e8d33f3d7a3409391198e51154cc126" style="width: 100.0%; height: 100.0%;">Piazza mons. G.P. Nicolini, 10</div>`)[0];
+            popup_411df371ec4545789bb3a77be3485932.setContent(html_5e8d33f3d7a3409391198e51154cc126);
+        
+
+        marker_c4ce55a0e0f84574b92f264b8aae9ed9.bindPopup(popup_411df371ec4545789bb3a77be3485932)
+        ;
+
+        
+    
+    
+            marker_c4ce55a0e0f84574b92f264b8aae9ed9.bindTooltip(
+                `<div>
+                     Scuola Elementare G. A. Tomasi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70f52de06554454db20780d94afbc9fe = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_539334f69c3c48738a4ef78c323ee1f0 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_70f52de06554454db20780d94afbc9fe.setIcon(custom_icon_539334f69c3c48738a4ef78c323ee1f0);
+        
+    
+        var popup_e2a09d54bde04dbb84e60ac3d58eb0ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad3bf96a554749dbabe2518e1054b5c4 = $(`<div id="html_ad3bf96a554749dbabe2518e1054b5c4" style="width: 100.0%; height: 100.0%;">Via G. Poli, 11</div>`)[0];
+            popup_e2a09d54bde04dbb84e60ac3d58eb0ed.setContent(html_ad3bf96a554749dbabe2518e1054b5c4);
+        
+
+        marker_70f52de06554454db20780d94afbc9fe.bindPopup(popup_e2a09d54bde04dbb84e60ac3d58eb0ed)
+        ;
+
+        
+    
+    
+            marker_70f52de06554454db20780d94afbc9fe.bindTooltip(
+                `<div>
+                     ex Caserma dei Carabinieri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30cfe5dd1fbf4d08920fab91eae8d7a7 = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_7f9e5cfde23647d4bd86c595c7302f2e = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_30cfe5dd1fbf4d08920fab91eae8d7a7.setIcon(custom_icon_7f9e5cfde23647d4bd86c595c7302f2e);
+        
+    
+        var popup_ed199696215446f0835a450a5369dae6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c21cf3717024931868f9999876287b8 = $(`<div id="html_2c21cf3717024931868f9999876287b8" style="width: 100.0%; height: 100.0%;">Via G. Poli, 11</div>`)[0];
+            popup_ed199696215446f0835a450a5369dae6.setContent(html_2c21cf3717024931868f9999876287b8);
+        
+
+        marker_30cfe5dd1fbf4d08920fab91eae8d7a7.bindPopup(popup_ed199696215446f0835a450a5369dae6)
+        ;
+
+        
+    
+    
+            marker_30cfe5dd1fbf4d08920fab91eae8d7a7.bindTooltip(
+                `<div>
+                     ex Caserma dei Carabinieri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a96e5d54328f4260858e0a98a0fe7e93 = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_090b2f511b014ac58843020a8a355eb6 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_a96e5d54328f4260858e0a98a0fe7e93.setIcon(custom_icon_090b2f511b014ac58843020a8a355eb6);
+        
+    
+        var popup_809cf02bb47d4db2b3dd59ed01daeebb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97ea1c7135044c138e934d5ebd163d48 = $(`<div id="html_97ea1c7135044c138e934d5ebd163d48" style="width: 100.0%; height: 100.0%;">Via G. Poli, 11</div>`)[0];
+            popup_809cf02bb47d4db2b3dd59ed01daeebb.setContent(html_97ea1c7135044c138e934d5ebd163d48);
+        
+
+        marker_a96e5d54328f4260858e0a98a0fe7e93.bindPopup(popup_809cf02bb47d4db2b3dd59ed01daeebb)
+        ;
+
+        
+    
+    
+            marker_a96e5d54328f4260858e0a98a0fe7e93.bindTooltip(
+                `<div>
+                     ex Caserma dei Carabinieri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_781108a2341f48f7b29ec391d0d26924 = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_3cfd1d7bee0646d3beeee88d24b87147 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_781108a2341f48f7b29ec391d0d26924.setIcon(custom_icon_3cfd1d7bee0646d3beeee88d24b87147);
+        
+    
+        var popup_c5ad17246627480a992a2d49f7b8589e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2702f8c6a3dc41b580d8d7f8ee34cc98 = $(`<div id="html_2702f8c6a3dc41b580d8d7f8ee34cc98" style="width: 100.0%; height: 100.0%;">Via G. Poli, 11</div>`)[0];
+            popup_c5ad17246627480a992a2d49f7b8589e.setContent(html_2702f8c6a3dc41b580d8d7f8ee34cc98);
+        
+
+        marker_781108a2341f48f7b29ec391d0d26924.bindPopup(popup_c5ad17246627480a992a2d49f7b8589e)
+        ;
+
+        
+    
+    
+            marker_781108a2341f48f7b29ec391d0d26924.bindTooltip(
+                `<div>
+                     ex Caserma dei Carabinieri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce2964a14b084639a9fea9bc22bb19ac = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_ace1e39f054945ad9d9dcbd97a8db6d8 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_ce2964a14b084639a9fea9bc22bb19ac.setIcon(custom_icon_ace1e39f054945ad9d9dcbd97a8db6d8);
+        
+    
+        var popup_cd499976e3054097bf0519baf872831f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_836b83973576495abf864c7800409d5c = $(`<div id="html_836b83973576495abf864c7800409d5c" style="width: 100.0%; height: 100.0%;">Via G. Poli, 11</div>`)[0];
+            popup_cd499976e3054097bf0519baf872831f.setContent(html_836b83973576495abf864c7800409d5c);
+        
+
+        marker_ce2964a14b084639a9fea9bc22bb19ac.bindPopup(popup_cd499976e3054097bf0519baf872831f)
+        ;
+
+        
+    
+    
+            marker_ce2964a14b084639a9fea9bc22bb19ac.bindTooltip(
+                `<div>
+                     ex Caserma dei Carabinieri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f66e1801a1e40b2824b269e7708e50d = L.marker(
+                [46.06482, 11.15336],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_f4674abfd6cf4f12bf180d80cd98c218 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_3f66e1801a1e40b2824b269e7708e50d.setIcon(custom_icon_f4674abfd6cf4f12bf180d80cd98c218);
+        
+    
+        var popup_e6273b59f93c4fb4858d65931128baf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6807050e51f94b42b601da76a5a25b27 = $(`<div id="html_6807050e51f94b42b601da76a5a25b27" style="width: 100.0%; height: 100.0%;">Via don Tommaso Dallafior, 3</div>`)[0];
+            popup_e6273b59f93c4fb4858d65931128baf9.setContent(html_6807050e51f94b42b601da76a5a25b27);
+        
+
+        marker_3f66e1801a1e40b2824b269e7708e50d.bindPopup(popup_e6273b59f93c4fb4858d65931128baf9)
+        ;
+
+        
+    
+    
+            marker_3f66e1801a1e40b2824b269e7708e50d.bindTooltip(
+                `<div>
+                     Centro Civico di Povo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0cd0657ba1e41c697ccfcbdfc9889e9 = L.marker(
+                [46.06482, 11.15336],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_f9240f1c821e4ab68b6501bc5fe23ee7 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_e0cd0657ba1e41c697ccfcbdfc9889e9.setIcon(custom_icon_f9240f1c821e4ab68b6501bc5fe23ee7);
+        
+    
+        var popup_52ea8a8b41f74f0eb2251e912a486857 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0ae76b06c9d40e48fcae9769f0c5582 = $(`<div id="html_e0ae76b06c9d40e48fcae9769f0c5582" style="width: 100.0%; height: 100.0%;">Via don Tommaso Dallafior, 3</div>`)[0];
+            popup_52ea8a8b41f74f0eb2251e912a486857.setContent(html_e0ae76b06c9d40e48fcae9769f0c5582);
+        
+
+        marker_e0cd0657ba1e41c697ccfcbdfc9889e9.bindPopup(popup_52ea8a8b41f74f0eb2251e912a486857)
+        ;
+
+        
+    
+    
+            marker_e0cd0657ba1e41c697ccfcbdfc9889e9.bindTooltip(
+                `<div>
+                     Centro Civico di Povo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4ccb59e190d4b11a0a3df71d389dba1 = L.marker(
+                [46.06482, 11.15336],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_d9e06be50a1f42599c546a943d6c841f = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_b4ccb59e190d4b11a0a3df71d389dba1.setIcon(custom_icon_d9e06be50a1f42599c546a943d6c841f);
+        
+    
+        var popup_7057a01a70f8490b82d443bc381b731d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f3a8c3147f445769b2bcf7d0a31de3b = $(`<div id="html_7f3a8c3147f445769b2bcf7d0a31de3b" style="width: 100.0%; height: 100.0%;">Via don Tommaso Dallafior, 3</div>`)[0];
+            popup_7057a01a70f8490b82d443bc381b731d.setContent(html_7f3a8c3147f445769b2bcf7d0a31de3b);
+        
+
+        marker_b4ccb59e190d4b11a0a3df71d389dba1.bindPopup(popup_7057a01a70f8490b82d443bc381b731d)
+        ;
+
+        
+    
+    
+            marker_b4ccb59e190d4b11a0a3df71d389dba1.bindTooltip(
+                `<div>
+                     Centro Civico di Povo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_beeee5f5bdc14057bdc1e279c5e45091 = L.marker(
+                [46.06482, 11.15336],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_618fe31d89004f218f3c1bb18fe363f9 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_beeee5f5bdc14057bdc1e279c5e45091.setIcon(custom_icon_618fe31d89004f218f3c1bb18fe363f9);
+        
+    
+        var popup_6c799d2833814b23a57e4533cc65da1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_469e4fecacd445cbb19106453bf201d5 = $(`<div id="html_469e4fecacd445cbb19106453bf201d5" style="width: 100.0%; height: 100.0%;">Via don Tommaso Dallafior, 3</div>`)[0];
+            popup_6c799d2833814b23a57e4533cc65da1c.setContent(html_469e4fecacd445cbb19106453bf201d5);
+        
+
+        marker_beeee5f5bdc14057bdc1e279c5e45091.bindPopup(popup_6c799d2833814b23a57e4533cc65da1c)
+        ;
+
+        
+    
+    
+            marker_beeee5f5bdc14057bdc1e279c5e45091.bindTooltip(
+                `<div>
+                     Centro Civico di Povo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a550c246a7154bf79b42868465420fcb = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_de90d527c1d9438aafb358b7ac32dc64 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_a550c246a7154bf79b42868465420fcb.setIcon(custom_icon_de90d527c1d9438aafb358b7ac32dc64);
+        
+    
+        var popup_c52ecfe979444aa08313286f71c046d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3063454560045d4b7b4d4b8c6a9451a = $(`<div id="html_d3063454560045d4b7b4d4b8c6a9451a" style="width: 100.0%; height: 100.0%;">Via Carlo e Valeria Julg, 9</div>`)[0];
+            popup_c52ecfe979444aa08313286f71c046d4.setContent(html_d3063454560045d4b7b4d4b8c6a9451a);
+        
+
+        marker_a550c246a7154bf79b42868465420fcb.bindPopup(popup_c52ecfe979444aa08313286f71c046d4)
+        ;
+
+        
+    
+    
+            marker_a550c246a7154bf79b42868465420fcb.bindTooltip(
+                `<div>
+                     Centro Civico di Cognola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dcb49b821c54737b76f2ca97123b923 = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_32a3af63ddaf45b998dbbd0bf89497a3 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_0dcb49b821c54737b76f2ca97123b923.setIcon(custom_icon_32a3af63ddaf45b998dbbd0bf89497a3);
+        
+    
+        var popup_5e66efe55c7948d7a72e326856a62347 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24a49b790daf4bfb8b6ad91710695902 = $(`<div id="html_24a49b790daf4bfb8b6ad91710695902" style="width: 100.0%; height: 100.0%;">Via Carlo e Valeria Julg, 9</div>`)[0];
+            popup_5e66efe55c7948d7a72e326856a62347.setContent(html_24a49b790daf4bfb8b6ad91710695902);
+        
+
+        marker_0dcb49b821c54737b76f2ca97123b923.bindPopup(popup_5e66efe55c7948d7a72e326856a62347)
+        ;
+
+        
+    
+    
+            marker_0dcb49b821c54737b76f2ca97123b923.bindTooltip(
+                `<div>
+                     Centro Civico di Cognola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_624edb0046a9403fb18b06c066594ebe = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_2712ea53087b45de8ed4a6d654bb2164 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_624edb0046a9403fb18b06c066594ebe.setIcon(custom_icon_2712ea53087b45de8ed4a6d654bb2164);
+        
+    
+        var popup_b57e3518a8f5467d9cb3819ed7dbaced = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54114fd9031247a5a495fb17cf288a5a = $(`<div id="html_54114fd9031247a5a495fb17cf288a5a" style="width: 100.0%; height: 100.0%;">Via Carlo e Valeria Julg, 9</div>`)[0];
+            popup_b57e3518a8f5467d9cb3819ed7dbaced.setContent(html_54114fd9031247a5a495fb17cf288a5a);
+        
+
+        marker_624edb0046a9403fb18b06c066594ebe.bindPopup(popup_b57e3518a8f5467d9cb3819ed7dbaced)
+        ;
+
+        
+    
+    
+            marker_624edb0046a9403fb18b06c066594ebe.bindTooltip(
+                `<div>
+                     Centro Civico di Cognola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e257c982ba942d9bcfd04fa9cb74f45 = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_c72a1ccc068c41b18000a1866cd4da71 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_7e257c982ba942d9bcfd04fa9cb74f45.setIcon(custom_icon_c72a1ccc068c41b18000a1866cd4da71);
+        
+    
+        var popup_bb3f13b3f84c46afad9bbe1e5a2b3abc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2e70f46a6dc476d9ccd5af5a0b8440e = $(`<div id="html_f2e70f46a6dc476d9ccd5af5a0b8440e" style="width: 100.0%; height: 100.0%;">Via Carlo e Valeria Julg, 9</div>`)[0];
+            popup_bb3f13b3f84c46afad9bbe1e5a2b3abc.setContent(html_f2e70f46a6dc476d9ccd5af5a0b8440e);
+        
+
+        marker_7e257c982ba942d9bcfd04fa9cb74f45.bindPopup(popup_bb3f13b3f84c46afad9bbe1e5a2b3abc)
+        ;
+
+        
+    
+    
+            marker_7e257c982ba942d9bcfd04fa9cb74f45.bindTooltip(
+                `<div>
+                     Centro Civico di Cognola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d544c32c4c84bc28c1922d76d5f95aa = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_bfbd8958d343476c897a13130e1dff56 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_1d544c32c4c84bc28c1922d76d5f95aa.setIcon(custom_icon_bfbd8958d343476c897a13130e1dff56);
+        
+    
+        var popup_cde77815444a4396bfb60e857976dbe9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdf77e4d1796406c9a741dbecb9d167e = $(`<div id="html_bdf77e4d1796406c9a741dbecb9d167e" style="width: 100.0%; height: 100.0%;">Via Carlo e Valeria Julg, 9</div>`)[0];
+            popup_cde77815444a4396bfb60e857976dbe9.setContent(html_bdf77e4d1796406c9a741dbecb9d167e);
+        
+
+        marker_1d544c32c4c84bc28c1922d76d5f95aa.bindPopup(popup_cde77815444a4396bfb60e857976dbe9)
+        ;
+
+        
+    
+    
+            marker_1d544c32c4c84bc28c1922d76d5f95aa.bindTooltip(
+                `<div>
+                     Centro Civico di Cognola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac444e13852f49408c4904da4f3f7a1e = L.marker(
+                [46.09058, 11.13178],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_f972fa2712ef480a9ee922368f7539a8 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_ac444e13852f49408c4904da4f3f7a1e.setIcon(custom_icon_f972fa2712ef480a9ee922368f7539a8);
+        
+    
+        var popup_617954edb15e4eddb39fa64a47c584a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49d27776370d40e093e0f3cedbffc5a1 = $(`<div id="html_49d27776370d40e093e0f3cedbffc5a1" style="width: 100.0%; height: 100.0%;">Via alla Formighetta, 4</div>`)[0];
+            popup_617954edb15e4eddb39fa64a47c584a8.setContent(html_49d27776370d40e093e0f3cedbffc5a1);
+        
+
+        marker_ac444e13852f49408c4904da4f3f7a1e.bindPopup(popup_617954edb15e4eddb39fa64a47c584a8)
+        ;
+
+        
+    
+    
+            marker_ac444e13852f49408c4904da4f3f7a1e.bindTooltip(
+                `<div>
+                     Scuola elementare di Martignano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9632538574be439ab614b2dd10898aec = L.marker(
+                [46.09058, 11.13178],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_29a91f72fd334f9e913d88add0fb7893 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_9632538574be439ab614b2dd10898aec.setIcon(custom_icon_29a91f72fd334f9e913d88add0fb7893);
+        
+    
+        var popup_6642b3d1074947fbaac14a3cbf91abdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee1acda9c2bd44c4b5a9e25021e125ae = $(`<div id="html_ee1acda9c2bd44c4b5a9e25021e125ae" style="width: 100.0%; height: 100.0%;">Via alla Formighetta, 4</div>`)[0];
+            popup_6642b3d1074947fbaac14a3cbf91abdd.setContent(html_ee1acda9c2bd44c4b5a9e25021e125ae);
+        
+
+        marker_9632538574be439ab614b2dd10898aec.bindPopup(popup_6642b3d1074947fbaac14a3cbf91abdd)
+        ;
+
+        
+    
+    
+            marker_9632538574be439ab614b2dd10898aec.bindTooltip(
+                `<div>
+                     Scuola elementare di Martignano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58bac64997cb49cd8182ab8c3b872e01 = L.marker(
+                [46.09058, 11.13178],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_c5cf5df047b44e2cb5777e3598aa17c9 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_58bac64997cb49cd8182ab8c3b872e01.setIcon(custom_icon_c5cf5df047b44e2cb5777e3598aa17c9);
+        
+    
+        var popup_3a37cf5510ef4bfeb7a497270ce7f9af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd142861f8ca4c2ba57aa6aa06bef7b3 = $(`<div id="html_dd142861f8ca4c2ba57aa6aa06bef7b3" style="width: 100.0%; height: 100.0%;">Via alla Formighetta, 4</div>`)[0];
+            popup_3a37cf5510ef4bfeb7a497270ce7f9af.setContent(html_dd142861f8ca4c2ba57aa6aa06bef7b3);
+        
+
+        marker_58bac64997cb49cd8182ab8c3b872e01.bindPopup(popup_3a37cf5510ef4bfeb7a497270ce7f9af)
+        ;
+
+        
+    
+    
+            marker_58bac64997cb49cd8182ab8c3b872e01.bindTooltip(
+                `<div>
+                     Scuola elementare di Martignano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9ee1fcd88c24a3eb6c7b44b4aff682a = L.marker(
+                [46.09058, 11.13178],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_928e7b038e6540b6bb8c0efb0fc83c62 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_e9ee1fcd88c24a3eb6c7b44b4aff682a.setIcon(custom_icon_928e7b038e6540b6bb8c0efb0fc83c62);
+        
+    
+        var popup_850adca0510f4633a745f875abb8571c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b75b448ef2df4d25a6a4b022e3e350e0 = $(`<div id="html_b75b448ef2df4d25a6a4b022e3e350e0" style="width: 100.0%; height: 100.0%;">Via alla Formighetta 4</div>`)[0];
+            popup_850adca0510f4633a745f875abb8571c.setContent(html_b75b448ef2df4d25a6a4b022e3e350e0);
+        
+
+        marker_e9ee1fcd88c24a3eb6c7b44b4aff682a.bindPopup(popup_850adca0510f4633a745f875abb8571c)
+        ;
+
+        
+    
+    
+            marker_e9ee1fcd88c24a3eb6c7b44b4aff682a.bindTooltip(
+                `<div>
+                     Scuola elementare di Martignano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8901fefa1704195a334d3b8e4e0f8b1 = L.marker(
+                [46.0378, 11.10656],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_86e03ef11be14b3688233b069a5f9925 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_d8901fefa1704195a334d3b8e4e0f8b1.setIcon(custom_icon_86e03ef11be14b3688233b069a5f9925);
+        
+    
+        var popup_35c6ef7e9be5469a8c9f77b28b1a6e6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfce37f0a247471abb412cbef6f302d3 = $(`<div id="html_bfce37f0a247471abb412cbef6f302d3" style="width: 100.0%; height: 100.0%;">Via val Gola, 2</div>`)[0];
+            popup_35c6ef7e9be5469a8c9f77b28b1a6e6d.setContent(html_bfce37f0a247471abb412cbef6f302d3);
+        
+
+        marker_d8901fefa1704195a334d3b8e4e0f8b1.bindPopup(popup_35c6ef7e9be5469a8c9f77b28b1a6e6d)
+        ;
+
+        
+    
+    
+            marker_d8901fefa1704195a334d3b8e4e0f8b1.bindTooltip(
+                `<div>
+                     Centro civico di Ravina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e776d066489d4d9d9ced453f92e9751b = L.marker(
+                [46.0378, 11.10656],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_256fc0abaa6a4000b1efc1230013ef8d = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_e776d066489d4d9d9ced453f92e9751b.setIcon(custom_icon_256fc0abaa6a4000b1efc1230013ef8d);
+        
+    
+        var popup_66384115b11d469ca0c9cf49b93a6004 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf14275e66564a5ba3fb068268600d16 = $(`<div id="html_bf14275e66564a5ba3fb068268600d16" style="width: 100.0%; height: 100.0%;">Via val Gola, 2</div>`)[0];
+            popup_66384115b11d469ca0c9cf49b93a6004.setContent(html_bf14275e66564a5ba3fb068268600d16);
+        
+
+        marker_e776d066489d4d9d9ced453f92e9751b.bindPopup(popup_66384115b11d469ca0c9cf49b93a6004)
+        ;
+
+        
+    
+    
+            marker_e776d066489d4d9d9ced453f92e9751b.bindTooltip(
+                `<div>
+                     Centro civico di Ravina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9397aeaf9344a479f973a0665137e05 = L.marker(
+                [46.0378, 11.10656],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_11e3965129674e6e85d8806ca5f69553 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_d9397aeaf9344a479f973a0665137e05.setIcon(custom_icon_11e3965129674e6e85d8806ca5f69553);
+        
+    
+        var popup_4c33791aa6774e89be053f7f1a94354a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f80f2d6b7a954bb9ac4779808076b06e = $(`<div id="html_f80f2d6b7a954bb9ac4779808076b06e" style="width: 100.0%; height: 100.0%;">Via val Gola, 2</div>`)[0];
+            popup_4c33791aa6774e89be053f7f1a94354a.setContent(html_f80f2d6b7a954bb9ac4779808076b06e);
+        
+
+        marker_d9397aeaf9344a479f973a0665137e05.bindPopup(popup_4c33791aa6774e89be053f7f1a94354a)
+        ;
+
+        
+    
+    
+            marker_d9397aeaf9344a479f973a0665137e05.bindTooltip(
+                `<div>
+                     Centro civico di Ravina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf231f5afcbe4e29afa151f29f308b3c = L.marker(
+                [46.01719, 11.10586],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_710d86962faf4f84bfd483cda307007e = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_bf231f5afcbe4e29afa151f29f308b3c.setIcon(custom_icon_710d86962faf4f84bfd483cda307007e);
+        
+    
+        var popup_ceb70b68449c472ba0d4383f5c0da454 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72c1e8f92a1f4992888e99b829e905c2 = $(`<div id="html_72c1e8f92a1f4992888e99b829e905c2" style="width: 100.0%; height: 100.0%;">Via sette Fontane, 1</div>`)[0];
+            popup_ceb70b68449c472ba0d4383f5c0da454.setContent(html_72c1e8f92a1f4992888e99b829e905c2);
+        
+
+        marker_bf231f5afcbe4e29afa151f29f308b3c.bindPopup(popup_ceb70b68449c472ba0d4383f5c0da454)
+        ;
+
+        
+    
+    
+            marker_bf231f5afcbe4e29afa151f29f308b3c.bindTooltip(
+                `<div>
+                     Ufficio comunale di Romagnano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9257acb4c5524e4da59fe9f55a8a3ccb = L.marker(
+                [46.06331, 11.09714],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_dd61c0896651460e8c7fe4126fcc3e91 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_9257acb4c5524e4da59fe9f55a8a3ccb.setIcon(custom_icon_dd61c0896651460e8c7fe4126fcc3e91);
+        
+    
+        var popup_7dcee9da0b3e4552a082973990db5b6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef19784b7d6a42548563a8b017a2fb10 = $(`<div id="html_ef19784b7d6a42548563a8b017a2fb10" style="width: 100.0%; height: 100.0%;">Via G. Bucelleni, 1</div>`)[0];
+            popup_7dcee9da0b3e4552a082973990db5b6d.setContent(html_ef19784b7d6a42548563a8b017a2fb10);
+        
+
+        marker_9257acb4c5524e4da59fe9f55a8a3ccb.bindPopup(popup_7dcee9da0b3e4552a082973990db5b6d)
+        ;
+
+        
+    
+    
+            marker_9257acb4c5524e4da59fe9f55a8a3ccb.bindTooltip(
+                `<div>
+                     Centro civico di Sardagna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92c765f351b44619a8c54ad89db82c7f = L.marker(
+                [46.07162, 11.06042],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_2a277d211de34ab88d9a580884be1594 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_92c765f351b44619a8c54ad89db82c7f.setIcon(custom_icon_2a277d211de34ab88d9a580884be1594);
+        
+    
+        var popup_0fe7aab123ab406e8f14082bb8f0f86c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_af967ab630ff4fedaa353d46f43f6611 = $(`<div id="html_af967ab630ff4fedaa353d46f43f6611" style="width: 100.0%; height: 100.0%;">Via di Revolta, 4</div>`)[0];
+            popup_0fe7aab123ab406e8f14082bb8f0f86c.setContent(html_af967ab630ff4fedaa353d46f43f6611);
+        
+
+        marker_92c765f351b44619a8c54ad89db82c7f.bindPopup(popup_0fe7aab123ab406e8f14082bb8f0f86c)
+        ;
+
+        
+    
+    
+            marker_92c765f351b44619a8c54ad89db82c7f.bindTooltip(
+                `<div>
+                     Centro civico di Sopramonte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d40705ea669540bca3c42584ee39edb5 = L.marker(
+                [46.07162, 11.06042],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_2e33315b20244aa0ae5979b812b99daf = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_d40705ea669540bca3c42584ee39edb5.setIcon(custom_icon_2e33315b20244aa0ae5979b812b99daf);
+        
+    
+        var popup_2651d7b9140a4df5b59dd75c968aac71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8083bed7953048e0be05ea5eac3e275e = $(`<div id="html_8083bed7953048e0be05ea5eac3e275e" style="width: 100.0%; height: 100.0%;">Via di Revolta, 4</div>`)[0];
+            popup_2651d7b9140a4df5b59dd75c968aac71.setContent(html_8083bed7953048e0be05ea5eac3e275e);
+        
+
+        marker_d40705ea669540bca3c42584ee39edb5.bindPopup(popup_2651d7b9140a4df5b59dd75c968aac71)
+        ;
+
+        
+    
+    
+            marker_d40705ea669540bca3c42584ee39edb5.bindTooltip(
+                `<div>
+                     Centro civico di Sopramonte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65a44001e7514044a5513fb04aabed9d = L.marker(
+                [46.08642, 11.06386],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_2062054171fa40d8825930853028df26 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_65a44001e7514044a5513fb04aabed9d.setIcon(custom_icon_2062054171fa40d8825930853028df26);
+        
+    
+        var popup_cab0a234f935404d81910b802101cd02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c06ff9a7ae14cd0bf7f5ea908bd244a = $(`<div id="html_5c06ff9a7ae14cd0bf7f5ea908bd244a" style="width: 100.0%; height: 100.0%;">Via dell'Androna, 1</div>`)[0];
+            popup_cab0a234f935404d81910b802101cd02.setContent(html_5c06ff9a7ae14cd0bf7f5ea908bd244a);
+        
+
+        marker_65a44001e7514044a5513fb04aabed9d.bindPopup(popup_cab0a234f935404d81910b802101cd02)
+        ;
+
+        
+    
+    
+            marker_65a44001e7514044a5513fb04aabed9d.bindTooltip(
+                `<div>
+                     Centro civico di Cadine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d35bcb1a83d445aa1f201b69f146337 = L.marker(
+                [46.08642, 11.06386],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_2d1e466f49604d8db24acb6476c467d4 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_3d35bcb1a83d445aa1f201b69f146337.setIcon(custom_icon_2d1e466f49604d8db24acb6476c467d4);
+        
+    
+        var popup_ca92887056364188be8cee1a6def91d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92d6af63501f4bd2819f08b77e4c5264 = $(`<div id="html_92d6af63501f4bd2819f08b77e4c5264" style="width: 100.0%; height: 100.0%;">Via dell'Androna, 1</div>`)[0];
+            popup_ca92887056364188be8cee1a6def91d6.setContent(html_92d6af63501f4bd2819f08b77e4c5264);
+        
+
+        marker_3d35bcb1a83d445aa1f201b69f146337.bindPopup(popup_ca92887056364188be8cee1a6def91d6)
+        ;
+
+        
+    
+    
+            marker_3d35bcb1a83d445aa1f201b69f146337.bindTooltip(
+                `<div>
+                     Centro civico di Cadine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f7b5a7ec2814262a5ed429f4effc070 = L.marker(
+                [46.1263, 11.11614],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_763d514040984f16a1f3770daf7a8aab = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_2f7b5a7ec2814262a5ed429f4effc070.setIcon(custom_icon_763d514040984f16a1f3770daf7a8aab);
+        
+    
+        var popup_43066db4e54b492f8063d2e150c84c17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57e3bd809702473dae607de856839f7d = $(`<div id="html_57e3bd809702473dae607de856839f7d" style="width: 100.0%; height: 100.0%;">Via delle Sugarine, 26</div>`)[0];
+            popup_43066db4e54b492f8063d2e150c84c17.setContent(html_57e3bd809702473dae607de856839f7d);
+        
+
+        marker_2f7b5a7ec2814262a5ed429f4effc070.bindPopup(popup_43066db4e54b492f8063d2e150c84c17)
+        ;
+
+        
+    
+    
+            marker_2f7b5a7ec2814262a5ed429f4effc070.bindTooltip(
+                `<div>
+                     Centro civico di Meano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c26096f51f6c4287b4ea89c441331170 = L.marker(
+                [46.1263, 11.11614],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_118944fa64644d488d5ea147cc28855a = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_c26096f51f6c4287b4ea89c441331170.setIcon(custom_icon_118944fa64644d488d5ea147cc28855a);
+        
+    
+        var popup_2100c9d5c90c460d9875fe530e665c98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c5e05b0b032b4645ac1e0146126fe359 = $(`<div id="html_c5e05b0b032b4645ac1e0146126fe359" style="width: 100.0%; height: 100.0%;">Via delle Sugarine, 26</div>`)[0];
+            popup_2100c9d5c90c460d9875fe530e665c98.setContent(html_c5e05b0b032b4645ac1e0146126fe359);
+        
+
+        marker_c26096f51f6c4287b4ea89c441331170.bindPopup(popup_2100c9d5c90c460d9875fe530e665c98)
+        ;
+
+        
+    
+    
+            marker_c26096f51f6c4287b4ea89c441331170.bindTooltip(
+                `<div>
+                     Centro civico di Meano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6517f79eafd4a2f9d3d4709258f44c2 = L.marker(
+                [46.13206, 11.13434],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_4787a6a2549349cd9f296fb8edf825dd = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_a6517f79eafd4a2f9d3d4709258f44c2.setIcon(custom_icon_4787a6a2549349cd9f296fb8edf825dd);
+        
+    
+        var popup_98ca139429144df280d09c3cf3f45321 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1027a31960140b699fc9401b86083fd = $(`<div id="html_b1027a31960140b699fc9401b86083fd" style="width: 100.0%; height: 100.0%;">Piazza A. Stainer, 1</div>`)[0];
+            popup_98ca139429144df280d09c3cf3f45321.setContent(html_b1027a31960140b699fc9401b86083fd);
+        
+
+        marker_a6517f79eafd4a2f9d3d4709258f44c2.bindPopup(popup_98ca139429144df280d09c3cf3f45321)
+        ;
+
+        
+    
+    
+            marker_a6517f79eafd4a2f9d3d4709258f44c2.bindTooltip(
+                `<div>
+                     Centro civico di Vigo Meano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fed37d779b5b4f67be1ce291c63bfa04 = L.marker(
+                [46.10785, 11.11235],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_94c45396614b428ea58dc23ce6c849b0 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_fed37d779b5b4f67be1ce291c63bfa04.setIcon(custom_icon_94c45396614b428ea58dc23ce6c849b0);
+        
+    
+        var popup_a19cc805f06d4be0b47066a89d51c864 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d01ee9cc0fd48a2a76d194ff2dcd45b = $(`<div id="html_4d01ee9cc0fd48a2a76d194ff2dcd45b" style="width: 100.0%; height: 100.0%;">Piazzale L. Groff, 2</div>`)[0];
+            popup_a19cc805f06d4be0b47066a89d51c864.setContent(html_4d01ee9cc0fd48a2a76d194ff2dcd45b);
+        
+
+        marker_fed37d779b5b4f67be1ce291c63bfa04.bindPopup(popup_a19cc805f06d4be0b47066a89d51c864)
+        ;
+
+        
+    
+    
+            marker_fed37d779b5b4f67be1ce291c63bfa04.bindTooltip(
+                `<div>
+                     Centro civico di Gardolo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed85b5a5496746d1ae6b7f7b2cde266b = L.marker(
+                [46.10785, 11.11235],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_d0ab6e5519e844a19cac321290ba6092 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_ed85b5a5496746d1ae6b7f7b2cde266b.setIcon(custom_icon_d0ab6e5519e844a19cac321290ba6092);
+        
+    
+        var popup_b42ab83b5a0c455e9b0b41cbc8e91f49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fdc8199785d43cf88447461caa15aa4 = $(`<div id="html_6fdc8199785d43cf88447461caa15aa4" style="width: 100.0%; height: 100.0%;">Piazzale L. Groff, 2</div>`)[0];
+            popup_b42ab83b5a0c455e9b0b41cbc8e91f49.setContent(html_6fdc8199785d43cf88447461caa15aa4);
+        
+
+        marker_ed85b5a5496746d1ae6b7f7b2cde266b.bindPopup(popup_b42ab83b5a0c455e9b0b41cbc8e91f49)
+        ;
+
+        
+    
+    
+            marker_ed85b5a5496746d1ae6b7f7b2cde266b.bindTooltip(
+                `<div>
+                     Centro civico di Gardolo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0d8fe231b1b4a9cbcf8ed10bf64ef7a = L.marker(
+                [46.10785, 11.11235],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_64320f9c153844f9ad1a93c97baeb0e9 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_f0d8fe231b1b4a9cbcf8ed10bf64ef7a.setIcon(custom_icon_64320f9c153844f9ad1a93c97baeb0e9);
+        
+    
+        var popup_060a4c167ce942ed8ee903ad0b51c733 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f80a985ce294cc59b106f46d054c452 = $(`<div id="html_1f80a985ce294cc59b106f46d054c452" style="width: 100.0%; height: 100.0%;">Piazzale L. Groff, 2</div>`)[0];
+            popup_060a4c167ce942ed8ee903ad0b51c733.setContent(html_1f80a985ce294cc59b106f46d054c452);
+        
+
+        marker_f0d8fe231b1b4a9cbcf8ed10bf64ef7a.bindPopup(popup_060a4c167ce942ed8ee903ad0b51c733)
+        ;
+
+        
+    
+    
+            marker_f0d8fe231b1b4a9cbcf8ed10bf64ef7a.bindTooltip(
+                `<div>
+                     Centro civico di Gardolo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa6a422c0c344d68b300a27cb6429689 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_0d388be8ee794ed79efe236dd2983148 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_fa6a422c0c344d68b300a27cb6429689.setIcon(custom_icon_0d388be8ee794ed79efe236dd2983148);
+        
+    
+        var popup_60e9339dc3374981bd31c252ba833c1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a863075f1c94f228f527ecd08120d01 = $(`<div id="html_4a863075f1c94f228f527ecd08120d01" style="width: 100.0%; height: 100.0%;">Via Soprasasso, 1</div>`)[0];
+            popup_60e9339dc3374981bd31c252ba833c1f.setContent(html_4a863075f1c94f228f527ecd08120d01);
+        
+
+        marker_fa6a422c0c344d68b300a27cb6429689.bindPopup(popup_60e9339dc3374981bd31c252ba833c1f)
+        ;
+
+        
+    
+    
+            marker_fa6a422c0c344d68b300a27cb6429689.bindTooltip(
+                `<div>
+                     Edificio Pluriuso (ex centro civico)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca60d6b2d95047518623657abd632f72 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_067803c66f1e442aae687bc29d268c7f = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_ca60d6b2d95047518623657abd632f72.setIcon(custom_icon_067803c66f1e442aae687bc29d268c7f);
+        
+    
+        var popup_4db43393faed44229df5398411bfeabc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d085c53ec84425486609171137f3a16 = $(`<div id="html_3d085c53ec84425486609171137f3a16" style="width: 100.0%; height: 100.0%;">Via Soprasasso, 1</div>`)[0];
+            popup_4db43393faed44229df5398411bfeabc.setContent(html_3d085c53ec84425486609171137f3a16);
+        
+
+        marker_ca60d6b2d95047518623657abd632f72.bindPopup(popup_4db43393faed44229df5398411bfeabc)
+        ;
+
+        
+    
+    
+            marker_ca60d6b2d95047518623657abd632f72.bindTooltip(
+                `<div>
+                     Edificio Pluriuso (ex centro civico)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_591a07fb0dc34526aad5ae83175f1441 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_b0f2d65c439942c0be6aa69deca3030a = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_591a07fb0dc34526aad5ae83175f1441.setIcon(custom_icon_b0f2d65c439942c0be6aa69deca3030a);
+        
+    
+        var popup_9bfdd780f04b404693785b39e57a025d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98b49bd6929e4420817f4dae4a0b9efc = $(`<div id="html_98b49bd6929e4420817f4dae4a0b9efc" style="width: 100.0%; height: 100.0%;">Via Soprasasso, 1</div>`)[0];
+            popup_9bfdd780f04b404693785b39e57a025d.setContent(html_98b49bd6929e4420817f4dae4a0b9efc);
+        
+
+        marker_591a07fb0dc34526aad5ae83175f1441.bindPopup(popup_9bfdd780f04b404693785b39e57a025d)
+        ;
+
+        
+    
+    
+            marker_591a07fb0dc34526aad5ae83175f1441.bindTooltip(
+                `<div>
+                     Edificio Pluriuso (ex centro civico)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa7692f4723045efb6f2e81f4f930981 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_ee317d6cd7064c0b9c0888057c3b4321 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_fa7692f4723045efb6f2e81f4f930981.setIcon(custom_icon_ee317d6cd7064c0b9c0888057c3b4321);
+        
+    
+        var popup_5cb0e55a9c0a4f058145944d38e1ce5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c8757c160a8486ca30dbc6f9b913725 = $(`<div id="html_7c8757c160a8486ca30dbc6f9b913725" style="width: 100.0%; height: 100.0%;">Via Soprasasso, 1</div>`)[0];
+            popup_5cb0e55a9c0a4f058145944d38e1ce5f.setContent(html_7c8757c160a8486ca30dbc6f9b913725);
+        
+
+        marker_fa7692f4723045efb6f2e81f4f930981.bindPopup(popup_5cb0e55a9c0a4f058145944d38e1ce5f)
+        ;
+
+        
+    
+    
+            marker_fa7692f4723045efb6f2e81f4f930981.bindTooltip(
+                `<div>
+                     Edificio Pluriuso (ex centro civico)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a733fb243146484481dd4e824488833e = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_b45b4480125d4cf2a2f0ec3dff78edcb = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_a733fb243146484481dd4e824488833e.setIcon(custom_icon_b45b4480125d4cf2a2f0ec3dff78edcb);
+        
+    
+        var popup_473aad53013a45c598a6c415984ed0da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b5d978bcd544f6d968b8c4f7865d1f9 = $(`<div id="html_9b5d978bcd544f6d968b8c4f7865d1f9" style="width: 100.0%; height: 100.0%;">Via Soprasasso, 1</div>`)[0];
+            popup_473aad53013a45c598a6c415984ed0da.setContent(html_9b5d978bcd544f6d968b8c4f7865d1f9);
+        
+
+        marker_a733fb243146484481dd4e824488833e.bindPopup(popup_473aad53013a45c598a6c415984ed0da)
+        ;
+
+        
+    
+    
+            marker_a733fb243146484481dd4e824488833e.bindTooltip(
+                `<div>
+                     Edificio Pluriuso (ex centro civico)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab71488f9af841618de06fcf2100d953 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_388206afb17a4fe0a0570f6c0a00f172 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_ab71488f9af841618de06fcf2100d953.setIcon(custom_icon_388206afb17a4fe0a0570f6c0a00f172);
+        
+    
+        var popup_6fbc2afac9c045f5b748b9726a56b4be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92b9056d792541d3a464f6df76bdea02 = $(`<div id="html_92b9056d792541d3a464f6df76bdea02" style="width: 100.0%; height: 100.0%;">Via Soprasasso, 1</div>`)[0];
+            popup_6fbc2afac9c045f5b748b9726a56b4be.setContent(html_92b9056d792541d3a464f6df76bdea02);
+        
+
+        marker_ab71488f9af841618de06fcf2100d953.bindPopup(popup_6fbc2afac9c045f5b748b9726a56b4be)
+        ;
+
+        
+    
+    
+            marker_ab71488f9af841618de06fcf2100d953.bindTooltip(
+                `<div>
+                     Edificio Pluriuso (ex centro civico)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f82ab6d6b3dc47efae39586e387581c6 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_41e69112ddd8453b81b4439c9a9b9873 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_f82ab6d6b3dc47efae39586e387581c6.setIcon(custom_icon_41e69112ddd8453b81b4439c9a9b9873);
+        
+    
+        var popup_378a6dcbe76645fd850e23214502ff25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38bb3a804c364a3abf446c693eb67b4f = $(`<div id="html_38bb3a804c364a3abf446c693eb67b4f" style="width: 100.0%; height: 100.0%;">Via Soprasasso, 1</div>`)[0];
+            popup_378a6dcbe76645fd850e23214502ff25.setContent(html_38bb3a804c364a3abf446c693eb67b4f);
+        
+
+        marker_f82ab6d6b3dc47efae39586e387581c6.bindPopup(popup_378a6dcbe76645fd850e23214502ff25)
+        ;
+
+        
+    
+    
+            marker_f82ab6d6b3dc47efae39586e387581c6.bindTooltip(
+                `<div>
+                     Edificio Pluriuso (ex centro civico)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_984c9ceee1614556bdfa3b4e9f7f3652 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_b37e9924f7ba4af6925431e0d0429ae6 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_984c9ceee1614556bdfa3b4e9f7f3652.setIcon(custom_icon_b37e9924f7ba4af6925431e0d0429ae6);
+        
+    
+        var popup_0cdc219f203b4f6e996adbfcad00d8ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bafe7505524c457ca2e48cfa0b26ce80 = $(`<div id="html_bafe7505524c457ca2e48cfa0b26ce80" style="width: 100.0%; height: 100.0%;">Via Antonio Stoppani, 3</div>`)[0];
+            popup_0cdc219f203b4f6e996adbfcad00d8ae.setContent(html_bafe7505524c457ca2e48cfa0b26ce80);
+        
+
+        marker_984c9ceee1614556bdfa3b4e9f7f3652.bindPopup(popup_0cdc219f203b4f6e996adbfcad00d8ae)
+        ;
+
+        
+    
+    
+            marker_984c9ceee1614556bdfa3b4e9f7f3652.bindTooltip(
+                `<div>
+                     Scuola Elementare S. Bellesini
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4934d48ae6b7415184615e536a53c3aa = L.marker(
+                [46.01719, 11.10586],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_7aeb50d65cb14bdd99f47a320f172cda = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_4934d48ae6b7415184615e536a53c3aa.setIcon(custom_icon_7aeb50d65cb14bdd99f47a320f172cda);
+        
+    
+        var popup_621f6206572a48dbb25848a3a7d505d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1035f4d6b2745ed9b8374e751c94f62 = $(`<div id="html_c1035f4d6b2745ed9b8374e751c94f62" style="width: 100.0%; height: 100.0%;">Via sette Fontane, 1</div>`)[0];
+            popup_621f6206572a48dbb25848a3a7d505d2.setContent(html_c1035f4d6b2745ed9b8374e751c94f62);
+        
+
+        marker_4934d48ae6b7415184615e536a53c3aa.bindPopup(popup_621f6206572a48dbb25848a3a7d505d2)
+        ;
+
+        
+    
+    
+            marker_4934d48ae6b7415184615e536a53c3aa.bindTooltip(
+                `<div>
+                     Ufficio comunale di Romagnano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65bb23eccd844a9baa78f84b79c9f725 = L.marker(
+                [46.1263, 11.11614],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_2817c7bbdba049b6923785adcfe2d86d = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_65bb23eccd844a9baa78f84b79c9f725.setIcon(custom_icon_2817c7bbdba049b6923785adcfe2d86d);
+        
+    
+        var popup_d62f90e8dca047eb8c3ab4a13ee7ce43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e5b689f3e18429994f93062b4fec22b = $(`<div id="html_3e5b689f3e18429994f93062b4fec22b" style="width: 100.0%; height: 100.0%;">Via delle Sugarine, 26</div>`)[0];
+            popup_d62f90e8dca047eb8c3ab4a13ee7ce43.setContent(html_3e5b689f3e18429994f93062b4fec22b);
+        
+
+        marker_65bb23eccd844a9baa78f84b79c9f725.bindPopup(popup_d62f90e8dca047eb8c3ab4a13ee7ce43)
+        ;
+
+        
+    
+    
+            marker_65bb23eccd844a9baa78f84b79c9f725.bindTooltip(
+                `<div>
+                     Centro civico di Meano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a157ca6dfe3419fb2e8362633cbbb03 = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_a4c30ec73e634682a59c1eaee20654b8 = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_6a157ca6dfe3419fb2e8362633cbbb03.setIcon(custom_icon_a4c30ec73e634682a59c1eaee20654b8);
+        
+    
+        var popup_5748de0d87fa4e5e81e7d3e6709d9836 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adb20a74db844985a692a628bdad802c = $(`<div id="html_adb20a74db844985a692a628bdad802c" style="width: 100.0%; height: 100.0%;">Via Carlo e Valeria Julg, 9</div>`)[0];
+            popup_5748de0d87fa4e5e81e7d3e6709d9836.setContent(html_adb20a74db844985a692a628bdad802c);
+        
+
+        marker_6a157ca6dfe3419fb2e8362633cbbb03.bindPopup(popup_5748de0d87fa4e5e81e7d3e6709d9836)
+        ;
+
+        
+    
+    
+            marker_6a157ca6dfe3419fb2e8362633cbbb03.bindTooltip(
+                `<div>
+                     Centro Civico di Cognola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bed576df54264ba29f9958c9805314b0 = L.marker(
+                [46.07162, 11.06042],
+                {}
+            ).addTo(map_9d526c1d821b4c34a1bdd59de3b1d443);
+        
+    
+        var custom_icon_f601edc027d74ca994ccb95dd1d3b85b = L.icon({"iconSize": [34, 34], "iconUrl": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/40/ballot-box-with-ballot_1f5f3.png"});
+        marker_bed576df54264ba29f9958c9805314b0.setIcon(custom_icon_f601edc027d74ca994ccb95dd1d3b85b);
+        
+    
+        var popup_18ece2f26ed540f8be4fdc406fa8e2ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_299b02bc6edb442d949706ff33ea9929 = $(`<div id="html_299b02bc6edb442d949706ff33ea9929" style="width: 100.0%; height: 100.0%;">Via di Revolta, 4</div>`)[0];
+            popup_18ece2f26ed540f8be4fdc406fa8e2ba.setContent(html_299b02bc6edb442d949706ff33ea9929);
+        
+
+        marker_bed576df54264ba29f9958c9805314b0.bindPopup(popup_18ece2f26ed540f8be4fdc406fa8e2ba)
+        ;
+
+        
+    
+    
+            marker_bed576df54264ba29f9958c9805314b0.bindTooltip(
+                `<div>
+                     Centro civico di Sopramonte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

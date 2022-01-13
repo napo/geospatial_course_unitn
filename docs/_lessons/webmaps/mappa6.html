@@ -1,0 +1,3306 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7341bf3bc214ec294f8fbefd7e6d824 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b7341bf3bc214ec294f8fbefd7e6d824" ></div>
+        
+</body>
+<script>    
+    
+            var map_b7341bf3bc214ec294f8fbefd7e6d824 = L.map(
+                "map_b7341bf3bc214ec294f8fbefd7e6d824",
+                {
+                    center: [46.0672, 11.1212],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8d793098c88147f0945113842ba7b2d5 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7341bf3bc214ec294f8fbefd7e6d824);
+        
+    
+            var marker_cluster_4069c97500d64e0eb271655e0d2efd7d = L.markerClusterGroup(
+                {}
+            );
+            map_b7341bf3bc214ec294f8fbefd7e6d824.addLayer(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var marker_5ca3a7f9fb34446687fa2e685b74b1f3 = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_7429683128824071b8cd086f53e53952 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_5ca3a7f9fb34446687fa2e685b74b1f3.setIcon(icon_7429683128824071b8cd086f53e53952);
+        
+    
+        var popup_98d968cc3f424e8eb5874b6d57fe51e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ec88b981b7b4a948fc6a88870adfb50 = $(`<div id="html_9ec88b981b7b4a948fc6a88870adfb50" style="width: 100.0%; height: 100.0%;"><strong>sezione:1</strong><br/>Scuola Elementare R. Sanzio</div>`)[0];
+            popup_98d968cc3f424e8eb5874b6d57fe51e6.setContent(html_9ec88b981b7b4a948fc6a88870adfb50);
+        
+
+        marker_5ca3a7f9fb34446687fa2e685b74b1f3.bindPopup(popup_98d968cc3f424e8eb5874b6d57fe51e6)
+        ;
+
+        
+    
+    
+            marker_5ca3a7f9fb34446687fa2e685b74b1f3.bindTooltip(
+                `<div>
+                     <strong>sezione:1</strong><br/>Scuola Elementare R. Sanzio<br/>Piazza Raffaello Sanzio, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9f5e7415895466ea94a96c4501a220b = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_bc134dafd2e549a7925d33fdb820bb79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_e9f5e7415895466ea94a96c4501a220b.setIcon(icon_bc134dafd2e549a7925d33fdb820bb79);
+        
+    
+        var popup_a3f41cb9d10441688f9b83b8dfedb156 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6e734758e124825976ccf92f3d8f460 = $(`<div id="html_a6e734758e124825976ccf92f3d8f460" style="width: 100.0%; height: 100.0%;"><strong>sezione:2</strong><br/>Scuola Elementare R. Sanzio</div>`)[0];
+            popup_a3f41cb9d10441688f9b83b8dfedb156.setContent(html_a6e734758e124825976ccf92f3d8f460);
+        
+
+        marker_e9f5e7415895466ea94a96c4501a220b.bindPopup(popup_a3f41cb9d10441688f9b83b8dfedb156)
+        ;
+
+        
+    
+    
+            marker_e9f5e7415895466ea94a96c4501a220b.bindTooltip(
+                `<div>
+                     <strong>sezione:2</strong><br/>Scuola Elementare R. Sanzio<br/>Piazza Raffaello Sanzio, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fac9201bf054a8c9a08c02aa08bb3b7 = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_b633bd97727b4898ab97081db2a5fff6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_8fac9201bf054a8c9a08c02aa08bb3b7.setIcon(icon_b633bd97727b4898ab97081db2a5fff6);
+        
+    
+        var popup_deaba260385a4114bffe223a09636448 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc95f06dac9b41299c060ad4ac18a494 = $(`<div id="html_fc95f06dac9b41299c060ad4ac18a494" style="width: 100.0%; height: 100.0%;"><strong>sezione:3</strong><br/>Scuola Elementare R. Sanzio</div>`)[0];
+            popup_deaba260385a4114bffe223a09636448.setContent(html_fc95f06dac9b41299c060ad4ac18a494);
+        
+
+        marker_8fac9201bf054a8c9a08c02aa08bb3b7.bindPopup(popup_deaba260385a4114bffe223a09636448)
+        ;
+
+        
+    
+    
+            marker_8fac9201bf054a8c9a08c02aa08bb3b7.bindTooltip(
+                `<div>
+                     <strong>sezione:3</strong><br/>Scuola Elementare R. Sanzio<br/>Piazza Raffaello Sanzio, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5cfb21e575e4350af632123ef47c861 = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_59ac92f5e88240e686f0cc5998992b3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c5cfb21e575e4350af632123ef47c861.setIcon(icon_59ac92f5e88240e686f0cc5998992b3d);
+        
+    
+        var popup_ca0ee37a92d649a48ee46cfb8c772c22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef2c7182f7e9441da37c5909c6729d9a = $(`<div id="html_ef2c7182f7e9441da37c5909c6729d9a" style="width: 100.0%; height: 100.0%;"><strong>sezione:4</strong><br/>Scuola Elementare R. Sanzio</div>`)[0];
+            popup_ca0ee37a92d649a48ee46cfb8c772c22.setContent(html_ef2c7182f7e9441da37c5909c6729d9a);
+        
+
+        marker_c5cfb21e575e4350af632123ef47c861.bindPopup(popup_ca0ee37a92d649a48ee46cfb8c772c22)
+        ;
+
+        
+    
+    
+            marker_c5cfb21e575e4350af632123ef47c861.bindTooltip(
+                `<div>
+                     <strong>sezione:4</strong><br/>Scuola Elementare R. Sanzio<br/>Piazza Raffaello Sanzio, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3455547b50ac4778a30cad1731e927b6 = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_b8797344a4a04d8bbd099fab022afe91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_3455547b50ac4778a30cad1731e927b6.setIcon(icon_b8797344a4a04d8bbd099fab022afe91);
+        
+    
+        var popup_fdcb1e3dcb42441bb3496fcc4efa3b96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18110fc2f89f4306a9744db66c19df09 = $(`<div id="html_18110fc2f89f4306a9744db66c19df09" style="width: 100.0%; height: 100.0%;"><strong>sezione:5</strong><br/>Scuola Elementare R. Sanzio</div>`)[0];
+            popup_fdcb1e3dcb42441bb3496fcc4efa3b96.setContent(html_18110fc2f89f4306a9744db66c19df09);
+        
+
+        marker_3455547b50ac4778a30cad1731e927b6.bindPopup(popup_fdcb1e3dcb42441bb3496fcc4efa3b96)
+        ;
+
+        
+    
+    
+            marker_3455547b50ac4778a30cad1731e927b6.bindTooltip(
+                `<div>
+                     <strong>sezione:5</strong><br/>Scuola Elementare R. Sanzio<br/>Piazza Raffaello Sanzio, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33d71e4a8dc6485dbbe8f9c864f20b3d = L.marker(
+                [46.07221, 11.12597],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_3321c37d9be447dc95951ab1930ba1c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_33d71e4a8dc6485dbbe8f9c864f20b3d.setIcon(icon_3321c37d9be447dc95951ab1930ba1c3);
+        
+    
+        var popup_ba7dcd09f81941679f6a86ee93e7c9e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d99ae769363842298d82f2bd4e852c72 = $(`<div id="html_d99ae769363842298d82f2bd4e852c72" style="width: 100.0%; height: 100.0%;"><strong>sezione:6</strong><br/>Scuola Elementare R. Sanzio</div>`)[0];
+            popup_ba7dcd09f81941679f6a86ee93e7c9e9.setContent(html_d99ae769363842298d82f2bd4e852c72);
+        
+
+        marker_33d71e4a8dc6485dbbe8f9c864f20b3d.bindPopup(popup_ba7dcd09f81941679f6a86ee93e7c9e9)
+        ;
+
+        
+    
+    
+            marker_33d71e4a8dc6485dbbe8f9c864f20b3d.bindTooltip(
+                `<div>
+                     <strong>sezione:6</strong><br/>Scuola Elementare R. Sanzio<br/>Piazza Raffaello Sanzio, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4b30d1e6d7d4966a85bf0377c215ee5 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_68e0b899abab4c86aecf76bfc1a3532e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_d4b30d1e6d7d4966a85bf0377c215ee5.setIcon(icon_68e0b899abab4c86aecf76bfc1a3532e);
+        
+    
+        var popup_225361614c7445339d5b65875b9d82de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7cced9d3908447399074b2b0acafb04b = $(`<div id="html_7cced9d3908447399074b2b0acafb04b" style="width: 100.0%; height: 100.0%;"><strong>sezione:7</strong><br/>Scuola Elementare S. Bellesini</div>`)[0];
+            popup_225361614c7445339d5b65875b9d82de.setContent(html_7cced9d3908447399074b2b0acafb04b);
+        
+
+        marker_d4b30d1e6d7d4966a85bf0377c215ee5.bindPopup(popup_225361614c7445339d5b65875b9d82de)
+        ;
+
+        
+    
+    
+            marker_d4b30d1e6d7d4966a85bf0377c215ee5.bindTooltip(
+                `<div>
+                     <strong>sezione:7</strong><br/>Scuola Elementare S. Bellesini<br/>Via Antonio Stoppani, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_758b16b2ee734b00b0a9a8cfa03492d8 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_d41e61ed1159432c97459fe5dbc0fa29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_758b16b2ee734b00b0a9a8cfa03492d8.setIcon(icon_d41e61ed1159432c97459fe5dbc0fa29);
+        
+    
+        var popup_470aa2e0aae74d8ea83fe9c19a553d8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4e84711dffb479ca686bb1455e63bf0 = $(`<div id="html_b4e84711dffb479ca686bb1455e63bf0" style="width: 100.0%; height: 100.0%;"><strong>sezione:8</strong><br/>Scuola Elementare S. Bellesini</div>`)[0];
+            popup_470aa2e0aae74d8ea83fe9c19a553d8b.setContent(html_b4e84711dffb479ca686bb1455e63bf0);
+        
+
+        marker_758b16b2ee734b00b0a9a8cfa03492d8.bindPopup(popup_470aa2e0aae74d8ea83fe9c19a553d8b)
+        ;
+
+        
+    
+    
+            marker_758b16b2ee734b00b0a9a8cfa03492d8.bindTooltip(
+                `<div>
+                     <strong>sezione:8</strong><br/>Scuola Elementare S. Bellesini<br/>Via Antonio Stoppani, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_23a1c84cd887457a9d615313373f8377 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_2e1e0a316bc24106b0095a8218ab423f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_23a1c84cd887457a9d615313373f8377.setIcon(icon_2e1e0a316bc24106b0095a8218ab423f);
+        
+    
+        var popup_98380265b7e548d1a35293fdb8a39a64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54098bf165044472af7698394091a8b3 = $(`<div id="html_54098bf165044472af7698394091a8b3" style="width: 100.0%; height: 100.0%;"><strong>sezione:9</strong><br/>Scuola Elementare S. Bellesini</div>`)[0];
+            popup_98380265b7e548d1a35293fdb8a39a64.setContent(html_54098bf165044472af7698394091a8b3);
+        
+
+        marker_23a1c84cd887457a9d615313373f8377.bindPopup(popup_98380265b7e548d1a35293fdb8a39a64)
+        ;
+
+        
+    
+    
+            marker_23a1c84cd887457a9d615313373f8377.bindTooltip(
+                `<div>
+                     <strong>sezione:9</strong><br/>Scuola Elementare S. Bellesini<br/>Via Antonio Stoppani, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_759055a67cdb46e2a6271bed73c78347 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_1a354b591d464f36b174ed33670456c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_759055a67cdb46e2a6271bed73c78347.setIcon(icon_1a354b591d464f36b174ed33670456c4);
+        
+    
+        var popup_c72c6a2863c3465f8515004933ed7a39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7895c9c312541d48bcbf51239efe3fd = $(`<div id="html_e7895c9c312541d48bcbf51239efe3fd" style="width: 100.0%; height: 100.0%;"><strong>sezione:10</strong><br/>Scuola Elementare S. Bellesini</div>`)[0];
+            popup_c72c6a2863c3465f8515004933ed7a39.setContent(html_e7895c9c312541d48bcbf51239efe3fd);
+        
+
+        marker_759055a67cdb46e2a6271bed73c78347.bindPopup(popup_c72c6a2863c3465f8515004933ed7a39)
+        ;
+
+        
+    
+    
+            marker_759055a67cdb46e2a6271bed73c78347.bindTooltip(
+                `<div>
+                     <strong>sezione:10</strong><br/>Scuola Elementare S. Bellesini<br/>Via Antonio Stoppani, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff65a733a0924b4ba18f22b4cbc2d30c = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_4527cb5433034c40bae8947327493975 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ff65a733a0924b4ba18f22b4cbc2d30c.setIcon(icon_4527cb5433034c40bae8947327493975);
+        
+    
+        var popup_80cc763b1fd9449a9eae5b286ad14541 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34ca0288890640d5a6f0cf2048c9bf2e = $(`<div id="html_34ca0288890640d5a6f0cf2048c9bf2e" style="width: 100.0%; height: 100.0%;"><strong>sezione:11</strong><br/>Scuola Elementare S. Bellesini</div>`)[0];
+            popup_80cc763b1fd9449a9eae5b286ad14541.setContent(html_34ca0288890640d5a6f0cf2048c9bf2e);
+        
+
+        marker_ff65a733a0924b4ba18f22b4cbc2d30c.bindPopup(popup_80cc763b1fd9449a9eae5b286ad14541)
+        ;
+
+        
+    
+    
+            marker_ff65a733a0924b4ba18f22b4cbc2d30c.bindTooltip(
+                `<div>
+                     <strong>sezione:11</strong><br/>Scuola Elementare S. Bellesini<br/>Via Antonio Stoppani, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b8ad9363833442d8eaaa85fb0d0cd95 = L.marker(
+                [46.08378, 11.12214],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_59dd35eaea4b4b9486c1a0c45e02a018 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_5b8ad9363833442d8eaaa85fb0d0cd95.setIcon(icon_59dd35eaea4b4b9486c1a0c45e02a018);
+        
+    
+        var popup_b6b1210f5a14416fbece5c61d6ff0a06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd62cd4d0bce45b0a83bb4dbe92429b0 = $(`<div id="html_dd62cd4d0bce45b0a83bb4dbe92429b0" style="width: 100.0%; height: 100.0%;"><strong>sezione:12</strong><br/>Centro Sociale (ex Elementari)</div>`)[0];
+            popup_b6b1210f5a14416fbece5c61d6ff0a06.setContent(html_dd62cd4d0bce45b0a83bb4dbe92429b0);
+        
+
+        marker_5b8ad9363833442d8eaaa85fb0d0cd95.bindPopup(popup_b6b1210f5a14416fbece5c61d6ff0a06)
+        ;
+
+        
+    
+    
+            marker_5b8ad9363833442d8eaaa85fb0d0cd95.bindTooltip(
+                `<div>
+                     <strong>sezione:12</strong><br/>Centro Sociale (ex Elementari)<br/>Via dei Solteri, 66
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb8e69bb4b694fd981b551ca9c0e24f8 = L.marker(
+                [46.08378, 11.12214],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_e4f0c78309e44e78a2617f8f4898109a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_cb8e69bb4b694fd981b551ca9c0e24f8.setIcon(icon_e4f0c78309e44e78a2617f8f4898109a);
+        
+    
+        var popup_8462cdb5afe64f989ffa3b6c4404acd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bc612da524e49a18942935ff8aae54f = $(`<div id="html_7bc612da524e49a18942935ff8aae54f" style="width: 100.0%; height: 100.0%;"><strong>sezione:13</strong><br/>Centro Sociale (ex Elementari)</div>`)[0];
+            popup_8462cdb5afe64f989ffa3b6c4404acd9.setContent(html_7bc612da524e49a18942935ff8aae54f);
+        
+
+        marker_cb8e69bb4b694fd981b551ca9c0e24f8.bindPopup(popup_8462cdb5afe64f989ffa3b6c4404acd9)
+        ;
+
+        
+    
+    
+            marker_cb8e69bb4b694fd981b551ca9c0e24f8.bindTooltip(
+                `<div>
+                     <strong>sezione:13</strong><br/>Centro Sociale (ex Elementari)<br/>Via dei Solteri, 66
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40bca962bf5b4292aae5f026c20aa9ba = L.marker(
+                [46.08378, 11.12214],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_2df92de993d84c7d89e511a955716d2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_40bca962bf5b4292aae5f026c20aa9ba.setIcon(icon_2df92de993d84c7d89e511a955716d2f);
+        
+    
+        var popup_d2bfefc1ace84601935c5747ae1f27e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cd8c226e8574d83a1d241b5b40ef27b = $(`<div id="html_2cd8c226e8574d83a1d241b5b40ef27b" style="width: 100.0%; height: 100.0%;"><strong>sezione:14</strong><br/>Centro Sociale (ex Elementari)</div>`)[0];
+            popup_d2bfefc1ace84601935c5747ae1f27e9.setContent(html_2cd8c226e8574d83a1d241b5b40ef27b);
+        
+
+        marker_40bca962bf5b4292aae5f026c20aa9ba.bindPopup(popup_d2bfefc1ace84601935c5747ae1f27e9)
+        ;
+
+        
+    
+    
+            marker_40bca962bf5b4292aae5f026c20aa9ba.bindTooltip(
+                `<div>
+                     <strong>sezione:14</strong><br/>Centro Sociale (ex Elementari)<br/>Via dei Solteri, 66
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93b2bb43878e49159d45f539d413d86a = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_4b021753c0704dfe85efb66746524791 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_93b2bb43878e49159d45f539d413d86a.setIcon(icon_4b021753c0704dfe85efb66746524791);
+        
+    
+        var popup_4b901a2d32814e9bbff82e46f9cde222 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be9abdfdfd9845aaab37e52729c04651 = $(`<div id="html_be9abdfdfd9845aaab37e52729c04651" style="width: 100.0%; height: 100.0%;"><strong>sezione:15</strong><br/>Scuola Elementare S. Bellesini</div>`)[0];
+            popup_4b901a2d32814e9bbff82e46f9cde222.setContent(html_be9abdfdfd9845aaab37e52729c04651);
+        
+
+        marker_93b2bb43878e49159d45f539d413d86a.bindPopup(popup_4b901a2d32814e9bbff82e46f9cde222)
+        ;
+
+        
+    
+    
+            marker_93b2bb43878e49159d45f539d413d86a.bindTooltip(
+                `<div>
+                     <strong>sezione:15</strong><br/>Scuola Elementare S. Bellesini<br/>Via Antonio Stoppani, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2261914471e44bf99746405c6d854d38 = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_23a98afd35054a34b729f942d93946d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_2261914471e44bf99746405c6d854d38.setIcon(icon_23a98afd35054a34b729f942d93946d7);
+        
+    
+        var popup_6997c5f682db429caa0d9144d4951945 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a84373f9d12042b6b175ed203720627f = $(`<div id="html_a84373f9d12042b6b175ed203720627f" style="width: 100.0%; height: 100.0%;"><strong>sezione:16</strong><br/>Scuola Elementare S. Bellesini</div>`)[0];
+            popup_6997c5f682db429caa0d9144d4951945.setContent(html_a84373f9d12042b6b175ed203720627f);
+        
+
+        marker_2261914471e44bf99746405c6d854d38.bindPopup(popup_6997c5f682db429caa0d9144d4951945)
+        ;
+
+        
+    
+    
+            marker_2261914471e44bf99746405c6d854d38.bindTooltip(
+                `<div>
+                     <strong>sezione:16</strong><br/>Scuola Elementare S. Bellesini<br/>Via Antonio Stoppani, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d4354d5ad204fb99bec4084f2175e2e = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_acdab5ab5b3944deb1d9f567a6ea1b29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_0d4354d5ad204fb99bec4084f2175e2e.setIcon(icon_acdab5ab5b3944deb1d9f567a6ea1b29);
+        
+    
+        var popup_629b8c1d0e614c58b43e6752cf74cc61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afdfdecc39d14d0f906e212ca1092e83 = $(`<div id="html_afdfdecc39d14d0f906e212ca1092e83" style="width: 100.0%; height: 100.0%;"><strong>sezione:17</strong><br/>Scuola Elementare F. Crispi</div>`)[0];
+            popup_629b8c1d0e614c58b43e6752cf74cc61.setContent(html_afdfdecc39d14d0f906e212ca1092e83);
+        
+
+        marker_0d4354d5ad204fb99bec4084f2175e2e.bindPopup(popup_629b8c1d0e614c58b43e6752cf74cc61)
+        ;
+
+        
+    
+    
+            marker_0d4354d5ad204fb99bec4084f2175e2e.bindTooltip(
+                `<div>
+                     <strong>sezione:17</strong><br/>Scuola Elementare F. Crispi<br/>Via San Giovanni Bosco, 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aebaa47240d4448db0d184f7e63cb021 = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_8d0b76eca8d54c208a2360e57755b134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_aebaa47240d4448db0d184f7e63cb021.setIcon(icon_8d0b76eca8d54c208a2360e57755b134);
+        
+    
+        var popup_eea6200de6334a39877925c5b773ecfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4de829637914656a5eb02f49a3dc29b = $(`<div id="html_a4de829637914656a5eb02f49a3dc29b" style="width: 100.0%; height: 100.0%;"><strong>sezione:18</strong><br/>Scuola Elementare F. Crispi</div>`)[0];
+            popup_eea6200de6334a39877925c5b773ecfb.setContent(html_a4de829637914656a5eb02f49a3dc29b);
+        
+
+        marker_aebaa47240d4448db0d184f7e63cb021.bindPopup(popup_eea6200de6334a39877925c5b773ecfb)
+        ;
+
+        
+    
+    
+            marker_aebaa47240d4448db0d184f7e63cb021.bindTooltip(
+                `<div>
+                     <strong>sezione:18</strong><br/>Scuola Elementare F. Crispi<br/>Via San Giovanni Bosco, 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62bf5d910fe54553b3c5b60d68189af3 = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_e3c5d5038fe640a3b1c8767335d133d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_62bf5d910fe54553b3c5b60d68189af3.setIcon(icon_e3c5d5038fe640a3b1c8767335d133d3);
+        
+    
+        var popup_6677f5897bbe4e268bfe6d31f1b766fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d1dd90e82a8478f86572bc4d8aa5001 = $(`<div id="html_1d1dd90e82a8478f86572bc4d8aa5001" style="width: 100.0%; height: 100.0%;"><strong>sezione:19</strong><br/>Scuola Elementare F. Crispi</div>`)[0];
+            popup_6677f5897bbe4e268bfe6d31f1b766fa.setContent(html_1d1dd90e82a8478f86572bc4d8aa5001);
+        
+
+        marker_62bf5d910fe54553b3c5b60d68189af3.bindPopup(popup_6677f5897bbe4e268bfe6d31f1b766fa)
+        ;
+
+        
+    
+    
+            marker_62bf5d910fe54553b3c5b60d68189af3.bindTooltip(
+                `<div>
+                     <strong>sezione:19</strong><br/>Scuola Elementare F. Crispi<br/>Via San Giovanni Bosco, 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d705a0d7c3444538b0f828a47e239d0c = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_89d8cbef57454ad28f175322bfb7c02f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_d705a0d7c3444538b0f828a47e239d0c.setIcon(icon_89d8cbef57454ad28f175322bfb7c02f);
+        
+    
+        var popup_59570698e8b847e694c5ebc8cc9d14e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82212a9d830f4f0e9cfd1aae81890eeb = $(`<div id="html_82212a9d830f4f0e9cfd1aae81890eeb" style="width: 100.0%; height: 100.0%;"><strong>sezione:20</strong><br/>Scuola Elementare F. Crispi</div>`)[0];
+            popup_59570698e8b847e694c5ebc8cc9d14e3.setContent(html_82212a9d830f4f0e9cfd1aae81890eeb);
+        
+
+        marker_d705a0d7c3444538b0f828a47e239d0c.bindPopup(popup_59570698e8b847e694c5ebc8cc9d14e3)
+        ;
+
+        
+    
+    
+            marker_d705a0d7c3444538b0f828a47e239d0c.bindTooltip(
+                `<div>
+                     <strong>sezione:20</strong><br/>Scuola Elementare F. Crispi<br/>Via San Giovanni Bosco, 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_089cf1479f3541d096860cd1a66739f3 = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_a0cfa5373a3e478596a51535eb3419f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_089cf1479f3541d096860cd1a66739f3.setIcon(icon_a0cfa5373a3e478596a51535eb3419f3);
+        
+    
+        var popup_ac5f5d75e78b4d34a1486b9fdf53076e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a41ac9f9f7444dddb7d7ae13b94e2c2d = $(`<div id="html_a41ac9f9f7444dddb7d7ae13b94e2c2d" style="width: 100.0%; height: 100.0%;"><strong>sezione:21</strong><br/>Scuola Elementare F. Crispi</div>`)[0];
+            popup_ac5f5d75e78b4d34a1486b9fdf53076e.setContent(html_a41ac9f9f7444dddb7d7ae13b94e2c2d);
+        
+
+        marker_089cf1479f3541d096860cd1a66739f3.bindPopup(popup_ac5f5d75e78b4d34a1486b9fdf53076e)
+        ;
+
+        
+    
+    
+            marker_089cf1479f3541d096860cd1a66739f3.bindTooltip(
+                `<div>
+                     <strong>sezione:21</strong><br/>Scuola Elementare F. Crispi<br/>Via San Giovanni Bosco, 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1ebdc7d5ac44fb99bb27d7a08c161fd = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_d2e868de0e0149e28d988c241defcb04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a1ebdc7d5ac44fb99bb27d7a08c161fd.setIcon(icon_d2e868de0e0149e28d988c241defcb04);
+        
+    
+        var popup_7652ee9657fc4328b7347eb58a0b79d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6dd13962a1da4898b02744461391c552 = $(`<div id="html_6dd13962a1da4898b02744461391c552" style="width: 100.0%; height: 100.0%;"><strong>sezione:22</strong><br/>Scuola Elementare F. Crispi</div>`)[0];
+            popup_7652ee9657fc4328b7347eb58a0b79d9.setContent(html_6dd13962a1da4898b02744461391c552);
+        
+
+        marker_a1ebdc7d5ac44fb99bb27d7a08c161fd.bindPopup(popup_7652ee9657fc4328b7347eb58a0b79d9)
+        ;
+
+        
+    
+    
+            marker_a1ebdc7d5ac44fb99bb27d7a08c161fd.bindTooltip(
+                `<div>
+                     <strong>sezione:22</strong><br/>Scuola Elementare F. Crispi<br/>Via San Giovanni Bosco, 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0c2e5dc751e44a29ba19981028e477a = L.marker(
+                [46.06465, 11.12554],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_07f89e65b8074ef0b68a5f35fb87c230 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_d0c2e5dc751e44a29ba19981028e477a.setIcon(icon_07f89e65b8074ef0b68a5f35fb87c230);
+        
+    
+        var popup_25738ec4554a467ebf8a3032a5b872d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_321cb0fb5d4140febbec15eb756ebbe4 = $(`<div id="html_321cb0fb5d4140febbec15eb756ebbe4" style="width: 100.0%; height: 100.0%;"><strong>sezione:23</strong><br/>Scuola Elementare F. Crispi</div>`)[0];
+            popup_25738ec4554a467ebf8a3032a5b872d5.setContent(html_321cb0fb5d4140febbec15eb756ebbe4);
+        
+
+        marker_d0c2e5dc751e44a29ba19981028e477a.bindPopup(popup_25738ec4554a467ebf8a3032a5b872d5)
+        ;
+
+        
+    
+    
+            marker_d0c2e5dc751e44a29ba19981028e477a.bindTooltip(
+                `<div>
+                     <strong>sezione:23</strong><br/>Scuola Elementare F. Crispi<br/>Via San Giovanni Bosco, 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cbb6a6b8cb1440786ddebb69e792245 = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_d0200e1c0b4a4bd5a99662824b983c0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_6cbb6a6b8cb1440786ddebb69e792245.setIcon(icon_d0200e1c0b4a4bd5a99662824b983c0d);
+        
+    
+        var popup_a5352dc9822941cf8f55837b0e5c3d5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae1a5cb0ad1d4e969537fcd547132547 = $(`<div id="html_ae1a5cb0ad1d4e969537fcd547132547" style="width: 100.0%; height: 100.0%;"><strong>sezione:24</strong><br/>Scuola Elementare D. Savio</div>`)[0];
+            popup_a5352dc9822941cf8f55837b0e5c3d5e.setContent(html_ae1a5cb0ad1d4e969537fcd547132547);
+        
+
+        marker_6cbb6a6b8cb1440786ddebb69e792245.bindPopup(popup_a5352dc9822941cf8f55837b0e5c3d5e)
+        ;
+
+        
+    
+    
+            marker_6cbb6a6b8cb1440786ddebb69e792245.bindTooltip(
+                `<div>
+                     <strong>sezione:24</strong><br/>Scuola Elementare D. Savio<br/>Via San Pio X, 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_232712a087da48af8e507a648528cc54 = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_452eac6f0aea4857acf9468f911bf000 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_232712a087da48af8e507a648528cc54.setIcon(icon_452eac6f0aea4857acf9468f911bf000);
+        
+    
+        var popup_5de7ba093e384393a18f9dd733292bb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba85017054d9402c9c30db2497ae565f = $(`<div id="html_ba85017054d9402c9c30db2497ae565f" style="width: 100.0%; height: 100.0%;"><strong>sezione:25</strong><br/>Scuola Elementare D. Savio</div>`)[0];
+            popup_5de7ba093e384393a18f9dd733292bb4.setContent(html_ba85017054d9402c9c30db2497ae565f);
+        
+
+        marker_232712a087da48af8e507a648528cc54.bindPopup(popup_5de7ba093e384393a18f9dd733292bb4)
+        ;
+
+        
+    
+    
+            marker_232712a087da48af8e507a648528cc54.bindTooltip(
+                `<div>
+                     <strong>sezione:25</strong><br/>Scuola Elementare D. Savio<br/>Via San Pio X, 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a44bbc5e81a479eb8bb213341d4d3b7 = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_fac8c817ff324030bab9b00ea2d39b47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_4a44bbc5e81a479eb8bb213341d4d3b7.setIcon(icon_fac8c817ff324030bab9b00ea2d39b47);
+        
+    
+        var popup_655108bedd144b58a4a8ea17983694a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ad8300cda024a67b5f03bf809bbf963 = $(`<div id="html_8ad8300cda024a67b5f03bf809bbf963" style="width: 100.0%; height: 100.0%;"><strong>sezione:26</strong><br/>Scuola Elementare D. Savio</div>`)[0];
+            popup_655108bedd144b58a4a8ea17983694a6.setContent(html_8ad8300cda024a67b5f03bf809bbf963);
+        
+
+        marker_4a44bbc5e81a479eb8bb213341d4d3b7.bindPopup(popup_655108bedd144b58a4a8ea17983694a6)
+        ;
+
+        
+    
+    
+            marker_4a44bbc5e81a479eb8bb213341d4d3b7.bindTooltip(
+                `<div>
+                     <strong>sezione:26</strong><br/>Scuola Elementare D. Savio<br/>Via San Pio X, 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3a33b6b04594839b6ba52e340c27262 = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_854ea8859a8141d3947acda54f0d9f8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_b3a33b6b04594839b6ba52e340c27262.setIcon(icon_854ea8859a8141d3947acda54f0d9f8d);
+        
+    
+        var popup_66e2f64447144ea08414a7a2596e9d66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6bf721cf797940c09914bf590c728707 = $(`<div id="html_6bf721cf797940c09914bf590c728707" style="width: 100.0%; height: 100.0%;"><strong>sezione:27</strong><br/>Scuola Elementare D. Savio</div>`)[0];
+            popup_66e2f64447144ea08414a7a2596e9d66.setContent(html_6bf721cf797940c09914bf590c728707);
+        
+
+        marker_b3a33b6b04594839b6ba52e340c27262.bindPopup(popup_66e2f64447144ea08414a7a2596e9d66)
+        ;
+
+        
+    
+    
+            marker_b3a33b6b04594839b6ba52e340c27262.bindTooltip(
+                `<div>
+                     <strong>sezione:27</strong><br/>Scuola Elementare D. Savio<br/>Via San Pio X, 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f46287531074d5d94ddac95751cca8a = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_d44dd8b901d343fb8155d37b1ba4c353 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_9f46287531074d5d94ddac95751cca8a.setIcon(icon_d44dd8b901d343fb8155d37b1ba4c353);
+        
+    
+        var popup_cf3fa2a84771456f865aa35a10816fbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3b9ee8418704c15856dfc3a7d1533af = $(`<div id="html_e3b9ee8418704c15856dfc3a7d1533af" style="width: 100.0%; height: 100.0%;"><strong>sezione:28</strong><br/>Scuola Elementare D. Savio</div>`)[0];
+            popup_cf3fa2a84771456f865aa35a10816fbe.setContent(html_e3b9ee8418704c15856dfc3a7d1533af);
+        
+
+        marker_9f46287531074d5d94ddac95751cca8a.bindPopup(popup_cf3fa2a84771456f865aa35a10816fbe)
+        ;
+
+        
+    
+    
+            marker_9f46287531074d5d94ddac95751cca8a.bindTooltip(
+                `<div>
+                     <strong>sezione:28</strong><br/>Scuola Elementare D. Savio<br/>Via San Pio X, 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0e2611c940949b69299678c9697aaaf = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_4cf77c2b40aa4885900657bc89d93c93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_b0e2611c940949b69299678c9697aaaf.setIcon(icon_4cf77c2b40aa4885900657bc89d93c93);
+        
+    
+        var popup_f04d2a19f3f24367b142509c2dc1acfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5210a224c5304b98a4dc209744e83d71 = $(`<div id="html_5210a224c5304b98a4dc209744e83d71" style="width: 100.0%; height: 100.0%;"><strong>sezione:29</strong><br/>Scuola Elementare D. Savio</div>`)[0];
+            popup_f04d2a19f3f24367b142509c2dc1acfb.setContent(html_5210a224c5304b98a4dc209744e83d71);
+        
+
+        marker_b0e2611c940949b69299678c9697aaaf.bindPopup(popup_f04d2a19f3f24367b142509c2dc1acfb)
+        ;
+
+        
+    
+    
+            marker_b0e2611c940949b69299678c9697aaaf.bindTooltip(
+                `<div>
+                     <strong>sezione:29</strong><br/>Scuola Elementare D. Savio<br/>Via San Pio X, 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac70ab56d395429bb30179b715672235 = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_a604bf44803e4ec68010abcee10a46b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ac70ab56d395429bb30179b715672235.setIcon(icon_a604bf44803e4ec68010abcee10a46b1);
+        
+    
+        var popup_a70dc63e464445489e6712026373c638 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fb89af944a1465584c1ae1ff4833698 = $(`<div id="html_9fb89af944a1465584c1ae1ff4833698" style="width: 100.0%; height: 100.0%;"><strong>sezione:30</strong><br/>Scuola Elementare D. Savio</div>`)[0];
+            popup_a70dc63e464445489e6712026373c638.setContent(html_9fb89af944a1465584c1ae1ff4833698);
+        
+
+        marker_ac70ab56d395429bb30179b715672235.bindPopup(popup_a70dc63e464445489e6712026373c638)
+        ;
+
+        
+    
+    
+            marker_ac70ab56d395429bb30179b715672235.bindTooltip(
+                `<div>
+                     <strong>sezione:30</strong><br/>Scuola Elementare D. Savio<br/>Via San Pio X, 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e36f476bc8344a099296717dd40a559a = L.marker(
+                [46.05349, 11.12081],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_0314aa46f4a640b5aeb4239f68050087 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_e36f476bc8344a099296717dd40a559a.setIcon(icon_0314aa46f4a640b5aeb4239f68050087);
+        
+    
+        var popup_816e278b90a64b23b58bca7352a4a8e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eeb1ca8149ac48c898204cc36f636117 = $(`<div id="html_eeb1ca8149ac48c898204cc36f636117" style="width: 100.0%; height: 100.0%;"><strong>sezione:31</strong><br/>Scuola Elementare D. Savio</div>`)[0];
+            popup_816e278b90a64b23b58bca7352a4a8e2.setContent(html_eeb1ca8149ac48c898204cc36f636117);
+        
+
+        marker_e36f476bc8344a099296717dd40a559a.bindPopup(popup_816e278b90a64b23b58bca7352a4a8e2)
+        ;
+
+        
+    
+    
+            marker_e36f476bc8344a099296717dd40a559a.bindTooltip(
+                `<div>
+                     <strong>sezione:31</strong><br/>Scuola Elementare D. Savio<br/>Via San Pio X, 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6103896f41264788ae2f9f5affe6c8c0 = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_97ca033dc0854140a6a463e253bfb4d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_6103896f41264788ae2f9f5affe6c8c0.setIcon(icon_97ca033dc0854140a6a463e253bfb4d8);
+        
+    
+        var popup_c7d943c0bbf34a309cba7e93884db6c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d89fffb081f64a42b3f15498a8403a16 = $(`<div id="html_d89fffb081f64a42b3f15498a8403a16" style="width: 100.0%; height: 100.0%;"><strong>sezione:32</strong><br/>Scuola Elementare Nicolodi</div>`)[0];
+            popup_c7d943c0bbf34a309cba7e93884db6c1.setContent(html_d89fffb081f64a42b3f15498a8403a16);
+        
+
+        marker_6103896f41264788ae2f9f5affe6c8c0.bindPopup(popup_c7d943c0bbf34a309cba7e93884db6c1)
+        ;
+
+        
+    
+    
+            marker_6103896f41264788ae2f9f5affe6c8c0.bindTooltip(
+                `<div>
+                     <strong>sezione:32</strong><br/>Scuola Elementare Nicolodi<br/>Via Antonio Fogazzaro, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2745adf0cfac4e6ea85cd5248185cef7 = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_a7766bda7c23434ca3d83794838e025b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_2745adf0cfac4e6ea85cd5248185cef7.setIcon(icon_a7766bda7c23434ca3d83794838e025b);
+        
+    
+        var popup_e4c72e8296ba4aafbe0e447823268d95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad96637a9ed84f79b8acac52722d7294 = $(`<div id="html_ad96637a9ed84f79b8acac52722d7294" style="width: 100.0%; height: 100.0%;"><strong>sezione:33</strong><br/>Scuola Elementare Nicolodi</div>`)[0];
+            popup_e4c72e8296ba4aafbe0e447823268d95.setContent(html_ad96637a9ed84f79b8acac52722d7294);
+        
+
+        marker_2745adf0cfac4e6ea85cd5248185cef7.bindPopup(popup_e4c72e8296ba4aafbe0e447823268d95)
+        ;
+
+        
+    
+    
+            marker_2745adf0cfac4e6ea85cd5248185cef7.bindTooltip(
+                `<div>
+                     <strong>sezione:33</strong><br/>Scuola Elementare Nicolodi<br/>Via Antonio Fogazzaro, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4a807bfe798481498dcbcba446469fd = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_e9f9b063e97949bba5d1056049f27e8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_e4a807bfe798481498dcbcba446469fd.setIcon(icon_e9f9b063e97949bba5d1056049f27e8c);
+        
+    
+        var popup_10f54005130e4c96b94dc5c5d35e7707 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ecb9d95dc7349c4bbdc121bf1c71ccc = $(`<div id="html_7ecb9d95dc7349c4bbdc121bf1c71ccc" style="width: 100.0%; height: 100.0%;"><strong>sezione:34</strong><br/>Scuola Elementare Nicolodi</div>`)[0];
+            popup_10f54005130e4c96b94dc5c5d35e7707.setContent(html_7ecb9d95dc7349c4bbdc121bf1c71ccc);
+        
+
+        marker_e4a807bfe798481498dcbcba446469fd.bindPopup(popup_10f54005130e4c96b94dc5c5d35e7707)
+        ;
+
+        
+    
+    
+            marker_e4a807bfe798481498dcbcba446469fd.bindTooltip(
+                `<div>
+                     <strong>sezione:34</strong><br/>Scuola Elementare Nicolodi<br/>Via Antonio Fogazzaro, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48efbda7ed034816a2168292e96bb0ff = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_2bdba64174b0447aa7257879a6ee80f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_48efbda7ed034816a2168292e96bb0ff.setIcon(icon_2bdba64174b0447aa7257879a6ee80f2);
+        
+    
+        var popup_f704cf3f405747d7ae0d68da998cfa58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_251e9dc1dc014c509060b488e58eb656 = $(`<div id="html_251e9dc1dc014c509060b488e58eb656" style="width: 100.0%; height: 100.0%;"><strong>sezione:35</strong><br/>Scuola Elementare Nicolodi</div>`)[0];
+            popup_f704cf3f405747d7ae0d68da998cfa58.setContent(html_251e9dc1dc014c509060b488e58eb656);
+        
+
+        marker_48efbda7ed034816a2168292e96bb0ff.bindPopup(popup_f704cf3f405747d7ae0d68da998cfa58)
+        ;
+
+        
+    
+    
+            marker_48efbda7ed034816a2168292e96bb0ff.bindTooltip(
+                `<div>
+                     <strong>sezione:35</strong><br/>Scuola Elementare Nicolodi<br/>Via Antonio Fogazzaro, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8d77147758a4257a1acff97dc24e2a5 = L.marker(
+                [46.05585, 11.12948],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_151fc0dce79f4d7d98716a8f6d7f13b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_d8d77147758a4257a1acff97dc24e2a5.setIcon(icon_151fc0dce79f4d7d98716a8f6d7f13b8);
+        
+    
+        var popup_2461b3bc7a8d40fbaeca0740b99b9ccb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e5e83cc54964637900b09ae6e38b03f = $(`<div id="html_3e5e83cc54964637900b09ae6e38b03f" style="width: 100.0%; height: 100.0%;"><strong>sezione:36</strong><br/>Scuola Elementare Nicolodi</div>`)[0];
+            popup_2461b3bc7a8d40fbaeca0740b99b9ccb.setContent(html_3e5e83cc54964637900b09ae6e38b03f);
+        
+
+        marker_d8d77147758a4257a1acff97dc24e2a5.bindPopup(popup_2461b3bc7a8d40fbaeca0740b99b9ccb)
+        ;
+
+        
+    
+    
+            marker_d8d77147758a4257a1acff97dc24e2a5.bindTooltip(
+                `<div>
+                     <strong>sezione:36</strong><br/>Scuola Elementare Nicolodi<br/>Via Antonio Fogazzaro, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_024e5ad91e5a467ab999bb64e43b695f = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_4a7319f0e31441beb22c916653bae849 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_024e5ad91e5a467ab999bb64e43b695f.setIcon(icon_4a7319f0e31441beb22c916653bae849);
+        
+    
+        var popup_9ece1c13f52a447d97296d4480d8e5ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04d9582a13274d5f9e216a254fb22d69 = $(`<div id="html_04d9582a13274d5f9e216a254fb22d69" style="width: 100.0%; height: 100.0%;"><strong>sezione:37</strong><br/>Scuola Elementare Clarina</div>`)[0];
+            popup_9ece1c13f52a447d97296d4480d8e5ce.setContent(html_04d9582a13274d5f9e216a254fb22d69);
+        
+
+        marker_024e5ad91e5a467ab999bb64e43b695f.bindPopup(popup_9ece1c13f52a447d97296d4480d8e5ce)
+        ;
+
+        
+    
+    
+            marker_024e5ad91e5a467ab999bb64e43b695f.bindTooltip(
+                `<div>
+                     <strong>sezione:37</strong><br/>Scuola Elementare Clarina<br/>Via Luigi Einaudi, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6563577011a41c89b85144a108eb96f = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_441a11952b7d4441a7d9f5715ff02a18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a6563577011a41c89b85144a108eb96f.setIcon(icon_441a11952b7d4441a7d9f5715ff02a18);
+        
+    
+        var popup_97c09ad104a94a0fae28a1e5223c9051 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4a4d307a3674a3ba8ec7aca09417c66 = $(`<div id="html_a4a4d307a3674a3ba8ec7aca09417c66" style="width: 100.0%; height: 100.0%;"><strong>sezione:38</strong><br/>Scuola Elementare Clarina</div>`)[0];
+            popup_97c09ad104a94a0fae28a1e5223c9051.setContent(html_a4a4d307a3674a3ba8ec7aca09417c66);
+        
+
+        marker_a6563577011a41c89b85144a108eb96f.bindPopup(popup_97c09ad104a94a0fae28a1e5223c9051)
+        ;
+
+        
+    
+    
+            marker_a6563577011a41c89b85144a108eb96f.bindTooltip(
+                `<div>
+                     <strong>sezione:38</strong><br/>Scuola Elementare Clarina<br/>Via Luigi Einaudi, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a09347de25a64490ae24ecd68f1802fb = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_756f76de7889481491e9b73d017d9d44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a09347de25a64490ae24ecd68f1802fb.setIcon(icon_756f76de7889481491e9b73d017d9d44);
+        
+    
+        var popup_d5402ecf9f05439ca068ba2e412512f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4710db35e50f41f1bfd69d3e05bce58e = $(`<div id="html_4710db35e50f41f1bfd69d3e05bce58e" style="width: 100.0%; height: 100.0%;"><strong>sezione:39</strong><br/>Scuola Elementare Clarina</div>`)[0];
+            popup_d5402ecf9f05439ca068ba2e412512f6.setContent(html_4710db35e50f41f1bfd69d3e05bce58e);
+        
+
+        marker_a09347de25a64490ae24ecd68f1802fb.bindPopup(popup_d5402ecf9f05439ca068ba2e412512f6)
+        ;
+
+        
+    
+    
+            marker_a09347de25a64490ae24ecd68f1802fb.bindTooltip(
+                `<div>
+                     <strong>sezione:39</strong><br/>Scuola Elementare Clarina<br/>Via Luigi Einaudi, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cff9c0c931e40d5ba24f447697bebb6 = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_a35fbd30c2a54c45991c066c5b8a7ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_8cff9c0c931e40d5ba24f447697bebb6.setIcon(icon_a35fbd30c2a54c45991c066c5b8a7ec6);
+        
+    
+        var popup_103335607ccb4e97935a9f80b1086ca3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d4959815b0f49e8b160d6d2eed317da = $(`<div id="html_6d4959815b0f49e8b160d6d2eed317da" style="width: 100.0%; height: 100.0%;"><strong>sezione:40</strong><br/>Scuola Elementare Clarina</div>`)[0];
+            popup_103335607ccb4e97935a9f80b1086ca3.setContent(html_6d4959815b0f49e8b160d6d2eed317da);
+        
+
+        marker_8cff9c0c931e40d5ba24f447697bebb6.bindPopup(popup_103335607ccb4e97935a9f80b1086ca3)
+        ;
+
+        
+    
+    
+            marker_8cff9c0c931e40d5ba24f447697bebb6.bindTooltip(
+                `<div>
+                     <strong>sezione:40</strong><br/>Scuola Elementare Clarina<br/>Via Luigi Einaudi, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aaa62e48b75548548f13495b290c55fe = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_2a6aa5d1464d4edba0534453a96bc216 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_aaa62e48b75548548f13495b290c55fe.setIcon(icon_2a6aa5d1464d4edba0534453a96bc216);
+        
+    
+        var popup_d514d8535e464c7fa2633d8831f786c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_688859a5b0f341bc9b7e258c8d3be201 = $(`<div id="html_688859a5b0f341bc9b7e258c8d3be201" style="width: 100.0%; height: 100.0%;"><strong>sezione:41</strong><br/>Scuola Elementare Clarina</div>`)[0];
+            popup_d514d8535e464c7fa2633d8831f786c8.setContent(html_688859a5b0f341bc9b7e258c8d3be201);
+        
+
+        marker_aaa62e48b75548548f13495b290c55fe.bindPopup(popup_d514d8535e464c7fa2633d8831f786c8)
+        ;
+
+        
+    
+    
+            marker_aaa62e48b75548548f13495b290c55fe.bindTooltip(
+                `<div>
+                     <strong>sezione:41</strong><br/>Scuola Elementare Clarina<br/>Via Luigi Einaudi, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56609f5b33ee4d5bbf7a8b631939e803 = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_df27a040a0714ec5a93e75408755c83e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_56609f5b33ee4d5bbf7a8b631939e803.setIcon(icon_df27a040a0714ec5a93e75408755c83e);
+        
+    
+        var popup_9bf5f931f938489d8e5dbc3dbb9a29d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6880b119d67749cfac4d2394345a2429 = $(`<div id="html_6880b119d67749cfac4d2394345a2429" style="width: 100.0%; height: 100.0%;"><strong>sezione:42</strong><br/>Scuola Elementare Clarina</div>`)[0];
+            popup_9bf5f931f938489d8e5dbc3dbb9a29d0.setContent(html_6880b119d67749cfac4d2394345a2429);
+        
+
+        marker_56609f5b33ee4d5bbf7a8b631939e803.bindPopup(popup_9bf5f931f938489d8e5dbc3dbb9a29d0)
+        ;
+
+        
+    
+    
+            marker_56609f5b33ee4d5bbf7a8b631939e803.bindTooltip(
+                `<div>
+                     <strong>sezione:42</strong><br/>Scuola Elementare Clarina<br/>Via Luigi Einaudi, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fd8b41627c84e78a2f1563966b0c1f2 = L.marker(
+                [46.0519, 11.12667],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_31fabbda49a04044af5b2e61edf58a26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_6fd8b41627c84e78a2f1563966b0c1f2.setIcon(icon_31fabbda49a04044af5b2e61edf58a26);
+        
+    
+        var popup_aa2253484d364c96b50dcae1853732bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ca6476d26c74ad499a95e20810ae3f1 = $(`<div id="html_6ca6476d26c74ad499a95e20810ae3f1" style="width: 100.0%; height: 100.0%;"><strong>sezione:43</strong><br/>Scuola Elementare Clarina</div>`)[0];
+            popup_aa2253484d364c96b50dcae1853732bf.setContent(html_6ca6476d26c74ad499a95e20810ae3f1);
+        
+
+        marker_6fd8b41627c84e78a2f1563966b0c1f2.bindPopup(popup_aa2253484d364c96b50dcae1853732bf)
+        ;
+
+        
+    
+    
+            marker_6fd8b41627c84e78a2f1563966b0c1f2.bindTooltip(
+                `<div>
+                     <strong>sezione:43</strong><br/>Scuola Elementare Clarina<br/>Via Luigi Einaudi, 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91acd8505dca4ba98983e88dca5ef6fd = L.marker(
+                [46.03983, 11.13395],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_07e2956f9b9f43c69bbce2b4f342111f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_91acd8505dca4ba98983e88dca5ef6fd.setIcon(icon_07e2956f9b9f43c69bbce2b4f342111f);
+        
+    
+        var popup_de7ddc2f86bc433ca31a49f350e26143 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa9ff8486e9a408cb8c4aa06a72a9cea = $(`<div id="html_aa9ff8486e9a408cb8c4aa06a72a9cea" style="width: 100.0%; height: 100.0%;"><strong>sezione:44</strong><br/>Scuola Elementare Madonna Bianca</div>`)[0];
+            popup_de7ddc2f86bc433ca31a49f350e26143.setContent(html_aa9ff8486e9a408cb8c4aa06a72a9cea);
+        
+
+        marker_91acd8505dca4ba98983e88dca5ef6fd.bindPopup(popup_de7ddc2f86bc433ca31a49f350e26143)
+        ;
+
+        
+    
+    
+            marker_91acd8505dca4ba98983e88dca5ef6fd.bindTooltip(
+                `<div>
+                     <strong>sezione:44</strong><br/>Scuola Elementare Madonna Bianca<br/>Piazzale Europa, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46829803d3074896a87735cde8dbd0f5 = L.marker(
+                [46.03983, 11.13395],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_c2d073bda6484f5e9d40f4f3abf2ad70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_46829803d3074896a87735cde8dbd0f5.setIcon(icon_c2d073bda6484f5e9d40f4f3abf2ad70);
+        
+    
+        var popup_57f294e18a484e25a24947cd927c0eae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69d39907c6d446d381d2748e710d965e = $(`<div id="html_69d39907c6d446d381d2748e710d965e" style="width: 100.0%; height: 100.0%;"><strong>sezione:45</strong><br/>Scuola Elementare Madonna Bianca</div>`)[0];
+            popup_57f294e18a484e25a24947cd927c0eae.setContent(html_69d39907c6d446d381d2748e710d965e);
+        
+
+        marker_46829803d3074896a87735cde8dbd0f5.bindPopup(popup_57f294e18a484e25a24947cd927c0eae)
+        ;
+
+        
+    
+    
+            marker_46829803d3074896a87735cde8dbd0f5.bindTooltip(
+                `<div>
+                     <strong>sezione:45</strong><br/>Scuola Elementare Madonna Bianca<br/>Piazzale Europa, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75fbbee65f8342cea7241b7bfb4c6d0a = L.marker(
+                [46.03983, 11.13395],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_a0cca287a94249d4b0e2c392ed3f19d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_75fbbee65f8342cea7241b7bfb4c6d0a.setIcon(icon_a0cca287a94249d4b0e2c392ed3f19d0);
+        
+    
+        var popup_4b0f17da832446ae90b77fc19c35a8fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ddc9439303949c8bbba309231df9a29 = $(`<div id="html_1ddc9439303949c8bbba309231df9a29" style="width: 100.0%; height: 100.0%;"><strong>sezione:46</strong><br/>Scuola Elementare Madonna Bianca</div>`)[0];
+            popup_4b0f17da832446ae90b77fc19c35a8fe.setContent(html_1ddc9439303949c8bbba309231df9a29);
+        
+
+        marker_75fbbee65f8342cea7241b7bfb4c6d0a.bindPopup(popup_4b0f17da832446ae90b77fc19c35a8fe)
+        ;
+
+        
+    
+    
+            marker_75fbbee65f8342cea7241b7bfb4c6d0a.bindTooltip(
+                `<div>
+                     <strong>sezione:46</strong><br/>Scuola Elementare Madonna Bianca<br/>Piazzale Europa, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_249924d8cd714d59b7d96c072cfcf5ca = L.marker(
+                [46.03983, 11.13395],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_6dff6d8190b34d99a6f4c48de63a2239 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_249924d8cd714d59b7d96c072cfcf5ca.setIcon(icon_6dff6d8190b34d99a6f4c48de63a2239);
+        
+    
+        var popup_76440cce7efc49b5a78664290896958a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fdb1343c95143938c07a6a01cf291b5 = $(`<div id="html_0fdb1343c95143938c07a6a01cf291b5" style="width: 100.0%; height: 100.0%;"><strong>sezione:47</strong><br/>Scuola Elementare Madonna Bianca</div>`)[0];
+            popup_76440cce7efc49b5a78664290896958a.setContent(html_0fdb1343c95143938c07a6a01cf291b5);
+        
+
+        marker_249924d8cd714d59b7d96c072cfcf5ca.bindPopup(popup_76440cce7efc49b5a78664290896958a)
+        ;
+
+        
+    
+    
+            marker_249924d8cd714d59b7d96c072cfcf5ca.bindTooltip(
+                `<div>
+                     <strong>sezione:47</strong><br/>Scuola Elementare Madonna Bianca<br/>Piazzale Europa, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a6bb83113cd4ed18ccb626d5ffce20e = L.marker(
+                [46.05708, 11.13303],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_a6b8732d3b14452181f5faf158f82bc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_8a6bb83113cd4ed18ccb626d5ffce20e.setIcon(icon_a6b8732d3b14452181f5faf158f82bc6);
+        
+    
+        var popup_2c56ac0d798e49ccbca603d58a3bb4c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce59f7240e204a14b4e0e74a2eac53ed = $(`<div id="html_ce59f7240e204a14b4e0e74a2eac53ed" style="width: 100.0%; height: 100.0%;"><strong>sezione:48</strong><br/>Centro Ospedaliero Santa Chiara</div>`)[0];
+            popup_2c56ac0d798e49ccbca603d58a3bb4c0.setContent(html_ce59f7240e204a14b4e0e74a2eac53ed);
+        
+
+        marker_8a6bb83113cd4ed18ccb626d5ffce20e.bindPopup(popup_2c56ac0d798e49ccbca603d58a3bb4c0)
+        ;
+
+        
+    
+    
+            marker_8a6bb83113cd4ed18ccb626d5ffce20e.bindTooltip(
+                `<div>
+                     <strong>sezione:48</strong><br/>Centro Ospedaliero Santa Chiara<br/>Largo Medaglie d'Oro, 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f291993f1e84469aa1f63e7aae3360cb = L.marker(
+                [46.05708, 11.13303],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_3766aff11ece4d8c96043a4309174436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f291993f1e84469aa1f63e7aae3360cb.setIcon(icon_3766aff11ece4d8c96043a4309174436);
+        
+    
+        var popup_a7eead78fea449a7873f6a37a7d88267 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6f4386f9d804925b1d67a3c6d196a41 = $(`<div id="html_b6f4386f9d804925b1d67a3c6d196a41" style="width: 100.0%; height: 100.0%;"><strong>sezione:49</strong><br/>Centro Ospedaliero Santa Chiara</div>`)[0];
+            popup_a7eead78fea449a7873f6a37a7d88267.setContent(html_b6f4386f9d804925b1d67a3c6d196a41);
+        
+
+        marker_f291993f1e84469aa1f63e7aae3360cb.bindPopup(popup_a7eead78fea449a7873f6a37a7d88267)
+        ;
+
+        
+    
+    
+            marker_f291993f1e84469aa1f63e7aae3360cb.bindTooltip(
+                `<div>
+                     <strong>sezione:49</strong><br/>Centro Ospedaliero Santa Chiara<br/>Largo Medaglie d'Oro, 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88c81b02a1864971919bbaf675c94340 = L.marker(
+                [46.04812, 11.14654],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_61903ce654d04c6ba3ee9bd3cf5aac5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_88c81b02a1864971919bbaf675c94340.setIcon(icon_61903ce654d04c6ba3ee9bd3cf5aac5e);
+        
+    
+        var popup_e1b600910d154f87843551106d1b4991 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_684a3f78ca1b4b77bc1cf55bd094e5cb = $(`<div id="html_684a3f78ca1b4b77bc1cf55bd094e5cb" style="width: 100.0%; height: 100.0%;"><strong>sezione:50</strong><br/>Scuola Elementare G. A. Tomasi</div>`)[0];
+            popup_e1b600910d154f87843551106d1b4991.setContent(html_684a3f78ca1b4b77bc1cf55bd094e5cb);
+        
+
+        marker_88c81b02a1864971919bbaf675c94340.bindPopup(popup_e1b600910d154f87843551106d1b4991)
+        ;
+
+        
+    
+    
+            marker_88c81b02a1864971919bbaf675c94340.bindTooltip(
+                `<div>
+                     <strong>sezione:50</strong><br/>Scuola Elementare G. A. Tomasi<br/>Piazza mons. G.P. Nicolini, 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41d50f47420549dc8475325c0213c84c = L.marker(
+                [46.04812, 11.14654],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_89feac65cd4b49f3b976b61b7ea8e99b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_41d50f47420549dc8475325c0213c84c.setIcon(icon_89feac65cd4b49f3b976b61b7ea8e99b);
+        
+    
+        var popup_60221998db0a400487aa8a2fa8110190 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_19546214b0c148c29b58a7412c5fdd15 = $(`<div id="html_19546214b0c148c29b58a7412c5fdd15" style="width: 100.0%; height: 100.0%;"><strong>sezione:51</strong><br/>Scuola Elementare G. A. Tomasi</div>`)[0];
+            popup_60221998db0a400487aa8a2fa8110190.setContent(html_19546214b0c148c29b58a7412c5fdd15);
+        
+
+        marker_41d50f47420549dc8475325c0213c84c.bindPopup(popup_60221998db0a400487aa8a2fa8110190)
+        ;
+
+        
+    
+    
+            marker_41d50f47420549dc8475325c0213c84c.bindTooltip(
+                `<div>
+                     <strong>sezione:51</strong><br/>Scuola Elementare G. A. Tomasi<br/>Piazza mons. G.P. Nicolini, 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91408ed85b6242e8801590b57d5de600 = L.marker(
+                [46.04812, 11.14654],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_9742a16f89e2467ea4d4393e53df161b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_91408ed85b6242e8801590b57d5de600.setIcon(icon_9742a16f89e2467ea4d4393e53df161b);
+        
+    
+        var popup_64601b65879246ffb8683023ae0ff13b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7146d8d0871747d9ac645725d3387a52 = $(`<div id="html_7146d8d0871747d9ac645725d3387a52" style="width: 100.0%; height: 100.0%;"><strong>sezione:52</strong><br/>Scuola Elementare G. A. Tomasi</div>`)[0];
+            popup_64601b65879246ffb8683023ae0ff13b.setContent(html_7146d8d0871747d9ac645725d3387a52);
+        
+
+        marker_91408ed85b6242e8801590b57d5de600.bindPopup(popup_64601b65879246ffb8683023ae0ff13b)
+        ;
+
+        
+    
+    
+            marker_91408ed85b6242e8801590b57d5de600.bindTooltip(
+                `<div>
+                     <strong>sezione:52</strong><br/>Scuola Elementare G. A. Tomasi<br/>Piazza mons. G.P. Nicolini, 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4007b8d47cb44c71a378736088194809 = L.marker(
+                [46.04812, 11.14654],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_e75aaaeca2ae4638aca167a7d7dcdd7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_4007b8d47cb44c71a378736088194809.setIcon(icon_e75aaaeca2ae4638aca167a7d7dcdd7e);
+        
+    
+        var popup_77acfc3f01ba4cfea5a3437b6a61bba5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ae50841ff53438e89f58a0b0315e6f2 = $(`<div id="html_6ae50841ff53438e89f58a0b0315e6f2" style="width: 100.0%; height: 100.0%;"><strong>sezione:53</strong><br/>Scuola Elementare G. A. Tomasi</div>`)[0];
+            popup_77acfc3f01ba4cfea5a3437b6a61bba5.setContent(html_6ae50841ff53438e89f58a0b0315e6f2);
+        
+
+        marker_4007b8d47cb44c71a378736088194809.bindPopup(popup_77acfc3f01ba4cfea5a3437b6a61bba5)
+        ;
+
+        
+    
+    
+            marker_4007b8d47cb44c71a378736088194809.bindTooltip(
+                `<div>
+                     <strong>sezione:53</strong><br/>Scuola Elementare G. A. Tomasi<br/>Piazza mons. G.P. Nicolini, 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09177fa0f90a41b580d1dcaaa433347d = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_0ac8be276b3d45f4bfcea63919831956 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_09177fa0f90a41b580d1dcaaa433347d.setIcon(icon_0ac8be276b3d45f4bfcea63919831956);
+        
+    
+        var popup_6a866dfbd830421ab79d172de489229e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e538d672830b4bd18512267034cd57ff = $(`<div id="html_e538d672830b4bd18512267034cd57ff" style="width: 100.0%; height: 100.0%;"><strong>sezione:54</strong><br/>ex Caserma dei Carabinieri</div>`)[0];
+            popup_6a866dfbd830421ab79d172de489229e.setContent(html_e538d672830b4bd18512267034cd57ff);
+        
+
+        marker_09177fa0f90a41b580d1dcaaa433347d.bindPopup(popup_6a866dfbd830421ab79d172de489229e)
+        ;
+
+        
+    
+    
+            marker_09177fa0f90a41b580d1dcaaa433347d.bindTooltip(
+                `<div>
+                     <strong>sezione:54</strong><br/>ex Caserma dei Carabinieri<br/>Via G. Poli, 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43e3d43428584da8a1e0e416e6fa6d18 = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_8d24a7e07c1d4a31af3fde8ec65a49ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_43e3d43428584da8a1e0e416e6fa6d18.setIcon(icon_8d24a7e07c1d4a31af3fde8ec65a49ee);
+        
+    
+        var popup_c78afef965d546d8ba0d37f543822abb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89a6b8748e4548cdb2828109d6490e77 = $(`<div id="html_89a6b8748e4548cdb2828109d6490e77" style="width: 100.0%; height: 100.0%;"><strong>sezione:55</strong><br/>ex Caserma dei Carabinieri</div>`)[0];
+            popup_c78afef965d546d8ba0d37f543822abb.setContent(html_89a6b8748e4548cdb2828109d6490e77);
+        
+
+        marker_43e3d43428584da8a1e0e416e6fa6d18.bindPopup(popup_c78afef965d546d8ba0d37f543822abb)
+        ;
+
+        
+    
+    
+            marker_43e3d43428584da8a1e0e416e6fa6d18.bindTooltip(
+                `<div>
+                     <strong>sezione:55</strong><br/>ex Caserma dei Carabinieri<br/>Via G. Poli, 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_737ee450f9674dfb8d2aa83431d364e2 = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_1b19341af85b46f4a62ccec6ab362797 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_737ee450f9674dfb8d2aa83431d364e2.setIcon(icon_1b19341af85b46f4a62ccec6ab362797);
+        
+    
+        var popup_d9658568a52b42a894f669d99b78d115 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c58a316bddc48e99e209aed64f33c7f = $(`<div id="html_8c58a316bddc48e99e209aed64f33c7f" style="width: 100.0%; height: 100.0%;"><strong>sezione:56</strong><br/>ex Caserma dei Carabinieri</div>`)[0];
+            popup_d9658568a52b42a894f669d99b78d115.setContent(html_8c58a316bddc48e99e209aed64f33c7f);
+        
+
+        marker_737ee450f9674dfb8d2aa83431d364e2.bindPopup(popup_d9658568a52b42a894f669d99b78d115)
+        ;
+
+        
+    
+    
+            marker_737ee450f9674dfb8d2aa83431d364e2.bindTooltip(
+                `<div>
+                     <strong>sezione:56</strong><br/>ex Caserma dei Carabinieri<br/>Via G. Poli, 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_167d62cf5d7c4067b2fbd9c37358d7b8 = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_040f3107a06640a4a2f4f34210e21ba4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_167d62cf5d7c4067b2fbd9c37358d7b8.setIcon(icon_040f3107a06640a4a2f4f34210e21ba4);
+        
+    
+        var popup_9b38b2f519ad450f9a2edd71f0980b84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fff3f533ad3430aa3dd6ba8acaeb803 = $(`<div id="html_9fff3f533ad3430aa3dd6ba8acaeb803" style="width: 100.0%; height: 100.0%;"><strong>sezione:57</strong><br/>ex Caserma dei Carabinieri</div>`)[0];
+            popup_9b38b2f519ad450f9a2edd71f0980b84.setContent(html_9fff3f533ad3430aa3dd6ba8acaeb803);
+        
+
+        marker_167d62cf5d7c4067b2fbd9c37358d7b8.bindPopup(popup_9b38b2f519ad450f9a2edd71f0980b84)
+        ;
+
+        
+    
+    
+            marker_167d62cf5d7c4067b2fbd9c37358d7b8.bindTooltip(
+                `<div>
+                     <strong>sezione:57</strong><br/>ex Caserma dei Carabinieri<br/>Via G. Poli, 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_473557341a1f4ce6bcd14c7c5d90e979 = L.marker(
+                [46.00578, 11.12904],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_c0f8f6a3c083420f826edf7c2dc8bbce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_473557341a1f4ce6bcd14c7c5d90e979.setIcon(icon_c0f8f6a3c083420f826edf7c2dc8bbce);
+        
+    
+        var popup_726cc021c97a4ab2b09d62e0cf1ad69a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acfb3deb5eef4154a97f5401b35e8c5e = $(`<div id="html_acfb3deb5eef4154a97f5401b35e8c5e" style="width: 100.0%; height: 100.0%;"><strong>sezione:58</strong><br/>ex Caserma dei Carabinieri</div>`)[0];
+            popup_726cc021c97a4ab2b09d62e0cf1ad69a.setContent(html_acfb3deb5eef4154a97f5401b35e8c5e);
+        
+
+        marker_473557341a1f4ce6bcd14c7c5d90e979.bindPopup(popup_726cc021c97a4ab2b09d62e0cf1ad69a)
+        ;
+
+        
+    
+    
+            marker_473557341a1f4ce6bcd14c7c5d90e979.bindTooltip(
+                `<div>
+                     <strong>sezione:58</strong><br/>ex Caserma dei Carabinieri<br/>Via G. Poli, 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f4ba294b481406cabcd30715029dff7 = L.marker(
+                [46.06482, 11.15336],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_cb99ca28736c4243aa7a95c320a387ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_1f4ba294b481406cabcd30715029dff7.setIcon(icon_cb99ca28736c4243aa7a95c320a387ab);
+        
+    
+        var popup_698c89e3aea240f9a4dc96968c598600 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f69ef61cebe441c0ba4bea33ba051ad9 = $(`<div id="html_f69ef61cebe441c0ba4bea33ba051ad9" style="width: 100.0%; height: 100.0%;"><strong>sezione:59</strong><br/>Centro Civico di Povo</div>`)[0];
+            popup_698c89e3aea240f9a4dc96968c598600.setContent(html_f69ef61cebe441c0ba4bea33ba051ad9);
+        
+
+        marker_1f4ba294b481406cabcd30715029dff7.bindPopup(popup_698c89e3aea240f9a4dc96968c598600)
+        ;
+
+        
+    
+    
+            marker_1f4ba294b481406cabcd30715029dff7.bindTooltip(
+                `<div>
+                     <strong>sezione:59</strong><br/>Centro Civico di Povo<br/>Via don Tommaso Dallafior, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbf5dac6485b4b66bccb9120f1334ba7 = L.marker(
+                [46.06482, 11.15336],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_4094af150a9b402abb8f667a3ceccfd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_cbf5dac6485b4b66bccb9120f1334ba7.setIcon(icon_4094af150a9b402abb8f667a3ceccfd3);
+        
+    
+        var popup_01f9f36834314261ad057d2121d09965 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf3af8483e224cff966c6e2bdc4e7830 = $(`<div id="html_cf3af8483e224cff966c6e2bdc4e7830" style="width: 100.0%; height: 100.0%;"><strong>sezione:60</strong><br/>Centro Civico di Povo</div>`)[0];
+            popup_01f9f36834314261ad057d2121d09965.setContent(html_cf3af8483e224cff966c6e2bdc4e7830);
+        
+
+        marker_cbf5dac6485b4b66bccb9120f1334ba7.bindPopup(popup_01f9f36834314261ad057d2121d09965)
+        ;
+
+        
+    
+    
+            marker_cbf5dac6485b4b66bccb9120f1334ba7.bindTooltip(
+                `<div>
+                     <strong>sezione:60</strong><br/>Centro Civico di Povo<br/>Via don Tommaso Dallafior, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53f8c6aea6d9480f87b0ce12b1c2fedd = L.marker(
+                [46.06482, 11.15336],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_e7c7aeb3d8db4daba82350be3d76a982 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_53f8c6aea6d9480f87b0ce12b1c2fedd.setIcon(icon_e7c7aeb3d8db4daba82350be3d76a982);
+        
+    
+        var popup_c95370d300b34927835da5c322d5be81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96b271dd7fe44058915cdd6d017c5d08 = $(`<div id="html_96b271dd7fe44058915cdd6d017c5d08" style="width: 100.0%; height: 100.0%;"><strong>sezione:61</strong><br/>Centro Civico di Povo</div>`)[0];
+            popup_c95370d300b34927835da5c322d5be81.setContent(html_96b271dd7fe44058915cdd6d017c5d08);
+        
+
+        marker_53f8c6aea6d9480f87b0ce12b1c2fedd.bindPopup(popup_c95370d300b34927835da5c322d5be81)
+        ;
+
+        
+    
+    
+            marker_53f8c6aea6d9480f87b0ce12b1c2fedd.bindTooltip(
+                `<div>
+                     <strong>sezione:61</strong><br/>Centro Civico di Povo<br/>Via don Tommaso Dallafior, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_feb42a8a375744dc8182fdf2704c3855 = L.marker(
+                [46.06482, 11.15336],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_8e646abb13424a27b772ec88e4573de5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_feb42a8a375744dc8182fdf2704c3855.setIcon(icon_8e646abb13424a27b772ec88e4573de5);
+        
+    
+        var popup_aa8b19eba1394cd6929d9a8a8d75dc57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bf96493211b47e2a50cbcb21c13dce8 = $(`<div id="html_0bf96493211b47e2a50cbcb21c13dce8" style="width: 100.0%; height: 100.0%;"><strong>sezione:62</strong><br/>Centro Civico di Povo</div>`)[0];
+            popup_aa8b19eba1394cd6929d9a8a8d75dc57.setContent(html_0bf96493211b47e2a50cbcb21c13dce8);
+        
+
+        marker_feb42a8a375744dc8182fdf2704c3855.bindPopup(popup_aa8b19eba1394cd6929d9a8a8d75dc57)
+        ;
+
+        
+    
+    
+            marker_feb42a8a375744dc8182fdf2704c3855.bindTooltip(
+                `<div>
+                     <strong>sezione:62</strong><br/>Centro Civico di Povo<br/>Via don Tommaso Dallafior, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7e13555d62a449fb8bc9069e7eb38d1 = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_0d7f01f595524de4905665de331c4354 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_a7e13555d62a449fb8bc9069e7eb38d1.setIcon(icon_0d7f01f595524de4905665de331c4354);
+        
+    
+        var popup_b39b1706ddce4d35a45c47d0662faadf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5018e8cbcb7d4ddcbcd7e611b97132bf = $(`<div id="html_5018e8cbcb7d4ddcbcd7e611b97132bf" style="width: 100.0%; height: 100.0%;"><strong>sezione:63</strong><br/>Centro Civico di Cognola</div>`)[0];
+            popup_b39b1706ddce4d35a45c47d0662faadf.setContent(html_5018e8cbcb7d4ddcbcd7e611b97132bf);
+        
+
+        marker_a7e13555d62a449fb8bc9069e7eb38d1.bindPopup(popup_b39b1706ddce4d35a45c47d0662faadf)
+        ;
+
+        
+    
+    
+            marker_a7e13555d62a449fb8bc9069e7eb38d1.bindTooltip(
+                `<div>
+                     <strong>sezione:63</strong><br/>Centro Civico di Cognola<br/>Via Carlo e Valeria Julg, 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13b013dc079e430cb14e682498e053b7 = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_74c209aa57fd44ac872c3b6b4f462c51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_13b013dc079e430cb14e682498e053b7.setIcon(icon_74c209aa57fd44ac872c3b6b4f462c51);
+        
+    
+        var popup_4149032bfe2c4c78a564b07a668bb62e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_653aed875e62479b97759628c340cb2d = $(`<div id="html_653aed875e62479b97759628c340cb2d" style="width: 100.0%; height: 100.0%;"><strong>sezione:64</strong><br/>Centro Civico di Cognola</div>`)[0];
+            popup_4149032bfe2c4c78a564b07a668bb62e.setContent(html_653aed875e62479b97759628c340cb2d);
+        
+
+        marker_13b013dc079e430cb14e682498e053b7.bindPopup(popup_4149032bfe2c4c78a564b07a668bb62e)
+        ;
+
+        
+    
+    
+            marker_13b013dc079e430cb14e682498e053b7.bindTooltip(
+                `<div>
+                     <strong>sezione:64</strong><br/>Centro Civico di Cognola<br/>Via Carlo e Valeria Julg, 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24585f4eb7554cafafd9dac1ef6c09f3 = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_c7243387c34043199d7b5745cb541d59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_24585f4eb7554cafafd9dac1ef6c09f3.setIcon(icon_c7243387c34043199d7b5745cb541d59);
+        
+    
+        var popup_4c22d850f0b94c0aba05e78c33984e72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a13b0274bf4e4da18cbfb8f7f38a8f5c = $(`<div id="html_a13b0274bf4e4da18cbfb8f7f38a8f5c" style="width: 100.0%; height: 100.0%;"><strong>sezione:65</strong><br/>Centro Civico di Cognola</div>`)[0];
+            popup_4c22d850f0b94c0aba05e78c33984e72.setContent(html_a13b0274bf4e4da18cbfb8f7f38a8f5c);
+        
+
+        marker_24585f4eb7554cafafd9dac1ef6c09f3.bindPopup(popup_4c22d850f0b94c0aba05e78c33984e72)
+        ;
+
+        
+    
+    
+            marker_24585f4eb7554cafafd9dac1ef6c09f3.bindTooltip(
+                `<div>
+                     <strong>sezione:65</strong><br/>Centro Civico di Cognola<br/>Via Carlo e Valeria Julg, 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56a1be39a01c4d72b6a68fa213665739 = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_f90484c19ced4e2eaad9a54b9b2a3d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_56a1be39a01c4d72b6a68fa213665739.setIcon(icon_f90484c19ced4e2eaad9a54b9b2a3d98);
+        
+    
+        var popup_c8ef4a76c92142a7aadf61c1633aae16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4003ad11888a41a9951c340a96a45fcf = $(`<div id="html_4003ad11888a41a9951c340a96a45fcf" style="width: 100.0%; height: 100.0%;"><strong>sezione:66</strong><br/>Centro Civico di Cognola</div>`)[0];
+            popup_c8ef4a76c92142a7aadf61c1633aae16.setContent(html_4003ad11888a41a9951c340a96a45fcf);
+        
+
+        marker_56a1be39a01c4d72b6a68fa213665739.bindPopup(popup_c8ef4a76c92142a7aadf61c1633aae16)
+        ;
+
+        
+    
+    
+            marker_56a1be39a01c4d72b6a68fa213665739.bindTooltip(
+                `<div>
+                     <strong>sezione:66</strong><br/>Centro Civico di Cognola<br/>Via Carlo e Valeria Julg, 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5582e6337e242a2a62ec947bd1c02b6 = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_fee0434ad1414082a6f0f28807fe6f8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f5582e6337e242a2a62ec947bd1c02b6.setIcon(icon_fee0434ad1414082a6f0f28807fe6f8a);
+        
+    
+        var popup_9e9198c0c920415fb152b857158309f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc0ef19695cb4f44b65d00667a348043 = $(`<div id="html_fc0ef19695cb4f44b65d00667a348043" style="width: 100.0%; height: 100.0%;"><strong>sezione:67</strong><br/>Centro Civico di Cognola</div>`)[0];
+            popup_9e9198c0c920415fb152b857158309f0.setContent(html_fc0ef19695cb4f44b65d00667a348043);
+        
+
+        marker_f5582e6337e242a2a62ec947bd1c02b6.bindPopup(popup_9e9198c0c920415fb152b857158309f0)
+        ;
+
+        
+    
+    
+            marker_f5582e6337e242a2a62ec947bd1c02b6.bindTooltip(
+                `<div>
+                     <strong>sezione:67</strong><br/>Centro Civico di Cognola<br/>Via Carlo e Valeria Julg, 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddc25e71130e4557834ab6609219856b = L.marker(
+                [46.09058, 11.13178],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_3fa03a1cb716460190a07d4c8c7ec6aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ddc25e71130e4557834ab6609219856b.setIcon(icon_3fa03a1cb716460190a07d4c8c7ec6aa);
+        
+    
+        var popup_f9137d497cb9460c98ffe86ac08d870d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_377c78aa4cdc4c09a4a4802d6848c8a5 = $(`<div id="html_377c78aa4cdc4c09a4a4802d6848c8a5" style="width: 100.0%; height: 100.0%;"><strong>sezione:68</strong><br/>Scuola elementare di Martignano</div>`)[0];
+            popup_f9137d497cb9460c98ffe86ac08d870d.setContent(html_377c78aa4cdc4c09a4a4802d6848c8a5);
+        
+
+        marker_ddc25e71130e4557834ab6609219856b.bindPopup(popup_f9137d497cb9460c98ffe86ac08d870d)
+        ;
+
+        
+    
+    
+            marker_ddc25e71130e4557834ab6609219856b.bindTooltip(
+                `<div>
+                     <strong>sezione:68</strong><br/>Scuola elementare di Martignano<br/>Via alla Formighetta, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c20aef3fecd4e0084940c0bd8ce5066 = L.marker(
+                [46.09058, 11.13178],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_4a2334681ad647afb4794b740381f093 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_1c20aef3fecd4e0084940c0bd8ce5066.setIcon(icon_4a2334681ad647afb4794b740381f093);
+        
+    
+        var popup_dc6f3f0ed3a94e5ea38932b0dd1d77a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc91d1be9a134911b08fee196ba4af35 = $(`<div id="html_cc91d1be9a134911b08fee196ba4af35" style="width: 100.0%; height: 100.0%;"><strong>sezione:69</strong><br/>Scuola elementare di Martignano</div>`)[0];
+            popup_dc6f3f0ed3a94e5ea38932b0dd1d77a2.setContent(html_cc91d1be9a134911b08fee196ba4af35);
+        
+
+        marker_1c20aef3fecd4e0084940c0bd8ce5066.bindPopup(popup_dc6f3f0ed3a94e5ea38932b0dd1d77a2)
+        ;
+
+        
+    
+    
+            marker_1c20aef3fecd4e0084940c0bd8ce5066.bindTooltip(
+                `<div>
+                     <strong>sezione:69</strong><br/>Scuola elementare di Martignano<br/>Via alla Formighetta, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_982afdb9d7914217996c33ce58cc1308 = L.marker(
+                [46.09058, 11.13178],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_6d09ded0d61e4f22b0b56b5334408aa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_982afdb9d7914217996c33ce58cc1308.setIcon(icon_6d09ded0d61e4f22b0b56b5334408aa8);
+        
+    
+        var popup_a2fd5442bafb4aca94bceb830986ed04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f253a4327d44fe188c0bac0f9a4d16b = $(`<div id="html_0f253a4327d44fe188c0bac0f9a4d16b" style="width: 100.0%; height: 100.0%;"><strong>sezione:70</strong><br/>Scuola elementare di Martignano</div>`)[0];
+            popup_a2fd5442bafb4aca94bceb830986ed04.setContent(html_0f253a4327d44fe188c0bac0f9a4d16b);
+        
+
+        marker_982afdb9d7914217996c33ce58cc1308.bindPopup(popup_a2fd5442bafb4aca94bceb830986ed04)
+        ;
+
+        
+    
+    
+            marker_982afdb9d7914217996c33ce58cc1308.bindTooltip(
+                `<div>
+                     <strong>sezione:70</strong><br/>Scuola elementare di Martignano<br/>Via alla Formighetta, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6265b2be94824833834441b6a905f59b = L.marker(
+                [46.09058, 11.13178],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_ae07701339ff4455b0664a727b29e27d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_6265b2be94824833834441b6a905f59b.setIcon(icon_ae07701339ff4455b0664a727b29e27d);
+        
+    
+        var popup_e602681fd2f04280ac9cda9f54b3c077 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8833f9cfed6d4a1cb6f2201fa3e6c880 = $(`<div id="html_8833f9cfed6d4a1cb6f2201fa3e6c880" style="width: 100.0%; height: 100.0%;"><strong>sezione:71</strong><br/>Scuola elementare di Martignano</div>`)[0];
+            popup_e602681fd2f04280ac9cda9f54b3c077.setContent(html_8833f9cfed6d4a1cb6f2201fa3e6c880);
+        
+
+        marker_6265b2be94824833834441b6a905f59b.bindPopup(popup_e602681fd2f04280ac9cda9f54b3c077)
+        ;
+
+        
+    
+    
+            marker_6265b2be94824833834441b6a905f59b.bindTooltip(
+                `<div>
+                     <strong>sezione:71</strong><br/>Scuola elementare di Martignano<br/>Via alla Formighetta 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cb9811f87cb44e0ab03ad0c73c8cd39 = L.marker(
+                [46.0378, 11.10656],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_a1f9f86e4e8f49a1b54d14d66a89c240 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_4cb9811f87cb44e0ab03ad0c73c8cd39.setIcon(icon_a1f9f86e4e8f49a1b54d14d66a89c240);
+        
+    
+        var popup_686d3c3b9af944649a993034b691759b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_302d7cbc317a4cbcbd1ff1d3ba915d34 = $(`<div id="html_302d7cbc317a4cbcbd1ff1d3ba915d34" style="width: 100.0%; height: 100.0%;"><strong>sezione:72</strong><br/>Centro civico di Ravina</div>`)[0];
+            popup_686d3c3b9af944649a993034b691759b.setContent(html_302d7cbc317a4cbcbd1ff1d3ba915d34);
+        
+
+        marker_4cb9811f87cb44e0ab03ad0c73c8cd39.bindPopup(popup_686d3c3b9af944649a993034b691759b)
+        ;
+
+        
+    
+    
+            marker_4cb9811f87cb44e0ab03ad0c73c8cd39.bindTooltip(
+                `<div>
+                     <strong>sezione:72</strong><br/>Centro civico di Ravina<br/>Via val Gola, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bca99b8244141e091e29eb3071b7aed = L.marker(
+                [46.0378, 11.10656],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_cc001d7bedb6437095386429d61be004 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_9bca99b8244141e091e29eb3071b7aed.setIcon(icon_cc001d7bedb6437095386429d61be004);
+        
+    
+        var popup_b32074a016054802a4d56fbf234fa8ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21ce00c0c8d8474482bfe2715d660a55 = $(`<div id="html_21ce00c0c8d8474482bfe2715d660a55" style="width: 100.0%; height: 100.0%;"><strong>sezione:73</strong><br/>Centro civico di Ravina</div>`)[0];
+            popup_b32074a016054802a4d56fbf234fa8ee.setContent(html_21ce00c0c8d8474482bfe2715d660a55);
+        
+
+        marker_9bca99b8244141e091e29eb3071b7aed.bindPopup(popup_b32074a016054802a4d56fbf234fa8ee)
+        ;
+
+        
+    
+    
+            marker_9bca99b8244141e091e29eb3071b7aed.bindTooltip(
+                `<div>
+                     <strong>sezione:73</strong><br/>Centro civico di Ravina<br/>Via val Gola, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ba70f39e557481d8ffc11087f423dae = L.marker(
+                [46.0378, 11.10656],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_ed580c11c6cb4a12a53a0665aa162e18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_8ba70f39e557481d8ffc11087f423dae.setIcon(icon_ed580c11c6cb4a12a53a0665aa162e18);
+        
+    
+        var popup_b85ea50e72c74c84aa561767d004d86c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b6911ccd5144ed4a1ed26a1cbd015fb = $(`<div id="html_1b6911ccd5144ed4a1ed26a1cbd015fb" style="width: 100.0%; height: 100.0%;"><strong>sezione:74</strong><br/>Centro civico di Ravina</div>`)[0];
+            popup_b85ea50e72c74c84aa561767d004d86c.setContent(html_1b6911ccd5144ed4a1ed26a1cbd015fb);
+        
+
+        marker_8ba70f39e557481d8ffc11087f423dae.bindPopup(popup_b85ea50e72c74c84aa561767d004d86c)
+        ;
+
+        
+    
+    
+            marker_8ba70f39e557481d8ffc11087f423dae.bindTooltip(
+                `<div>
+                     <strong>sezione:74</strong><br/>Centro civico di Ravina<br/>Via val Gola, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0b9e7c4b2db41859574ada174e13d87 = L.marker(
+                [46.01719, 11.10586],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_8ce49dba414d4ad9a6eb43eea54d8f97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_d0b9e7c4b2db41859574ada174e13d87.setIcon(icon_8ce49dba414d4ad9a6eb43eea54d8f97);
+        
+    
+        var popup_6d2d2e6fe70d4a0a8c2d8f2b6ef71bb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8616b4b1ba4140b5989c546ceab28327 = $(`<div id="html_8616b4b1ba4140b5989c546ceab28327" style="width: 100.0%; height: 100.0%;"><strong>sezione:75</strong><br/>Ufficio comunale di Romagnano</div>`)[0];
+            popup_6d2d2e6fe70d4a0a8c2d8f2b6ef71bb8.setContent(html_8616b4b1ba4140b5989c546ceab28327);
+        
+
+        marker_d0b9e7c4b2db41859574ada174e13d87.bindPopup(popup_6d2d2e6fe70d4a0a8c2d8f2b6ef71bb8)
+        ;
+
+        
+    
+    
+            marker_d0b9e7c4b2db41859574ada174e13d87.bindTooltip(
+                `<div>
+                     <strong>sezione:75</strong><br/>Ufficio comunale di Romagnano<br/>Via sette Fontane, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d21ca4439240463696fb557944bac453 = L.marker(
+                [46.06331, 11.09714],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_3bd4cf1679cc4fda9210e39866fd1f6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_d21ca4439240463696fb557944bac453.setIcon(icon_3bd4cf1679cc4fda9210e39866fd1f6a);
+        
+    
+        var popup_4f33411986594ab283d80e597d35b49c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0efa6b8672194a2ca434522a71fe607a = $(`<div id="html_0efa6b8672194a2ca434522a71fe607a" style="width: 100.0%; height: 100.0%;"><strong>sezione:76</strong><br/>Centro civico di Sardagna</div>`)[0];
+            popup_4f33411986594ab283d80e597d35b49c.setContent(html_0efa6b8672194a2ca434522a71fe607a);
+        
+
+        marker_d21ca4439240463696fb557944bac453.bindPopup(popup_4f33411986594ab283d80e597d35b49c)
+        ;
+
+        
+    
+    
+            marker_d21ca4439240463696fb557944bac453.bindTooltip(
+                `<div>
+                     <strong>sezione:76</strong><br/>Centro civico di Sardagna<br/>Via G. Bucelleni, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b692659987a2429b96e2226fccd4d4a6 = L.marker(
+                [46.07162, 11.06042],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_3c79a575330b408d915ac1fbf1faa0db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_b692659987a2429b96e2226fccd4d4a6.setIcon(icon_3c79a575330b408d915ac1fbf1faa0db);
+        
+    
+        var popup_964a1d9c66544cfcb60f84bf54887fe6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ef8b743328a403eaa18ad22bbe6fbcd = $(`<div id="html_6ef8b743328a403eaa18ad22bbe6fbcd" style="width: 100.0%; height: 100.0%;"><strong>sezione:77</strong><br/>Centro civico di Sopramonte</div>`)[0];
+            popup_964a1d9c66544cfcb60f84bf54887fe6.setContent(html_6ef8b743328a403eaa18ad22bbe6fbcd);
+        
+
+        marker_b692659987a2429b96e2226fccd4d4a6.bindPopup(popup_964a1d9c66544cfcb60f84bf54887fe6)
+        ;
+
+        
+    
+    
+            marker_b692659987a2429b96e2226fccd4d4a6.bindTooltip(
+                `<div>
+                     <strong>sezione:77</strong><br/>Centro civico di Sopramonte<br/>Via di Revolta, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36a14b243ce940d4a514b9b3dbf46978 = L.marker(
+                [46.07162, 11.06042],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_fbf1c8f590de418c88ac85fde9cbde84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_36a14b243ce940d4a514b9b3dbf46978.setIcon(icon_fbf1c8f590de418c88ac85fde9cbde84);
+        
+    
+        var popup_8d9bf188bead4786a1d5d16c70757eb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f64cbb045f7408c8869d8b8b9084105 = $(`<div id="html_4f64cbb045f7408c8869d8b8b9084105" style="width: 100.0%; height: 100.0%;"><strong>sezione:78</strong><br/>Centro civico di Sopramonte</div>`)[0];
+            popup_8d9bf188bead4786a1d5d16c70757eb9.setContent(html_4f64cbb045f7408c8869d8b8b9084105);
+        
+
+        marker_36a14b243ce940d4a514b9b3dbf46978.bindPopup(popup_8d9bf188bead4786a1d5d16c70757eb9)
+        ;
+
+        
+    
+    
+            marker_36a14b243ce940d4a514b9b3dbf46978.bindTooltip(
+                `<div>
+                     <strong>sezione:78</strong><br/>Centro civico di Sopramonte<br/>Via di Revolta, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdcd15e005fc493bb570a9641d0c3dbb = L.marker(
+                [46.08642, 11.06386],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_be95d8e0424047eaa1ee85b3ed729d1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_fdcd15e005fc493bb570a9641d0c3dbb.setIcon(icon_be95d8e0424047eaa1ee85b3ed729d1a);
+        
+    
+        var popup_1e5c8a6459954ff481ebd18fd94be3f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fde9770a3e754a9ca222bcbbd7533444 = $(`<div id="html_fde9770a3e754a9ca222bcbbd7533444" style="width: 100.0%; height: 100.0%;"><strong>sezione:79</strong><br/>Centro civico di Cadine</div>`)[0];
+            popup_1e5c8a6459954ff481ebd18fd94be3f8.setContent(html_fde9770a3e754a9ca222bcbbd7533444);
+        
+
+        marker_fdcd15e005fc493bb570a9641d0c3dbb.bindPopup(popup_1e5c8a6459954ff481ebd18fd94be3f8)
+        ;
+
+        
+    
+    
+            marker_fdcd15e005fc493bb570a9641d0c3dbb.bindTooltip(
+                `<div>
+                     <strong>sezione:79</strong><br/>Centro civico di Cadine<br/>Via dell'Androna, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee894aa5fc364faeab409d2cca18b427 = L.marker(
+                [46.08642, 11.06386],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_c776257836c14afcab5942436f2bd4ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ee894aa5fc364faeab409d2cca18b427.setIcon(icon_c776257836c14afcab5942436f2bd4ff);
+        
+    
+        var popup_99d489825a834e2fb34f68c6ee884e55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_496ac99e4aa34fabbc5b90a0129941dd = $(`<div id="html_496ac99e4aa34fabbc5b90a0129941dd" style="width: 100.0%; height: 100.0%;"><strong>sezione:80</strong><br/>Centro civico di Cadine</div>`)[0];
+            popup_99d489825a834e2fb34f68c6ee884e55.setContent(html_496ac99e4aa34fabbc5b90a0129941dd);
+        
+
+        marker_ee894aa5fc364faeab409d2cca18b427.bindPopup(popup_99d489825a834e2fb34f68c6ee884e55)
+        ;
+
+        
+    
+    
+            marker_ee894aa5fc364faeab409d2cca18b427.bindTooltip(
+                `<div>
+                     <strong>sezione:80</strong><br/>Centro civico di Cadine<br/>Via dell'Androna, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_513941f1df67427f972a58e2957823d1 = L.marker(
+                [46.1263, 11.11614],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_52b6cc9f89c345b1bce747d75200380f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_513941f1df67427f972a58e2957823d1.setIcon(icon_52b6cc9f89c345b1bce747d75200380f);
+        
+    
+        var popup_bd918b8dac9a447d885e139424f5599c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acfdbb3207a04444af0d896f5a2446b9 = $(`<div id="html_acfdbb3207a04444af0d896f5a2446b9" style="width: 100.0%; height: 100.0%;"><strong>sezione:81</strong><br/>Centro civico di Meano</div>`)[0];
+            popup_bd918b8dac9a447d885e139424f5599c.setContent(html_acfdbb3207a04444af0d896f5a2446b9);
+        
+
+        marker_513941f1df67427f972a58e2957823d1.bindPopup(popup_bd918b8dac9a447d885e139424f5599c)
+        ;
+
+        
+    
+    
+            marker_513941f1df67427f972a58e2957823d1.bindTooltip(
+                `<div>
+                     <strong>sezione:81</strong><br/>Centro civico di Meano<br/>Via delle Sugarine, 26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6efa6f7f960f473cbd27dec8d15bae62 = L.marker(
+                [46.1263, 11.11614],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_c632fcfe6b0045138587c6404a7f5bdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_6efa6f7f960f473cbd27dec8d15bae62.setIcon(icon_c632fcfe6b0045138587c6404a7f5bdd);
+        
+    
+        var popup_c3b5e644708c4fb0824739efcf106e45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_222b7c193ff84a2f8b387923653aa78c = $(`<div id="html_222b7c193ff84a2f8b387923653aa78c" style="width: 100.0%; height: 100.0%;"><strong>sezione:82</strong><br/>Centro civico di Meano</div>`)[0];
+            popup_c3b5e644708c4fb0824739efcf106e45.setContent(html_222b7c193ff84a2f8b387923653aa78c);
+        
+
+        marker_6efa6f7f960f473cbd27dec8d15bae62.bindPopup(popup_c3b5e644708c4fb0824739efcf106e45)
+        ;
+
+        
+    
+    
+            marker_6efa6f7f960f473cbd27dec8d15bae62.bindTooltip(
+                `<div>
+                     <strong>sezione:82</strong><br/>Centro civico di Meano<br/>Via delle Sugarine, 26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf125e3feba1436d913774320f7090d6 = L.marker(
+                [46.13206, 11.13434],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_a69c049be2df49b385e7ad2003e6f6c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_cf125e3feba1436d913774320f7090d6.setIcon(icon_a69c049be2df49b385e7ad2003e6f6c0);
+        
+    
+        var popup_d7a97bc97caf4cda995ddf5c06b280db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb01ffd573704b7a8d7b977c34bef247 = $(`<div id="html_eb01ffd573704b7a8d7b977c34bef247" style="width: 100.0%; height: 100.0%;"><strong>sezione:83</strong><br/>Centro civico di Vigo Meano</div>`)[0];
+            popup_d7a97bc97caf4cda995ddf5c06b280db.setContent(html_eb01ffd573704b7a8d7b977c34bef247);
+        
+
+        marker_cf125e3feba1436d913774320f7090d6.bindPopup(popup_d7a97bc97caf4cda995ddf5c06b280db)
+        ;
+
+        
+    
+    
+            marker_cf125e3feba1436d913774320f7090d6.bindTooltip(
+                `<div>
+                     <strong>sezione:83</strong><br/>Centro civico di Vigo Meano<br/>Piazza A. Stainer, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cafbb601584749d78fc29c09b87d56ed = L.marker(
+                [46.10785, 11.11235],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_54d1b63e33554da29a14867b61eab79c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_cafbb601584749d78fc29c09b87d56ed.setIcon(icon_54d1b63e33554da29a14867b61eab79c);
+        
+    
+        var popup_2ae265b68b104748aedd85b003a0daaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76a46537c978424fbdddacbf96a5879b = $(`<div id="html_76a46537c978424fbdddacbf96a5879b" style="width: 100.0%; height: 100.0%;"><strong>sezione:84</strong><br/>Centro civico di Gardolo</div>`)[0];
+            popup_2ae265b68b104748aedd85b003a0daaa.setContent(html_76a46537c978424fbdddacbf96a5879b);
+        
+
+        marker_cafbb601584749d78fc29c09b87d56ed.bindPopup(popup_2ae265b68b104748aedd85b003a0daaa)
+        ;
+
+        
+    
+    
+            marker_cafbb601584749d78fc29c09b87d56ed.bindTooltip(
+                `<div>
+                     <strong>sezione:84</strong><br/>Centro civico di Gardolo<br/>Piazzale L. Groff, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_043fe795346645268a5051692fd866ae = L.marker(
+                [46.10785, 11.11235],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_4c5820be5fbe4c62b66a33631477589e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_043fe795346645268a5051692fd866ae.setIcon(icon_4c5820be5fbe4c62b66a33631477589e);
+        
+    
+        var popup_d83ddd226ead4ddab7f0761fb58af67e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3be17371c631427eb024bcef1fab73d9 = $(`<div id="html_3be17371c631427eb024bcef1fab73d9" style="width: 100.0%; height: 100.0%;"><strong>sezione:85</strong><br/>Centro civico di Gardolo</div>`)[0];
+            popup_d83ddd226ead4ddab7f0761fb58af67e.setContent(html_3be17371c631427eb024bcef1fab73d9);
+        
+
+        marker_043fe795346645268a5051692fd866ae.bindPopup(popup_d83ddd226ead4ddab7f0761fb58af67e)
+        ;
+
+        
+    
+    
+            marker_043fe795346645268a5051692fd866ae.bindTooltip(
+                `<div>
+                     <strong>sezione:85</strong><br/>Centro civico di Gardolo<br/>Piazzale L. Groff, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00087122d1e54883a4bc27fbc96d9394 = L.marker(
+                [46.10785, 11.11235],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_2322cba1fde643c699f86e3379a10667 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_00087122d1e54883a4bc27fbc96d9394.setIcon(icon_2322cba1fde643c699f86e3379a10667);
+        
+    
+        var popup_1fdce2aac8fe4d22a36583755646a9ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_717eccb29e0048479d59bf4339b9ac67 = $(`<div id="html_717eccb29e0048479d59bf4339b9ac67" style="width: 100.0%; height: 100.0%;"><strong>sezione:86</strong><br/>Centro civico di Gardolo</div>`)[0];
+            popup_1fdce2aac8fe4d22a36583755646a9ce.setContent(html_717eccb29e0048479d59bf4339b9ac67);
+        
+
+        marker_00087122d1e54883a4bc27fbc96d9394.bindPopup(popup_1fdce2aac8fe4d22a36583755646a9ce)
+        ;
+
+        
+    
+    
+            marker_00087122d1e54883a4bc27fbc96d9394.bindTooltip(
+                `<div>
+                     <strong>sezione:86</strong><br/>Centro civico di Gardolo<br/>Piazzale L. Groff, 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0952ebbc261f4d43af4fddee68c2535d = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_6de877fda2224460b6a3f0b716f4b6e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_0952ebbc261f4d43af4fddee68c2535d.setIcon(icon_6de877fda2224460b6a3f0b716f4b6e1);
+        
+    
+        var popup_dd97fff2810d4862ba7956f49525a14e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8de049aaa9c8443486079a1979fcfed0 = $(`<div id="html_8de049aaa9c8443486079a1979fcfed0" style="width: 100.0%; height: 100.0%;"><strong>sezione:87</strong><br/>Edificio Pluriuso (ex centro civico)</div>`)[0];
+            popup_dd97fff2810d4862ba7956f49525a14e.setContent(html_8de049aaa9c8443486079a1979fcfed0);
+        
+
+        marker_0952ebbc261f4d43af4fddee68c2535d.bindPopup(popup_dd97fff2810d4862ba7956f49525a14e)
+        ;
+
+        
+    
+    
+            marker_0952ebbc261f4d43af4fddee68c2535d.bindTooltip(
+                `<div>
+                     <strong>sezione:87</strong><br/>Edificio Pluriuso (ex centro civico)<br/>Via Soprasasso, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfcd196510e749b48f1f6b8e08217d36 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_167f6163a1194742aacb1a13c08dbb7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_cfcd196510e749b48f1f6b8e08217d36.setIcon(icon_167f6163a1194742aacb1a13c08dbb7e);
+        
+    
+        var popup_f0a5d4df07a14390889381ffd2344b8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c28460ac6e3349b6a41eee725ac6f559 = $(`<div id="html_c28460ac6e3349b6a41eee725ac6f559" style="width: 100.0%; height: 100.0%;"><strong>sezione:88</strong><br/>Edificio Pluriuso (ex centro civico)</div>`)[0];
+            popup_f0a5d4df07a14390889381ffd2344b8e.setContent(html_c28460ac6e3349b6a41eee725ac6f559);
+        
+
+        marker_cfcd196510e749b48f1f6b8e08217d36.bindPopup(popup_f0a5d4df07a14390889381ffd2344b8e)
+        ;
+
+        
+    
+    
+            marker_cfcd196510e749b48f1f6b8e08217d36.bindTooltip(
+                `<div>
+                     <strong>sezione:88</strong><br/>Edificio Pluriuso (ex centro civico)<br/>Via Soprasasso, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8541c08d1d93440eafb8753805624b89 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_30fc1ea1c7e64f779d43875926004e90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_8541c08d1d93440eafb8753805624b89.setIcon(icon_30fc1ea1c7e64f779d43875926004e90);
+        
+    
+        var popup_923ed00b22bb489d9045db40e4a2f156 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a571ec750470421292a022802c02238e = $(`<div id="html_a571ec750470421292a022802c02238e" style="width: 100.0%; height: 100.0%;"><strong>sezione:89</strong><br/>Edificio Pluriuso (ex centro civico)</div>`)[0];
+            popup_923ed00b22bb489d9045db40e4a2f156.setContent(html_a571ec750470421292a022802c02238e);
+        
+
+        marker_8541c08d1d93440eafb8753805624b89.bindPopup(popup_923ed00b22bb489d9045db40e4a2f156)
+        ;
+
+        
+    
+    
+            marker_8541c08d1d93440eafb8753805624b89.bindTooltip(
+                `<div>
+                     <strong>sezione:89</strong><br/>Edificio Pluriuso (ex centro civico)<br/>Via Soprasasso, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21d3726fddbd42498a899f5ed1b0f63d = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_5e9b785046a3415590cff6cf1dc9d07f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_21d3726fddbd42498a899f5ed1b0f63d.setIcon(icon_5e9b785046a3415590cff6cf1dc9d07f);
+        
+    
+        var popup_eb4eaf300f394bc8b44cfbf35c997abf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4251fc24a114ae6b47fda92df0ff7e8 = $(`<div id="html_e4251fc24a114ae6b47fda92df0ff7e8" style="width: 100.0%; height: 100.0%;"><strong>sezione:90</strong><br/>Edificio Pluriuso (ex centro civico)</div>`)[0];
+            popup_eb4eaf300f394bc8b44cfbf35c997abf.setContent(html_e4251fc24a114ae6b47fda92df0ff7e8);
+        
+
+        marker_21d3726fddbd42498a899f5ed1b0f63d.bindPopup(popup_eb4eaf300f394bc8b44cfbf35c997abf)
+        ;
+
+        
+    
+    
+            marker_21d3726fddbd42498a899f5ed1b0f63d.bindTooltip(
+                `<div>
+                     <strong>sezione:90</strong><br/>Edificio Pluriuso (ex centro civico)<br/>Via Soprasasso, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1877ce02614412dbfb8ead1de9f6318 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_2143a3311939404bbb44f251924504c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c1877ce02614412dbfb8ead1de9f6318.setIcon(icon_2143a3311939404bbb44f251924504c7);
+        
+    
+        var popup_4305caadf6b44741951c868f22f902c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_210807ff6f1840de8ef81b905fa640ac = $(`<div id="html_210807ff6f1840de8ef81b905fa640ac" style="width: 100.0%; height: 100.0%;"><strong>sezione:91</strong><br/>Edificio Pluriuso (ex centro civico)</div>`)[0];
+            popup_4305caadf6b44741951c868f22f902c4.setContent(html_210807ff6f1840de8ef81b905fa640ac);
+        
+
+        marker_c1877ce02614412dbfb8ead1de9f6318.bindPopup(popup_4305caadf6b44741951c868f22f902c4)
+        ;
+
+        
+    
+    
+            marker_c1877ce02614412dbfb8ead1de9f6318.bindTooltip(
+                `<div>
+                     <strong>sezione:91</strong><br/>Edificio Pluriuso (ex centro civico)<br/>Via Soprasasso, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55f71f7e0354462789057f8868148888 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_405f828dc9c3490bac3bedd90805ea7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_55f71f7e0354462789057f8868148888.setIcon(icon_405f828dc9c3490bac3bedd90805ea7c);
+        
+    
+        var popup_8e40a21244ce49e3a3c578ac9b679ad3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba743245a505434882b049b74e666bd6 = $(`<div id="html_ba743245a505434882b049b74e666bd6" style="width: 100.0%; height: 100.0%;"><strong>sezione:92</strong><br/>Edificio Pluriuso (ex centro civico)</div>`)[0];
+            popup_8e40a21244ce49e3a3c578ac9b679ad3.setContent(html_ba743245a505434882b049b74e666bd6);
+        
+
+        marker_55f71f7e0354462789057f8868148888.bindPopup(popup_8e40a21244ce49e3a3c578ac9b679ad3)
+        ;
+
+        
+    
+    
+            marker_55f71f7e0354462789057f8868148888.bindTooltip(
+                `<div>
+                     <strong>sezione:92</strong><br/>Edificio Pluriuso (ex centro civico)<br/>Via Soprasasso, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b398d83218ab46489f5f69bfcbabd1e6 = L.marker(
+                [46.10654, 11.11181],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_27f0ab1e58914616893dbefd79559599 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_b398d83218ab46489f5f69bfcbabd1e6.setIcon(icon_27f0ab1e58914616893dbefd79559599);
+        
+    
+        var popup_774df8a3bb614f7dadc7c65f8181ef72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26793759dc8946359595f148e5a2a698 = $(`<div id="html_26793759dc8946359595f148e5a2a698" style="width: 100.0%; height: 100.0%;"><strong>sezione:93</strong><br/>Edificio Pluriuso (ex centro civico)</div>`)[0];
+            popup_774df8a3bb614f7dadc7c65f8181ef72.setContent(html_26793759dc8946359595f148e5a2a698);
+        
+
+        marker_b398d83218ab46489f5f69bfcbabd1e6.bindPopup(popup_774df8a3bb614f7dadc7c65f8181ef72)
+        ;
+
+        
+    
+    
+            marker_b398d83218ab46489f5f69bfcbabd1e6.bindTooltip(
+                `<div>
+                     <strong>sezione:93</strong><br/>Edificio Pluriuso (ex centro civico)<br/>Via Soprasasso, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4243e2acfd1e44a89c5e44739dfaa41f = L.marker(
+                [46.07725, 11.12063],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_7144fa1448bb4cb799b436107020778f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_4243e2acfd1e44a89c5e44739dfaa41f.setIcon(icon_7144fa1448bb4cb799b436107020778f);
+        
+    
+        var popup_7527312fee9e4800a7f60e1ac001bdb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f7eae3f85e44ee98745480173101ad7 = $(`<div id="html_6f7eae3f85e44ee98745480173101ad7" style="width: 100.0%; height: 100.0%;"><strong>sezione:94</strong><br/>Scuola Elementare S. Bellesini</div>`)[0];
+            popup_7527312fee9e4800a7f60e1ac001bdb7.setContent(html_6f7eae3f85e44ee98745480173101ad7);
+        
+
+        marker_4243e2acfd1e44a89c5e44739dfaa41f.bindPopup(popup_7527312fee9e4800a7f60e1ac001bdb7)
+        ;
+
+        
+    
+    
+            marker_4243e2acfd1e44a89c5e44739dfaa41f.bindTooltip(
+                `<div>
+                     <strong>sezione:94</strong><br/>Scuola Elementare S. Bellesini<br/>Via Antonio Stoppani, 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3ba2fa05c07401c885cccbaec0172cf = L.marker(
+                [46.01719, 11.10586],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_61513cb150ff4236a83ba2599ebd7649 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c3ba2fa05c07401c885cccbaec0172cf.setIcon(icon_61513cb150ff4236a83ba2599ebd7649);
+        
+    
+        var popup_7ba9a4fecd1d40f3bc4442f82f505bae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e656c8c51b264545aa9578d6b4c1c82b = $(`<div id="html_e656c8c51b264545aa9578d6b4c1c82b" style="width: 100.0%; height: 100.0%;"><strong>sezione:95</strong><br/>Ufficio comunale di Romagnano</div>`)[0];
+            popup_7ba9a4fecd1d40f3bc4442f82f505bae.setContent(html_e656c8c51b264545aa9578d6b4c1c82b);
+        
+
+        marker_c3ba2fa05c07401c885cccbaec0172cf.bindPopup(popup_7ba9a4fecd1d40f3bc4442f82f505bae)
+        ;
+
+        
+    
+    
+            marker_c3ba2fa05c07401c885cccbaec0172cf.bindTooltip(
+                `<div>
+                     <strong>sezione:95</strong><br/>Ufficio comunale di Romagnano<br/>Via sette Fontane, 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_743fb90353bb4fa29afe1a19701e1631 = L.marker(
+                [46.1263, 11.11614],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_e59f80cf2d5a4a77946057bbfd4e39cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_743fb90353bb4fa29afe1a19701e1631.setIcon(icon_e59f80cf2d5a4a77946057bbfd4e39cc);
+        
+    
+        var popup_6e044d08a95e4e1ab51363541f95ad90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e927f711bbfc43b381b133d0e521e970 = $(`<div id="html_e927f711bbfc43b381b133d0e521e970" style="width: 100.0%; height: 100.0%;"><strong>sezione:96</strong><br/>Centro civico di Meano</div>`)[0];
+            popup_6e044d08a95e4e1ab51363541f95ad90.setContent(html_e927f711bbfc43b381b133d0e521e970);
+        
+
+        marker_743fb90353bb4fa29afe1a19701e1631.bindPopup(popup_6e044d08a95e4e1ab51363541f95ad90)
+        ;
+
+        
+    
+    
+            marker_743fb90353bb4fa29afe1a19701e1631.bindTooltip(
+                `<div>
+                     <strong>sezione:96</strong><br/>Centro civico di Meano<br/>Via delle Sugarine, 26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b63a9d246a5d42cbb7393a9801dbb5c6 = L.marker(
+                [46.07695, 11.14202],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_0c324c9a0d084920909d73aba9de3610 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_b63a9d246a5d42cbb7393a9801dbb5c6.setIcon(icon_0c324c9a0d084920909d73aba9de3610);
+        
+    
+        var popup_f2e153a9854a419c96b178b7345ddcac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fd2f0448a0144e2b7e44e633279610c = $(`<div id="html_6fd2f0448a0144e2b7e44e633279610c" style="width: 100.0%; height: 100.0%;"><strong>sezione:97</strong><br/>Centro Civico di Cognola</div>`)[0];
+            popup_f2e153a9854a419c96b178b7345ddcac.setContent(html_6fd2f0448a0144e2b7e44e633279610c);
+        
+
+        marker_b63a9d246a5d42cbb7393a9801dbb5c6.bindPopup(popup_f2e153a9854a419c96b178b7345ddcac)
+        ;
+
+        
+    
+    
+            marker_b63a9d246a5d42cbb7393a9801dbb5c6.bindTooltip(
+                `<div>
+                     <strong>sezione:97</strong><br/>Centro Civico di Cognola<br/>Via Carlo e Valeria Julg, 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19a57b57616e44d792d8de244c4f3e29 = L.marker(
+                [46.07162, 11.06042],
+                {}
+            ).addTo(marker_cluster_4069c97500d64e0eb271655e0d2efd7d);
+        
+    
+            var icon_4aeffd0487694286a070545614bd9dab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-circle-down", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_19a57b57616e44d792d8de244c4f3e29.setIcon(icon_4aeffd0487694286a070545614bd9dab);
+        
+    
+        var popup_f2dd6018fa674420a47eaa1f4acf5c4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_786e3070b54c4acc89fa00274b126e02 = $(`<div id="html_786e3070b54c4acc89fa00274b126e02" style="width: 100.0%; height: 100.0%;"><strong>sezione:98</strong><br/>Centro civico di Sopramonte</div>`)[0];
+            popup_f2dd6018fa674420a47eaa1f4acf5c4d.setContent(html_786e3070b54c4acc89fa00274b126e02);
+        
+
+        marker_19a57b57616e44d792d8de244c4f3e29.bindPopup(popup_f2dd6018fa674420a47eaa1f4acf5c4d)
+        ;
+
+        
+    
+    
+            marker_19a57b57616e44d792d8de244c4f3e29.bindTooltip(
+                `<div>
+                     <strong>sezione:98</strong><br/>Centro civico di Sopramonte<br/>Via di Revolta, 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
