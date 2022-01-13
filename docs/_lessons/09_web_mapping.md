@@ -4,7 +4,7 @@ permalink: /lessons/09_web_mapping
 excerpt: "Web Mapping"
 last_modified_at: 2021-11-28T06:02:03-09:02
 header:
-  teaser: https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/compare_map_matching.jpg
+  teaser: /lessons/09_web_mapping_files/mappa13.jpg
 #redirect_from:
 #  - /theme-setup/
 toc: true
@@ -616,7 +616,7 @@ folium.GeoJson(
 m9
 ```
 
-![](09_web_mapping_files/mappa11.jpg)
+![](09_web_mapping_files/mappa_azzurra.png)
 
 
 
@@ -635,7 +635,7 @@ folium.GeoJson(
 
 m9
 ```
-![](09_web_mapping_files/mappa12.jpg)
+![](09_web_mapping_files/mappa11.jpg)
 
 
 
@@ -652,11 +652,11 @@ folium.Choropleth(
     fill_color='Oranges', 
     fill_opacity=0.6, 
     line_opacity=1,
-    legend_name='percentage votes obtained by Marini',
+    legend_name='percentage votes obtained by Martini',
     smooth_factor=0).add_to(m9)
 m9
 ```
-![](09_web_mapping_files/mappa13.jpg)
+![](09_web_mapping_files/mappa_martini.jpg)
 
 
 
@@ -693,7 +693,7 @@ folium.Choropleth(
     fill_color='Oranges', 
     fill_opacity=0.8, 
     line_opacity=1,
-    legend_name='percentage votes obtained by Marini',
+    legend_name='percentage votes obtained by Martini',
     smooth_factor=0).add_to(m10)
 
 # generate choropleth map 
@@ -711,7 +711,7 @@ folium.Choropleth(
 m10
 ```
 
-![](09_web_mapping_files/mappa13.jpg)
+![](09_web_mapping_files/mappa12.jpg)
 
 
 add tooltip
@@ -744,7 +744,7 @@ folium.features.GeoJson(map_degasperi,
 m10
 ```
 
-![](09_web_mapping_files/mappa14.jpg)
+![](09_web_mapping_files/mappa13.jpg)
 
 
 
