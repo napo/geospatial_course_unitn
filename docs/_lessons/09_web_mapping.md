@@ -401,7 +401,7 @@ for index, row in polling_stations.iterrows():
 m5
 ```
 
-<a href="/lessons/webmaps/map5a.html" target="_new">![](09_web_mapping_files/mappa6.jpg)</a>
+<a href="/lessons/webmaps/map5a.html" target="_new">![](09_web_mapping_files/mappa5b.jpg)</a>
 
 
 
@@ -435,8 +435,7 @@ for index, row in polling_stations.iterrows():
 m6
 ```
 
-
-<a href="/lessons/webmaps/mappa6.html" target="_new">![](09_web_mapping_files/mappa7.jpg)</a>
+<a href="/lessons/webmaps/map5a.html" target="_new">![](09_web_mapping_files/mappa6.jpg)</a>
 
 
 
@@ -451,6 +450,7 @@ from folium.plugins import HeatMap
 ```python
 m7=folium.Map(location=[46.0672,11.1212],tiles='cartodbpositron',zoom_start=11)
 ```
+
 
 #### Create a Heatmap layer
 
@@ -479,8 +479,7 @@ HeatMap(data.values).add_to(m7)
 m7
 ```
 
-<a href="/lessons/webmaps/mappa7.html" target="_new">![](09_web_mapping_files/mappa8.jpg)</a>
-
+<a href="/lessons/webmaps/mappa7.html" target="_new">![](09_web_mapping_files/mappa7.jpg)</a>
 
 
 ## playing with result of the election
@@ -544,9 +543,7 @@ data = candidate_pantano[['latitude','longitude','voti']]
 HeatMap(data.values).add_to(m8)
 m8
 ```
-
-<a href="/lessons/webmaps/mappa8.html" target="_new">![](09_web_mapping_files/mappa9.jpg)</a>
-
+<a href="/lessons/webmaps/mappa8.html" target="_new">![](09_web_mapping_files/mappa8.jpg)</a>
 
 
 ### heatmap by percentage
@@ -561,8 +558,8 @@ data = candidate_pantano[['latitude','longitude','percentage']]
 HeatMap(data.values).add_to(m8)
 m8
 ```
-<a href="/lessons/webmaps/mappa8.html" target="_new">![](09_web_mapping_files/mappa10.jpg)</a>
 
+<a href="/lessons/webmaps/mappa8.html" target="_new">![](09_web_mapping_files/mappa9.jpg)</a>
 
 
 ##  Choropleth
