@@ -28,8 +28,8 @@ lessons :
     url:  /lessons/04-retrieving_data_from_openstreetmap
   - title: 05 - Street Network Analysis
     url:  /lessons/05-street-network-analysis
-  - title: 06 - Moving Analysis
-    url: /lessons/06-moving_analysis
+  - title: 06 - Trajectory Analysis
+    url: /lessons/06-mobilty-analytics
   - title: 07 - Basic operations on raster data
     url: /lessons/07-basic-operation-on-raster
   - title: 08 - Visualizing geospatial data
