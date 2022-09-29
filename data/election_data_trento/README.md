@@ -1,1 +1,0 @@
-data from https://www.comune.trento.it/Aree-tematiche/Statistiche-e-dati-elettorali/Elettorale/Elezioni-amministrative-e-referendum-costituzionale-20-21-settembre-2020/Affluenze-e-risultati-elezioni-amministrative-2020
