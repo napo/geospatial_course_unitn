@@ -20,7 +20,7 @@ title                    : "Geospatial Analysis and Representation for Data Scie
 title_separator          : "-"
 subtitle                 : course for the master in Data Science University of Trento
 name                     : "Maurizio Napolitano"
-description              : "he documentation produced during the course in Geospatial analysis and representation for data science for the students in data science of the University of Trento - academic year 2021/2022"
+description              : "he documentation produced during the course in Geospatial analysis and representation for data science for the students in data science of the University of Trento - academic year 2022/2023"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
