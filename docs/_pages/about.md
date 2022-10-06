@@ -38,7 +38,7 @@ every Friday from 1 October to 3 December - room 12 Department of Sociology and 
 
 ## Course websites
 
-- [official page of the University of Trento](https://www.esse3.unitn.it/Guide/PaginaADErogata.do?ad_er_id=2021*N0*N0*S1*51795*94842&ANNO_ACCADEMICO=2021&mostra_percorsi=S
+- [official page of the University of Trento](https://www.esse3.unitn.it/Guide/PaginaADErogata.do?ad_er_id=2022*N0*N0*S1*51795*94842&ANNO_ACCADEMICO=2022&mostra_percorsi=S
 )
 - [Lessons](https://napo.github.io/geospatial_course_unitn) by Maurizio Napolitano
 - [Github with code and other resources](https://github.com/napo/geospatial_course_unitn) by Maurizio Napolitano

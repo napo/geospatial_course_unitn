@@ -2,7 +2,7 @@
 title: "Introduction"
 layout: home
 permalink: /
-date: 2021-09-23T11:48:41-04:00
+date: 2022-10-06T11:48:41-04:00
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
@@ -11,7 +11,7 @@ header:
     - label: "more"
       url: "/about/"
   caption: "Photo credit: [**geralt**](https://www.instagram.com/gerdaltmannpixabay/)"
-excerpt: "this page contains all the material produced for the Geospatial Analysis and Representation for Data Science course for the master in Data Science University of Trento - academic year 2020/2021"
+excerpt: "this page contains all the material produced for the Geospatial Analysis and Representation for Data Science course for the master in Data Science University of Trento - academic year 2022/2023"
 intro: 
   - excerpt: 
 feature_row:
