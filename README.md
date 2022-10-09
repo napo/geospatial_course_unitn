@@ -31,6 +31,11 @@ In the next lesson the solution is then presented, thus repeating the concepts e
 Maurizio Napolitano<br/>
 every Friday from 1 October to 3 December - room 12 Department of Sociology and Social Research - University of Trento
 
+## MyBinder
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/napo/geospatial_course_unitn/HEAD?labpath=code)
+
+
+
 ## Slide about the course 
 [view the slides](https://docs.google.com/presentation/d/e/2PACX-1vSBVsLi-ND3eGZ0ZyAd-XWs453H4PRkywlYzJIVrHWnxrF1QLMe0GX4nlWq8YXeqWNNUwZS-t8IOO4e/pub?start=false&loop=false&delayms=3000) - [download](https://github.com/napo/geospatial_course_unitn/raw/master/pdf/presentation of the course - geospatial analysis.pdf) 
 
