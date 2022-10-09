@@ -12,7 +12,8 @@ You can download each file from here and use how you prefer or simple [clone](ht
 The code is presented in class using [Google Colab](https://colab.research.google.com/)<br/>you can decide to import each script from the Colab’ interface or by using the github repository
 
 ## MyBinder
-You can use the code directly from MyBinder with a click on this button<br/>![https://static.mybinder.org/badge_logo.svg](https://mybinder.org/v2/gh/napo/geospatial_course_unitn/master?filepath=code)
+You can use the code directly from MyBinder with a click on this button<br/>
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/napo/geospatial_course_unitn/HEAD?labpath=code)
 
 ## Anaconda
 If you use anaconda rember to change the command pip with the command conda to install all the packages
