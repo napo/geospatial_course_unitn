@@ -9,7 +9,7 @@ toc: true
 [Geographic Data Science](https://geographicdata.science/)
 
 ## Blogs
-[Geohackweek](https://geohackweek.github.io/)
+[Geohackweek](https://geohackweek.github.io/)<br/>
 [Open Source Spatial Analysis Tools for Python: A Quick Guide ](https://makepath.com/open-source-spatial-analysis-tools-a-quick-guide/)
 
 ## Courses
