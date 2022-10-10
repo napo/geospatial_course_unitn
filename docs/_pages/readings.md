@@ -14,7 +14,7 @@ toc: true
 
 ## Courses
 [Automating GIS-processes](https://automating-gis-processes.github.io/site/)<br/>
-[Spatial data science for sustainable development](https://sustainability-gis.readthedocs.io/en/latest/)
+[Spatial data science for sustainable development](https://sustainability-gis.readthedocs.io/en/latest/)<br/>
 [Geographic Data Science for Applied Economists](http://darribas.org/gds4ae/content/pages/home.html)
 
 ## Workshops
