@@ -10,6 +10,7 @@ toc: true
 
 ## Blogs
 [Geohackweek](https://geohackweek.github.io/)
+[Open Source Spatial Analysis Tools for Python: A Quick Guide ](https://makepath.com/open-source-spatial-analysis-tools-a-quick-guide/)
 
 ## Courses
 [Automating GIS-processes](https://automating-gis-processes.github.io/site/)<br/>
