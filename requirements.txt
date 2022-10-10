@@ -1,3 +1,7 @@
-geopandas==0.10.0
+geopandas==0.10.2
 requests==2.23.0
 matplotlib==3.2.2
+pygeos==0.13
+bs4==4.6.3
+xlrd==2.0.1
+dms2dec==0.1
