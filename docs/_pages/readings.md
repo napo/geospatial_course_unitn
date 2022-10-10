@@ -9,11 +9,12 @@ toc: true
 [Geographic Data Science](https://geographicdata.science/)
 
 ## Blogs
-[Geohackweek](https://geohackweek.github.io/)
+[Geohackweek](https://geohackweek.github.io/)<br/>
+[Open Source Spatial Analysis Tools for Python: A Quick Guide ](https://makepath.com/open-source-spatial-analysis-tools-a-quick-guide/)
 
 ## Courses
 [Automating GIS-processes](https://automating-gis-processes.github.io/site/)<br/>
-[Spatial data science for sustainable development](https://sustainability-gis.readthedocs.io/en/latest/)
+[Spatial data science for sustainable development](https://sustainability-gis.readthedocs.io/en/latest/)<br/>
 [Geographic Data Science for Applied Economists](http://darribas.org/gds4ae/content/pages/home.html)
 
 ## Workshops
