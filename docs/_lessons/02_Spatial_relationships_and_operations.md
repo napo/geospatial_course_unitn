@@ -2245,10 +2245,11 @@ Overview of the different functions to check spatial relationships (*spatial pre
 </ul>
 
 
-See https://shapely.readthedocs.io/en/stable/manual.html#predicates-and-relationships for an overview of those methods.
+See <a href="https://shapely.readthedocs.io/en/stable/manual.html#predicates-and-relationships">predicates-and-relationships<a> for an overview of those methods.
 
 
-See https://en.wikipedia.org/wiki/DE-9IM for all details on the semantics of those operations. 
+See <a href="https://en.wikipedia.org/wiki/DE-9IM">https://en.wikipedia.org/wiki/DE-9IM</a> for all details on the semantics of those operations. 
+</div>
 
 # Spatial Joins
 
