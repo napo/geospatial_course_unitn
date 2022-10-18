@@ -2228,30 +2228,30 @@ Here the reason<Br/>
 ---
 
 
-<div class="alert alert-info" style="font-size:120%">
-<b>REFERENCE</b>: <br>
+
+**REFERENCE**
 
 Overview of the different functions to check spatial relationships (*spatial predicate functions*):
-<ul>
-    <li>`equals`</li>
-<li>`contains`</li>
-<li>`crosses`</li>
-<li>`disjoint`</li>
-<li>`intersects`</li>
-<li>`overlaps`</li>
-<li>`touches`</li>
-<li>`within`</li>
-<li>`covers`</li>
-</ul>
 
+- `equals`
+- `contains`
+- `crosses`
+- `disjoint`
+- `intersects`
+- `overlaps`
+- `touches`
+- `within`
+- `covers`
 
 See <a href="https://shapely.readthedocs.io/en/stable/manual.html#predicates-and-relationships">predicates-and-relationships<a> for an overview of those methods.
 
 
 See <a href="https://en.wikipedia.org/wiki/DE-9IM">https://en.wikipedia.org/wiki/DE-9IM</a> for all details on the semantics of those operations. 
-</div>
+
+
 
 # Spatial Joins
+
 
 You can create a join like the usual [join](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html) between pandas dataframe by using a spatial relationship with the function [geopandas.sjoin](http://geopandas.readthedocs.io/en/latest/reference/geopandas.sjoin.html)
 
@@ -2564,8 +2564,8 @@ plt.show()
 
 
 
-<div class="alert alert-info" style="font-size:120%">
-<b>SPATIAL JOIN </b>= *transferring attributes from one layer to another based on their spatial relationship*<br/>
+
+**SPATIAL JOIN** = *transferring attributes from one layer to another based on their spatial relationship*
 
 Different parts of this operations:
 <ul>
@@ -2577,6 +2577,7 @@ Different parts of this operations:
 
 
 ---
+
 # Spatial operations 
 GeoPandas provide analysis methods that return new geometric objects (based on shapely)
 
@@ -2692,8 +2693,8 @@ northeast_geometry.simplify(10000,preserve_topology=False).symmetric_difference(
 
 
 
-<div class="alert alert-info" style="font-size:120%">
-<b>REMEMBER:</b>
+
+**REMEMBER:**
 
 GeoPandas (and Shapely for the individual objects) provides a whole lot of basic methods to analyse the geospatial data (distance, length, centroid, boundary, convex_hull, simplify, transform, ....), much more than the few that we can touch in this tutorial.
 <ul>
@@ -2703,6 +2704,7 @@ GeoPandas (and Shapely for the individual objects) provides a whole lot of basic
 
 
 ---
+
 # Clip 
 
 Extracts input features that overlay the clip features.
@@ -3105,16 +3107,15 @@ italy.to_crs(epsg=32632).geometry[0]
 
 
 
-<div class="alert alert-info" style="font-size:120%">
-<b>REMEMBER:</b>
+**REMEMBER:**
 
 dissolve can be thought of as doing three things: (a) it **dissolves** all the geometries within a given group together into a single geometric feature (using the *unary_union* method), and (b) it **aggregates** all the rows of data in a group using *groupby.aggregate()*, and (c) it **combines** those two results.
     
-<ul>
-<li>An overview of all methods provided by GeoPandas can be found here: <a href="http://geopandas.org/aggregation_with_dissolve.html">http://geopandas.org/aggregation_with_dissolve.html</a></li>
- </ul>
+An overview of all methods provided by GeoPandas can be found here: <a href="http://geopandas.org/aggregation_with_dissolve.html">http://geopandas.org/aggregation_with_dissolve.html</a>
 
 ---
+
+
 # Overlay
 
 Spatial overlays allow you to compare two GeoDataFrames containing polygon or multipolygon geometries and create a new GeoDataFrame with the new geometries representing the spatial combination and merged properties. This allows you to answer questions like
