@@ -107,11 +107,11 @@ warnings.simplefilter("ignore")
 
 geopackage with the administrative units of italy
 
-The couse offers the file in a geopackage stored [here](https://github.com/napo/geospatial_course_unitn/raw/master/data/istat/istat_administrative_units_generalized_2021.gpkgg)
+The couse offers the file in a geopackage stored [here](https://github.com/napo/geospatial_course_unitn/raw/master/data/istat/istat_administrative_units_2021.gpkgg)
 
 
 ```python
-url = 'https://github.com/napo/geospatial_course_unitn/raw/master/data/istat/istat_administrative_units_generalized_2022.gpkg'
+url = 'https://github.com/napo/geospatial_course_unitn/raw/master/data/istat/istat_administrative_units_2022.gpkg'
 ```
 
 
@@ -127,7 +127,7 @@ you can repeat the operation ( = direct download) for each layer but it's better
 
 ```python
 # download the file
-geopackage_istat_file = "istat_administrative_units_generalized_2022.gpkg"
+geopackage_istat_file = "istat_administrative_units_2022.gpkg"
 r = requests.get(url, allow_redirects=True)
 open(geopackage_istat_file, 'wb').write(r.content)
 ```
