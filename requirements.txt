@@ -1,5 +1,5 @@
 geopandas==0.10.2
-pyrosm=
+pyrosm==0.6.1
 requests==2.23.0
 matplotlib==3.2.2
 mapclassify=2.4.3
