@@ -4,7 +4,7 @@ permalink: /solutions/03-retrieving_data_from_sdi
 excerpt: "Retrieving data from SDI"
 last_modified_at: 2022-10-29T06:48:03-01:21
 header:
-  teaser: /solutions/03_solution_exercise_retrieving_data_from_sdi_files/03_solution_exercise_retrieving_data_from_sdi_62_0.png
+  teaser: /solutions/03_solution_exercise_retrieving_data_from_sdi_files/03_solution_exercise_retrieving_data_from_sdi_100_0.png
 #redirect_from:
 #  - /theme-setup/
 toc: true
