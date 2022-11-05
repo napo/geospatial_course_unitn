@@ -1,6 +1,6 @@
 geopandas==0.12.1
 pyrosm==0.6.1
-requests==2.23.0
+requests==2.28.1
 matplotlib==3.5.2
 mapclassify==2.4.3
 pygeos==0.13
