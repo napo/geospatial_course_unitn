@@ -1,4 +1,4 @@
-geopandas==0.10.2
+geopandas==0.12.1
 pyrosm==0.6.1
 requests==2.23.0
 matplotlib==3.5.2
