@@ -15,3 +15,5 @@ bmi-arcgis-restapi==2.2.2
 osmnx==1.2.2
 branca==0.5.0
 folium==0.13.0
+gpxpy==1.5.0
+movingpandas==0.11rc1
