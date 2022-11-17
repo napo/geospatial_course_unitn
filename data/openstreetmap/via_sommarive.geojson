@@ -1,0 +1,118 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-10-31T19:11:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/97004470",
+        "highway": "unclassified",
+        "lit": "yes",
+        "maxspeed:type": "IT:urban",
+        "name": "Via Sommarive",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1503916,
+            46.0651888
+          ],
+          [
+            11.1503885,
+            46.065259
+          ],
+          [
+            11.1503291,
+            46.0658081
+          ],
+          [
+            11.1503553,
+            46.0660673
+          ],
+          [
+            11.1504269,
+            46.0662416
+          ],
+          [
+            11.1504578,
+            46.0664484
+          ],
+          [
+            11.1504632,
+            46.0665992
+          ],
+          [
+            11.150486,
+            46.06725
+          ],
+          [
+            11.1504934,
+            46.0674388
+          ],
+          [
+            11.1504947,
+            46.067517
+          ],
+          [
+            11.1505302,
+            46.0679016
+          ],
+          [
+            11.1505783,
+            46.0682774
+          ],
+          [
+            11.1505966,
+            46.0683584
+          ],
+          [
+            11.1506321,
+            46.0684154
+          ],
+          [
+            11.1506783,
+            46.0684621
+          ]
+        ]
+      },
+      "id": "way/97004470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/382958545",
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Via Sommarive",
+        "source:maxspeed": "sign",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1505783,
+            46.0682774
+          ],
+          [
+            11.1504546,
+            46.0686468
+          ],
+          [
+            11.1502868,
+            46.0686584
+          ],
+          [
+            11.1502278,
+            46.0686882
+          ]
+        ]
+      },
+      "id": "way/382958545"
+    }
+  ]
+}

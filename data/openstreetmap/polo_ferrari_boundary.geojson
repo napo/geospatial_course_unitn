@@ -1,0 +1,356 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-10-31T18:38:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/525163745",
+        "@relations": [
+          {
+            "role": "",
+            "rel": 11817621,
+            "reltags": {
+              "addr:city": "Trento",
+              "addr:street": "via Sommarive",
+              "addr:suburb": "Povo",
+              "alt_name": "Polo Ferrari",
+              "amenity": "university",
+              "name": "Polo Scientifico e Tecnologico \"Polo Ferrari\"",
+              "short_name": "Polo Ferrari",
+              "type": "site"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1499113,
+            46.0673721
+          ],
+          [
+            11.1499195,
+            46.0676412
+          ]
+        ]
+      },
+      "id": "way/525163745"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/780554821",
+        "@relations": [
+          {
+            "role": "",
+            "rel": 11817621,
+            "reltags": {
+              "addr:city": "Trento",
+              "addr:street": "via Sommarive",
+              "addr:suburb": "Povo",
+              "alt_name": "Polo Ferrari",
+              "amenity": "university",
+              "name": "Polo Scientifico e Tecnologico \"Polo Ferrari\"",
+              "short_name": "Polo Ferrari",
+              "type": "site"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1503225,
+            46.0665335
+          ],
+          [
+            11.1503337,
+            46.0668931
+          ],
+          [
+            11.1503586,
+            46.0674386
+          ],
+          [
+            11.1503603,
+            46.0674763
+          ]
+        ]
+      },
+      "id": "way/780554821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/813683596",
+        "@relations": [
+          {
+            "role": "",
+            "rel": 11817621,
+            "reltags": {
+              "addr:city": "Trento",
+              "addr:street": "via Sommarive",
+              "addr:suburb": "Povo",
+              "alt_name": "Polo Ferrari",
+              "amenity": "university",
+              "name": "Polo Scientifico e Tecnologico \"Polo Ferrari\"",
+              "short_name": "Polo Ferrari",
+              "type": "site"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1502947,
+            46.0664929
+          ],
+          [
+            11.1502114,
+            46.0664938
+          ],
+          [
+            11.1502109,
+            46.0664755
+          ],
+          [
+            11.1501126,
+            46.0664775
+          ],
+          [
+            11.1501143,
+            46.0665131
+          ],
+          [
+            11.1501154,
+            46.066553
+          ]
+        ]
+      },
+      "id": "way/813683596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/813683597",
+        "@relations": [
+          {
+            "role": "",
+            "rel": 11817621,
+            "reltags": {
+              "addr:city": "Trento",
+              "addr:street": "via Sommarive",
+              "addr:suburb": "Povo",
+              "alt_name": "Polo Ferrari",
+              "amenity": "university",
+              "name": "Polo Scientifico e Tecnologico \"Polo Ferrari\"",
+              "short_name": "Polo Ferrari",
+              "type": "site"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1501143,
+            46.0665131
+          ],
+          [
+            11.1499764,
+            46.0665168
+          ],
+          [
+            11.1497398,
+            46.0665231
+          ],
+          [
+            11.1492673,
+            46.0665357
+          ],
+          [
+            11.1492855,
+            46.0671559
+          ],
+          [
+            11.1492925,
+            46.0673963
+          ],
+          [
+            11.149296,
+            46.0674763
+          ],
+          [
+            11.1494106,
+            46.0674992
+          ],
+          [
+            11.1497235,
+            46.0674939
+          ],
+          [
+            11.1502755,
+            46.0674845
+          ],
+          [
+            11.1503338,
+            46.0674734
+          ],
+          [
+            11.1503327,
+            46.0674498
+          ],
+          [
+            11.1503323,
+            46.067439
+          ],
+          [
+            11.1503318,
+            46.0674277
+          ]
+        ]
+      },
+      "id": "way/813683597"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/742336418",
+        "@relations": [
+          {
+            "role": "",
+            "rel": 11817621,
+            "reltags": {
+              "addr:city": "Trento",
+              "addr:street": "via Sommarive",
+              "addr:suburb": "Povo",
+              "alt_name": "Polo Ferrari",
+              "amenity": "university",
+              "name": "Polo Scientifico e Tecnologico \"Polo Ferrari\"",
+              "short_name": "Polo Ferrari",
+              "type": "site"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1493153,
+            46.067656
+          ],
+          [
+            11.1493494,
+            46.0676534
+          ],
+          [
+            11.1493768,
+            46.0676532
+          ],
+          [
+            11.1493748,
+            46.067583
+          ],
+          [
+            11.1494425,
+            46.0675817
+          ],
+          [
+            11.1496455,
+            46.0675779
+          ],
+          [
+            11.1496471,
+            46.0676152
+          ],
+          [
+            11.1498996,
+            46.0676093
+          ],
+          [
+            11.1498985,
+            46.0675715
+          ],
+          [
+            11.1499161,
+            46.0675711
+          ],
+          [
+            11.1499349,
+            46.0675707
+          ],
+          [
+            11.1499362,
+            46.0676222
+          ],
+          [
+            11.1503634,
+            46.0676148
+          ],
+          [
+            11.1503706,
+            46.0676785
+          ],
+          [
+            11.1503768,
+            46.0678125
+          ],
+          [
+            11.1503793,
+            46.0678668
+          ],
+          [
+            11.150382,
+            46.0679267
+          ],
+          [
+            11.1503854,
+            46.0680461
+          ],
+          [
+            11.1503894,
+            46.0681365
+          ],
+          [
+            11.1503956,
+            46.0682251
+          ],
+          [
+            11.1504067,
+            46.0684668
+          ],
+          [
+            11.1504076,
+            46.0685533
+          ],
+          [
+            11.1500449,
+            46.0685595
+          ],
+          [
+            11.1494189,
+            46.0685733
+          ],
+          [
+            11.1493511,
+            46.0685738
+          ],
+          [
+            11.1493153,
+            46.067656
+          ]
+        ]
+      },
+      "id": "way/742336418"
+    }
+  ]
+}
