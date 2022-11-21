@@ -2,7 +2,7 @@
 title: "Solution 06"
 permalink: /solutions/06-moving_analysis
 excerpt: "Mobily Analysis / Map Matching"
-last_modified_at: 2021-11-21T21:10:01-12:41
+last_modified_at: 2022-11-21T21:10:01-12:41
 header:
   teaser: https://raw.githubusercontent.com/napo/geospatial_course_unitn/master/images/compare_map_matching.jpg
 #redirect_from:
