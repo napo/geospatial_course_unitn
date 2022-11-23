@@ -1,0 +1,1 @@
+http://sit.comune.bolzano.it/geoserver/wfs?service=WFS&request=GetCapabilities
