@@ -1,0 +1,592 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2022-11-24T14:02:34Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24744093",
+        "alt_name": "Via dei Valoni",
+        "highway": "unclassified",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxheight": "default",
+        "maxspeed": "50",
+        "name": "Via dei Valóni",
+        "smoothness": "good",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1504947,
+            46.067517
+          ],
+          [
+            11.1504393,
+            46.0675181
+          ],
+          [
+            11.1503612,
+            46.0675197
+          ],
+          [
+            11.1494624,
+            46.0675357
+          ],
+          [
+            11.1493986,
+            46.0675311
+          ],
+          [
+            11.1493435,
+            46.067521
+          ],
+          [
+            11.1491986,
+            46.0674913
+          ],
+          [
+            11.1489877,
+            46.0674236
+          ],
+          [
+            11.1488838,
+            46.0673832
+          ],
+          [
+            11.1487446,
+            46.0673043
+          ],
+          [
+            11.1486782,
+            46.0672571
+          ],
+          [
+            11.1486347,
+            46.0672082
+          ],
+          [
+            11.1485483,
+            46.06713
+          ],
+          [
+            11.1484527,
+            46.0670434
+          ],
+          [
+            11.1483632,
+            46.0669643
+          ],
+          [
+            11.1481362,
+            46.0668966
+          ],
+          [
+            11.147785,
+            46.0668875
+          ],
+          [
+            11.1477207,
+            46.0668534
+          ],
+          [
+            11.1476878,
+            46.0668071
+          ],
+          [
+            11.1476743,
+            46.0666644
+          ],
+          [
+            11.1476653,
+            46.0665699
+          ],
+          [
+            11.1476428,
+            46.0664109
+          ]
+        ]
+      },
+      "id": "way/24744093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/25302471",
+        "alt_name": "Via dei Valoni",
+        "highway": "unclassified",
+        "name": "Via dei Valóni",
+        "oneway": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1464485,
+            46.0657819
+          ],
+          [
+            11.1465124,
+            46.0657757
+          ],
+          [
+            11.1465912,
+            46.0657911
+          ],
+          [
+            11.1467534,
+            46.0658797
+          ],
+          [
+            11.1467908,
+            46.0659138
+          ],
+          [
+            11.1467955,
+            46.0659449
+          ],
+          [
+            11.1467839,
+            46.0659848
+          ]
+        ]
+      },
+      "id": "way/25302471"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/25302473",
+        "alt_name": "Via dei Valoni",
+        "cycleway:both": "no",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Via dei Valóni",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1476428,
+            46.0664109
+          ],
+          [
+            11.1483208,
+            46.0664362
+          ],
+          [
+            11.1489768,
+            46.0664716
+          ],
+          [
+            11.1497393,
+            46.0664779
+          ],
+          [
+            11.1500009,
+            46.0664568
+          ],
+          [
+            11.1501264,
+            46.0664494
+          ],
+          [
+            11.1503967,
+            46.0664486
+          ],
+          [
+            11.1504578,
+            46.0664484
+          ]
+        ]
+      },
+      "id": "way/25302473"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32225700",
+        "agricultural": "yes",
+        "alt_name": "Via dei Valoni",
+        "highway": "unclassified",
+        "lane_markings": "no",
+        "motor_vehicle": "no",
+        "name": "Via dei Valóni",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1504578,
+            46.0664484
+          ],
+          [
+            11.1506079,
+            46.0664469
+          ],
+          [
+            11.1515673,
+            46.0664411
+          ],
+          [
+            11.1516203,
+            46.0664277
+          ],
+          [
+            11.1516656,
+            46.0664163
+          ],
+          [
+            11.1520257,
+            46.0664303
+          ],
+          [
+            11.1521071,
+            46.0664335
+          ]
+        ]
+      },
+      "id": "way/32225700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/38082910",
+        "alt_name": "Via dei Valoni",
+        "highway": "unclassified",
+        "name": "Via dei Valóni",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1428407,
+            46.0663405
+          ],
+          [
+            11.1428019,
+            46.0663478
+          ],
+          [
+            11.1427812,
+            46.0663699
+          ],
+          [
+            11.1427903,
+            46.0664247
+          ],
+          [
+            11.1428941,
+            46.0665941
+          ],
+          [
+            11.1430197,
+            46.0667447
+          ],
+          [
+            11.1432941,
+            46.0670222
+          ],
+          [
+            11.1436749,
+            46.0673582
+          ]
+        ]
+      },
+      "id": "way/38082910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/40115769",
+        "alt_name": "Via dei Valoni",
+        "cycleway:both": "no",
+        "height": "2.60",
+        "highway": "unclassified",
+        "layer": "-1",
+        "name": "Via dei Valóni",
+        "oneway": "no",
+        "surface": "asphalt",
+        "tunnel": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1467839,
+            46.0659848
+          ],
+          [
+            11.1467755,
+            46.0660902
+          ]
+        ]
+      },
+      "id": "way/40115769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/78363222",
+        "alt_name": "Via dei Valoni",
+        "highway": "unclassified",
+        "name": "Via dei Valóni",
+        "oneway": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1467755,
+            46.0660902
+          ],
+          [
+            11.1467683,
+            46.0661318
+          ],
+          [
+            11.1467777,
+            46.0662233
+          ],
+          [
+            11.1467794,
+            46.0662437
+          ],
+          [
+            11.1467865,
+            46.0662655
+          ],
+          [
+            11.1468065,
+            46.0662772
+          ]
+        ]
+      },
+      "id": "way/78363222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/419226774",
+        "alt_name": "Via dei Valoni",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Via dei Valóni",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1438107,
+            46.0664354
+          ],
+          [
+            11.1434688,
+            46.0664392
+          ],
+          [
+            11.1432185,
+            46.0664336
+          ],
+          [
+            11.1430925,
+            46.0664151
+          ],
+          [
+            11.142973,
+            46.0663843
+          ],
+          [
+            11.1428407,
+            46.0663405
+          ]
+        ]
+      },
+      "id": "way/419226774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/419226779",
+        "alt_name": "Via dei Valoni",
+        "cycleway:both": "no",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Via dei Valóni",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1455928,
+            46.0666868
+          ],
+          [
+            11.145421,
+            46.0666939
+          ],
+          [
+            11.1452341,
+            46.0666803
+          ],
+          [
+            11.1449739,
+            46.0666277
+          ],
+          [
+            11.1447067,
+            46.0665433
+          ],
+          [
+            11.144521,
+            46.0664627
+          ],
+          [
+            11.1443889,
+            46.0664385
+          ],
+          [
+            11.1438107,
+            46.0664354
+          ]
+        ]
+      },
+      "id": "way/419226779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/419226780",
+        "alt_name": "Via dei Valoni",
+        "cycleway:both": "no",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Via dei Valóni",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1468065,
+            46.0662772
+          ],
+          [
+            11.146767,
+            46.0662971
+          ],
+          [
+            11.1466463,
+            46.0663578
+          ],
+          [
+            11.146417,
+            46.066459
+          ],
+          [
+            11.1462493,
+            46.0665208
+          ],
+          [
+            11.1458295,
+            46.0666428
+          ],
+          [
+            11.1455928,
+            46.0666868
+          ]
+        ]
+      },
+      "id": "way/419226780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/419226781",
+        "alt_name": "Via dei Valoni",
+        "cycleway:both": "no",
+        "highway": "unclassified",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Via dei Valóni",
+        "smoothness": "good",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1468065,
+            46.0662772
+          ],
+          [
+            11.1469399,
+            46.0662953
+          ],
+          [
+            11.1473004,
+            46.0663293
+          ],
+          [
+            11.1475654,
+            46.0663783
+          ],
+          [
+            11.1476428,
+            46.0664109
+          ]
+        ]
+      },
+      "id": "way/419226781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/840851738",
+        "alt_name": "Via dei Valoni",
+        "highway": "unclassified",
+        "lane_markings": "no",
+        "name": "Via dei Valóni",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.1521071,
+            46.0664335
+          ],
+          [
+            11.152368,
+            46.0664436
+          ],
+          [
+            11.1528095,
+            46.0664944
+          ],
+          [
+            11.1530526,
+            46.0664749
+          ],
+          [
+            11.1531061,
+            46.0664712
+          ]
+        ]
+      },
+      "id": "way/840851738"
+    }
+  ]
+}
