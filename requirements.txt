@@ -17,4 +17,5 @@ osmnx==1.2.2
 branca==0.5.0
 folium==0.13.0
 gpxpy==1.5.0
+pyproject-toml==0.0.10 
 movingpandas==0.11rc1
