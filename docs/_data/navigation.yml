@@ -34,8 +34,6 @@ lessons :
     url: /lessons/07-basic-operation-on-raster
   - title: 08 - Visualizing geospatial data
     url: /lessons/08-visualizing-geospatial-data
-  - title: 09 - Web Mapping
-    url: /lessons/09-web-mapping
   - title: Meta
     children:
       - title: "About"
@@ -64,8 +62,6 @@ solutions :
     url: /solutions/06-moving_analysis
   - title: 07 - operations on raster data
     url: /solutions/07-operations_on_raster_data
-  - title: 08 - visualizing geospatial data (elections)
-    url: /solutions/08-visualizing-electoral-data
   - title: Meta
     children:
       - title: "About"
