@@ -2,7 +2,7 @@
 title: "Solution 07"
 permalink: /solutions/07-operations_on_raster_data
 excerpt: "Operations on raster data"
-last_modified_at: 2021-11-25T21:10:01-12:41
+last_modified_at: 2022-11-25T21:10:01-12:41
 header:
   teaser: /solutions/07_basic_operations_on_raster_data_solution_to_the_exercises__files/07_basic_operations_on_raster_data_solution_to_the_exercises__157_0.png
 #redirect_from:
