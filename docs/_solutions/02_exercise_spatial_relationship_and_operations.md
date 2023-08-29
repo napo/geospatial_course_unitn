@@ -23,7 +23,7 @@ toc: true
  
 1 - create the geodataframe of the [gas&oil stations](https://www.mise.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv) of Italy 
   - data from the italian [Ministry of Economic Development](https://www.mise.gov.it)
-  - count the total of the gas&oil stations for each muncipality of Trentino
+  - count the total of the gas&oil stations for each municipality of Trentino
 
 2 - identify the difference of municipalities in Trentino in the year 2019 with the year 2022
   - identify which municipalities are created from aggregation to others
@@ -379,7 +379,7 @@ geo_stations[geo_stations.geometry.is_empty].shape[0]
 
 Error:<br/>
 the values should be zero: the geodataframe should contains points.<br/>
-Maybe therea are some rows where the values of latitude and lontigude aren't present 
+Maybe there are some rows where the values of latitude and longitude aren't present 
 
 
 ```python
@@ -450,7 +450,7 @@ Ehm ... there is a point outside Italy
 
 ### fix the problem
 
-We need to indentify the points outside the boundary of Italy 
+We need to identify the points outside the boundary of Italy 
 - create the polygon with the administrative boundaries of Italy
 - check each point if is inside the polygon
 
@@ -776,7 +776,7 @@ fiona.listlayers(istat2019)
 
 
 
-    ['provincies', 'regions', 'macroregions', 'municipalities']
+    ['provinces', 'regions', 'macroregions', 'municipalities']
 
 
 
@@ -788,18 +788,18 @@ fiona.listlayers(istat2022)
 
 
 
-    ['provincies', 'regions', 'municipalities', 'macroregions']
+    ['provinces', 'regions', 'municipalities', 'macroregions']
 
 
 
 
 ```python
-provincies2022 = gpd.read_file(istat2022,layer="provincies")
+provinces2022 = gpd.read_file(istat2022,layer="provinces")
 ```
 
 
 ```python
-provincies2022.head(3)
+provinces2022.head(3)
 ```
 
 
@@ -895,7 +895,7 @@ provincies2022.head(3)
 
 
 ```python
-provincies2022.DEN_PROV.unique()
+provinces2022.DEN_PROV.unique()
 ```
 
 
@@ -926,7 +926,7 @@ choose the province of Trento
 
 
 ```python
-province_of_trento = provincies2022[provincies2022['DEN_PROV']=='Trento']
+province_of_trento = provinces2022[provinces2022['DEN_PROV']=='Trento']
 ```
 
 
@@ -1030,7 +1030,7 @@ stations.province.unique()
 
 
 ```python
-provincies2022[provincies2022['DEN_PROV']=='Trento']['SIGLA'].unique()
+provinces2022[provinces2022['DEN_PROV']=='Trento']['SIGLA'].unique()
 ```
 
 
@@ -1156,7 +1156,7 @@ municipalities2022.head(3)
 
 
 ```python
-cod_prov_trento = provincies2022[provincies2022.DEN_PROV == 'Trento'].COD_PROV.values[0]
+cod_prov_trento = provinces2022[provinces2022.DEN_PROV == 'Trento'].COD_PROV.values[0]
 ```
 
 
