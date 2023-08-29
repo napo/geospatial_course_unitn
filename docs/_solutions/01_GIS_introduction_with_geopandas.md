@@ -25,15 +25,15 @@ except ModuleNotFoundError as e:
 
 # Exercise
 1. load the shapefile of ISTAT with the information of the provinces
- - filter it for an italian provice at your choice (eg. Trento)
+ - filter it for an italian province at your choice (eg. Trento)
  - plot it
-2. load the shapefile of ISTAT with the informations of the muncipalities
+2. load the shapefile of ISTAT with the informations of the municipalities
  - identify the cities of the province selected with the biggest and smallest area
  - extract all the centroids of the areas expressed in WGS84
- - select all the muncipalities of the Province of Trento
+ - select all the municipalities of the Province of Trento
  - extract a representative point for the area of each municipality converted in WGS84<br/>suggestion: *.representative_point()*
  - save the points in a GeoJSON file
- - calculate the distance on the geodentic between the municipality with the big area and smallest area by using the centroid
+ - calculate the distance on the geodetic between the municipality with the big area and smallest area by using the centroid
 3. download the shapefile of the [lakes and bodies of water](https://github.com/napo/geospatial_course_unitn/raw/master/data/trentino/lakes_bodies_of_water_trentino.zip) of Trentino
  - plot the geometries where Fktuso is “02”
  - convert in WGS84 and create a geojson
@@ -1056,7 +1056,7 @@ you can download, open with [geojson.io](https://geojson.io) and create a [gist 
 **tip 2**:<br/>
 you can download the files and create a map with [umap](https://umap.openstretmap.fr) and create an [interactive map online with the data](http://umap.openstreetmap.fr/en/map/municipalities-of-the-province-of-trento_663616#11/46.1901/11.6750)
 
-### calculate the distance on the geodentic between the municipality with the big area and smallest area by using the centroid
+### calculate the distance on the geodetic between the municipality with the big area and smallest area by using the centroid
 
 
 
